@@ -1,0 +1,31 @@
+NautilusWindow .scrollbar{
+    -GtkRange-trough-border: 2;
+}
+
+NautilusWindow .scrollbar.trough{
+    background: #ffffff;
+}
+
+NautilusWindow .toolbar,
+NautilusWindow .toolbar:backdrop {
+    background: #ffffff;
+    border-bottom-width: 1px;
+    border-color: #e2e2e2;
+}
+
+NautilusWindow .pane-separator,
+NautilusWindow .pane-separator:prelight,
+NautilusWindow .pane-separator:selected, 
+NautilusWindow .pane-separator.vertical, 
+NautilusWindow .pane-separator.vertical:prelight,
+NautilusWindow .pane-separator.vertical:selected {
+	-unico-centroid-texture: none; 
+    background-image: none;
+    border-width: 0;
+    background-color: #aeaeae;
+    color: #aeaeae;
+}
+
+NautilusWindow * {
+    -GtkPaned-handle-size: 1;
+}

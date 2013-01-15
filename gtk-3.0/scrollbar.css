@@ -3,44 +3,29 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width: 7;
+    -GtkRange-slider-width: 6;
     -GtkRange-stepper-size: 0;
-    -GtkRange-stepper-spacing: 1;
+    -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
 
     -GtkScrollbar-min-slider-length: 30;
+    background: rgba(255, 255, 255, 0.0)
 }
 
 .scrollbar.trough {
-    background-color: rgba(255, 255, 255, 1.0);
+    background-color: rgba(255, 255, 255, 0.0);
     border-width: 0;
     border-radius: 0;
 }
 
 .scrollbar.slider{
     border-width: 0;
-    background-color: #5ebceb;
+    background-color: #aeaeae;
     border-radius: 0;
 }
-.scrollbar.slider:prelight,
-.scrollbar.button {
-    /*border-width: 0;*/
-    /*background-color:         alpha (#000, 0.4);*/
-    /*border-radius: 10px;*/
-    border-width: 0;
+
+.scrollbar.slider:prelight {
     background-color: #5ebceb;
-    -unico-inner-stroke-color:  rgba (0, 0, 0, 0);
-    -unico-outer-stroke-color:  alpha (#FFF, 0.4);
-    border-radius: 0;
-    -GtkRange-slider-width: 4;
-}
-
-.scrollbar.slider:insensitive {
-    -GtkRange-slider-width: 0;
-}
-
-.scrollbar.trough:insensitive {
-    -GtkRange-trough-border: 0;
 }
 
 GtkScrolledWindow.frame {
@@ -48,4 +33,5 @@ GtkScrolledWindow.frame {
     border-width: 0px;
     border-radius: 0px;
     padding: 0;
+    background: rgba(255, 255, 255, 0.0)
 }
