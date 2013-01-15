@@ -1,0 +1,422 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+    <name>Deepin</name>
+    <author>LinuxDeepin Team</author>
+    <copyright>GPLv3</copyright>
+    <date>2012-2013</date>
+    <description>Default theme for LinuxDeepin.</description>
+</info>
+
+<!--geometry -->
+<frame_geometry name="normal" rounded_top_left="1" rounded_top_right="1" rounded_bottom_left="1" rounded_bottom_right="1">
+	<distance name="left_width" value="2"/>
+	<distance name="right_width" value="2"/>
+	<distance name="bottom_height" value="2"/>
+	<distance name="left_titlebar_edge" value="0"/>
+	<distance name="right_titlebar_edge" value="0"/>
+	<distance name="title_vertical_pad" value="11"/>
+	<distance name="button_width" value="27"/>
+	<distance name="button_height" value="26"/>
+	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
+</frame_geometry>
+
+<frame_geometry name="maximized" parent="normal" rounded_top_left="0" rounded_top_right="0" rounded_bottom_left="0" rounded_bottom_right="0">
+	<distance name="left_width" value="0"/>
+	<distance name="right_width" value="0"/>
+	<distance name="bottom_height" value="0"/>
+</frame_geometry>
+
+<frame_geometry name="border" has_title="false">
+	<distance name="left_width" value="0"/>
+	<distance name="right_width" value="0"/>
+	<distance name="bottom_height" value="0"/>
+	<distance name="left_titlebar_edge" value="0"/>
+	<distance name="right_titlebar_edge" value="0"/>
+	<distance name="button_width" value="0"/>
+	<distance name="button_height" value="0"/>
+	<distance name="title_vertical_pad" value="0"/>
+	<border name="title_border" left="0" right="0" top="0" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
+</frame_geometry>
+
+<!--corner and ouline -->
+<constant name="BlackColor" value="#000000"/>
+<constant name="WhiteColor" value="#ffffff"/>
+
+<draw_ops name="corner_outline">
+    <!--line y="0" -->
+    <tint color="BlackColor" x="1" y="0" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="2" y="0" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="3" y="0" width="width-6" height="1" alpha="0.6"/>
+    <tint color="BlackColor" x="width-3" y="0" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-2" y="0" width="1" height="1" alpha="0.25"/>
+
+    <!--line y="1" -->
+    <tint color="BlackColor" x="0" y="1" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="1" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="2" y="1" width="1" height="1" alpha="0.25"/>
+    <tint color="WhiteColor" x="3" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="4" y="1" width="width-8" height="1" alpha="0.6"/>
+    <tint color="WhiteColor" x="width-4" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="width-3" y="1" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="width-2" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-1" y="1" width="1" height="1" alpha="0.25"/>
+
+    <!--line y="2" -->
+    <tint color="BlackColor" x="0" y="2" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="1" y="2" width="1" height="1" alpha="0.25"/>
+    <tint color="WhiteColor" x="2" y="2" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="3" y="2" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-4" y="2" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-3" y="2" width="1" height="1" alpha="0.50"/>
+    <tint color="#b3b3b3" x="width-2" y="2" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="width-1" y="2" width="1" height="1" alpha="0.50"/>
+
+    <!--line y="3" -->
+    <tint color="BlackColor" x="0" y="3" width="1" height="1" alpha="0.6"/>
+    <tint color="WhiteColor" x="1" y="3" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="2" y="3" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-3" y="3" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-2" y="3" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-1" y="3" width="1" height="1" alpha="0.6"/>
+
+    <!--line y="height-4" -->
+    <tint color="BlackColor" x="0" y="height-4" width="1" height="1" alpha="0.6"/>
+    <tint color="WhiteColor" x="1" y="height-4" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="2" y="height-4" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-3" y="height-4" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-2" y="height-4" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-1" y="height-4" width="1" height="1" alpha="0.6"/>
+
+    <!--line y="height-3" -->
+    <tint color="BlackColor" x="0" y="height-3" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="1" y="height-3" width="1" height="1" alpha="0.25"/>
+    <tint color="WhiteColor" x="2" y="height-3" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="3" y="height-3" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-4" y="height-3" width="1" height="1" alpha="0.15"/>
+    <tint color="WhiteColor" x="width-3" y="height-3" width="1" height="1" alpha="0.50"/>
+    <tint color="#b3b3b3" x="width-2" y="height-3" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="width-1" y="height-3" width="1" height="1" alpha="0.50"/>
+
+    <!--line y="height-2" -->
+    <tint color="BlackColor" x="0" y="height-2" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="1" y="height-2" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="2" y="height-2" width="1" height="1" alpha="0.25"/>
+    <tint color="WhiteColor" x="3" y="height-2" width="1" height="1" alpha="0.5"/>
+    <tint color="WhiteColor" x="4" y="height-2" width="width-8" height="1" alpha="0.6"/>
+    <tint color="WhiteColor" x="width-4" y="height-2" width="1" height="1" alpha="0.5"/>
+    <tint color="#b3b3b3" x="width-3" y="height-2" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="width-2" y="height-2" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-1" y="height-2" width="1" height="1" alpha="0.25"/>
+
+    <!--line y="height-1" -->
+    <tint color="BlackColor" x="1" y="height-1" width="1" height="1" alpha="0.25"/>
+    <tint color="BlackColor" x="2" y="height-1" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="3" y="height-1" width="width-6" height="1" alpha="0.6"/>
+    <tint color="BlackColor" x="width-3" y="height-1" width="1" height="1" alpha="0.5"/>
+    <tint color="BlackColor" x="width-2" y="height-1" width="1" height="1" alpha="0.25"/>
+
+    <!--vertical line -->
+    <tint color="BlackColor" x="0" y="4" width="1" height="height-8" alpha="0.6"/>
+    <tint color="WhiteColor" x="1" y="4" width="1" height="height-8" alpha="0.6"/>
+
+    <tint color="WhiteColor" x="width-2" y="4" width="1" height="height-8" alpha="0.6"/>
+    <tint color="BlackColor" x="width-1" y="4" width="1" height="height-8" alpha="0.6"/>
+</draw_ops>
+
+<!-- focused background -->
+<constant name="FocusedBgColor" value="#ccefff"/>
+
+<draw_ops name="focused_color_background">
+    <!--top line -->
+    <tint color="FocusedBgColor" x="0" y="0" width="1" height="1" alpha="1.0"/>
+    <tint color="FocusedBgColor" x="1" y="0" width="1" height="1" alpha="0.5"/>
+    <tint color="FocusedBgColor" x="2" y="0" width="width-4" height="1" alpha="1.0"/>
+    <tint color="FocusedBgColor" x="width-2" y="0" width="1" height="1" alpha="0.5"/>
+
+    <!--bottom line -->
+    <tint color="FocusedBgColor" x="1" y="height-1" width="1" height="1" alpha="0.5"/>
+    <tint color="FocusedBgColor" x="2" y="height-1" width="width-4" height="1" alpha="1.0"/>
+    <tint color="FocusedBgColor" x="width-2" y="height-1" width="1" height="1" alpha="0.5"/>
+
+    <!--left line -->
+    <tint color="FocusedBgColor" x="0" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="FocusedBgColor" x="0" y="2" width="1" height="height-4" alpha="1.0"/>
+    <tint color="FocusedBgColor" x="0" y="height-2" width="1" height="1" alpha="0.5"/>
+
+    <!--right line -->
+    <tint color="FocusedBgColor" x="width-1" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="FocusedBgColor" x="width-1" y="2" width="1" height="height-4" alpha="1.0"/>
+    <tint color="FocusedBgColor" x="width-1" y="height-2" width="1" height="1" alpha="0.5"/>
+
+    <!--center block -->
+    <tint color="FocusedBgColor" x="1" y="1" width="width-2" height="height-2" alpha="1.0"/>
+</draw_ops>
+
+<draw_ops name="focused_normal_entire_background">
+    <include name="focused_color_background"/>
+    <include name="corner_outline"/>
+</draw_ops>
+
+<draw_ops name="focused_maxed_entire_background">
+    <tint color="FocusedBgColor" x="0" y="0" width="width" height="height" alpha="1.0"/>
+</draw_ops>
+
+<!-- unfocused background -->
+<constant name="UnFocusedBgColor" value="#daebf2"/>
+
+<draw_ops name="unfocused_color_background">
+    <!--top line -->
+    <tint color="UnFocusedBgColor" x="0" y="0" width="1" height="1" alpha="1.0"/>
+    <tint color="UnFocusedBgColor" x="1" y="0" width="1" height="1" alpha="0.5"/>
+    <tint color="UnFocusedBgColor" x="2" y="0" width="width-4" height="1" alpha="1.0"/>
+    <tint color="UnFocusedBgColor" x="width-2" y="0" width="1" height="1" alpha="0.5"/>
+
+    <!--bottom line -->
+    <tint color="UnFocusedBgColor" x="1" y="height-1" width="1" height="1" alpha="0.5"/>
+    <tint color="UnFocusedBgColor" x="2" y="height-1" width="width-4" height="1" alpha="1.0"/>
+    <tint color="UnFocusedBgColor" x="width-2" y="height-1" width="1" height="1" alpha="0.5"/>
+
+    <!--left line -->
+    <tint color="UnFocusedBgColor" x="0" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="UnFocusedBgColor" x="0" y="2" width="1" height="height-4" alpha="1.0"/>
+    <tint color="UnFocusedBgColor" x="0" y="height-2" width="1" height="1" alpha="0.5"/>
+
+    <!--right line -->
+    <tint color="UnFocusedBgColor" x="width-1" y="1" width="1" height="1" alpha="0.5"/>
+    <tint color="UnFocusedBgColor" x="width-1" y="2" width="1" height="height-4" alpha="1.0"/>
+    <tint color="UnFocusedBgColor" x="width-1" y="height-2" width="1" height="1" alpha="0.5"/>
+
+    <!--center block -->
+    <tint color="UnFocusedBgColor" x="1" y="1" width="width-2" height="height-2" alpha="1.0"/>
+</draw_ops>
+
+<draw_ops name="unfocused_normal_entire_background">
+    <include name="unfocused_color_background"/>
+    <include name="corner_outline"/>
+</draw_ops>
+
+<draw_ops name="unfocused_maxed_entire_background">
+    <tint color="UnFocusedBgColor" x="0" y="0" width="width" height="height" alpha="1.0"/>
+</draw_ops>
+
+<!--titles -->
+<constant name="LeftTitleSpacer" value="2"/>
+<constant name="TitleColor" value="#333333"/>
+
+<draw_ops name="title">
+    <title color="TitleColor" x="LeftTitleSpacer" y="0 `max` ((height-title_height)/2)" />
+</draw_ops>
+
+<!--<draw_ops name="title_unfocused">-->
+    <!--<title color="TitleColor" x="LeftTitleSpacer" y="0 `max` ((height-title_height)/2)" />-->
+<!--</draw_ops>-->
+
+<!-- menu icon -->
+<constant name="IconTitleSpacing" value="2"/>
+<draw_ops name="menu_button">
+    <icon  x="(0 `max` (width-mini_icon_width)) / 2" y="(height-mini_icon_height) / 2"
+        width="mini_icon_width" height="mini_icon_height"/>
+</draw_ops>
+
+<!-- close icon -->
+<draw_ops name="close_button_normal">
+	<image filename="window_close_normal.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="close_button_prelight">
+	<image filename="window_close_hover.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="close_button_pressed">
+	<image filename="window_close_press.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<!-- maximize icon -->
+<draw_ops name="maximize_button_normal">
+	<image filename="window_max_normal.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="maximize_button_prelight">
+	<image filename="window_max_hover.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="maximize_button_pressed">
+	<image filename="window_max_press.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<!-- unmaximize icon -->
+<draw_ops name="unmaximize_button_normal">
+	<image filename="window_unmax_normal.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_button_prelight">
+	<image filename="window_unmax_hover.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="unmaximize_button_pressed">
+	<image filename="window_unmax_press.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<!-- minimize icon -->
+<draw_ops name="minimize_button_normal">
+    	<image filename="window_min_normal.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="minimize_button_prelight">
+    	<image filename="window_min_hover.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<draw_ops name="minimize_button_pressed">
+    	<image filename="window_min_press.png"
+		x="0"
+		y="0"
+		width="object_width"
+		height="object_height"/>
+</draw_ops>
+
+<!--draw nothing -->
+<draw_ops name="blank"></draw_ops>
+
+<!-- frame styles -->
+<frame_style name="focused_normal" geometry="normal" background="gtk:bg[NORMAL]" alpha="0.0">
+	<piece position="entire_background" draw_ops="focused_normal_entire_background"/>
+	<piece position="title" draw_ops="title"/>
+	<button function="close" state="normal" draw_ops="close_button_normal"/>
+	<button function="close" state="pressed" draw_ops="close_button_pressed"/>
+	<button function="close" state="prelight" draw_ops="close_button_prelight"/>
+	<button function="maximize" state="normal" draw_ops="maximize_button_normal"/>
+	<button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
+	<button function="maximize" state="prelight" draw_ops="maximize_button_prelight"/>
+	<button function="minimize" state="normal" draw_ops="minimize_button_normal"/>
+	<button function="minimize" state="pressed" draw_ops="minimize_button_pressed"/>
+	<button function="minimize" state="prelight" draw_ops="minimize_button_prelight"/>
+	<button function="menu" state="normal" draw_ops="menu_button"/>
+	<button function="menu" state="pressed" draw_ops="menu_button"/>
+	<button function="menu" state="prelight" draw_ops="menu_button"/>
+    <button function="shade" state="normal" draw_ops="blank"/>
+    <button function="shade" state="pressed" draw_ops="blank" />
+    <button function="unshade" state="normal" draw_ops="blank" />
+	<button function="unshade" state="pressed" draw_ops="blank" />
+	<button function="above" state="normal" draw_ops="blank" />
+	<button function="above" state="pressed" draw_ops="blank" />
+	<button function="unabove" state="normal" draw_ops="blank" />
+	<button function="unabove" state="pressed" draw_ops="blank" />
+	<button function="stick" state="normal" draw_ops="blank" />
+	<button function="stick" state="pressed" draw_ops="blank" />
+	<button function="unstick" state="normal" draw_ops="blank" />
+	<button function="unstick" state="pressed" draw_ops="blank" />
+</frame_style>
+
+<frame_style name="unfocused_normal" geometry="normal" background="gtk:bg[NORMAL]" alpha="0.0" parent="focused_normal">
+	<piece position="entire_background" draw_ops="unfocused_normal_entire_background"/>
+</frame_style>
+
+<frame_style name="focused_maximized" geometry="maximized" background="gtk:bg[NORMAL]" alpha="0.0" parent="focused_normal">
+	<piece position="entire_background" draw_ops="focused_maxed_entire_background"/>
+	<button function="maximize" state="normal" draw_ops="unmaximize_button_normal"/>
+	<button function="maximize" state="pressed" draw_ops="unmaximize_button_pressed"/>
+	<button function="maximize" state="prelight" draw_ops="unmaximize_button_prelight"/>
+</frame_style>
+
+<frame_style name="unfocused_maximized" geometry="maximized" background="gtk:bg[NORMAL]" alpha="0.0" parent="focused_normal">
+	<piece position="entire_background" draw_ops="unfocused_maxed_entire_background"/>
+	<button function="maximize" state="normal" draw_ops="unmaximize_button_normal"/>
+	<button function="maximize" state="pressed" draw_ops="unmaximize_button_pressed"/>
+	<button function="maximize" state="prelight" draw_ops="unmaximize_button_prelight"/>
+</frame_style>
+
+<frame_style name="border" geometry="border" background="gtk:bg[NORMAL]" alpha="0.0" parent="focused_normal">
+	<piece position="entire_background" draw_ops="blank"/>
+	<piece position="title" draw_ops="blank"/>
+</frame_style>
+
+<frame_style_set name="normal">
+	<frame focus="yes" state="normal" resize="both" style="focused_normal"/>
+	<frame focus="no" state="normal" resize="both" style="unfocused_normal"/>
+	<frame focus="yes" state="maximized" style="focused_maximized"/>
+	<frame focus="no" state="maximized" style="unfocused_maximized"/>
+	<frame focus="yes" state="shaded" style="focused_normal"/>
+	<frame focus="no" state="shaded" style="unfocused_normal"/>
+	<frame focus="yes" state="maximized_and_shaded" style="focused_maximized"/>
+	<frame focus="no" state="maximized_and_shaded" style="unfocused_maximized"/>
+</frame_style_set>
+
+<frame_style_set name="border">
+	<frame focus="yes" state="normal" resize="both" style="border"/>
+	<frame focus="no" state="normal" resize="both" style="border"/>
+	<frame focus="yes" state="maximized" style="border"/>
+	<frame focus="no" state="maximized" style="border"/>
+	<frame focus="yes" state="shaded" style="border"/>
+	<frame focus="no" state="shaded" style="border"/>
+	<frame focus="yes" state="maximized_and_shaded" style="border"/>
+	<frame focus="no" state="maximized_and_shaded" style="border"/>
+</frame_style_set>
+
+<window type="normal" style_set="normal"/>
+<window type="dialog" style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu" style_set="normal"/>
+<window type="utility" style_set="normal"/>
+<window type="border" style_set="border"/>
+
+<!--menu_icon -->
+<!--<draw_ops name="close_button_icon_unfocused">-->
+    <!--<rectangle color="red" x="0" y="0" width="width" height="height"/>-->
+<!--</draw_ops>-->
+
+<!--<menu_icon function="close" state="normal" draw_ops="close_button_icon_unfocused"/>-->
+<!--<menu_icon function="maximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>-->
+<!--<menu_icon function="unmaximize" state="normal" draw_ops="maximize_button_icon_unfocused"/>-->
+<!--<menu_icon function="minimize" state="normal" draw_ops="minimize_button_icon_unfocused"/>-->
+
+</metacity_theme>
+
+
+
