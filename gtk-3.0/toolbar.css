@@ -11,23 +11,14 @@
 	border-width: 0 0 1px 0;
 	-unico-inner-stroke-width: 0 0 1px 0;
 
-	border-color: shade (@bg_color, 0.56);
+	border-color: #e2e2e2;
+    background-color: #fff;
 	
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (@bg_color),
-				     to (shade (@bg_color, 0.84)));
 }
 
 .toolbar:backdrop {
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 1.06)),
-				     to (shade (@bg_color, 0.96)));
-				     
-    border-color: shade (@bg_color, 0.76);
+    background-color: #fff;
+    border-color: @insensitive_color;
 }
 
 .toolbar:insensitive {

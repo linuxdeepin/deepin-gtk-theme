@@ -6,8 +6,8 @@
 
     -GtkArrow-arrow-scaling: 0.75;
     
-    -GtkCheckButton-indicator-size: 15;
-    -GtkCheckMenuItem-indicator-size: 12;
+    -GtkCheckButton-indicator-size: 22;
+    -GtkCheckMenuItem-indicator-size: 18;
     
     -GtkExpander-expander-size: 16; 
       
@@ -22,6 +22,7 @@
     -GtkTextView-error-underline-color: @error_color;
     
     -GtkWidget-focus-padding: 0;
+    -GtkWidget-focus-line-width: 1;
     
     -GtkWidget-wide-separators: true;
     -GtkWidget-separator-width: 2px;
@@ -34,12 +35,11 @@
 
     -unico-bullet-color: shade (@bg_color, 0.535);
     -unico-bullet-outline-color: shade (@bg_color, 1.2);
-    -unico-focus-border-color: transparent;
-    -unico-focus-border-radius: 2;
-    -unico-focus-fill-color: transparent;
-    -unico-focus-outer-stroke-color: transparent;
     -unico-inner-stroke-color: transparent;
     -unico-text-shadow-color: alpha (#fff, 0.30);
+    -unico-focus-border-color: transparent;
+    -unico-focus-fill-color: transparent;
+    -unico-focus-outer-stroke-color: transparent;
 }
 
 /*****************
@@ -60,6 +60,10 @@
     color: @insensitive_color;
 }
 
+*:backdrop:insensitive{
+    color: @insensitive_color;
+}
+
 *:selected,
 *:selected:focused {
     background-color: alpha (@selected_bg_color, 0.9);
@@ -72,17 +76,9 @@
 
 /* Border */
 GtkScrolledWindow.frame,
-.button,
-.check,
 .entry,
-.notebook,
-.radio,
 .separator,
 BeatBoxStatusBar,
-GtkProgressBar.trough,
-.scale.trough,
-GtkSwitch,
-GtkSwitch.trough,
 PostlerMessages.view row:selected {
     -unico-outer-stroke-style: custom;
     border-style: solid;
@@ -114,8 +110,7 @@ PostlerMessages {
 
 /* No outer stroke */
 BeatBoxStatusBar,
-column-header .button,
-GtkSwitch.slider {     
+column-header .button {     
     -unico-outer-stroke-width: 0;  
 }
 
@@ -154,11 +149,7 @@ column-header .button {
 }
 
 /* Slightly rounded */
-.button,
-.check,
-.entry,
-.notebook,
-.notebook tab .button {
+.entry {
     border-radius: 2.5px;
 }
 
@@ -169,12 +160,7 @@ column-header .button {
 
 /* Circular */
 .help_button,
-.radio,
-GtkInfoBar .button,
-GtkProgressBar,
-.scale.trough,
-GtkSwitch,
-GtkSwitch.trough  {
+GtkInfoBar .button {
     border-radius: 12px;
 }
 
@@ -184,19 +170,16 @@ GtkSwitch.trough  {
 **************/
 
 /* etched text */
-.button,
 .help_button:backdrop,
 .entry,
 .inline-toolbar.toolbar .button,
 *:insensitive,
-.notebook,
 .secondary-toolbar,
 .secondary-toolbar.toolbar .button,
 .sidebar,
 .sidebar.view,
 .toolbar,
-BeatBoxStatusBar,
-GtkSwitch {
+BeatBoxStatusBar {
     text-shadow: 0 1 alpha (#fff, 0.4);
     icon-shadow: 0 1 alpha (#fff, 0.4);
 }
@@ -214,8 +197,7 @@ GtkSwitch {
 .menu *:prelight,
 .sidebar.view:selected,
 .tooltip *,
-GtkInfoBar *,
-GtkSwitch.trough:active {
+GtkInfoBar * {
     color: @selected_fg_color;
 }
 
@@ -226,8 +208,7 @@ GtkSwitch.trough:active {
 .menu *:prelight,
 .sidebar.view:selected,
 .tooltip,
-GtkInfoBar,
-GtkSwitch.trough:active {
+GtkInfoBar {
     text-shadow: 0 1 alpha (#000, 0.3);
     icon-shadow: 0 1 alpha (#000, 0.3);
 }
@@ -255,7 +236,6 @@ GtkCalendar.view {
     background-color: transparent
 }
 
-.highlight,
 GtkCalendar.highlight {
     background-color: @transparent;
     color: #777;
@@ -309,7 +289,12 @@ GtkScrolledWindow.frame {
 
 .grip {
 	background-color: transparent;
-	-unico-centroid-texture: url("assets/resize-grip.svg");
+	-unico-centroid-texture: -gtk-gradient(linear,
+                            left top,
+                            left bottom,
+                            from(rgba(255, 255, 255, 0.0)),
+                            to(rgba(255, 255, 255, 0.0))
+                            );
 }
 
 /************
@@ -565,65 +550,6 @@ BeatBoxStatusBar:backdrop {
 }
 
 /************
- * Switches *
- ***********/
-
-GtkSwitch {
-    font: bold condensed;
-    color: #4d4d4d;
-    -GtkSwitch-slider-width: 22;
-    padding-left: 1px;
-    padding-right: 12px;
-}
-
-GtkSwitch:active {
-    padding-right: 1px;
-    padding-left: 12px;
-}
-
-GtkSwitch.trough {
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#000, 0.07)),
-                    to (alpha (#000, 0.03)));
-}
-
-GtkSwitch.trough:active {
-
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (#3689e6),
-				     to (#55c1ec));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (#266ca4),
-                     to (#4187b8));
-
-}
-
-GtkSwitch.trough:active:backdrop {
-
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 0.59)),
-				     to (shade (@bg_color, 0.81)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (shade (@bg_color, 0.56)),
-                     to (shade (@bg_color, 0.68)));
-
-}
-
-GtkSwitch.slider {
-    background-image: url("assets/switch-slider.svg");
-}
-
-
-/************
  * Tooltips *
  ************/
  
@@ -667,55 +593,37 @@ GtkSwitch.slider {
 *************/
 
 /* Inner Higlight */
-.button,
-.menu.menuitem,
-.menubar.menuitem:active,
-.menubar.menuitem:prelight,
-.menuitem:active,
-.menuitem:prelight,
-.notebook,
-.toolbar,
-GtkProgressBar.progressbar,
-PostlerMessages.view row:selected,
-.progressbar row,
-.progressbar row:hover,
-.progressbar row:selected,
-.progressbar row:selected:focused,
-.trough row,
-.trough row:hover,
-.trough row:selected,
-.trough row:selected:focused {
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                     left bottom, left top,
-                     from (alpha (#fff, 0.20)),
-                     color-stop (0.20, alpha (#fff, 0.05)),
-                     color-stop (0.80, alpha (#fff, 0.05)),
-                     to (alpha (#fff, 0.50)));
-}
+/*.button,*/
+/*.menu.menuitem,*/
+/*.menubar.menuitem:active,*/
+/*.menubar.menuitem:prelight,*/
+/*.menuitem:active,*/
+/*.menuitem:prelight,*/
+/*.notebook,*/
+/*.toolbar,*/
+/*PostlerMessages.view row:selected,*/
+/*.trough row,*/
+/*.trough row:hover,*/
+/*.trough row:selected,*/
+/*.trough row:selected:focused {*/
+    /*-unico-inner-stroke-gradient: -gtk-gradient (linear,*/
+                     /*left bottom, left top,*/
+                     /*from (alpha (#fff, 0.20)),*/
+                     /*color-stop (0.20, alpha (#fff, 0.05)),*/
+                     /*color-stop (0.80, alpha (#fff, 0.05)),*/
+                     /*to (alpha (#fff, 0.50)));*/
+/*}*/
 
 /* Outer Highlight */
 .button:active,
 .button:backdrop,
 .button:insensitive,
 .entry,
-.check,
-.dynamic-notebook .button,
-.notebook tab .button {
+.dynamic-notebook .button {
         -unico-outer-stroke-gradient: -gtk-gradient (linear,
                          left top, left bottom,
                          from (@transparent),
                          color-stop (0.80, @transparent),
-                         to (alpha (#fff, 0.40)));
-}
-
-/* Outer Highlight Rounded */
-.radio,
-GtkProgressBar.trough,
-GtkSwitch.trough {
-        -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                         left top, left bottom,
-                         from (@transparent),
-                         color-stop (0.50, @transparent),
                          to (alpha (#fff, 0.40)));
 }
 
@@ -727,14 +635,10 @@ GtkSwitch.trough {
 
 .button:active,
 .entry,
-.check,
 .inline-toolbar.toolbar,
 .inline-toolbar.toolbar .button,
 .dynamic-notebook .button,
-.notebook tab .button,
-.radio,
-GtkProgressBar.trough,
-.scale.trough {
+.notebook tab .button {
     -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,
                     from (alpha (#000, 0.10)),
@@ -743,9 +647,6 @@ GtkProgressBar.trough,
 
 /* Outer Shadow */
 
-.button,
-.menu.menuitem,
-.notebook,
 .cd  {
         -unico-outer-stroke-gradient:               -gtk-gradient (linear,
                                                     left top, left bottom,
@@ -760,27 +661,28 @@ GtkProgressBar.trough,
 
 /* Interactive Trough */
 
-.check,
-.entry,
-.radio,
-GtkSwitch.trough {
-    background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade (@base_color, 0.82)),
-                     color-stop (0.20, shade (@base_color, 0.90)),
-			         to (@base_color)); 
+.entry {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@theme_base_color, 0.97)),
+                                     to (@theme_base_color));
+    border-top-color: shade (@theme_bg_color, 0.64);
+    border-right-color: shade (@theme_bg_color, 0.76);
+    border-bottom-color: shade (@theme_bg_color, 0.82);
+    border-left-color: shade (@theme_bg_color, 0.76);
+    border-radius: 2px;
+    border-style: solid;
+    padding: 3px 5px 3px 5px;
 
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (alpha (#000, 0.34)),
-                     to (alpha (#000, 0.20)));
+    color: @theme_text_color;
+
+    -unico-border-gradient: none;
+    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
+                                                 from (alpha (shade (@theme_bg_color, 0.05), 0.04)),
+                                                 to (alpha (shade (@theme_bg_color, 0.05), 0.02)));
+    -unico-inner-stroke-width: 1;
 }
 
-.check:backdrop,
-.entry:backdrop,
-.radio:backdrop,
-GtkSwitch.trough:backdrop {
+.entry:backdrop {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
@@ -796,10 +698,7 @@ GtkSwitch.trough:backdrop {
 
 /* Insensitive Trough */
 
-.check:insensitive,
-.entry:insensitive,
-.radio:insensitive,
-GtkSwitch.trough:insensitive {
+.entry:insensitive {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
@@ -814,21 +713,12 @@ GtkSwitch.trough:insensitive {
 
 }
 
-/* Shallow Trough */
-
-GtkProgressBar.trough,
-.scale.trough {
-    background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (alpha (#000, 0.18)),
-                     color-stop (0.20, alpha (#000, 0.14)),
-			         to (alpha (#000, 0.04)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (alpha (#000, 0.40)),
-                     to (alpha (#000, 0.30)));
+.entry:focus {
+    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
+                                        from (shade (#4c93de, 0.75)),
+                                        to (shade (#4c93de, 0.8)));
+    -unico-inner-stroke-color: #c9e2fc;
+    -unico-inner-stroke-gradient: none;
 }
 
 /* Postler */
@@ -942,7 +832,7 @@ GtkComboBox.combobox-entry .button:prelight {
  * Notebooks and *
  * Tabs          *
  *****************/
-
+/***
 .dynamic-notebook {
     background-image: -gtk-gradient (linear,
             left top,
@@ -1010,46 +900,41 @@ GtkComboBox.combobox-entry .button:prelight {
     -unico-outer-stroke-width: 1px;
 
     -unico-inner-stroke-color: alpha (#fff, 0.30);
-
 }
-
+***/
 .notebook {
-
-    border-color: shade (@bg_color, 0.60);
-
-    -GtkNotebook-tab-overlap: 5px;
-
-    background-color: shade (@bg_color, 1.06);
-}
-
-.notebook tab {
-    background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade (@bg_color, 0.75)),
-                     to (shade (@bg_color, 0.80)));
-
-    border-radius: 4px;
-
-    padding: 2px 3px 0 3px;
+    -GtkNotebook-tab-overlap: 3;
+    border: 1px solid #b2b2b2;
+    border-radius: 2px;
+    background-color: #fff;
 }
 
 .notebook tab:active {
-        background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade (@bg_color, 1.24)),
-                     to (shade (@bg_color, 1.06)));
-
-        color: @text_color;
-
+    background-color: #fff;
 }
 
+.notebook tab.top:active {
+    padding: 2px 0 0 0;
+}
+
+.notebook tab.right:active {
+    padding: 0 2px 0 0;
+}
+
+.notebook tab.bottom:active {
+    padding: 0 0 2px 0;
+}
+
+.notebook tab.left:active {
+    padding: 0 0 0 2px;
+}
+/***
 .dynamic-notebook .button:hover,
 .dynamic-notebook .button:hover:active,
 .dynamic-notebook .notebook .button,
 .dynamic-notebook .notebook .button:hover,
 .dynamic-notebook .notebook .button:hover:active,
+***/
 .notebook tab .button:hover,
 .notebook tab .button:hover:active {
 
@@ -1068,8 +953,10 @@ GtkComboBox.combobox-entry .button:prelight {
                      to (alpha (#000, 0.32)));
 }
 
+/***
 .dynamic-notebook .button:hover:active,
 .dynamic-notebook .notebook .button:hover:active,
+***/
 .notebook tab .button:hover:active {
     background-color:   alpha (#000, 0.10);
 }
@@ -1128,76 +1015,6 @@ GtkComboBox.combobox-entry .button:prelight {
                     from (alpha (#000, 0.10)),
                     to (alpha (#000, 0.06)));
 
-}
-
-
-
-/*
-
-    -GtkButton-interior-focus: true;
-    -GtkToolItemGroup-expander-size: 12;
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;
-    -GtkWidget-wide-separators: 1;
-    -WnckTasklist-fade-overlay-rect: 0;
-    -GtkWidget-focus-line-width: 1;
-*/
-
-/*************************
- * Check and Radio items *
- *************************/
-
-.check,
-.check row:selected,
-.check row:selected:focused {
-
-}
-
-.check:insensitive,
-.check row:selected:insensitive,
-.check row:selected:focused:insensitive {
-}
-
-.check:active,
-.check row:selected:active,
-.check row:selected:focused:active {
-}
-
-.check:active:insensitive,
-.check row:selected:active:insensitive,
-.check row:selected:focused:active:insensitive
-{
-}
-
-.check:inconsistent,
-.check row:selected:inconsistent,
-.check row:selected:focused:inconsistent {
-}
-
-.radio,
-.radio row:selected,
-.radio row:selected:focused {
-
-}
-
-.radio:insensitive,
-.radio row:selected:insensitive,
-.radio row:selected:focused:insensitive {
-}
-
-.radio:active,
-.radio row:selected:active,
-.radio row:selected:focused:active {
-}
-
-.radio:active:insensitive,
-.radio row:selected:active:insensitive,
-.radio row:selected:focused:active:insensitive {
-}
-
-.radio:inconsistent,
-.radio row:selected:inconsistent,
-.radio row:selected:focused:inconsistent {
 }
 
 GtkViewport,
@@ -1277,13 +1094,15 @@ row:insensitive {
 }
 
 .view:selected {
-    background-color: shade (@base_color, 0.80);
+    border: 1px solid #5a8ca6;
+    border-radius: 2px;
+    background-color: #aecfe1;
     color: @text_color;
 }
 
 .view:selected:focused {
-    background-color: @selected_bg_color;
-    color: @selected_fg_color;
+    /*background-color: @selected_bg_color;*/
+    /*color: @selected_fg_color;*/
 }
 
 row:selected:backdrop,
@@ -1316,6 +1135,8 @@ CheeseThumbView /* Cheese */
 @import url("albumlistview.css");
 @import url("notify.css");
 @import url("apps/nautilus.css");
+@import url("checkradiobutton.css");
+@import url("switch.css");
 
 
 /**********************
@@ -1339,12 +1160,6 @@ GtkImage:selected:backdrop {
 .menu .separator {
     border-width: 1px;
 }
-
-GtkScale {
-    padding: 14px;
-}
-
-
 
 *:backdrop {
     color: alpha (@text_color, 0.8);

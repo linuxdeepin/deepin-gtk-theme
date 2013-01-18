@@ -6,12 +6,14 @@ NautilusWindow .scrollbar.trough{
     background: #ffffff;
 }
 
+/***
 NautilusWindow .toolbar,
 NautilusWindow .toolbar:backdrop {
     background: #ffffff;
     border-bottom-width: 1px;
     border-color: #e2e2e2;
 }
+***/
 
 NautilusWindow .pane-separator,
 NautilusWindow .pane-separator:prelight,

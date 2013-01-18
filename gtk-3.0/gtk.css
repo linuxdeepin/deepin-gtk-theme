@@ -1,11 +1,11 @@
 /* Default color scheme */
 @define-color base_color #FFF;
-@define-color bg_color #DEDEDE;
+@define-color bg_color #fff;
 @define-color tooltip_bg_color #000;
-@define-color selected_bg_color #4a90d9;
-@define-color text_color #2e3436;
-@define-color insensitive_color #888;
-@define-color fg_color #2e3436;
+@define-color selected_bg_color #007fbe;
+@define-color text_color #000;
+@define-color insensitive_color #dedede;
+@define-color fg_color #000;
 @define-color tooltip_fg_color #FFF;
 @define-color selected_fg_color #FFF;
 @define-color transparent alpha (#FFF, 0.00);
@@ -41,7 +41,3 @@
 @define-color insensitive_fg_color #a7aba7;
 
 @import url("gtk-widgets.css");
-* {
-    -GtkWindow-resize-grip-height: 0;
-    -GtkWindow-resize-grip-width: 0;
-}

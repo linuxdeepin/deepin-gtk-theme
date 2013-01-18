@@ -20,8 +20,12 @@
 
 .scrollbar.slider{
     border-width: 0;
-    background-color: #aeaeae;
+    background-color: #ccefff;
     border-radius: 0;
+}
+
+.scrollbar.slider:backdrop{
+    background-color: #daebf2;
 }
 
 .scrollbar.slider:prelight {

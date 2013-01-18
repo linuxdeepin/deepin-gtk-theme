@@ -18,22 +18,8 @@
     background-color: #daebf2;
 }
 
-/* remove the image from the prelight areas
-.menubar.menuitem:prelight {
-    background-image: none;
-    background-color: @theme_base_color;
-    color: @theme_text_color;
-
-    border-style: solid;
-    border-radius: 3;
-    border-width: 1;
-    border-color: @inactive_frame_color;
-}
-*/
-
-.menubar.menuitem {
-    border-width: 1px;
-    border-style: none;
+.menubar .menuitem {
+    border: 1px solid #fff;
 }
 
 .menu,
@@ -62,6 +48,7 @@
 }
 
 .menu.button {
+    border:1px solid #7fa182;
     background-image: none;
 }
 
@@ -84,45 +71,17 @@
 }
 
 .menubar.menuitem:active,
-.menubar.menuitem:prelight,
+.menubar.menuitem:prelight{
+    border: 1px solid #7fa182;
+    background: #31ABEE;
+}
+
 .menuitem:active,
 .menuitem:prelight {
-    border-style: solid;
-    border-width: 1px 0 1px 0;
-    -unico-inner-stroke-width: 1px 0 1px 0;
-
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (shade (@selected_bg_color, 1.30)),
-                    to (shade (@selected_bg_color, 0.98)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (shade (@selected_bg_color, 1.05)),
-                    to (shade (@selected_bg_color, 0.88)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#fff, 0.30)),
-                    to (alpha (#fff, 0.06)));
-
+    border: 0px solid #7fa182;
+    background: #31ABEE;
 }
 
-/* menu radio and check items are drawn differently */
-.menu.check:active {
-    color: @menu_controls_color;
+.menu {
+    background-color: #fff;
 }
-
-.menu.radio:active {
-    color: @menu_controls_color;
-}
-
-.menu.check:prelight {
-    color: @theme_selected_fg_color;
-}
-
-.menu.radio:prelight {
-    color: @theme_selected_fg_color;
-}
-

@@ -1,0 +1,31 @@
+/************
+ * Switches *
+ ***********/
+* {
+    -GtkSwitch-slider-width: 14;
+}
+
+GtkSwitch.trough {
+    /*background-image: url("assets/switch-off-trough.png");*/
+    padding: 0;
+    border: 1px solid #a6a6a6;
+    border-radius: 2px;
+    background-color: #d1d1d1;
+    color: #000;
+}
+
+GtkSwitch.trough:active {
+    /*background-image: url("assets/switch-on-trough.png");*/
+    padding: 0;
+    border: 1px solid #108cd2;
+    border-radius: 2px;
+    background-color: #31abee;
+}
+
+GtkSwitch.slider {
+    /*background-image: url("assets/switch-off-slider.png");*/
+    padding: 0px;
+    border: 1px solid #a6a6a6;
+    border-radius: 2px;
+    background-color: #fff;
+}

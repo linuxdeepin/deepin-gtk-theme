@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
 Name=Deepin
-Comment=elementary desktop default theme modfied for linuxdeepin
+Comment=Gtk theme and Metacity theme for linuxdeepin
 Encoding=UTF-8
 
 Name[en_US]=Deepin
@@ -11,4 +11,4 @@ GtkTheme=Deepin
 MetacityTheme=Deepin
 IconTheme=Deepin
 CursorTheme=DMZ-Black
-ButtonLayout=close:maximize
+ButtonLayout=menu:minimize,maxmize,close
