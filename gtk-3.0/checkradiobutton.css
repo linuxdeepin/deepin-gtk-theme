@@ -2,6 +2,7 @@
  * check and radio *
  *******************/
 /* draw regular check and radio items using our assets */
+
 .check,
 .check row:selected,
 .check row:selected:focus {
@@ -56,6 +57,62 @@
     background-image: url("assets/checkbox-mixed-insensitive.png");
 }
 
+/*** for treeview***/
+GtkTreeView.check,
+GtkTreeView.check row:selected,
+GtkTreeView.check row:selected:focus {
+    background-image: url("assets/16-unchecked.png");
+}
+
+GtkTreeView.check:hover,
+GtkTreeView.check row:selected:hover,
+GtkTreeView.check row:selected:focus:hover {
+    background-image: url("assets/16-unchecked.png");
+}
+
+GtkTreeView.check:insensitive,
+GtkTreeView.check row:selected:insensitive,
+GtkTreeView.check row:selected:focus:insensitive {
+    background-image: url("assets/16-unchecked.png");
+}
+
+GtkTreeView.check:active,
+GtkTreeView.check row:selected:active,
+GtkTreeView.check row:selected:focus:active {
+    background-image: url("assets/16-checked.png");
+}
+
+GtkTreeView.check:active:hover,
+GtkTreeView.check row:selected:active:hover,
+GtkTreeView.check row:selected:focus:active:hover {
+    background-image: url("assets/16-checked.png");
+}
+
+GtkTreeView.check:active:insensitive,
+GtkTreeView.check row:selected:active:insensitive,
+GtkTreeView.check row:selected:focus:active:insensitive {
+    background-image: url("assets/16-checked-insensitive.png");
+}
+
+GtkTreeView.check:inconsistent,
+GtkTreeView.check row:selected:inconsistent,
+GtkTreeView.check row:selected:focus:inconsistent {
+    background-image: url("assets/16-mixed.png");
+}
+
+GtkTreeView.check:inconsistent:hover,
+GtkTreeView.check row:selected:inconsistent:hover,
+GtkTreeView.check row:selected:focus:inconsistent:hover {
+    background-image: url("assets/16-mixed.png");
+}
+
+GtkTreeView.check:inconsistent:insensitive,
+GtkTreeView.check row:selected:inconsistent:insensitive,
+GtkTreeView.check row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/16-mixed-insensitive.png");
+}
+
+/*** Radio button ***/
 .radio,
 .radio row:selected,
 .radio row:selected:focus {
