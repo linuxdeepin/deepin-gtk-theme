@@ -10,7 +10,7 @@
     -GtkCheckButton-indicator-spacing: 0;
     -GtkCheckMenuItem-indicator-size: 18;
     
-    -GtkExpander-expander-size: 16; 
+    -GtkExpander-expander-size: 6; 
       
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 0;
@@ -33,6 +33,10 @@
     -GtkWidget-visited-link-color: @link_color;
     -GtkIMHtml-hyperlink-color: @link_color;
     -GtkHTML-link-color: @link_color;
+
+    -GtkWindow-resize-grip-default: false;
+    -GtkWindow-resize-grip-width: 0;
+    -GtkWindow-resize-grip-height: 0;
 
     -unico-bullet-color: shade (@bg_color, 0.535);
     -unico-bullet-outline-color: shade (@bg_color, 1.2);
@@ -671,16 +675,6 @@ BeatBoxStatusBar:backdrop {
 }
 
 .entry:backdrop {
-    background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade (@base_color, 0.90)),
-			         to (@base_color));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#000, 0.07)),
-                    to (alpha (#000, 0.04)));
 }
 
 
@@ -699,6 +693,7 @@ BeatBoxStatusBar:backdrop {
                      from (shade (@bg_color, 0.67)),
                      to (shade (@bg_color, 0.74)));
 
+    color: @insensitive_color;
 }
 
 .entry:focus {
@@ -988,7 +983,6 @@ GtkIconView {
 
 GtkTreeView {
     -GtkTreeView-vertical-separator: 0;
-    -GtkTreeView-expander-size: 8px;
 }
 GtkTreeView.dnd {
     border-color: shade (@selected_bg_color, 1.12);
@@ -1152,7 +1146,7 @@ GtkImage:selected:backdrop {
  * Fix Menu Seps *
  ****************/
 .menu .separator {
-    border-width: 1px;
+    border-width: 2px;
 }
 
 *:backdrop {

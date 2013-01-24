@@ -29,3 +29,7 @@ GtkSwitch.slider {
     border-radius: 2px;
     background-color: #fff;
 }
+
+GtkSwitch:insensitive {
+    color: @insensitive_color;
+}

@@ -44,18 +44,20 @@
     border-width: 1px;
     border-color: shade (@bg_color, 0.66);
 
-    -unico-inner-stroke-width: 1px;
+    /*-unico-inner-stroke-width: 1px;*/
 }
 
 .menu.button {
-    border:1px solid #7fa182;
+    border:5px solid #7fa182;
     background-image: none;
 }
 
+/***
 .menu .menuitem {
     padding: 3px;
     -unico-menuitem-arrow-color: @menu_controls_color;
 }
+***/
 
 .menuitem.accelerator {
     color: alpha (#FFF, 0.66);
@@ -78,10 +80,13 @@
 
 .menuitem:active,
 .menuitem:prelight {
-    border: 0px solid #7fa182;
+    border: 2px solid rgba(255, 255, 255, 0.0);
+    border-radius: 2px;
     background: #31ABEE;
 }
 
 .menu {
-    background-color: #fff;
+    background-color: #f2fbff;
+    border: 1px solid #858a8c;
+    border-radius: 2px;
 }

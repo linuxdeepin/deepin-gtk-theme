@@ -3,13 +3,13 @@
  **************/
 
 .scrollbar {
-    -GtkRange-slider-width: 6;
+    -GtkRange-slider-width: 8;
     -GtkRange-stepper-size: 0;
     -GtkRange-stepper-spacing: 0;
     -GtkRange-trough-border: 0;
 
     -GtkScrollbar-min-slider-length: 30;
-    background: rgba(255, 255, 255, 0.0)
+    background-color: rgba(255, 255, 255, 0.0)
 }
 
 .scrollbar.trough {
@@ -19,9 +19,9 @@
 }
 
 .scrollbar.slider{
-    border-width: 0;
-    background-color: #ccefff;
-    border-radius: 0;
+    border: 1px solid #b0cad7;
+    border-radius: 2px;
+    background-color: #e5f7ff;
 }
 
 .scrollbar.slider:backdrop{
