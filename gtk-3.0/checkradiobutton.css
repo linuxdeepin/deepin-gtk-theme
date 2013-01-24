@@ -61,55 +61,55 @@
 GtkTreeView.check,
 GtkTreeView.check row:selected,
 GtkTreeView.check row:selected:focus {
-    background-image: url("assets/16-unchecked.png");
+    background-image: url("assets/16-checkbox-unchecked.png");
 }
 
 GtkTreeView.check:hover,
 GtkTreeView.check row:selected:hover,
 GtkTreeView.check row:selected:focus:hover {
-    background-image: url("assets/16-unchecked.png");
+    background-image: url("assets/16-checkbox-unchecked.png");
 }
 
 GtkTreeView.check:insensitive,
 GtkTreeView.check row:selected:insensitive,
 GtkTreeView.check row:selected:focus:insensitive {
-    background-image: url("assets/16-unchecked.png");
+    background-image: url("assets/16-checkbox-unchecked-insensitive.png");
 }
 
 GtkTreeView.check:active,
 GtkTreeView.check row:selected:active,
 GtkTreeView.check row:selected:focus:active {
-    background-image: url("assets/16-checked.png");
+    background-image: url("assets/16-checkbox-checked.png");
 }
 
 GtkTreeView.check:active:hover,
 GtkTreeView.check row:selected:active:hover,
 GtkTreeView.check row:selected:focus:active:hover {
-    background-image: url("assets/16-checked.png");
+    background-image: url("assets/16-checkbox-checked.png");
 }
 
 GtkTreeView.check:active:insensitive,
 GtkTreeView.check row:selected:active:insensitive,
 GtkTreeView.check row:selected:focus:active:insensitive {
-    background-image: url("assets/16-checked-insensitive.png");
+    background-image: url("assets/16-checkbox-checked-insensitive.png");
 }
 
 GtkTreeView.check:inconsistent,
 GtkTreeView.check row:selected:inconsistent,
 GtkTreeView.check row:selected:focus:inconsistent {
-    background-image: url("assets/16-mixed.png");
+    background-image: url("assets/16-checkbox-mixed.png");
 }
 
 GtkTreeView.check:inconsistent:hover,
 GtkTreeView.check row:selected:inconsistent:hover,
 GtkTreeView.check row:selected:focus:inconsistent:hover {
-    background-image: url("assets/16-mixed.png");
+    background-image: url("assets/16-checkbox-mixed.png");
 }
 
 GtkTreeView.check:inconsistent:insensitive,
 GtkTreeView.check row:selected:inconsistent:insensitive,
 GtkTreeView.check row:selected:focus:inconsistent:insensitive {
-    background-image: url("assets/16-mixed-insensitive.png");
+    background-image: url("assets/16-checkbox-mixed-insensitive.png");
 }
 
 /*** Radio button ***/
@@ -165,4 +165,59 @@ GtkTreeView.check row:selected:focus:inconsistent:insensitive {
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focus:inconsistent:insensitive {
     background-image: url("assets/radio-mixed-insensitive.png");
+}
+
+/*** for treeview***/
+GtkTreeView.radio,
+GtkTreeView.radio row:selected,
+GtkTreeView.radio row:selected:focus {
+    background-image: url("assets/16-radio-unselected.png");
+}
+
+GtkTreeView.radio:hover,
+GtkTreeView.radio row:selected:hover,
+GtkTreeView.radio row:selected:focus:hover {
+    background-image: url("assets/16-radio-unselected.png");
+}
+
+GtkTreeView.radio:insensitive,
+GtkTreeView.radio row:selected:insensitive,
+GtkTreeView.radio row:selected:focus:insensitive {
+    background-image: url("assets/16-radio-unselected-insensitive.png");
+}
+
+GtkTreeView.radio:active,
+GtkTreeView.radio row:selected:active,
+GtkTreeView.radio row:selected:focus:active {
+    background-image: url("assets/16-radio-selected.png");
+}
+
+GtkTreeView.radio:active:hover,
+GtkTreeView.radio row:selected:active:hover,
+GtkTreeView.radio row:selected:focus:active:hover {
+    background-image: url("assets/16-radio-selected.png");
+}
+
+GtkTreeView.radio:active:insensitive,
+GtkTreeView.radio row:selected:active:insensitive,
+GtkTreeView.radio row:selected:focus:active:insensitive {
+    background-image: url("assets/16-radio-selected-insensitive.png");
+}
+
+GtkTreeView.radio:inconsistent,
+GtkTreeView.radio row:selected:inconsistent,
+GtkTreeView.radio row:selected:focus:inconsistent {
+    background-image: url("assets/16-radio-mixed.png");
+}
+
+GtkTreeView.radio:inconsistent:hover,
+GtkTreeView.radio row:selected:inconsistent:hover,
+GtkTreeView.radio row:selected:focus:inconsistent:hover {
+    background-image: url("assets/16-radio-mixed.png");
+}
+
+GtkTreeView.radio:inconsistent:insensitive,
+GtkTreeView.radio row:selected:inconsistent:insensitive,
+GtkTreeView.radio row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/16-radio-mixed-insensitive.png");
 }

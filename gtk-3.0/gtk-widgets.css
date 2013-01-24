@@ -7,6 +7,7 @@
     -GtkArrow-arrow-scaling: 0.75;
     
     -GtkCheckButton-indicator-size: 22;
+    -GtkCheckButton-indicator-spacing: 0;
     -GtkCheckMenuItem-indicator-size: 18;
     
     -GtkExpander-expander-size: 16; 
@@ -708,32 +709,6 @@ BeatBoxStatusBar:backdrop {
     -unico-inner-stroke-gradient: none;
 }
 
-/* Postler */
-/***
-PostlerMessages {
-    -GtkTreeView-vertical-separator:            10px;
-}
-
-
-PostlerMessages.view row:selected {
-
-    border-width: 1px 0 1px 0;
-    -unico-outer-stroke-width: 0;
-
-    color:#333;
-
-    background-image: -gtk-gradient (linear, 
-        left top, left bottom, 
-        from (#DCDCDC),
-        to (#C7C7C7));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-        left top, left bottom,
-        from (shade (@base_color, 0.70)),
-        to (shade (@base_color, 0.64)));
-}
-***/
-
 /**************
  * ComboBoxes *
  **************/
@@ -1021,7 +996,7 @@ GtkTreeView.dnd {
     border-width: 1px;
     border-style: solid;
 }
-/***
+
 GtkTreeView row:nth-child(even) {
 	background-color: @base_color;
 }
@@ -1031,7 +1006,8 @@ GtkTreeView row:nth-child(odd) {
 }
 
 GtkTreeView.separator {
-
+    padding: 0;
+    margin: 0;
 }
 
 GtkTreeView .entry {
@@ -1039,7 +1015,7 @@ GtkTreeView .entry {
 
 column-header {
 }
-***/
+
 column-header:nth-child(first) .button,
 column-header:nth-child(first) .button:backdrop {
     border-width: 0 0 1px 0;
@@ -1084,27 +1060,25 @@ column-header .button:hover {
                     to (shade (@base_color, 0.45)));
 }
 
-.column {
-    padding: 0;
-    margin: 0;
-}
-
-row:hover {
-}
-
-row:insensitive {
-}
-
-.view:selected {
+.view:selected,
+.view:selected:focused {
     border: 1px solid #5a8ca6;
     border-radius: 2px;
     background-color: #aecfe1;
     color: @text_color;
 }
 
-.view:selected:focused {
-    /*background-color: @selected_bg_color;*/
-    /*color: @selected_fg_color;*/
+.view:selected:backdrop,
+.view:selected:focused:backdrop {
+    border: 1px solid #5a8ca6;
+    border-radius: 2px;
+    background-color: #aecfe1;
+    color: @text_color;
+}
+
+row:selected,
+row:selected:focused {
+    background-color: @bg_color;
 }
 
 row:selected:backdrop,
@@ -1113,17 +1087,12 @@ row:selected:focused:backdrop {
 }
 
 .cell {
-    -GtkCheckButton-indicator-size: 16;
     -GtkWidget-focus-line-width: 0;
 
     background-color: @base_color;
     border-radius: 0;
     border-width: 0;
 }
-
-.cell:selected {
-}
-
 
 .check,
 .radio,
