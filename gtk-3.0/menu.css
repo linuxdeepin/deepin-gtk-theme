@@ -2,6 +2,12 @@
  * Menus *
  *********/
 
+* {
+    -GtkMenu-vertical-offset: 2;
+    -GtkMenu-horizontal-offset: 2;
+    -GtkMenuItem-width-chars: 20;
+}
+
 /* this controls the general appearance of the menubar */
 .menubar {
     background-color: #ccefff;
@@ -19,45 +25,32 @@
 }
 
 .menubar .menuitem {
-    border: 1px solid #fff;
+    /***
+    -unico-outer-stroke-width: 2px;
+    -unico-outer-stroke-gradient: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from(transparent),
+                                    color-stop(0.3, rgba(0,0,0,0.5)),
+                                    color-stop(0.5, rgba(0,0,0,1.0)),
+                                    color-stop(0.7, rgba(0,0,0,0.5)),
+                                    to(transparent)
+                                    );
+    ***/
 }
 
-.menu,
-.popover_bg {
-    /*border-radius: 6;*/
+.menu {
+    background-color: #f2fbff;
+    border: 1px solid #858a8c;
+}
 
-    background-color: #f8f8f8;
-    background-image: none;
-
-    /*background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (#f0f0f0),
-			         to (#f8f8f8));*/
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (#fff),
-                    to (alpha (#fff, 0.39)));
-
-    border-style: solid;
-    border-width: 1px;
-    border-color: shade (@bg_color, 0.66);
-
-    /*-unico-inner-stroke-width: 1px;*/
+.menubar.menu {
+    border-width: 0 1px 1px 1px;
 }
 
 .menu.button {
     border:5px solid #7fa182;
     background-image: none;
 }
-
-/***
-.menu .menuitem {
-    padding: 3px;
-    -unico-menuitem-arrow-color: @menu_controls_color;
-}
-***/
 
 .menuitem.accelerator {
     color: alpha (#FFF, 0.66);
@@ -81,12 +74,11 @@
 .menuitem:active,
 .menuitem:prelight {
     border: 2px solid rgba(255, 255, 255, 0.0);
-    border-radius: 2px;
     background: #31ABEE;
 }
 
-.menu {
-    background-color: #f2fbff;
-    border: 1px solid #858a8c;
-    border-radius: 2px;
+.menu .menuitem:active,
+.menu .menuitem:prelight {
+    border-radius: 4px;
 }
+

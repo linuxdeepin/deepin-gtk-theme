@@ -1,12 +1,10 @@
-.sidebar,
-.sidebar.view {
+.sidebar {
     background-color: @bg_color;
     border-radius: 0;
-    color: shade (@bg_color, 0.50);
+    color: @text_color;
 }
 
-.sidebar:backdrop,
-.sidebar.view:backdrop {
+.sidebar:backdrop {
     background-color: shade (@bg_color, 1.04);
 }
 
@@ -15,6 +13,7 @@
     -GtkTreeView-vertical-separator: 1;
 }
 
+/***
 .sidebar.view:selected,
 .sidebar.view:prelight:selected {
     border-style: solid;
@@ -55,7 +54,7 @@
 .sidebar.view:prelight {
     background-color:         shade (@bg_color, 1.10);
 }
-
+***/
 .sidebar-pane-separator,
 .sidebar-pane-separator:prelight,
 .sidebar-pane-separator:selected,

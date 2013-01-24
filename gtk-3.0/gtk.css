@@ -3,7 +3,7 @@
 @define-color bg_color #fff;
 @define-color tooltip_bg_color #000;
 @define-color selected_bg_color #007fbe;
-@define-color text_color #000;
+@define-color text_color #333;
 @define-color insensitive_color #aaaaaa;
 @define-color fg_color #000;
 @define-color tooltip_fg_color #FFF;

@@ -83,11 +83,10 @@
 GtkScrolledWindow.frame,
 .entry,
 .separator {
-    -unico-outer-stroke-style: custom;
     border-style: solid;
     border-width: 1px;
-	-unico-inner-stroke-width: 1px;
-	-unico-outer-stroke-width: 1px;
+	/*-unico-inner-stroke-width: 1px;*/
+	/*-unico-outer-stroke-width: 1px;*/
 }
 
 /* No Border */
@@ -477,16 +476,41 @@ GtkScrolledWindow {
 /************
 * Separator *
 ************/
-
-.separator {
-    -unico-border-gradient: none;
-    -unico-inner-stroke-color: alpha (#fff, 0.4);
-    -unico-inner-stroke-gradient: none;
-    
-    border-color: alpha (#000, 0.2);
+.menu .separator{
+    -GtkWidget-separator-width: 1px;
+    -GtkWidget-separator-height: 1px;
+    border-style: solid;
+    -unico-border-gradient: -gtk-gradient(linear,
+                            left top, right top,
+                            from(transparent),
+                            color-stop(0.2, rgba(0,0,0,0.8)),
+                            color-stop(0.5, rgba(0,0,0,1.0)),
+                            color-stop(0.8, rgba(0,0,0,0.8)),
+                            to(transparent)
+                            );
 }
 
+.separator.horizontal{
+    -unico-border-gradient: -gtk-gradient(linear,
+                            left top, right top,
+                            from(transparent),
+                            color-stop(0.2, rgba(0,0,0,0.8)),
+                            color-stop(0.5, rgba(0,0,0,1.0)),
+                            color-stop(0.8, rgba(0,0,0,0.8)),
+                            to(transparent)
+                            );
+}
 
+.separator.vertical{
+    -unico-border-gradient: -gtk-gradient(linear,
+                            left top, left bottom,
+                            from(transparent),
+                            color-stop(0.2, rgba(0,0,0,0.8)),
+                            color-stop(0.5, rgba(0,0,0,1.0)),
+                            color-stop(0.8, rgba(0,0,0,0.8)),
+                            to(transparent)
+                            );
+}
 /**************
 * SpinButtons *
 **************/
@@ -510,48 +534,12 @@ GtkScrolledWindow {
     -unico-outer-stroke-width: 0;
 }
 
-/*************
- * Statusbar *
- ************/
-
-BeatBoxStatusBar {
-    padding: 1px;
-
-    background-image: -gtk-gradient (linear,
-		     left top,
-		     left bottom,
-		     from (@bg_color),
-		     to (shade (@bg_color, 0.88)));
-		     
-    border-top-width: 1px;
-
-    border-top-color: shade (@bg_color, 0.52);
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                     left bottom, left top,
-                     from (alpha (#fff, 0.20)),
-                     color-stop (0.20, alpha (#fff, 0.05)),
-                     color-stop (0.80, alpha (#fff, 0.05)),
-                     to (alpha (#fff, 0.50)));
-}
-
-BeatBoxStatusBar:backdrop {
-
-    background-image: -gtk-gradient (linear,
-		     left top,
-		     left bottom,
-		     from (shade (@bg_color, 1.08)),
-		     to (shade (@bg_color, 0.98)));
-		  
-    border-top-color: shade (@bg_color, 0.62);
-}
-
 /************
  * Tooltips *
  ************/
  
 .tooltip {
-    padding: 4px;
+    padding: 2px;
     
     background-color: alpha(#000, 0.85);
 }
@@ -1012,7 +1000,7 @@ column-header {
 
 column-header:nth-child(first) .button,
 column-header:nth-child(first) .button:backdrop {
-    border-width: 0 0 1px 0;
+    border-width: 1px 1px 1px 1px;
 }
 
 column-header .button,
@@ -1022,23 +1010,21 @@ column-header .button:backdrop {
 
     padding: 1px 2px 1px 2px;
 
-	border-width: 0 0 1px 1px;
+	border-width: 1px 1px 1px 0;
 
     -unico-outer-stroke-style: none;
     -GtkButton-inner-border: 2px;
-
+/**
     background-image: -gtk-gradient (linear,
                     left top,
                     left bottom,
                     from (shade (@base_color, 0.88)),
                     to (@base_color));
-
         -unico-border-gradient: -gtk-gradient (linear,
         left top, left bottom,
         from (shade (@base_color, 0.88)),
         to (shade (@base_color, 0.70)));
-
-
+**/
 }
 
 column-header .button:hover {
@@ -1056,7 +1042,7 @@ column-header .button:hover {
 
 .view:selected,
 .view:selected:focused {
-    border: 1px solid #5a8ca6;
+    border: 0px solid #5a8ca6;
     border-radius: 2px;
     background-color: #aecfe1;
     color: @text_color;
@@ -1140,13 +1126,6 @@ GtkImage:backdrop,
 GtkImage:insensitive:backdrop,
 GtkImage:selected:backdrop {
     background-color: @transparent;
-}
-
-/*****************
- * Fix Menu Seps *
- ****************/
-.menu .separator {
-    border-width: 2px;
 }
 
 *:backdrop {
