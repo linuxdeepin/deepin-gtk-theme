@@ -6,6 +6,7 @@
     -GtkMenu-vertical-offset: 2;
     -GtkMenu-horizontal-offset: 2;
     -GtkMenuItem-arrow-scaling: 0.6;
+    -GtkMenuItem-width-chars: 15;
 }
 
 /* this controls the general appearance of the menubar */
@@ -66,7 +67,7 @@
 .menuitem:hover {
     border-width: 0 1px 0 1px;
     border-color: rgba(255, 255, 255, 0.0);
-    background: #d9f3ff;
+    background: #cceeff;
     color: @text_color;
 }
 

@@ -470,9 +470,9 @@ GtkScrolledWindow {
     -unico-border-gradient: -gtk-gradient(linear,
                             left top, right top,
                             from(transparent),
-                            color-stop(0.4, rgba(0,0,0,0.5)),
-                            color-stop(0.5, rgba(0,0,0,0.7)),
-                            color-stop(0.6, rgba(0,0,0,0.5)),
+                            color-stop(0.3, rgba(0,0,0,0.1)),
+                            color-stop(0.5, rgba(0,0,0,0.2)),
+                            color-stop(0.7, rgba(0,0,0,0.1)),
                             to(transparent)
                             );
 }
