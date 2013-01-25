@@ -9,9 +9,8 @@ GtkComboBox.combobox-entry .button {
 }
 
 .button {
-    border: 1px solid #5a8ca6;
+    border: 1px solid #a3becc;
     background-color: #f2fbff;
-    border-radius: 2px;
 }
 
 .button:hover {
@@ -20,11 +19,11 @@ GtkComboBox.combobox-entry .button {
 
 .button:active,
 .button:hover:active {
-    background-color: #aecfe1;
+    background-color: #daebf2;
 }
 
 .toolbar .button {
-    padding: 0px;
+    margin: 1px;
 	icon-shadow: none;
 }
 

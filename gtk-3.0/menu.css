@@ -5,7 +5,8 @@
 * {
     -GtkMenu-vertical-offset: 2;
     -GtkMenu-horizontal-offset: 2;
-    -GtkMenuItem-width-chars: 20;
+    -GtkMenuItem-width-chars: 25;
+    -GtkMenuItem-arrow-scaling: 0.6;
 }
 
 /* this controls the general appearance of the menubar */
@@ -40,7 +41,8 @@
 
 .menu {
     background-color: #f2fbff;
-    border: 1px solid #858a8c;
+    border: 1px solid alpha(#000, 0.2);
+    color: @text_color;
 }
 
 .menubar.menu {
@@ -48,37 +50,38 @@
 }
 
 .menu.button {
+    /***
     border:5px solid #7fa182;
     background-image: none;
+    ***/
 }
 
-.menuitem.accelerator {
-    color: alpha (#FFF, 0.66);
-}
-
-.menuitem.accelerator:prelight,
-.menuitem.accelerator:active {
-    color: alpha (@text_color, 0.49);
-}
-
-.menuitem:insensitive {
-    color: alpha (@text_color, 0.40);
-}
-
-.menubar.menuitem:active,
-.menubar.menuitem:prelight{
-    border: 1px solid #7fa182;
-    background: #31ABEE;
+.menu.button:active,
+.menu.button:selected,
+.menu.button:hover {
+    color: @text_color;
 }
 
 .menuitem:active,
-.menuitem:prelight {
-    border: 2px solid rgba(255, 255, 255, 0.0);
-    background: #31ABEE;
+.menuitem:selected,
+.menuitem:hover {
+    border-width: 0 1px 0 1px;
+    border-color: rgba(255, 255, 255, 0.0);
+    background: #d9f3ff;
+    color: @text_color;
+}
+
+.menubar.menuitem:active,
+.menubar.menuitem:selected,
+.menubar.menuitem:hover {
+    border: 1px solid alpha(#000, 0.2);
+    background: #b7d7e5;
+    color: #333;
 }
 
 .menu .menuitem:active,
-.menu .menuitem:prelight {
-    border-radius: 4px;
+.menu .menuitem:selected,
+.menu .menuitem:hover {
+    color: @text_color;
 }
 

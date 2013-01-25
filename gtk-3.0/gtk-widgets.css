@@ -12,8 +12,8 @@
     
     -GtkExpander-expander-size: 6; 
       
-    -GtkMenu-horizontal-padding: 0;
-    -GtkMenu-vertical-padding: 0;
+    -GtkMenu-horizontal-padding: 2;
+    -GtkMenu-vertical-padding: 2;
     
     -GtkPaned-handle-size: 8px;
     
@@ -171,7 +171,6 @@ GtkInfoBar .button {
 .secondary-toolbar,
 .secondary-toolbar.toolbar .button,
 .sidebar,
-.sidebar.view,
 .toolbar {
     text-shadow: 0 1 alpha (#fff, 0.4);
     icon-shadow: 0 1 alpha (#fff, 0.4);
@@ -184,22 +183,12 @@ GtkInfoBar .button {
 .expander row:selected:focused,
 .help_button *,
 .help_button *:prelight,
-.menubar *:active,
-.menubar *:prelight,
-.menu *:active,
-.menu *:prelight,
-.sidebar.view:selected,
 .tooltip *,
 GtkInfoBar * {
     color: @selected_fg_color;
 }
 
 /* text shadow */
-.menubar.menuitem:active,
-.menubar.menuitem:prelight,
-.menu *:active,
-.menu *:prelight,
-.sidebar.view:selected,
 .tooltip,
 GtkInfoBar {
     text-shadow: 0 1 alpha (#000, 0.3);
@@ -282,7 +271,6 @@ GtkScrolledWindow.frame {
 
 .grip {
 	/*background-color: transparent;*/
-    background-image: url("assets/resize-grip.svg");
     /***
 	-unico-centroid-texture: -gtk-gradient(linear,
                             left top,
@@ -571,33 +559,6 @@ GtkScrolledWindow {
 * Highlights *
 *************/
 
-/* Inner Higlight */
-/*.button,*/
-/*.menu.menuitem,*/
-/*.menubar.menuitem:active,*/
-/*.menubar.menuitem:prelight,*/
-/*.menuitem:active,*/
-/*.menuitem:prelight,*/
-/*.notebook,*/
-/*.toolbar,*/
-/*PostlerMessages.view row:selected,*/
-/*.trough row,*/
-/*.trough row:hover,*/
-/*.trough row:selected,*/
-/*.trough row:selected:focused {*/
-    /*-unico-inner-stroke-gradient: -gtk-gradient (linear,*/
-                     /*left bottom, left top,*/
-                     /*from (alpha (#fff, 0.20)),*/
-                     /*color-stop (0.20, alpha (#fff, 0.05)),*/
-                     /*color-stop (0.80, alpha (#fff, 0.05)),*/
-                     /*to (alpha (#fff, 0.50)));*/
-/*}*/
-
-/*** Outer Highlight
-.button:active,
-.button:backdrop,
-.button:insensitive,
-***/
 .entry,
 .dynamic-notebook .button {
         -unico-outer-stroke-gradient: -gtk-gradient (linear,
@@ -1042,17 +1003,17 @@ column-header .button:hover {
 
 .view:selected,
 .view:selected:focused {
-    border: 0px solid #5a8ca6;
-    border-radius: 2px;
-    background-color: #aecfe1;
+    border-width: 0 1px 0 1px;
+    border-color: transparent;
+    background-color: #d9f3ff;
     color: @text_color;
 }
 
 .view:selected:backdrop,
 .view:selected:focused:backdrop {
-    border: 1px solid #5a8ca6;
-    border-radius: 2px;
-    background-color: #aecfe1;
+    border-width: 0 1px 0 1px;
+    border-color: transparent;
+    background-color: #d9f3ff;
     color: @text_color;
 }
 
