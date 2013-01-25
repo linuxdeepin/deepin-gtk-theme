@@ -5,7 +5,7 @@
 @define-color selected_bg_color #007fbe;
 @define-color text_color #333;
 @define-color insensitive_color #aaaaaa;
-@define-color fg_color #000;
+@define-color fg_color #333;
 @define-color tooltip_fg_color #FFF;
 @define-color selected_fg_color #FFF;
 @define-color transparent alpha (#FFF, 0.00);

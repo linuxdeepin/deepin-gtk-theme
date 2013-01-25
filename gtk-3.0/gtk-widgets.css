@@ -11,6 +11,7 @@
     -GtkCheckMenuItem-indicator-size: 18;
     
     -GtkExpander-expander-size: 6; 
+    -GtkTreeView-expander-size: 8; 
       
     -GtkMenu-horizontal-padding: 2;
     -GtkMenu-vertical-padding: 2;
@@ -179,8 +180,6 @@ GtkInfoBar .button {
 /* white text */
 .button.noundo *,
 .button.noundo *:prelight,
-.expander row:selected,
-.expander row:selected:focused,
 .help_button *,
 .help_button *:prelight,
 .tooltip *,
@@ -1003,14 +1002,14 @@ column-header .button:hover {
 
 .view:selected,
 .view:selected:focused {
-    border-width: 0 1px 0 1px;
-    border-color: transparent;
-    background-color: #d9f3ff;
+    border: 1px solid #a3becc;
+    border-radius: 2px;
+    background-color: alpha(#d9f3ff, 0.8);
     color: @text_color;
 }
 
-.view:selected:backdrop,
-.view:selected:focused:backdrop {
+GtkTreeView.view:selected,
+GtkTreeView.view:selected:focused {
     border-width: 0 1px 0 1px;
     border-color: transparent;
     background-color: #d9f3ff;
