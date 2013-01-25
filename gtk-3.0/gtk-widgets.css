@@ -536,18 +536,6 @@ GtkScrolledWindow {
 }
 
 
-/********
-* Views *
-********/
-
-.view {
-    background-color: @base_color;
-}
-
-.view:selected {
-    background-color: @selected_bg_color
-}
-
 /****************************************************************************************************
 ******************************************************* Redo this crap ******************************
 ****************************************************************************************************/
@@ -1000,6 +988,10 @@ column-header .button:hover {
                     to (shade (@base_color, 0.45)));
 }
 
+/********
+* Views *
+********/
+
 .view:selected,
 .view:selected:focused {
     border: 1px solid #a3becc;
@@ -1007,6 +999,16 @@ column-header .button:hover {
     background-color: alpha(#d9f3ff, 0.8);
     color: @text_color;
 }
+
+/***
+GtkTextView {
+    background-color: @base_color;
+}
+
+GtkTextView:selected {
+    background-color: @selected_bg_color
+}
+***/
 
 GtkTreeView.view:selected,
 GtkTreeView.view:selected:focused {
