@@ -31,3 +31,16 @@ NautilusWindow .pane-separator.vertical:selected {
 NautilusWindow * {
     -GtkPaned-handle-size: 1;
 }
+
+NautilusWindow .toolbar .button {
+    border: 1px solid #a3becc;
+    border-radius: 0;
+    background-color: #f2fbff;
+    margin: 1px;
+	icon-shadow: none;
+}
+
+NautilusWindow .toolbar .button:active,
+NautilusWindow .toolbar .button:hover:active {
+    background-color: #daebf2;
+}
