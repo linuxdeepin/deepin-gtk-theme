@@ -13,9 +13,11 @@ GtkComboBox.combobox-entry .button {
     background-color: #f2fbff;
 }
 
+/***
 .button:hover {
     background-color: #cceeff;
 }
+***/
 
 .button:active,
 .button:hover:active {
