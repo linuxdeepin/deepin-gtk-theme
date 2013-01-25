@@ -149,7 +149,7 @@ column-header .button {
 
 /* Window roundness */
 .tooltip {
-    border-radius: 6px;
+    border-radius: 3px;
 }
 
 /* Circular */
@@ -471,9 +471,9 @@ GtkScrolledWindow {
     -unico-border-gradient: -gtk-gradient(linear,
                             left top, right top,
                             from(transparent),
-                            color-stop(0.2, rgba(0,0,0,0.8)),
-                            color-stop(0.5, rgba(0,0,0,1.0)),
-                            color-stop(0.8, rgba(0,0,0,0.8)),
+                            color-stop(0.4, rgba(0,0,0,0.5)),
+                            color-stop(0.5, rgba(0,0,0,0.7)),
+                            color-stop(0.6, rgba(0,0,0,0.5)),
                             to(transparent)
                             );
 }
@@ -529,11 +529,11 @@ GtkScrolledWindow {
 .tooltip {
     padding: 2px;
     
-    background-color: alpha(#000, 0.85);
+    background-color: alpha(#000, 0.70);
 }
 
 .tooltip * {
-    background-color: alpha(#000, 0.85);
+    background-color: alpha(#000, 0.70);
 }
 
 
