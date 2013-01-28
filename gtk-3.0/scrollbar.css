@@ -31,11 +31,3 @@
 .scrollbar.slider:prelight {
     background-color: #daebf2;
 }
-
-GtkScrolledWindow.frame {
-    border-style: solid;
-    border-width: 0px;
-    border-radius: 0px;
-    padding: 0;
-    background: rgba(255, 255, 255, 0.0)
-}

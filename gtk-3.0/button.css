@@ -5,7 +5,8 @@
 .button,
 .button.menuitem.menubar,
 GtkComboBox.combobox-entry .button {
-    padding: 1px;
+    padding: 0px;
+    margin: 0px
 }
 
 .button {

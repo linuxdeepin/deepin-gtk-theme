@@ -86,6 +86,7 @@ GtkScrolledWindow.frame,
 .separator {
     border-style: solid;
     border-width: 1px;
+    border-color: #7fa1b2;
 	/*-unico-inner-stroke-width: 1px;*/
 	/*-unico-outer-stroke-width: 1px;*/
 }
@@ -145,7 +146,7 @@ column-header .button {
 
 /* Slightly rounded */
 .entry {
-    border-radius: 2.5px;
+    border-radius: 2px;
 }
 
 /* Window roundness */
@@ -166,7 +167,6 @@ GtkInfoBar .button {
 
 /* etched text */
 .help_button:backdrop,
-.entry,
 .inline-toolbar.toolbar .button,
 *:insensitive,
 .secondary-toolbar,
@@ -477,6 +477,7 @@ GtkScrolledWindow {
                             );
 }
 
+/***
 .separator.horizontal{
     -unico-border-gradient: -gtk-gradient(linear,
                             left top, right top,
@@ -498,7 +499,7 @@ GtkScrolledWindow {
                             to(transparent)
                             );
 }
-
+***/
 GtkComboBox.separator.vertical,
 GtkComboBox.separator.horizontal {
     border-width: 0;
@@ -510,9 +511,7 @@ GtkComboBox.separator.horizontal {
 
 .spinbutton .button,
 .spinbutton .button:focus {
-    padding: 2px 6px;
-    
-    -unico-outer-stroke-width: 0 0 0 1px;
+    padding: 0 1px;
 }
 
 .spinbutton .button:first-child {
@@ -552,7 +551,6 @@ GtkComboBox.separator.horizontal {
 * Highlights *
 *************/
 
-.entry,
 .dynamic-notebook .button {
         -unico-outer-stroke-gradient: -gtk-gradient (linear,
                          left top, left bottom,
@@ -568,7 +566,6 @@ GtkComboBox.separator.horizontal {
 /* Inner Shadow */
 
 /**.button:active,**/
-.entry,
 .inline-toolbar.toolbar,
 .inline-toolbar.toolbar .button,
 .dynamic-notebook .button,
@@ -605,7 +602,7 @@ GtkComboBox.separator.horizontal {
     border-left-color: shade (@theme_bg_color, 0.76);
     border-radius: 2px;
     border-style: solid;
-    padding: 3px 5px 3px 5px;
+    padding: 0;
 
     color: @theme_text_color;
 
@@ -639,9 +636,12 @@ GtkComboBox.separator.horizontal {
 }
 
 .entry:focus {
+    /***
     -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
                                         from (shade (#4c93de, 0.75)),
                                         to (shade (#4c93de, 0.8)));
+    ***/
+    border-color: #31abee;
     -unico-inner-stroke-color: #c9e2fc;
     -unico-inner-stroke-gradient: none;
 }
@@ -651,11 +651,13 @@ GtkComboBox.separator.horizontal {
  **************/
 
 GtkComboBox .separator {
+    /***
     border-color: @transparent;
 
     -unico-border-gradient: none;
     -unico-inner-stroke-color: @transparent;
     -unico-inner-stroke-gradient: none;
+    ***/
 }
 
 /*GtkComboBox.combobox-entry .entry,
@@ -677,7 +679,7 @@ GtkComboBox.combobox-entry .button:prelight {
 ********/
 
 *.entry {
-    padding: 5px;
+    padding: 2px 0;
     -GtkEntry-progress-border: 0;
 }
 
@@ -889,43 +891,15 @@ GtkComboBox.combobox-entry .button:prelight {
 				     to (shade (@base_color, 0.55)));
 }
 
-
-/***
-.button:active:insensitive {
-
-    background-image: -gtk-gradient (linear,
-			         left top,
-			         left bottom,
-			         from (shade (@bg_color, 0.85)),
-                     color-stop (0.20, shade (@bg_color, 0.94)),
-			         to (@bg_color));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (shade (@bg_color, 0.67)),
-                     to (shade (@bg_color, 0.74)));
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (@transparent),
-                     color-stop (0.75, @transparent),
-                     to (alpha (#fff, 0.40)));
-
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (alpha (#000, 0.10)),
-                    to (alpha (#000, 0.06)));
-
-}
-***/
-
 GtkViewport,
 GtkIconView {
 }
 
 GtkTreeView {
     -GtkTreeView-vertical-separator: 0;
+    border: 1px solid #5a8ca6;
 }
+
 GtkTreeView.dnd {
     border-color: shade (@selected_bg_color, 1.12);
     border-radius: 2px;
@@ -941,11 +915,6 @@ GtkTreeView row:nth-child(odd) {
 	background-color: shade (@base_color, 0.96);
 }
 
-GtkTreeView.separator {
-    padding: 0;
-    margin: 0;
-}
-
 GtkTreeView .entry {
 }
 
@@ -959,39 +928,17 @@ column-header:nth-child(first) .button:backdrop {
 
 column-header .button,
 column-header .button:backdrop {
-
-    font: bold condensed;
-
     padding: 1px 2px 1px 2px;
 
 	border-width: 1px 1px 1px 0;
 
     -unico-outer-stroke-style: none;
     -GtkButton-inner-border: 2px;
-/**
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (shade (@base_color, 0.88)),
-                    to (@base_color));
-        -unico-border-gradient: -gtk-gradient (linear,
-        left top, left bottom,
-        from (shade (@base_color, 0.88)),
-        to (shade (@base_color, 0.70)));
-**/
 }
 
 column-header .button:hover {
     color: @text_color;
-
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (shade (@base_color, 0.90)),
-                                     color-stop (0.02, shade (@base_color, 0.80)),
-                                     color-stop (0.96, @base_color),
-                                     color-stop (0.99, shade (@base_color, 0.50)),
-                    to (shade (@base_color, 0.45)));
+    background-color: #cceeff;
 }
 
 /********
