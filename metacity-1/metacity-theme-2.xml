@@ -165,7 +165,7 @@
 </draw_ops>
 
 <!-- unfocused background -->
-<constant name="UnFocusedBgColor" value="#daebf2"/>
+<constant name="UnFocusedBgColor" value="#ccefff"/>
 
 <draw_ops name="unfocused_color_background">
     <!--top line -->

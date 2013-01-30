@@ -21,9 +21,6 @@
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 0;
 }
-.menubar:backdrop {
-    background-color: #daebf2;
-}
 
 .menubar .menuitem {
     /***
