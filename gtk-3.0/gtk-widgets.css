@@ -953,7 +953,6 @@ column-header .button:hover {
     color: @text_color;
 }
 
-/***
 GtkTextView {
     background-color: @base_color;
 }
@@ -961,7 +960,6 @@ GtkTextView {
 GtkTextView:selected {
     background-color: @selected_bg_color
 }
-***/
 
 GtkTreeView.view:selected,
 GtkTreeView.view:selected:focused {

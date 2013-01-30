@@ -1,0 +1,10 @@
+#************************************************
+#	gtk2-colors-mint.css
+#************************************************
+gtk-color-scheme 	= "selected_bg_color: #5e7553"
+gtk-color-scheme 	= "selected_fg_color: #ffffff"
+gtk-color-scheme 	= "row_selected_bg_color: #c2dbb6"
+gtk-color-scheme 	= "row_selected_fg_color: #080808"
+gtk-color-scheme 	= "entry_text_selected: #c2dbb6"
+gtk-color-scheme 	= "entry_text_color: #080808"
+

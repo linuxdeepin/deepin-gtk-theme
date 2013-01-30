@@ -1,0 +1,10 @@
+#************************************************
+#	gtk2-colors-ubuntu.css
+#************************************************
+gtk-color-scheme 	= "selected_bg_color: #a9502b"
+gtk-color-scheme 	= "selected_fg_color: #ffffff"
+gtk-color-scheme 	= "row_selected_bg_color: #ffbb9f"
+gtk-color-scheme 	= "row_selected_fg_color: #080808"
+gtk-color-scheme 	= "entry_text_selected: #ffbb9f"
+gtk-color-scheme 	= "entry_text_color: #080808"
+
