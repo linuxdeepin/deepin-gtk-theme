@@ -24,10 +24,6 @@
     background-color: #e5f7ff;
 }
 
-.scrollbar.slider:backdrop{
-    background-color: #daebf2;
-}
-
 .scrollbar.slider:prelight {
     background-color: #daebf2;
 }
