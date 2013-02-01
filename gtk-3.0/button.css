@@ -2,11 +2,14 @@
 * Button *
 *********/
 
-.button,
-.button.menuitem.menubar,
-GtkComboBox.combobox-entry .button {
+.button {
     padding: 0px;
-    margin: 0px
+    -unico-outer-stroke-width: 0;
+    -unico-outer-stroke-gradient: none;
+    -unico-outer-stroke-color: @transparent;
+    -unico-inner-stroke-width: 0;
+    -unico-inner-stroke-gradient: none;
+    -unico-inner-stroke-color: @transparent;
 }
 
 .button {
@@ -17,6 +20,10 @@ GtkComboBox.combobox-entry .button {
 
 .button:hover {
     background-color: #cceeff;
+}
+
+.button:focus {
+    border-color: #00f;
 }
 
 .button:active,
@@ -103,7 +110,7 @@ GtkComboBox.combobox-entry .button {
 .help_button *:insensitive {
     color: alpha (@text_color, 0.7);
 }
-
+/***
 .button.noundo {
     background-image: -gtk-gradient (linear,
 				     left top,
@@ -116,3 +123,4 @@ GtkComboBox.combobox-entry .button {
                      from (#dd3b27),
                      to (#791235));
 }
+***/
