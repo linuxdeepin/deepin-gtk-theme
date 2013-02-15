@@ -869,8 +869,9 @@ GtkComboBox.combobox-entry .button:prelight {
 .pane-separator:prelight,
 .pane-separator:selected {
 
-	-unico-centroid-texture: url("assets/pane-handle.svg");
+	-unico-centroid-texture: url("assets/handle.png");
     
+    /***
     background-image: -gtk-gradient (linear,
 				     left top,
 				     right top,
@@ -878,12 +879,14 @@ GtkComboBox.combobox-entry .button:prelight {
                      color-stop (0.15, @base_color),
                      color-stop (0.85, shade (@base_color, 0.88)),
 				     to (shade (@base_color, 0.55)));
+    ***/
+    background-color: #FFF;
 }
 
 .pane-separator.vertical,
 .pane-separator.vertical:prelight,
 .pane-separator.vertical:selected {
-    
+   /*** 
     background-image: -gtk-gradient (linear,
 				     left top,
 				     left bottom,
@@ -891,6 +894,8 @@ GtkComboBox.combobox-entry .button:prelight {
                      color-stop (0.15, @base_color),
                      color-stop (0.85, shade (@base_color, 0.88)),
 				     to (shade (@base_color, 0.55)));
+    ***/
+    background-color: #FFF;
 }
 
 GtkViewport,

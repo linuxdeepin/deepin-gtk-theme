@@ -55,6 +55,7 @@ style "default" {
 	GtkRange::trough-border						= 0
 	GtkRange::slider-width						= 15
 	GtkRange::stepper-size						= 1
+	GtkRange::trough-side-details				= 0
 
 	GtkScale::slider-length						= 9
 	GtkScale::slider-width						= 15
@@ -65,8 +66,8 @@ style "default" {
 	GtkScrollbar::min-slider-length				= 9
 	GtkScrollbar::slider-width					= 10
 	GtkScrollbar::trough-border					= 1
-	GtkScrollbar::activate-slider 				= FALSE
-	GtkScrollbar::trough-side-details			= FALSE
+	GtkScrollbar::activate-slider 				= 0
+	GtkScrollbar::trough-side-details			= 0
 	GtkScrollbar::stepper-size              	= 1
 
 	GtkScrolledWindow::scrollbar-spacing		= 0
@@ -535,11 +536,11 @@ style "scale" { # slider
 
 style "scrollbar" {
 	bg[SELECTED]                = "#e5f7ff"
-	#bg[ACTIVE]                  = "#daebf2"
+    #bg[ACTIVE]                  = "#0f0"
     #bg[PRELIGHT]                = "#daebf2"
 
     # color flechas (stepper)	
-    #fg[NORMAL]          = shade (1.00, @base_color)
+    fg[NORMAL]          = "#FFF"
     #fg[PRELIGHT]		= shade (1.00, "#daebf2")
 	#fg[ACTIVE]		    = shade (1.00, @base_color)
     #fg[SELECTED]        = shade (1.00, @base_color)
