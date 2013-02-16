@@ -2,39 +2,58 @@
 * Button *
 *********/
 
-.button {
-    padding: 0px;
-    -unico-outer-stroke-width: 0;
-    -unico-outer-stroke-gradient: none;
-    -unico-outer-stroke-color: @transparent;
-    -unico-inner-stroke-width: 0;
-    -unico-inner-stroke-gradient: none;
-    -unico-inner-stroke-color: @transparent;
-}
+@define-color button_border_normal_color #5a8ca6;
+@define-color button_border_hover_color #cceeff;
+@define-color button_border_focus_color #31abee;
+@define-color button_border_active_color #aecfe1;
+
+@define-color button_normal_color #f2fbff;
+@define-color button_hover_color #cceeff;
+@define-color button_focus_color #cceeff;
+@define-color button_active_color #aecfe1;
+
+@define-color button_border_backdrop_color #aecfe1;
 
 .button {
-    border: 1px solid #5a8ca6;
+    border: 1px solid @button_border_normal_color;
     border-radius: 2px;
-    background-color: #f2fbff;
+    background-color: @button_normal_color;
 }
 
 .button:hover {
-    background-color: #cceeff;
+    background-color: @button_hover_color;
 }
 
 .button:focus {
-    border-color: #00f;
+    border-color: @button_border_focus_color;
+}
+
+GtkDialog .button {
+    padding: 0;
+}
+
+GtkDialog .button:focused {
+    background-color: @button_focus_color;
+}
+
+GtkDialog .button:focused:active {
+    background-color: @button_active_color;
 }
 
 .button:active,
 .button:hover:active {
-    background-color: #aecfe1;
+    background-color: @button_active_color;
+}
+
+.button:backdrop:insensitive {
+    border-color: @button_border_backdrop_color;
 }
 
 .toolbar .button {
     margin: 1px;
 	icon-shadow: none;
 }
+
 
 /*************************** 
 * Secondary Toolbar Button *
@@ -110,17 +129,4 @@
 .help_button *:insensitive {
     color: alpha (@text_color, 0.7);
 }
-/***
-.button.noundo {
-    background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-                     from (#e56453),
-                     to (#bb2332));
 
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (#dd3b27),
-                     to (#791235));
-}
-***/
