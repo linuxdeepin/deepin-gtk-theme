@@ -7,4 +7,4 @@
 * [bug] button focus size, when a button get focus, it will turn to smaller.
 
 * [tweak] color in TextView, when select some words in TextView, the selected words 
-  background color is too light.
+  background color is too light. [2013-02-16 fixed]
