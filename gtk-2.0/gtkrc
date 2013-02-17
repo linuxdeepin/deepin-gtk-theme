@@ -152,6 +152,12 @@ style "wide" {
 	ythickness	= 2
 }
 
+style "separator" {
+	xthickness	= 2
+	ythickness	= 2
+    bg[NORMAL] = "#eee"
+}
+
 style "wider" {
 	xthickness	= 3
 	ythickness	= 3
@@ -381,7 +387,7 @@ style "menu_item_white" {
 
 	engine "murrine" {
         gradient_shades		= {1.0, 1.0, 1.0, 1.0}
-        roundness           = 3
+        roundness           = 0
 		border_shades 		= {1.00, 1.0}
         contrast            = 1.0
 	}
@@ -694,7 +700,6 @@ style "checkradio"  {
 
 # The default style is applied to every widget
 class "GtkWidget"				style "default"
-class "GtkSeparator"			style "wide"
 class "GtkFrame"				style "wide"
 class "GtkCalendar"				style "wide"
 class "GtkEntry"				style "entry"
@@ -735,6 +740,11 @@ widget_class "*.<GtkList>*"				style "treeview"
 widget_class "*.<GtkCList>*"			style "treeview"
 
 class "*GtkExpander*"  					style "expander"
+widget_class "*<GtkSeparator>*"			style "separator"
+widget_class "*<GtkMenuItem>*<GtkSeparatorMenuItem>*"			style "separator"
+widget_class "*<GtkToolItem>*<GtkSeparatorToolItem>*"			style "separator"
+#class "GtkSeparatorMenuItem"	style "separator"
+#class "GtkSeparatorToolItem"	style "separator"
 
 widget_class "*<GtkProgress>"			style "progressbar"
 
