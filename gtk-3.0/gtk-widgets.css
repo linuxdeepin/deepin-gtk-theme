@@ -1053,4 +1053,6 @@ GtkTextView.view:selected:focused {
     color: @selected_fg_color;
     background-color: @selected_bg_color;
 }
-
+.arrow {
+    padding: 8px;
+}

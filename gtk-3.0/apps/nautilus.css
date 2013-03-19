@@ -36,6 +36,7 @@ NautilusWindow .toolbar .button {
     border: 1px solid #a3becc;
     border-radius: 0;
     background-color: #f2fbff;
+    /*background-color: blue;*/
     icon-shadow: none;
 }
 
@@ -53,11 +54,16 @@ NautilusWindow .primary-toolbar.toolbar {
 	-unico-inner-stroke-width: 0px;
     -unico-inner-stroke-gradient: none;
 
-	padding: 0px; 
+	padding: 0 1px 0 6px; 
 	
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
-    background-color: @transparent;
+    /*background-color: @transparent;*/
+    /*background-color: green;*/
+}
+
+NautilusWindow .primary-toolbar.toolbar GtkHBox{
+	padding: 0 4px 0 4px; 
 }
 
 NautilusWindow .primary-toolbar .toolbar .button,
@@ -73,6 +79,7 @@ NautilusWindow .primary-toolbar.toolbar .button {
 	-unico-outer-stroke-width: 6px 0px 6px 0px;	
 	-unico-outer-stroke-gradient: none;
 	-unico-outer-stroke-color: @transparent;
+    /*background: red;*/
 }
 
 #nautilus-search-button * {
@@ -86,7 +93,7 @@ NautilusWindow .primary-toolbar.toolbar .button {
 	-unico-outer-stroke-color: @transparent;
 
     background-image: none;
-    padding: 0 4px;
+    padding: 0 4px 0 4px;
 }
 
 NautilusWindow GtkScrolledWindow.frame {
@@ -96,4 +103,3 @@ NautilusWindow GtkScrolledWindow.frame {
     padding: 0;
     background: rgba(255, 255, 255, 0.0)
 }
-
