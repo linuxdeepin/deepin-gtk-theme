@@ -44,6 +44,7 @@ style "default" {
 	#GtkMenuBar::shadow-type					= GTK_SHADOW_NONE # En Unity se habilita esta linea
 
 	GtkMenu::horizontal-padding					= 0
+	GtkMenu::horizontal-offset  				= 2
 	GtkMenu::vertical-padding					= 0
 	GtkSeparatorMenuItem::horizontal-padding	= 7
 
@@ -363,8 +364,8 @@ style "menubar" {
 }
 
 style "menu" {
-	xthickness	= 0
-	ythickness	= 0
+	xthickness	= 3
+	ythickness	= 3
 
 	bg[NORMAL]	= "#f2fbff"
 
@@ -373,6 +374,8 @@ style "menu" {
 	engine "murrine" {
 		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
 		roundness			= 0 # 0 = squared
+		border_shades 		= {1.00, 1.0}
+        border_colors       = {"#FF0000", "#FF0000"}
 	}
 }
 
@@ -585,13 +588,12 @@ style "spinbutton" = "button" { # input/stepper
 	#}
 }
 
-style "toolbar" { 	
+style "toolbar" {
 	engine "murrine" {
 		contrast                = 0.80
-		lightborder_shade		= 1.00
+        lightborderstyle		= 1
+        lightborder_shade       = 1.0
 		gradient_shades     	= {1.05,1.06,1.07,1.08}               
-		# gradient_shades     	= {1.03,1.00,1.00,0.98}        
-		# gradient_shades     	= {1.00,0.98,0.98,0.96}  # En Unity
 	}
 }
 
@@ -612,10 +614,17 @@ style "toolbar_button" {
 		border_shades           = {1.10, 0.90}
 		contrast                = 1.05
 		lightborderstyle		= 1
-		# lightborder_shade		= 1.80
+		lightborder_shade		= 1.80
 		textstyle               = 1
 	}
 }
+
+style "file_chooser_widget_toolbar" {
+    engine "murrine" {
+        border_colors = {"#FFFFFF", "#FFFFFF"}
+    }
+}
+widget_class "<GtkFileChooserDialog>*<GtkToolbar>" style "file_chooser_widget_toolbar"
 
 style "tooltips" {
 	xthickness	= 8
