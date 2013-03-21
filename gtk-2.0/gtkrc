@@ -78,7 +78,7 @@ style "default" {
 	GtkToolbar::window-dragging					= 1
 
 	GtkTreeView::expander-size					= 7
-	GtkTreeView::odd_row_color					= "#F4F8F9"
+    #GtkTreeView::odd_row_color					= "#F4F8F9"
 	# en eclipse afecta backcolor de "Quick Type Hierarchy (CTRL+T)"
 	# GtkTreeView::even_row_color			= "#FFF"
 
@@ -641,8 +641,6 @@ style "tooltips" {
 }
 
 style "treeview" {
-
-	bg[SELECTED]	= shade (1.90, @selected_bg_color)		# color checkbox en listas
 	text[ACTIVE]	= shade (1.00, @row_selected_fg_color)	# item selected unfocused
 	text[SELECTED]	= shade (1.00, @row_selected_fg_color)	# item selected
 

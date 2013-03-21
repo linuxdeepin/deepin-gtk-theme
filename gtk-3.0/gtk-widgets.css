@@ -731,86 +731,15 @@ GtkComboBox.combobox-entry .button:prelight {
                     to (@transparent));
 }
 
-
-/*****************
- * Notebooks and *
- * Tabs          *
- *****************/
-/***
-.dynamic-notebook {
-    background-image: -gtk-gradient (linear,
-            left top,
-            left bottom,
-            from (shade (@bg_color, 0.65)),
-            to (shade (@bg_color, 0.76)));
-}
-
-.dynamic-notebook .notebook {
-    border-width: 1px 0 0 0;
-    -unico-outer-stroke-style: none;
-    -unico-inner-stroke-style: none;
-
-    border-radius: 0;
-
-    -GtkNotebook-tab-overlap: 4px;
-    -GtkNotebook-initial-gap: 10px;
-
-}
-
-.dynamic-notebook .notebook tab {
-    padding: 2px 3px 0 3px;
-
-    color: alpha (@text_color, 0.80);
-
-    border-radius: 0;
-
-    background-image: none;
-    background-color: @transparent;
-
-    border-width: 0 1px 0 0;
-    -unico-inner-stroke-width: 0 1px 0 0;
-    -unico-outer-stroke-width: 0;
-    -unico-border-gradient: -gtk-gradient (linear,
-        left top, left bottom,
-        from (@transparent),
-        to (alpha (#000, 0.20)));
-    -unico-inner-stroke-gradient: -gtk-gradient (linear,
-        left top, left bottom,
-        from (@transparent),
-        to (alpha (#fff, 0.20)));
-
-}
-
-.dynamic-notebook .notebook tab:nth-child(first) {
-    border-width: 0 1px 0 1px;
-    -unico-inner-stroke-width: 0 1px 0 1px;
-}
-
-.dynamic-notebook .notebook tab:active {
-    background-image: -gtk-gradient (linear,
-            left top,
-            left bottom,
-            from (shade (@bg_color, 1.06)),
-            to (@bg_color));
-
-    -unico-border-gradient: none;
-    border-color: shade (@bg_color, 0.50);
-
-    color: @text_color;
-    border-radius: 4px;
-
-    border-width: 1px;
-    -unico-inner-stroke-width: 1px;
-    -unico-outer-stroke-width: 1px;
-
-    -unico-inner-stroke-color: alpha (#fff, 0.30);
-}
-***/
 .notebook {
-    -GtkNotebook-tab-overlap: 3;
+    -GtkNotebook-tab-overlap: 1;
     border: 1px solid #b2b2b2;
     border-radius: 2px;
     background-color: #fff;
+}
+
+.notebook tab {
+    padding: 1px;
 }
 
 .notebook tab:active {
@@ -818,27 +747,21 @@ GtkComboBox.combobox-entry .button:prelight {
 }
 
 .notebook tab.top:active {
-    padding: 2px 0 0 0;
+    padding: 2px 1px 1px 1px;
 }
 
 .notebook tab.right:active {
-    padding: 0 2px 0 0;
+    padding: 1px 2px 1px 1px;
 }
 
 .notebook tab.bottom:active {
-    padding: 0 0 2px 0;
+    padding: 1px 1px 2px 1px;
 }
 
 .notebook tab.left:active {
-    padding: 0 0 0 2px;
+    padding: 1px 1px 1px 2px;
 }
-/***
-.dynamic-notebook .button:hover,
-.dynamic-notebook .button:hover:active,
-.dynamic-notebook .notebook .button,
-.dynamic-notebook .notebook .button:hover,
-.dynamic-notebook .notebook .button:hover:active,
-***/
+
 .notebook tab .button:hover,
 .notebook tab .button:hover:active {
 
@@ -857,10 +780,6 @@ GtkComboBox.combobox-entry .button:prelight {
                      to (alpha (#000, 0.32)));
 }
 
-/***
-.dynamic-notebook .button:hover:active,
-.dynamic-notebook .notebook .button:hover:active,
-***/
 .notebook tab .button:hover:active {
     background-color:   alpha (#000, 0.10);
 }
