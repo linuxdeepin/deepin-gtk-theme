@@ -5,7 +5,7 @@ gtk-color-scheme    = "insensitive_color:#808080"
 gtk-color-scheme 	= "selected_bg_color: #d9f3ff"
 gtk-color-scheme 	= "selected_fg_color: #000"
 gtk-color-scheme 	= "row_selected_bg_color: #198bc4"
-gtk-color-scheme 	= "row_selected_fg_color: #FFF"
+gtk-color-scheme 	= "row_selected_fg_color: #FFFFFF"
 gtk-color-scheme 	= "entry_text_selected: #198bc4"
 gtk-color-scheme 	= "entry_text_color: #080808"
 
@@ -641,13 +641,10 @@ style "tooltips" {
 }
 
 style "treeview" {
-	text[ACTIVE]	= shade (1.00, @row_selected_fg_color)	# item selected unfocused
-	text[SELECTED]	= shade (1.00, @row_selected_fg_color)	# item selected
-
-	engine "murrine" {
-		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
-        separatorstyle = 0
-	}
+	text[ACTIVE]	= @selected_fg_color
+	text[SELECTED]	= @selected_fg_color
+    bg[ACTIVE]      = @selected_bg_color
+    bg[SELECTED]    = @selected_bg_color
 }
 
 style "treeview_header" {
