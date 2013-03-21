@@ -120,9 +120,6 @@ GtkScrolledWindow.frame,
 /* No Padding */
 
 .entry.progressbar,
-.notebook tab .button,
-.notebook tab .button:hover,
-.notebook tab .button:hover:active,
 .toolbar GtkComboBox {
     padding: 0;
 }
@@ -133,7 +130,6 @@ GtkScrolledWindow.frame,
 ************/
 
 /* Square */
-.dynamic-notebook tab,
 .inline-toolbar.toolbar,
 .inline-toolbar.toolbar .button,
 .pane-separator,
@@ -157,8 +153,7 @@ column-header .button {
 }
 
 /* Circular */
-.help_button,
-GtkInfoBar .button {
+.help_button{
     border-radius: 12px;
 }
 
@@ -381,11 +376,7 @@ GtkInfoBar .button {
                      from (@transparent),
                      color-stop (0.50, @transparent),
                      to (alpha (#fff, 0.30)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (alpha (#000, 0.30)),
-                     to (alpha (#000, 0.24)));
+    border: 1px solid #FFFFFF;
 
 }
 
@@ -547,20 +538,6 @@ GtkComboBox.separator.horizontal {
 ******************************************************* Redo this crap ******************************
 ****************************************************************************************************/
 
-
-
-/*************
-* Highlights *
-*************/
-
-.dynamic-notebook .button {
-        -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                         left top, left bottom,
-                         from (@transparent),
-                         color-stop (0.80, @transparent),
-                         to (alpha (#fff, 0.40)));
-}
-
 /**********
 * Shadows *
 **********/
@@ -569,9 +546,7 @@ GtkComboBox.separator.horizontal {
 
 /**.button:active,**/
 .inline-toolbar.toolbar,
-.inline-toolbar.toolbar .button,
-.dynamic-notebook .button,
-.notebook tab .button {
+.inline-toolbar.toolbar .button {
     -unico-inner-stroke-gradient: -gtk-gradient (linear,
                     left top, left bottom,
                     from (alpha (#000, 0.10)),
@@ -731,6 +706,10 @@ GtkComboBox.combobox-entry .button:prelight {
                     to (@transparent));
 }
 
+/************
+ NoteBook Area 
+ ************/
+
 .notebook {
     -GtkNotebook-tab-overlap: 1;
     border: 1px solid #b2b2b2;
@@ -739,49 +718,41 @@ GtkComboBox.combobox-entry .button:prelight {
 }
 
 .notebook tab {
-    padding: 1px;
-}
-
-.notebook tab:active {
     background-color: #fff;
+    padding: 1px 2px 1px 2px;
 }
 
 .notebook tab.top:active {
-    padding: 2px 1px 1px 1px;
+    padding: 2px 2px 1px 2px;
 }
 
 .notebook tab.right:active {
-    padding: 1px 2px 1px 1px;
+    padding: 1px 3px 1px 2px;
 }
 
 .notebook tab.bottom:active {
-    padding: 1px 1px 2px 1px;
+    padding: 1px 2px 2px 2px;
 }
 
 .notebook tab.left:active {
-    padding: 1px 1px 1px 2px;
+    padding: 1px 2px 1px 3px;
+}
+
+.notebook tab .button {
+    padding: 0px;
+    border-width: 0;
 }
 
 .notebook tab .button:hover,
 .notebook tab .button:hover:active {
 
-    padding: 0;
+    padding: 0px;
 
     -GtkButton-inner-border: 0;
     -GtkButton-image-spacing: 0;
-    -GtkButton-inner-border: 0;
 
-    background-image:   none;
-    background-color:   alpha (#000, 0.02);
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                     left top, left bottom,
-                     from (alpha (#000, 0.29)),
-                     to (alpha (#000, 0.32)));
-}
-
-.notebook tab .button:hover:active {
-    background-color:   alpha (#000, 0.10);
+    background-color:   #cceeff;
+    border-width: 0px;
 }
 
 .pane-separator,
@@ -886,17 +857,6 @@ GtkTreeView.view:selected:focused {
     background-color: #d9f3ff;
     color: @text_color;
 }
-/***
-row:selected,
-row:selected:focused {
-    background-color: @bg_color;
-}
-
-row:selected:backdrop,
-row:selected:focused:backdrop {
-    background-color: @bg_color;
-}
-***/
 
 .cell {
     -GtkWidget-focus-line-width: 0;

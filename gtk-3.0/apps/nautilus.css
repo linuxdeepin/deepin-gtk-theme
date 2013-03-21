@@ -47,7 +47,6 @@ NautilusWindow .primary-toolbar.toolbar .button:hover:active,
 NautilusWindow .primary-toolbar .toolbar .button:active,
 NautilusWindow .primary-toolbar .toolbar .button:hover:active {
     background-color: #daebf2;
-    font: sans normal 9;
 }
 
 NautilusWindow .primary-toolbar.toolbar {
