@@ -567,6 +567,7 @@ style "scrollbar" {
         lightborderstyle        = 0
         trough_shades           = {1.9, 1.9}
         border_shades           = {0.9, 0.9}
+        border_colors           = {"#b0cad7", "#b0cad7"}
         contrast                = 0.00
 	}	
 }
