@@ -11,15 +11,15 @@
 
 /* this controls the general appearance of the menubar */
 .menubar {
-    background-color: #ccefff;
-    padding: 0;
+    background: url("assets/menubg.png") repeat-x;
+    padding: 5px 0;
     border-width: 0;
     border-style: solid;
     border-bottom-width: 1px;
     border-bottom-color: #aeaeae;
 
     -GtkWidget-window-dragging: true;
-    -GtkMenuBar-internal-padding: 0;
+    -GtkMenuBar-internal-padding: 5 0 5 0;
 }
 
 .menubar .menuitem {

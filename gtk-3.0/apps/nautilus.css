@@ -46,7 +46,7 @@ NautilusWindow .primary-toolbar.toolbar .button:active,
 NautilusWindow .primary-toolbar.toolbar .button:hover:active,
 NautilusWindow .primary-toolbar .toolbar .button:active,
 NautilusWindow .primary-toolbar .toolbar .button:hover:active {
-    background-color: #daebf2;
+    /*background-color: #daebf2;*/
 }
 
 NautilusWindow .primary-toolbar.toolbar {
@@ -79,20 +79,38 @@ NautilusWindow .primary-toolbar.toolbar .button {
 	-unico-outer-stroke-gradient: none;
 	-unico-outer-stroke-color: @transparent;
     /*background: red;*/
+    border: 0;
+    background-color: #fff;
+}
+
+NautilusWindow .primary-toolbar .toolbar .button:active,
+NautilusWindow .primary-toolbar.toolbar .button:active {
+    background-color: #fff;
+}
+
+NautilusWindow .primary-toolbar .toolbar .button:hover,
+NautilusWindow .primary-toolbar.toolbar .button:hover {
+    background-color: #fff;
+}
+
+NautilusWindow .primary-toolbar .toolbar .button:focus,
+NautilusWindow .primary-toolbar.toolbar .button:focus {
+    background-color: #fff;
 }
 
 #nautilus-search-button * {
     box-shadow: none;
     -unico-inner-stroke-width: 0;
-	-unico-inner-stroke-gradient: none;
-	-unico-inner-stroke-color: @transparent;
+    -unico-inner-stroke-gradient: none;
+    -unico-inner-stroke-color: @transparent;
 
-	-unico-outer-stroke-width: 6px 4px 6px 4px;
-	-unico-outer-stroke-gradient: none;
-	-unico-outer-stroke-color: @transparent;
+    -unico-outer-stroke-width: 6px 4px 6px 4px;
+    -unico-outer-stroke-gradient: none;
+    -unico-outer-stroke-color: @transparent;
 
-    background-image: none;
+    /*background-image: none;*/
     padding: 0 4px 0 4px;
+    /*border: 1px solid #5a8ca6;*/
 }
 
 NautilusWindow GtkScrolledWindow.frame {
