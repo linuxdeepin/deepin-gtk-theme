@@ -47,6 +47,7 @@ style "default" {
 	GtkMenu::horizontal-offset  				= 2
 	GtkMenu::vertical-padding					= 0
 	GtkSeparatorMenuItem::horizontal-padding	= 7
+    GtkMenu::border-details                      = 1
 
 	GtkNotebook::tab-overlap					= 2		# Default = 2
 	GtkNotebook::tab-curvature					= 1		# Default = 1
@@ -375,7 +376,7 @@ style "menu" {
 		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
 		roundness			= 0 # 0 = squared
 		border_shades 		= {1.00, 1.0}
-        border_colors       = {"#FF0000", "#FF0000"}
+        border_colors       = {"#F2FBFF", "#F2FBFF"}
 	}
 }
 
