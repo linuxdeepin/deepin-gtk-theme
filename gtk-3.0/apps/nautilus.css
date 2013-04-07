@@ -32,6 +32,10 @@ NautilusWindow * {
     -GtkPaned-handle-size: 1;
 }
 
+NautilusWindow .menubar{
+    -GtkMenuBar-internal-padding: 5 0 5 0;
+}
+
 NautilusWindow .toolbar .button {
     border: 1px solid #a3becc;
     border-radius: 0;
