@@ -21,20 +21,6 @@
     -GtkMenuBar-internal-padding: 2 0 2 0;
 }
 
-.menubar .menuitem {
-    /***
-    -unico-outer-stroke-width: 2px;
-    -unico-outer-stroke-gradient: -gtk-gradient(linear,
-                                    left top, left bottom,
-                                    from(transparent),
-                                    color-stop(0.3, rgba(0,0,0,0.5)),
-                                    color-stop(0.5, rgba(0,0,0,1.0)),
-                                    color-stop(0.7, rgba(0,0,0,0.5)),
-                                    to(transparent)
-                                    );
-    ***/
-}
-
 .menu {
     background-color: #f2fbff;
     border: 1px solid alpha(#000, 0.2);
@@ -70,9 +56,11 @@
 .menubar.menuitem:active,
 .menubar.menuitem:selected,
 .menubar.menuitem:hover {
-    border: 1px solid alpha(#000, 0.2);
-    background: #b7d7e5;
-    color: #333;
+    border-style: solid;
+    border-color: #c2c9cc;
+    border-width: 1px 1px 0 1px;
+    background: #f2fbff;
+    color: @text_color;
 }
 
 .menu .menuitem:active,
