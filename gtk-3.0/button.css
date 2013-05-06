@@ -104,8 +104,8 @@ GtkDialog .button:focused:active {
 
 .help_button {
 
-    text-shadow: 0 1 alpha (#000, 0.6);
-    icon-shadow: 0 1 alpha (#000, 0.6);
+    text-shadow: 0 1px alpha (#000, 0.6);
+    icon-shadow: 0 1px alpha (#000, 0.6);
 
     background-image: -gtk-gradient (linear,
         left top,
