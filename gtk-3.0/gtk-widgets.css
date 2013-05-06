@@ -76,6 +76,11 @@
     color: @selected_fg_color;
 }
 
+GtkLabel,
+GtkLabel:insensitive {
+    background-color: @transparent;
+}
+
 /****************
 * Border Styles *
 ****************/
@@ -92,7 +97,6 @@ GtkScrolledWindow.frame,
 }
 
 /* No Border */
-.menu.button,
 .tooltip {
     border-image: none;
     border-style: none;
@@ -170,8 +174,8 @@ column-header .button {
 .secondary-toolbar.toolbar .button,
 .sidebar,
 .toolbar {
-    text-shadow: 0 1 alpha (#fff, 0.4);
-    icon-shadow: 0 1 alpha (#fff, 0.4);
+    text-shadow: 0px 1px alpha(#fff, 0.4);
+    icon-shadow: 0px 1px alpha(#fff, 0.4);
 }
 
 /* white text */
@@ -187,8 +191,8 @@ GtkInfoBar * {
 /* text shadow */
 .tooltip,
 GtkInfoBar {
-    text-shadow: 0 1 alpha (#000, 0.3);
-    icon-shadow: 0 1 alpha (#000, 0.3);
+    text-shadow: 0px 1px 0px alpha(#000, 0.3);
+    icon-shadow: 0px 1px 0px alpha(#000, 0.3);
 }
 
 .title { font: raleway 36; }
@@ -935,3 +939,4 @@ GtkTextView.view:selected:focused {
 .arrow {
     padding: 8px;
 }
+

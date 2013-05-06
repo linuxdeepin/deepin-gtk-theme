@@ -69,3 +69,13 @@
     color: @text_color;
 }
 
+.menu GtkLabel:hover,
+.menu GtkLabel:focus,
+.menu GtkLabel:active,
+.menu GtkLabel:selected{
+    background-color: #cceeff;
+}
+
+.menubar .menuitem GtkLabel:backdrop{
+    background: url("assets/menubg.png") repeat-x;
+}

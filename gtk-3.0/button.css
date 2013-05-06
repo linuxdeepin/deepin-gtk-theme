@@ -14,9 +14,14 @@
 
 @define-color button_border_backdrop_color #aecfe1;
 
-.button {
+.button{
     border: 1px solid @button_border_normal_color;
     border-radius: 2px;
+    background-color: @button_normal_color;
+}
+
+.button GtkLabel:focus:backdrop,
+.button GtkLabel:backdrop{
     background-color: @button_normal_color;
 }
 
@@ -40,6 +45,7 @@ GtkDialog .button:focused:active {
     background-color: @button_active_color;
 }
 
+.button GtkLabel:active:backdrop,
 .button:active,
 .button:hover:active {
     background-color: @button_active_color;
@@ -104,8 +110,8 @@ GtkDialog .button:focused:active {
 
 .help_button {
 
-    text-shadow: 0 1 alpha (#000, 0.6);
-    icon-shadow: 0 1 alpha (#000, 0.6);
+    text-shadow: 0px 1px 0px alpha(#000, 0.6);
+    icon-shadow: 0px 1px 0px alpha(#000, 0.6);
 
     background-image: -gtk-gradient (linear,
         left top,

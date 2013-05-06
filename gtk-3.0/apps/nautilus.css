@@ -82,7 +82,6 @@ NautilusWindow .primary-toolbar.toolbar .button {
 	-unico-outer-stroke-width: 6px 0px 6px 0px;	
 	-unico-outer-stroke-gradient: none;
 	-unico-outer-stroke-color: @transparent;
-    /*background: red;*/
     border: 0;
     background-color: #fff;
 }
