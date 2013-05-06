@@ -211,8 +211,14 @@ GtkCalendar.button:insensitive:backdrop,
 GtkCalendar.header,
 GtkCalendar.view {
     background-image: none;
-    background-color: transparent
+    background-color: transparent;
 }
+GtkLabel,
+GtkLabel:backdrop
+{
+    background-color: transparent;
+}
+
 
 GtkCalendar.highlight {
     background-color: @transparent;
