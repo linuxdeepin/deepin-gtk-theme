@@ -9,7 +9,7 @@
 }
 
 .button:hover {
-    background-color: @button_hover_color;
+    background-color: @hover_color;
 }
 
 .button:focus {
@@ -34,10 +34,10 @@
     background: @bg_color;
 }
 .spinbutton .button:nth-child(2):hover {
-    background: @button_hover_color;
+    background: @hover_color;
 }
 .spinbutton .button:last-child:hover {
-    background: @button_hover_color;
+    background: @hover_color;
 }
 
 .spinbutton .button:nth-child(2){

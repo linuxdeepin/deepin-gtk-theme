@@ -12,17 +12,16 @@
 /* this controls the general appearance of the menubar */
 .menubar {
     background: url("assets/menubg.png") repeat-x;
-    border-width: 0;
     border-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: #aeaeae;
+    border-width: 0 0 1px 0;
+    border-bottom-color: @insensitive_color;
 
     -GtkWidget-window-dragging: true;
     -GtkMenuBar-internal-padding: 2 0 2 0;
 }
 
 .menu {
-    background-color: #f2fbff;
+    background-color: @menu_bg_color;
     border: 1px solid alpha(#000, 0.2);
     color: @text_color;
 }
@@ -31,28 +30,13 @@
     border-width: 0 1px 1px 1px;
 }
 
-.menu.button {
-    /***
-    border:5px solid #7fa182;
-    background-image: none;
-    ***/
-}
-
-.menu.button:active,
-.menu.button:selected,
-.menu.button:hover {
+.menubar>.menuitem {
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: @insensitive_color;
+    background-color: @menu_bg_color;
     color: @text_color;
 }
-
-.menuitem:active,
-.menuitem:selected,
-.menuitem:hover {
-    border-width: 0 1px 0 1px;
-    border-color: rgba(255, 255, 255, 0.0);
-    background: #cceeff;
-    color: @text_color;
-}
-
 .menubar.menuitem:active,
 .menubar.menuitem:selected,
 .menubar.menuitem:hover {
@@ -66,6 +50,6 @@
 .menu .menuitem:active,
 .menu .menuitem:selected,
 .menu .menuitem:hover {
+    background-color: @hover_color;
     color: @text_color;
 }
-

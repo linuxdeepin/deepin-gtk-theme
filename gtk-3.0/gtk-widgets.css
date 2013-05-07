@@ -8,7 +8,7 @@
     
     -GtkCheckButton-indicator-size: 22;
     -GtkCheckButton-indicator-spacing: 0;
-    -GtkCheckMenuItem-indicator-size: 18;
+    -GtkCheckMenuItem-indicator-size: 22;
     
     -GtkExpander-expander-size: 6; 
     -GtkTreeView-expander-size: 8; 
@@ -90,7 +90,6 @@ GtkScrolledWindow.frame,
 }
 
 /* No Border */
-.menu.button,
 .tooltip {
     border-image: none;
     border-style: none;
@@ -101,15 +100,6 @@ GtkScrolledWindow.frame,
     -unico-inner-stroke-width: 0;
 }
 
-/* No focus border */
-/***
-.button:active,
-.button:hover:active {
-    -unico-focus-border-color: transparent;
-    -unico-focus-fill-color: transparent;
-    -unico-focus-outer-stroke-color: transparent;
-}
-***/
 
 /**********
 * Padding *
