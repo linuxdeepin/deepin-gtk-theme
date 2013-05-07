@@ -284,6 +284,19 @@ audio-volume-medium</property>
                         <property name="y">398</property>
                       </packing>
                     </child>
+                    <child>
+                      <object class="GtkProgressBar" id="progressbar1">
+                        <property name="width_request">0</property>
+                        <property name="height_request">0</property>
+                        <property name="visible">True</property>
+                        <property name="can_focus">False</property>
+                        <property name="fraction">0.40000000000000002</property>
+                      </object>
+                      <packing>
+                        <property name="x">166</property>
+                        <property name="y">45</property>
+                      </packing>
+                    </child>
                   </object>
                 </child>
                 <child type="tab">

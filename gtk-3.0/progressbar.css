@@ -8,18 +8,21 @@ GtkProgressBar {
 }
 
 GtkProgressBar.trough{
-    border: 1px solid rgba(255, 255, 255, 0.0);
+    border: 1px solid @insensitive_color;
     border-radius: 2px;
-    -unico-inner-stroke-width: 1px;
-    -unico-inner-stroke-color: #a6a6a6;
-    background-color: #dee0e1;
+    background-color: shade(@insensitive_color, 1.35);
 }
 
-
+@define-color p_color #31abee;
 
 .progressbar {
-    border: 1px solid #108cd2;
     border-radius: 2px;
-    background-color: #31abee;
-}
+    background-color: @p_color;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (@p_color),
+                                     color-stop (0.1, @p_color),
+                                     to (@p_color));
+    background-color: @p_color;
 
+    color: @selected_fg_color;
+}

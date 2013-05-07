@@ -4,7 +4,7 @@
     
     background-clip: padding-box;
 
-    -GtkArrow-arrow-scaling: 0.75;
+    -GtkArrow-arrow-scaling: 0.50;
     
     -GtkCheckButton-indicator-size: 22;
     -GtkCheckButton-indicator-spacing: 0;
@@ -117,7 +117,6 @@ GtkScrolledWindow.frame,
 
 /* No Padding */
 
-.entry.progressbar,
 .toolbar GtkComboBox {
     padding: 0;
 }
@@ -599,30 +598,12 @@ GtkComboBox.separator.horizontal {
 /**************
  * ComboBoxes *
  **************/
-
 GtkComboBox .separator {
-    /***
-    border-color: @transparent;
-
-    -unico-border-gradient: none;
-    -unico-inner-stroke-color: @transparent;
-    -unico-inner-stroke-gradient: none;
-    ***/
+    border-width: 0;
+    border-color: none;
+    background: none;
 }
 
-/*GtkComboBox.combobox-entry .entry,
-GtkComboBox.combobox-entry .entry:prelight {
-    border-radius: 2.5 0 0 2.5;
-    border-width: 1 0 1 1;
-}
-
-GtkComboBox.combobox-entry .button,
-GtkComboBox.combobox-entry .button:prelight {
-    border-radius: 0 2.5 2.5 0;
-    border-width: 1 1 1 0;
-    padding: 2 3;
-}
-*/
 
 /********
 * Entry *
@@ -657,26 +638,6 @@ GtkComboBox.combobox-entry .button:prelight {
 			         from (shade (@warning_color, 1.12)),
                      color-stop (0.20, shade (@warning_color, 1.24)),
 			         to (shade (@warning_color, 1.30))); 
-}
-
-
-.entry.progressbar {
-
-    background-image: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (shade (@selected_bg_color, 1.23)),
-                    to (shade (@selected_bg_color, 1.37)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (shade (@selected_bg_color, 1.00)),
-                    to (shade (@selected_bg_color, 1.00)));
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (@transparent),
-                    to (@transparent));
 }
 
 /************
