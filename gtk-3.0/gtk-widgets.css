@@ -43,8 +43,6 @@
     -unico-bullet-outline-color: shade (@bg_color, 1.2);
     -unico-inner-stroke-color: transparent;
     -unico-text-shadow-color: alpha (#fff, 0.30);
-    -unico-focus-border-color: transparent;
-    -unico-focus-fill-color: transparent;
     -unico-focus-outer-stroke-color: transparent;
 }
 
