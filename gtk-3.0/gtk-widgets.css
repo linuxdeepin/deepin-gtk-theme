@@ -80,7 +80,6 @@
 
 /* Border */
 GtkScrolledWindow.frame,
-.entry,
 .separator {
     border-style: solid;
     border-width: 1px;
@@ -125,11 +124,6 @@ GtkScrolledWindow.frame,
 GtkTreeView .entry,
 column-header .button {
     border-radius: 0;
-}
-
-/* Slightly rounded */
-.entry {
-    border-radius: 2px;
 }
 
 /* Window roundness */
@@ -535,28 +529,22 @@ GtkComboBox.separator.horizontal {
 }
 
 
-/**********
-* Troughs *
-**********/
-
-/* Interactive Trough */
-
 .entry {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_base_color, 0.97)),
                                      to (@theme_base_color));
+
     border-radius: 2px;
     border-style: solid;
-    padding: 0;
+    border-width: 1px;
+    border-color: @insensitive_color;
+    padding: 4px;
 
     color: @theme_text_color;
 }
 
 .entry:backdrop {
 }
-
-
-/* Insensitive Trough */
 
 .entry:insensitive {
     background-image: -gtk-gradient (linear,
@@ -575,11 +563,6 @@ GtkComboBox.separator.horizontal {
 }
 
 .entry:focus {
-    /***
-    -unico-border-gradient: -gtk-gradient (linear, left top, left bottom,
-                                        from (shade (#4c93de, 0.75)),
-                                        to (shade (#4c93de, 0.8)));
-    ***/
     border-color: #31abee;
     -unico-inner-stroke-color: #c9e2fc;
     -unico-inner-stroke-gradient: none;
@@ -592,16 +575,6 @@ GtkComboBox .separator {
     border-width: 0;
     border-color: none;
     background: none;
-}
-
-
-/********
-* Entry *
-********/
-
-*.entry {
-    padding: 2px 0;
-    -GtkEntry-progress-border: 0;
 }
 
 *.security_trusted {
@@ -765,7 +738,6 @@ column-header .button:hover {
 /********
 * Views *
 ********/
-
 .view:selected,
 .view:selected:focused {
     border: 1px solid #a3becc;

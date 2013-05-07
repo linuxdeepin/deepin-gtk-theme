@@ -52,9 +52,6 @@
     border-color: @insensitive_color;
     background: @bg_color;
 }
-.entry.spinbutton {
-    padding: 4px;
-}
 
 GtkDialog .button {
     padding: 0;
