@@ -105,20 +105,3 @@ GraniteWidgetsPopOver .entry {
     background-color: alpha (#000, 0.15);
 
 }
-
-/*.app:hover, .app:focus {
-
-    border-width: 3;
-
-    -unico-outer-stroke-gradient: -gtk-gradient (linear,
-                    left top, left bottom,
-                    from (shade (@selected_bg_color, 1.05)),
-                    to (shade (@selected_bg_color, 0.88)));
-
-    -unico-border-gradient: -gtk-gradient (linear,
-                    left top,
-                    left bottom,
-                    from (shade (@selected_bg_color, 1.30)),
-                    to (shade (@selected_bg_color, 0.98)));
-
-}*/

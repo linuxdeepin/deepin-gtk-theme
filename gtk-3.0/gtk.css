@@ -1,10 +1,10 @@
 /* Default color scheme */
-@define-color base_color #FFF;
+@define-color base_color #fff;
 @define-color bg_color #fff;
 @define-color tooltip_bg_color #000;
 @define-color selected_bg_color #007fbe;
 @define-color text_color #333;
-@define-color insensitive_color #808080;
+@define-color insensitive_color #a3a3a3;
 @define-color fg_color #333;
 @define-color tooltip_fg_color #FFF;
 @define-color selected_fg_color #FFF;
@@ -36,8 +36,17 @@
 @define-color error_fg_color rgb (166, 38, 38);
 @define-color error_bg_color rgb (237, 54, 54);
 
+@define-color button_border_normal_color #a3a3a3;
+@define-color button_border_hover_color #31abee;
+@define-color button_border_focus_color #31abee;
+@define-color button_border_active_color #31abee;
 
-@define-color insensitive_bg_color #f4f4f2;
-@define-color insensitive_fg_color #a7aba7;
+@define-color button_normal_color #f2fbff;
+@define-color button_hover_color #cceeff;
+@define-color button_focus_color #cceeff;
+@define-color button_active_color #aecfe1;
+
+@define-color button_border_backdrop_color #aecfe1;
+
 
 @import url("gtk-widgets.css");

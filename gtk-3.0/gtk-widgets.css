@@ -1,5 +1,5 @@
 * {
-    engine: unico;
+    /*engine: unico;*/
     padding: 1px;
     
     background-clip: padding-box;
@@ -70,7 +70,7 @@
 
 *:selected,
 *:selected:focused {
-    background-color: alpha (@selected_bg_color, 0.9);
+    background-color: @selected_bg_color;
     color: @selected_fg_color;
 }
 
@@ -132,8 +132,6 @@ GtkScrolledWindow.frame,
 .inline-toolbar.toolbar .button,
 .pane-separator,
 .rubberband,
-.spinbutton .button,
-.spinbutton .button:focus,
 .view,
 GtkTreeView .entry,
 column-header .button {
@@ -502,26 +500,7 @@ GtkComboBox.separator.horizontal {
     border-width: 0;
 }
 
-/**************
-* SpinButtons *
-**************/
 
-.spinbutton .button,
-.spinbutton .button:focus {
-    padding: 0 1px;
-}
-
-.spinbutton .button:first-child {
-    border-width: 1px 0 1px 1px;
-    border-radius: 2px 0 0 2px;
-    -unico-outer-stroke-width: 0;
-}
-
-.spinbutton .button:last-child {
-    border-width: 1px 1px 1px 0;
-    border-radius: 0 2px 2px 0;
-    -unico-outer-stroke-width: 0;
-}
 
 /************
  * Tooltips *
@@ -577,21 +556,11 @@ GtkComboBox.separator.horizontal {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_base_color, 0.97)),
                                      to (@theme_base_color));
-    border-top-color: shade (@theme_bg_color, 0.64);
-    border-right-color: shade (@theme_bg_color, 0.76);
-    border-bottom-color: shade (@theme_bg_color, 0.82);
-    border-left-color: shade (@theme_bg_color, 0.76);
     border-radius: 2px;
     border-style: solid;
     padding: 0;
 
     color: @theme_text_color;
-
-    -unico-border-gradient: none;
-    -unico-inner-stroke-gradient: -gtk-gradient (linear, left top, left bottom,
-                                                 from (alpha (shade (@theme_bg_color, 0.05), 0.04)),
-                                                 to (alpha (shade (@theme_bg_color, 0.05), 0.02)));
-    -unico-inner-stroke-width: 1;
 }
 
 .entry:backdrop {

@@ -2,18 +2,6 @@
 * Button *
 *********/
 
-@define-color button_border_normal_color #5a8ca6;
-@define-color button_border_hover_color #cceeff;
-@define-color button_border_focus_color #31abee;
-@define-color button_border_active_color #aecfe1;
-
-@define-color button_normal_color #f2fbff;
-@define-color button_hover_color #cceeff;
-@define-color button_focus_color #cceeff;
-@define-color button_active_color #aecfe1;
-
-@define-color button_border_backdrop_color #aecfe1;
-
 .button {
     border: 1px solid @button_border_normal_color;
     border-radius: 2px;
@@ -26,6 +14,46 @@
 
 .button:focus {
     border-color: @button_border_focus_color;
+}
+
+/**************
+* SpinButtons *
+**************/
+
+.spinbutton {
+    border-width: 1px 1px 1px 1px;
+    border-color: @button_border_normal_color;
+}
+
+.spinbutton .button:nth-child(2):focused {
+    border-width: 0px 1 0px 1px;
+    border-color: @button_border_focus_color;
+    background: @bg_color;
+}
+.spinbutton .button:last-child:focused {
+    background: @bg_color;
+}
+.spinbutton .button:nth-child(2):hover {
+    background: @button_hover_color;
+}
+.spinbutton .button:last-child:hover {
+    background: @button_hover_color;
+}
+
+.spinbutton .button:nth-child(2){
+    border-width: 0px 1 0px 1px;
+    border-color: @insensitive_color;
+    border-style:solid;
+    -unico-outer-stroke-width: 0;
+    background: @bg_color;
+}
+.spinbutton .button:last-child{
+    border-width: 0px 0px 0px 0px;
+    border-color: @insensitive_color;
+    background: @bg_color;
+}
+.entry.spinbutton {
+    padding: 4px;
 }
 
 GtkDialog .button {
@@ -67,7 +95,7 @@ GtkDialog .button:focused:active {
 
 .secondary-toolbar.toolbar .button:hover {
 
-    color: shade (@selected_bg_color, 0.65);
+    /*color: shade (@selected_bg_color, 0.65);*/
 
     border-color: @transparent;
     background-image: none;
