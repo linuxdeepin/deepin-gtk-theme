@@ -5,7 +5,7 @@
 * {
     -GtkMenu-vertical-offset: 2;
     -GtkMenu-horizontal-offset: 2;
-    -GtkMenuItem-arrow-scaling: 0.5;
+    -GtkMenuItem-arrow-scaling: 0.6;
     -GtkMenuItem-width-chars: 15;
 }
 

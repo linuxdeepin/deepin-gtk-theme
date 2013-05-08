@@ -26,7 +26,7 @@
 }
 
 .spinbutton .button:nth-child(2):focused {
-    border-width: 0px 1 0px 1px;
+    border-width: 0px 1px 0px 1px;
     border-color: @button_border_focus_color;
     background: @bg_color;
 }
@@ -41,7 +41,7 @@
 }
 
 .spinbutton .button:nth-child(2){
-    border-width: 0px 1 0px 1px;
+    border-width: 0px 1px 0px 1px;
     border-color: @insensitive_color;
     border-style:solid;
     -unico-outer-stroke-width: 0;
