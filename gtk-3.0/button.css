@@ -25,6 +25,10 @@
     border-color: @button_border_normal_color;
 }
 
+.spinbutton:focused {
+    border: 1px @button_border_focus_color solid;
+}
+
 .spinbutton .button:nth-child(2):focused {
     border-width: 0px 1px 0px 1px;
     border-color: @button_border_focus_color;
