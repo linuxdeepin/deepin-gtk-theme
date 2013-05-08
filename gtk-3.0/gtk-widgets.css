@@ -3,9 +3,8 @@
     padding: 1px;
     
     background-clip: padding-box;
-
-    -GtkArrow-arrow-scaling: 0.50;
     
+    -GtkArrow-arrow-scaling: 0.70;
     -GtkCheckButton-indicator-size: 22;
     -GtkCheckButton-indicator-spacing: 0;
     -GtkCheckMenuItem-indicator-size: 22;
@@ -57,7 +56,7 @@
 
 *:backdrop {
     background-color: shade (@bg_color, 1.06);
-    color: @insensitive_color;
+    color: alpha (@text_color, 0.8);
 }
 
 *:insensitive {
@@ -84,8 +83,6 @@ GtkScrolledWindow.frame,
     border-style: solid;
     border-width: 1px;
     border-color: #7fa1b2;
-	/*-unico-inner-stroke-width: 1px;*/
-	/*-unico-outer-stroke-width: 1px;*/
 }
 
 /* No Border */
@@ -190,14 +187,8 @@ GtkCalendar.button:insensitive:backdrop,
 GtkCalendar.header,
 GtkCalendar.view {
     background-image: none;
-    background-color: transparent;
+    background-color: @transparent;
 }
-GtkLabel,
-GtkLabel:backdrop
-{
-    background-color: transparent;
-}
-
 
 GtkCalendar.highlight {
     background-color: @transparent;
@@ -563,9 +554,9 @@ GtkComboBox.separator.horizontal {
 }
 
 .entry:focus {
-    border-color: #31abee;
-    -unico-inner-stroke-color: #c9e2fc;
-    -unico-inner-stroke-gradient: none;
+    /*border-color: #31abee;*/
+    /*-unico-inner-stroke-color: #c9e2fc;*/
+    /*-unico-inner-stroke-gradient: none;*/
 }
 
 /**************
@@ -738,14 +729,6 @@ column-header .button:hover {
 /********
 * Views *
 ********/
-.view:selected,
-.view:selected:focused {
-    border: 1px solid #a3becc;
-    border-radius: 2px;
-    background-color: alpha(#d9f3ff, 0.8);
-    color: @text_color;
-}
-
 GtkTreeView.view:selected,
 GtkTreeView.view:selected:focused {
     border-width: 0 1px 0 1px;
@@ -806,6 +789,9 @@ CheeseThumbView /* Cheese */
  *********************/
  
 GtkDrawingArea,
+GtkLabel,
+GtkLabel:insensitive,
+GtkLabel:backdrop,
 GtkImage,
 GtkImage:insensitive,
 GtkImage:selected,
@@ -814,10 +800,6 @@ GtkImage:backdrop,
 GtkImage:insensitive:backdrop,
 GtkImage:selected:backdrop {
     background-color: @transparent;
-}
-
-*:backdrop {
-    color: alpha (@text_color, 0.8);
 }
 /******************
  * TextView color *
