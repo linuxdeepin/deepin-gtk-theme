@@ -85,3 +85,19 @@ NautilusWindow GtkScrolledWindow.frame {
     padding: 0;
     background: @transparent
 }
+
+NautilusTrashBar.info .button {
+    background: @bg_color;
+    border-width: 1px;
+}
+
+NautilusTrashBar.info GtkLabel {
+    color: @text_color;
+}
+
+NautilusTrashBar.info .button:insensitive
+{
+    background-color: @insensitive_color;
+    color: white;
+    border-width: 0px;
+}
