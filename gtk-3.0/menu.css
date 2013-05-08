@@ -47,8 +47,6 @@
     color: @text_color;
 }
 
-.menu .menuitem:active,
-.menu .menuitem:selected,
 .menu .menuitem:hover {
     background-color: @hover_color;
     color: @text_color;
