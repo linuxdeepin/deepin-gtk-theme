@@ -88,17 +88,6 @@ GtkScrolledWindow.frame,
 	/*-unico-outer-stroke-width: 1px;*/
 }
 
-/* No Border */
-.tooltip {
-    border-image: none;
-    border-style: none;
-    border-width: 0;
-    -unico-outer-stroke-style: none;
-    -unico-inner-stroke-style: none;
-    -unico-outer-stroke-width: 0;
-    -unico-inner-stroke-width: 0;
-}
-
 
 /**********
 * Padding *
@@ -124,11 +113,6 @@ GtkScrolledWindow.frame,
 GtkTreeView .entry,
 column-header .button {
     border-radius: 0;
-}
-
-/* Window roundness */
-.tooltip {
-    border-radius: 3px;
 }
 
 /* Circular */
@@ -491,12 +475,16 @@ GtkComboBox.separator.horizontal {
  
 .tooltip {
     padding: 2px;
-    
-    background-color: alpha(#000, 0.70);
-}
+    background-color: alpha(#000, 0.9);
 
-.tooltip * {
-    background-color: alpha(#000, 0.70);
+    border-radius: 3px;
+    border-image: none;
+    border-style: none;
+    border-width: 0;
+    -unico-outer-stroke-style: none;
+    -unico-inner-stroke-style: none;
+    -unico-outer-stroke-width: 0;
+    -unico-inner-stroke-width: 0;
 }
 
 
