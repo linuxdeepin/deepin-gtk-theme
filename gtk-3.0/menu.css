@@ -32,17 +32,15 @@
 
 .menubar>.menuitem {
     border-width: 1px 1px 0px 1px;
-    border-style: solid;
-    border-color: @insensitive_color;
-    background-color: @menu_bg_color;
+    background: url("assets/menubg.png") repeat-x;
     color: @text_color;
 }
-.menubar.menuitem:active,
-.menubar.menuitem:selected,
-.menubar.menuitem:hover {
+.menubar>.menuitem:active,
+.menubar>.menuitem:selected,
+.menubar>.menuitem:hover {
+    border-width: 1px 1px 0 1px;
     border-style: solid;
     border-color: #c2c9cc;
-    border-width: 1px 1px 0 1px;
     background: #f2fbff;
     color: @text_color;
 }
