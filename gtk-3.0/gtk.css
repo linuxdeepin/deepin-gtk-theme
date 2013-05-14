@@ -23,7 +23,6 @@
 @define-color button_focus_color #cceeff;
 @define-color button_active_color #aecfe1;
 
-@define-color button_border_backdrop_color #aecfe1;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
 @define-color theme_base_color @base_color;

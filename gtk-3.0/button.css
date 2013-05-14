@@ -74,10 +74,6 @@ GtkDialog .button:focused:active {
     background-color: @button_active_color;
 }
 
-.button:backdrop:insensitive {
-    border-color: @button_border_backdrop_color;
-}
-
 .toolbar .button {
     margin: 1px;
 	icon-shadow: none;
