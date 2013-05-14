@@ -353,9 +353,9 @@ style "menubar" {
         image {
             function = BOX
             state = NORMAL
-            shadow = OUT
-            overlay_file = "assets/menubg.png"
-            overlay_stretch = TRUE
+            recolorable = TRUE
+            file = "assets/menubg.png"
+            stretch = TRUE
         }
     }
 }
