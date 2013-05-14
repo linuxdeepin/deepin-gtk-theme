@@ -79,13 +79,11 @@
 ****************/
 
 /* Border */
-GtkScrolledWindow.frame,
-.separator {
+GtkScrolledWindow.frame
+{
     border-style: solid;
     border-width: 1px;
     border-color: #7fa1b2;
-	/*-unico-inner-stroke-width: 1px;*/
-	/*-unico-outer-stroke-width: 1px;*/
 }
 
 
@@ -425,43 +423,6 @@ GtkScrolledWindow {
 /************
 * Separator *
 ************/
-.menu .separator{
-    -GtkWidget-separator-width: 1px;
-    -GtkWidget-separator-height: 1px;
-    border-style: solid;
-    -unico-border-gradient: -gtk-gradient(linear,
-                            left top, right top,
-                            from(transparent),
-                            color-stop(0.3, rgba(0,0,0,0.1)),
-                            color-stop(0.5, rgba(0,0,0,0.2)),
-                            color-stop(0.7, rgba(0,0,0,0.1)),
-                            to(transparent)
-                            );
-}
-
-/***
-.separator.horizontal{
-    -unico-border-gradient: -gtk-gradient(linear,
-                            left top, right top,
-                            from(transparent),
-                            color-stop(0.2, rgba(0,0,0,0.3)),
-                            color-stop(0.5, rgba(0,0,0,0.5)),
-                            color-stop(0.8, rgba(0,0,0,0.3)),
-                            to(transparent)
-                            );
-}
-
-.separator.vertical{
-    -unico-border-gradient: -gtk-gradient(linear,
-                            left top, left bottom,
-                            from(transparent),
-                            color-stop(0.2, rgba(0,0,0,0.3)),
-                            color-stop(0.5, rgba(0,0,0,0.5)),
-                            color-stop(0.8, rgba(0,0,0,0.3)),
-                            to(transparent)
-                            );
-}
-***/
 GtkComboBox.separator.vertical,
 GtkComboBox.separator.horizontal {
     border-width: 0;

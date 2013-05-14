@@ -20,10 +20,12 @@
     -GtkMenuBar-internal-padding: 2 0 2 0;
 }
 
-.menu {
+.menuitem {
     background-color: @menu_bg_color;
-    border: 1px solid alpha(#000, 0.2);
     color: @text_color;
+}
+.menu{
+    border: 1px solid alpha(#000, 0.2);
 }
 
 .menubar.menu {
@@ -48,4 +50,16 @@
 .menu .menuitem:hover {
     background-color: @hover_color;
     color: @text_color;
+}
+.menuitem.separator{
+    -GtkMenuItem-horizontal-padding: 1px;
+    -GtkWidget-separator-height: -1px;
+    background-image: -gtk-gradient(linear,
+        left top, right top,
+        from(transparent),
+        color-stop(0.3, rgba(0,0,0,0.1)),
+        color-stop(0.5, rgba(0,0,0,0.2)),
+        color-stop(0.7, rgba(0,0,0,0.1)),
+        to(transparent)
+    );
 }
