@@ -349,19 +349,15 @@ style "handle" {
 class "GtkPaned"	style "handle"
 
 style "menubar" {
-    # Modificado
-	xthickness	= 3
-	ythickness	= 3
-
-    fg[NORMAL]          =  shade (1.00, @fg_color) 	# color texto menubar
-    bg[NORMAL]          =  shade (1.00, "#CCEFFF")
-
-	engine "murrine"
-	{   gradient_shades     	= {1.00,1.00,1.00,1.00}
-        border_shades 			= {1.0, 1.0}
-		contrast            	= 1.00
-		lightborderstyle		= 1
-	}
+    engine "pixmap" {
+        image {
+            function = BOX
+            state = NORMAL
+            shadow = OUT
+            overlay_file = "assets/menubg.png"
+            overlay_stretch = TRUE
+        }
+    }
 }
 
 style "menu" {
