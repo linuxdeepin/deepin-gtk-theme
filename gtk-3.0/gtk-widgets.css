@@ -57,7 +57,7 @@
 
 *:backdrop {
     background-color: shade (@bg_color, 1.06);
-    color: @insensitive_color;
+    color: alpha (@text_color, 0.8);
 }
 
 *:insensitive {
@@ -764,9 +764,6 @@ GtkImage:selected:backdrop {
     background-color: @transparent;
 }
 
-*:backdrop {
-    color: alpha (@text_color, 0.8);
-}
 /******************
  * TextView color *
  *****************/
