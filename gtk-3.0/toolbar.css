@@ -1,23 +1,20 @@
 /***********
-* Toolbars *
-***********/
+ * Toolbars *
+ ***********/
 
 .toolbar {
     -GtkWidget-window-dragging: true;
-    
-    padding: 1px;
-    
-    border-style: solid;
-	border-width: 0 0 1px 0;
-	-unico-inner-stroke-width: 0 0 1px 0;
 
-	border-color: #e2e2e2;
-    background-color: #fff;
-	
+    padding: 1px;
+
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    -unico-inner-stroke-width: 0 0 1px 0;
+
+    border-color: #e2e2e2;
 }
 
 .toolbar:backdrop {
-    background-color: #fff;
     border-color: #e2e2e2;
 }
 
@@ -36,8 +33,8 @@
 
 
 /*********************
-* Secondary Toolbars *
-*********************/
+ * Secondary Toolbars *
+ *********************/
 
 .secondary-toolbar.toolbar {
 
@@ -45,29 +42,29 @@
     -unico-inner-stroke-width: 1px 0 1px 0;
 
     background-image: -gtk-gradient (linear,
-		     left top,
-		     left bottom,
-		     from (shade (@bg_color, 0.84)),
-		     to (shade (@bg_color, 0.76)));
-		     
+    left top,
+    left bottom,
+    from (shade (@bg_color, 0.84)),
+    to (shade (@bg_color, 0.76)));
+
     border-color: shade (@bg_color, 0.50);
 }
 
 .secondary-toolbar.toolbar:backdrop {
 
     background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 0.96)),
-				     to (shade (@bg_color, 0.86)));
-				     
+    left top,
+    left bottom,
+    from (shade (@bg_color, 0.96)),
+    to (shade (@bg_color, 0.86)));
+
     border-color: shade (@bg_color, 0.60);
 }
 
 
 /******************
-* Bottom Toolbars *
-******************/
+ * Bottom Toolbars *
+ ******************/
 
 .bottom-toolbar.toolbar {
     padding: 10px;
@@ -77,19 +74,19 @@
 
     border-color: shade (@bg_color, 0.66);
     background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (@bg_color),
-				     to (shade (@bg_color, 0.88)));
+    left top,
+    left bottom,
+    from (@bg_color),
+    to (shade (@bg_color, 0.88)));
 }
 
 .bottom-toolbar.toolbar:backdrop {
     border-color: shade (@bg_color, 0.82);
     background-image: -gtk-gradient (linear,
-				     left top,
-				     left bottom,
-				     from (shade (@bg_color, 1.06)),
-				     to (shade (@bg_color, 1.02)));
+    left top,
+    left bottom,
+    from (shade (@bg_color, 1.06)),
+    to (shade (@bg_color, 1.02)));
 }
 
 .bottom-toolbar.toolbar .button {
@@ -108,13 +105,13 @@
     padding: 0;
 
     -unico-border-gradient: -gtk-gradient (linear,
-        left top, left bottom,
-        from (shade (@bg_color, 0.70)),
-        to (shade (@bg_color, 0.70)));
+    left top, left bottom,
+    from (shade (@bg_color, 0.70)),
+    to (shade (@bg_color, 0.70)));
 
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@base_color, 0.92)),
-                                     to (shade (@base_color, 0.98)));
+    from (shade (@base_color, 0.92)),
+    to (shade (@base_color, 0.98)));
 
 }
 
@@ -145,6 +142,6 @@
 .inline-toolbar.toolbar .button *:insensitive,
 .inline-toolbar.toolbar .button:insensitive {
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@base_color, 0.86)),
-                                     to (shade (@base_color, 0.92)));
+    from (shade (@base_color, 0.86)),
+    to (shade (@base_color, 0.92)));
 }

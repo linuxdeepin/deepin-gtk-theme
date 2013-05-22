@@ -11,7 +11,11 @@
 @define-color transparent alpha (#FFF, 0.00);
 @define-color selected_text_color rgb(0,117,192);
 
-@define-color menu_bg_color #f2fbff;
+@define-color menu_bg_top_color #ecf8fc;
+@define-color menu_bg_bottom_color #dcf2f9;
+@define-color menuitem_bg_color #f2fbff;
+
+@define-color base_color #fff;
 
 @define-color hover_color #cceeff;
 

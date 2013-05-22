@@ -1,3 +1,14 @@
+/* Deepin modify nautilus to set Button name by below
+ * nautilus-toolbar-xxx
+ * xxx:
+ *      Search
+ *      View List
+ *      View Grid
+ *      go-down-symbolic
+ *      emblem-system-symbolic
+ *      Back
+ *      Forward
+ */
 NautilusWindow .scrollbar{
     -GtkRange-trough-border: 2;
 }
@@ -12,7 +23,6 @@ NautilusWindow .pane-separator:selected,
 NautilusWindow .pane-separator.vertical, 
 NautilusWindow .pane-separator.vertical:prelight,
 NautilusWindow .pane-separator.vertical:selected {
-	-unico-centroid-texture: none; 
     background-image: none;
     border-width: 0;
     background-color: #aeaeae;
@@ -23,59 +33,47 @@ NautilusWindow * {
     -GtkPaned-handle-size: 1;
 }
 
-NautilusWindow .primary-toolbar.toolbar {
-    -unico-inner-stroke-width: 0px;
-    -unico-inner-stroke-gradient: none;
-
-    padding: 0 1px 0 6px;
+NautilusWindow .toolbar {
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;
 }
-
-NautilusWindow .primary-toolbar.toolbar GtkHBox{
-    padding: 0 4px 0 4px;
+NautilusWindow .menubar {
+    border-color: @button_border_normal_color;
+    border-style: solid;
+    border: 0px 0px 1px 0px;
+}
+NautilusWindow .menubar:backdrop {
+    border-color: @button_border_normal_color;
+    border-style: solid;
+    border: 0px 0px 1px 0px;
 }
 
-NautilusWindow .primary-toolbar .toolbar .button,
-NautilusWindow .primary-toolbar.toolbar .button {
-
+NautilusWindow .toolbar .button {
     padding: 0;
-    -unico-border-gradient: none;
-
-    -unico-inner-stroke-width: 0;
-    -unico-inner-stroke-gradient: none;
-    -unico-inner-stroke-color: @transparent;
-
-    -unico-outer-stroke-width: 6px 0px 6px 0px;	
-    -unico-outer-stroke-gradient: none;
-    -unico-outer-stroke-color: @transparent;
     border: 0;
-    background-color: #fff;
+    background: none;
+    border: 1px solid transparent;
 }
-
-NautilusWindow .primary-toolbar.toolbar GtkLabel {
-    padding: 0px 5px;
+NautilusWindow .toolbar .button:active {
+    background-image: -gtk-gradient (linear,
+            left top,
+            left bottom,
+            from (alpha(@menu_bg_bottom_color, 0.2)),
+            to (@menu_bg_top_color)); 
+    border: 1px solid @insensitive_color;
 }
-NautilusWindow .primary-toolbar.toolbar GtkLabel:active,
-NautilusWindow .primary-toolbar.toolbar GtkLabel:focus {
-    color: @selected_text_color;
-}
-NautilusWindow .primary-toolbar.toolbar GtkLabel:hover
-{
+NautilusWindow .toolbar .button:hover {
+    border: 1px solid @insensitive_color;
+    background: none;
     color: shade(@selected_text_color, 1.35);
 }
 
-#nautilus-search-button * {
-    box-shadow: none;
-    -unico-inner-stroke-width: 0;
-    -unico-inner-stroke-gradient: none;
-    -unico-inner-stroke-color: @transparent;
+NautilusWindow .toolbar .button GtkLabel {
+    padding: 0px 5px;
+}
 
-    -unico-outer-stroke-width: 6px 4px 6px 4px;
-    -unico-outer-stroke-gradient: none;
-    -unico-outer-stroke-color: @transparent;
-
-    padding: 0 4px 0 4px;
+NautilusWindow .toolbar GtkHBox{
+    padding: 0 0px;
 }
 
 NautilusWindow GtkScrolledWindow.frame {
