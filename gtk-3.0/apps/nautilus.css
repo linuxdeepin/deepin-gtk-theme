@@ -40,12 +40,12 @@ NautilusWindow .toolbar {
 NautilusWindow .menubar {
     border-color: @button_border_normal_color;
     border-style: solid;
-    border: 0px 0px 1px 0px;
+    border-width: 0px 0px 1px 0px;
 }
 NautilusWindow .menubar:backdrop {
     border-color: @button_border_normal_color;
     border-style: solid;
-    border: 0px 0px 1px 0px;
+    border-width: 0px 0px 1px 0px;
 }
 
 NautilusWindow .toolbar .button {
