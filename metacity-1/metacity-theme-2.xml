@@ -183,6 +183,7 @@
 
 <draw_ops name="focused_maxed_entire_background">
     <tint color="FocusedBgColor" x="0" y="0" width="width" height="height" alpha="1.0"/>
+    <tint color="InnerOutLine" x="0" y="title_height+12" width="width" height="1" alpha="1.0"/>
 </draw_ops>
 
 <!-- unfocused background -->
@@ -226,6 +227,7 @@
 
 <draw_ops name="unfocused_maxed_entire_background">
     <tint color="UnFocusedBgColor" x="0" y="0" width="width" height="height" alpha="1.0"/>
+    <tint color="InnerOutLine" x="0" y="title_height+12" width="width" height="1" alpha="1.0"/>
 </draw_ops>
 
 <!--titles -->
