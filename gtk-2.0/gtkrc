@@ -367,13 +367,7 @@ style "menu" {
 	bg[NORMAL]	= "#f2fbff"
 
 	GtkMenuItem::arrow-scaling	= 0.5
-	
-	engine "murrine" {
-		gradient_shades		= {1.0, 1.0, 1.0, 1.0}
-		roundness			= 0 # 0 = squared
-		border_shades 		= {1.00, 1.0}
-        border_colors       = {"#F2FBFF", "#F2FBFF"}
-	}
+        engine "equinox" {}
 }
 
 style "menu_item_white" {
