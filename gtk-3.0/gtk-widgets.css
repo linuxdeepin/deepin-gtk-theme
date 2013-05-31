@@ -135,7 +135,6 @@ GtkInfoBar {
     icon-shadow: 0 1px alpha (#000, 0.3);
 }
 
-.title { font: raleway 36; }
 .h1 { font: open sans bold 24; }
 .h2 { font: open sans light 18; }
 .h3 { font: open sans bold 12; }
