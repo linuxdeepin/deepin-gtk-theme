@@ -41,6 +41,7 @@
     border-width: 1px 1px 0px 1px;
     background: url("assets/menubg.png") repeat-x;
     color: @text_color;
+    font-size: 10.5px;
 }
 .menubar>.menuitem:active,
 .menubar>.menuitem:selected,
