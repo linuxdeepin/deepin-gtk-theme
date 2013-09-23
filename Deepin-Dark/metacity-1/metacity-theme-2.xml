@@ -97,6 +97,10 @@
     <!-- vertical right -->
     <tint color="#a3a3a3" x="width-1" y="2" width="1" height="2" alpha="1.0"/>
     <tint color="#808080" x="width-1" y="4" width="1" height="height-4" alpha="1.0"/>
+
+    <!-- bottom -->
+    <tint color="#808080" x="1" y="height-1" width="width-2" height="1" alpha="1.0"/>
+
     
 </draw_ops>
 
