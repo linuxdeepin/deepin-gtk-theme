@@ -171,11 +171,6 @@ GtkLabel:insensitive {
 	border-radius: 10px;
 	border-color: 		alpha(#ffffff,0.2);
     background-color: 	alpha(@theme_tooltip_bg_color, 0.80);
-  box-shadow: inset  0px  4px alpha(#000, 0.5),
-				inset  0px  3px alpha(#000, 0.5),
-				inset  0px  2px alpha(#000, 0.5),
-				inset  0px  1px alpha(#000, 0.5),
-
     color: 				shade(@theme_tooltip_fg_color, 1.00);
 }
 
@@ -1076,7 +1071,7 @@ GtkComboBox.combobox-entry .button *:prelight {
     border-width: 1px 0px 1px 1px; /* remove rightr */
     border-top-color: 		shade(@toolbar_gradient_base, 0.60);
     border-left-color: 		shade(@toolbar_gradient_base, 0.70);
-    border-bottom-color: 	shade(@toolbar_gradient_base, 0.80);
+    border-bottom-color: 	#000;
 
     box-shadow: inset  0px  3px alpha(#000, 0.02),
 				inset  0px  2px alpha(#000, 0.04),

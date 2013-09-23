@@ -2,7 +2,7 @@
  * tabs          *
  *****************/
 
-@define-color theme_tab_bg_color #000;
+@define-color theme_tab_bg_color shade(mix (@theme_selected_bg_color, @theme_bg_color, 0.35), 1.25);
 
 .notebook tab {
 	background-image: -gtk-gradient (linear,
@@ -25,7 +25,7 @@
 .notebook tab:active {
    background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade (@theme_tab_bg_color, 0.90)),
+                                     from (shade (@bg_color, 0.90)),
 									 color-stop (0.40, shade(@theme_tab_bg_color, 1.05)),
 									 to   (shade(@theme_tab_bg_color, 1.15)));
 

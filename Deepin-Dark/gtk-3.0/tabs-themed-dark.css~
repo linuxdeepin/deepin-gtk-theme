@@ -31,15 +31,6 @@
                 inset -1px  0px alpha(#eee, 0.1); 
 }
 
-.notebook tab:active {
-	background-image:          linear-gradient(to right,
-                                      #ffffff,
-                                      #afe2ff  48%,
-                                      #5fc5ff 48%,
-                                      #5fc5ff 50%,
-                                      #5fc5ff 50%,
-                                      #e1f4ff
-                                      );
 
 	border-color:       shade(@button_border_active, 1.10);
 

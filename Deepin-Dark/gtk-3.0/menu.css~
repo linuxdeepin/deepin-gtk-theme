@@ -196,10 +196,10 @@ GtkComboBox .menuitem *:hover {
 .menuitem:hover {
 	/* contextual menu item-selected */
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (alpha (#5BBDF0, 0.9)),
-                                     to   (alpha (#08A7FF, 0.9)));
+                                     from (alpha (#62bded, 0.9)),
+                                     to   (alpha (#3babe5, 1.0)));
 
-    color: #000;
+ color: #FFF;
 	text-shadow: alpha (@base_color,0.3);
     border-radius: 0;
     border-image: none;
@@ -218,8 +218,8 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem *:hover, 
 .menuitem:hover,
 .menu .menuitem:hover {
-    color: #000
-   	text-shadow: alpha (@base_color,0.3)
+    color: #FFF
+   	text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 
 .primary-toolbar .menuitem *:insensitive,
@@ -230,7 +230,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:insensitive,
 .menuitem *:insensitive {
 	/* contextual menu insensitive */
-    color: mix (@menu_fg_dark_color, @menu_bg_dark_color, 0.4);
+    color: #FFF
     text-shadow: none;
 }
 

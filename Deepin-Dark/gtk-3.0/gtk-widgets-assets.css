@@ -3,9 +3,13 @@
  *************************/
 
 .check,
+.check:hover,
 .radio,
+.radio:hover,
 .check:active,
+.check:active:hover,
 .radio:active,
+.radio:active:hover,
 .check:insensitive,
 .radio:insensitive {
     background-color: transparent;
@@ -24,6 +28,12 @@ GtkCheckButton:selected:focus {
 .check row:selected:focused {
     background-image: url("assets/checkbox-unchecked.svg");
 }
+.check:hover,
+.check row:hover,
+.check row:selected:hover,
+.check row:selected:focused:hover {
+    background-image: url("assets/checkbox-unchecked-hover.svg");
+}
 
 .check:insensitive,
 .check row:selected:insensitive,
@@ -36,7 +46,18 @@ GtkCheckButton:selected:focus {
 .check row:selected:active,
 .check row:selected:focused:active {
     background-image: url("assets/checkbox-checked.svg");
+}
 
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focused:active:hover {
+    background-image: url("assets/checkbox-checked-hover.svg");
+}
+
+.check:active:pressed,
+.check row:selected:active:pressed,
+.check row:selected:focused:active:pressed {
+    background-image: url("assets/checkbox-checked-pressed.svg");
 }
 
 .check:active:insensitive,
@@ -50,7 +71,12 @@ GtkCheckButton:selected:focus {
 .check row:selected:inconsistent,
 .check row:selected:focused:inconsistent {
     background-image: url("assets/checkbox-mixed.svg");
+}
 
+.check:inconsistent:acitve:hover
+.check row:selected:active:hover,
+.check row:selected:focused:active:hover {
+    background-image: url("assets/checkbox-mixed-hover.svg");
 }
 
 .check:inconsistent:insensitive,
@@ -65,6 +91,12 @@ GtkCheckButton:selected:focus {
 .radio row:selected:focused {
     background-image: url("assets/radio-unselected.svg");
 }
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focused:hover, {
+    background-image: url("assets/radio-unselected-hover.svg");
+
+}
 
 .radio:insensitive,
 .radio row:selected:insensitive,
@@ -78,6 +110,12 @@ GtkCheckButton:selected:focus {
 	background-image: url("assets/radio-selected.svg");
 }
 
+.radio:active:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focused:active:hover {
+	background-image: url("assets/radio-selected-hover.svg");
+}
+
 .radio:active:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focused:active:insensitive {
@@ -88,7 +126,12 @@ GtkCheckButton:selected:focus {
 .radio row:selected:inconsistent,
 .radio row:selected:focused:inconsistent {
     background-image: url("assets/radio-mixed.svg");
+}
 
+.radio:inconsistent:active:hover,
+.radio row:selected:inconsistent:active:hover,
+.radio row:selected:focused:inconsistent:active:hover {
+    background-image: url("assets/radio-mixed-hover.svg");
 }
 
 .radio:inconsistent:insensitive,

@@ -234,7 +234,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.png"
+			overlay_file = "assets/checkbox-unchecked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -243,7 +243,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.png"
+			overlay_file = "assets/checkbox-unchecked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -252,7 +252,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.png"
+			overlay_file = "assets/checkbox-unchecked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -261,7 +261,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked-insensitive.png"
+			overlay_file = "assets/checkbox-unchecked-insensitive.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -270,7 +270,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.png"
+			overlay_file = "assets/checkbox-checked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -279,7 +279,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.png"
+			overlay_file = "assets/checkbox-checked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -288,7 +288,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.png"
+			overlay_file = "assets/checkbox-checked.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -298,7 +298,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = IN
-			overlay_file = "assets/checkbox-checked-insensitive.png"
+			overlay_file = "assets/checkbox-checked-insensitive.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -306,7 +306,7 @@ style "checkbutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.png"
+			file = "assets/null.svg"
 		}
 	}
 }
@@ -318,7 +318,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.png"
+			overlay_file = "assets/radio-unselected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -327,7 +327,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.png"
+			overlay_file = "assets/radio-unselected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -336,7 +336,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.png"
+			overlay_file = "assets/radio-unselected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -345,7 +345,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = OUT
-			overlay_file = "assets/radio-unselected-insensitive.png"
+			overlay_file = "assets/radio-unselected-insensitive.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -354,7 +354,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = IN
-			overlay_file = "assets/radio-selected.png"
+			overlay_file = "assets/radio-selected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -363,7 +363,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/radio-selected.png"
+			overlay_file = "assets/radio-selected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -372,7 +372,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = IN
-			overlay_file = "assets/radio-selected.png"
+			overlay_file = "assets/radio-selected.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -382,7 +382,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = IN
-			overlay_file = "assets/radio-selected-insensitive.png"
+			overlay_file = "assets/radio-selected-insensitive.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -390,7 +390,7 @@ style "radiobutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.png"
+			file = "assets/null.svg"
 		}
 	}
 }

@@ -3,9 +3,13 @@
  *************************/
 
 .check,
+.check:hover,
 .radio,
+.radio:hover,
 .check:active,
+.check:active:hover,
 .radio:active,
+.radio:active:hover,
 .check:insensitive,
 .radio:insensitive {
     background-color: transparent;
@@ -22,79 +26,117 @@ GtkCheckButton:selected:focus {
 .check,
 .check row:selected,
 .check row:selected:focused {
-    background-image: url("assets/checkbox-unchecked.png");
+    background-image: url("assets/checkbox-unchecked.svg");
+}
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focused:hover {
+    background-image: url("assets/checkbox-unchecked-hover.svg");
 }
 
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focused:insensitive {
-    background-image: url("assets/checkbox-unchecked-insensitive.png");
+    background-image: url("assets/checkbox-unchecked-insensitive.svg");
     background-color: transparent;
 }
 
 .check:active,
 .check row:selected:active,
 .check row:selected:focused:active {
-    background-image: url("assets/checkbox-checked.png");
+    background-image: url("assets/checkbox-checked.svg");
+}
 
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focused:active:hover {
+    background-image: url("assets/checkbox-checked-hover.svg");
+}
+
+.check:active:pressed,
+.check row:selected:active:pressed,
+.check row:selected:focused:active:pressed {
+    background-image: url("assets/checkbox-checked-pressed.svg");
 }
 
 .check:active:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focused:active:insensitive {
-    background-image: url("assets/checkbox-checked-insensitive.png");
+    background-image: url("assets/checkbox-checked-insensitive.svg");
     background-color: transparent;
 }
 
 .check:inconsistent,
 .check row:selected:inconsistent,
 .check row:selected:focused:inconsistent {
-    background-image: url("assets/checkbox-mixed.png");
+    background-image: url("assets/checkbox-mixed.svg");
+}
 
+.check:inconsistent:acitve:hover
+.check row:selected:active:hover,
+.check row:selected:focused:active:hover {
+    background-image: url("assets/checkbox-mixed-hover.svg");
 }
 
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focused:inconsistent:insensitive {
-    background-image: url("assets/checkbox-mixed-insensitive.png");
+    background-image: url("assets/checkbox-mixed-insensitive.svg");
 
 }
 
 .radio,
 .radio row:selected,
 .radio row:selected:focused {
-    background-image: url("assets/radio-unselected.png");
+    background-image: url("assets/radio-unselected.svg");
+}
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focused:hover, {
+    background-image: url("assets/radio-unselected-hover.svg");
+
 }
 
 .radio:insensitive,
 .radio row:selected:insensitive,
 .radio row:selected:focused:insensitive {
-    background-image: url("assets/radio-unselected-insensitive.png");
+    background-image: url("assets/radio-unselected-insensitive.svg");
 }
 
 .radio:active,
 .radio row:selected:active,
 .radio row:selected:focused:active {
-	background-image: url("assets/radio-selected.png");
+	background-image: url("assets/radio-selected.svg");
+}
+
+.radio:active:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focused:active:hover {
+	background-image: url("assets/radio-selected-hover.svg");
 }
 
 .radio:active:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focused:active:insensitive {
-    background-image: url("assets/radio-selected-insensitive.png");
+    background-image: url("assets/radio-selected-insensitive.svg");
 }
 
 .radio:inconsistent,
 .radio row:selected:inconsistent,
 .radio row:selected:focused:inconsistent {
-    background-image: url("assets/radio-mixed.png");
+    background-image: url("assets/radio-mixed.svg");
+}
 
+.radio:inconsistent:active:hover,
+.radio row:selected:inconsistent:active:hover,
+.radio row:selected:focused:inconsistent:active:hover {
+    background-image: url("assets/radio-mixed-hover.svg");
 }
 
 .radio:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focused:inconsistent:insensitive {
-    background-image: url("assets/radio-mixed-insensitive.png");
+    background-image: url("assets/radio-mixed-insensitive.svg");
     background-color: transparent;
 }
 
