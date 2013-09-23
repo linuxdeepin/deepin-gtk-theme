@@ -98,14 +98,18 @@ class Window():
                  os.path.join(os.path.expanduser("~"), ".themes"))
         valid = walk_directories(dirs, lambda d:
                     os.path.exists(os.path.join(d, "gtk-2.0")) and \
-                        os.path.exists(os.path.join(d, "gtk-3.0")))
+                        os.path.exists(os.path.join(d, "gtk-3.0")) and \
+                        os.path.exists(os.path.join(d, "metacity-1"))
+                        )
         return valid
         
     def _on_combo_changed(self, combo):
         _iter = combo.get_active_iter()
         if _iter:
             value = combo.get_model().get_value(_iter, 0)
-            self.default_settings.set_property("gtk-theme-name", value)
+            #self.default_settings.set_property("gtk-theme-name", value)
+            #os.system('gsettings set org.gnome.desktop.interface gtk-theme %s' % value)
+            os.system('gsettings set org.gnome.desktop.wm.preferences theme %s' % value)
 
 if __name__ == "__main__":
     win = Window()

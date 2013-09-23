@@ -150,8 +150,8 @@ NautilusWindow .pane-separator {
 
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
-	color: shade(@theme_text_dark_color, 0.95);
-	text-shadow: 1px 1px @theme_shadow_dark_color;
+    color: shade(@theme_text_dark_color, 0.95);
+    text-shadow: 1px 1px @theme_shadow_dark_color;
 }
 
 
