@@ -1698,7 +1698,7 @@ MathWindow .button *:active:hover,
                                      color-stop (0.15, shade(@toolbar_gradient_base, 1.10)),
                                      to   (shade(@toolbar_gradient_base, 1.15)));
 }
-
+	/* 定义输入框 */
 .toolbar .entry,
 .toolbar.menubar .entry,
 .toolbar .raised .entry,
@@ -1709,11 +1709,11 @@ MathWindow .button *:active:hover,
     color:  @entry_text_dark_color;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@bg_color, 0.75)),
-                                     color-stop (0.20, shade(@bg_color, 0.95)),
+                                     from (shade(@bg_color, 0.85)),
+                                     color-stop (0.20, shade(@bg_color, 0.98)),
                                      to   (shade(@base_color, 1.00)));
 	/* outer */
-    border-width: 2px;
+    border-width: 1px;
     border-style: solid;
     border-radius: 8px;
     border-top-color: 		transparent;
@@ -1746,10 +1746,10 @@ background-image: -gtk-gradient (linear,
                                      color-stop (0.25, shade(@bg_color, 0.98)),
                                      to   (shade(@base_color, 1.00)));
 	/* outer */
-    border-top-color: 		@focused_dark_entry_outer;
-    border-right-color: 	alpha(@focused_dark_entry_outer, 0.90);
-    border-left-color: 		alpha(@focused_dark_entry_outer, 0.90);
-    border-bottom-color: 	alpha(@focused_dark_entry_outer, 0.85);
+    border-top-color: 		alpha(#000,0.4);
+    border-right-color: 	alpha(#000,0.4);
+    border-left-color: 		alpha(#000,0.4);
+    border-bottom-color: 	alpha(#000,0.4);
 
 	/* border */
     box-shadow: inset  0px  3px alpha(#000, 0.03),

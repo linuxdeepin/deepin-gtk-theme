@@ -19,13 +19,13 @@ NautilusWindow .primary-toolbar.toolbar {
     background-image: none,
                       -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@base_color, 0.9)),
-                                     color-stop (0.20, shade(@base_color, 0.97)),
+                                     from (shade(@base_color, 1.0)),
+                                     color-stop (0.20, shade(@base_color, 1.0)),
                                      to   (shade(@bg_color, 1.00)));
     background-repeat: repeat;
     background-position: top left;
 
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 0px 0px;
     border-radius: 0px;
     border-style: solid;
     border-color: alpha(#000,0.3);
