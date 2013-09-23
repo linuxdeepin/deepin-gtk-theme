@@ -28,32 +28,33 @@ GtkCheckButton:selected:focus {
 .check,
 .check row:selected,
 .check row:selected:focused {
-    background-image: url("assets/checkbox-unchecked.png");
+    background-image: url("assets/checkbox-unchecked.svg");
 }
 
 .check:hover,
 .check row:selected:hover,
 .check row:selected:focused:hover {
-    background-image: url("assets/checkbox-unchecked-hover.png");
+    background-image: url("assets/checkbox-unchecked-hover.svg");
 }
 
 .check:insensitive,
 .check row:selected:insensitive,
 .check row:selected:focused:insensitive {
-    background-image: url("assets/checkbox-unchecked-insensitive.png");
+    background-image: url("assets/checkbox-unchecked-insensitive.svg");
     background-color: transparent;
 }
 
 .check:active,
 .check row:selected:active,
 .check row:selected:focused:active {
-    background-image: url("assets/checkbox-checked.png");
+    background-image: url("assets/checkbox-checked.svg");
 }
 
 .check:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focused:active:hover {
-    background-image: url("assets/checkbox-checked-hover.png");
+    background-image: url("assets/checkbox-checked-hover.svg");
+}
 
 
 /**
@@ -67,76 +68,76 @@ GtkCheckButton:selected:focus {
 .check:active:insensitive,
 .check row:selected:active:insensitive,
 .check row:selected:focused:active:insensitive {
-    background-image: url("assets/checkbox-checked-insensitive.png");
+    background-image: url("assets/checkbox-checked-insensitive.svg");
     background-color: transparent;
 }
 
 .check:inconsistent,
 .check row:selected:inconsistent,
 .check row:selected:focused:inconsistent {
-    background-image: url("assets/checkbox-mixed.png");
+    background-image: url("assets/checkbox-mixed.svg");
 }
 
 .check:inconsistent:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focused:active:hover {
-    background-image: url("assets/checkbox-mixed-hover.png");
+    background-image: url("assets/checkbox-mixed-hover.svg");
 }
 
 .check:inconsistent:insensitive,
 .check row:selected:inconsistent:insensitive,
 .check row:selected:focused:inconsistent:insensitive {
-    background-image: url("assets/checkbox-mixed-insensitive.png");
+    background-image: url("assets/checkbox-mixed-insensitive.svg");
 
 }
 
 .radio,
 .radio row:selected,
 .radio row:selected:focused {
-    background-image: url("assets/radio-unselected.png");
+    background-image: url("assets/radio-unselected.svg");
 }
 .radio:hover,
 .radio row:selected:hover,
 .radio row:selected:focused:hover {
-    background-image: url("assets/radio-unselected-hover.png");
+    background-image: url("assets/radio-unselected-hover.svg");
 
 }
 
 .radio:insensitive,
 .radio row:selected:insensitive,
 .radio row:selected:focused:insensitive {
-    background-image: url("assets/radio-unselected-insensitive.png");
+    background-image: url("assets/radio-unselected-insensitive.svg");
 }
 
 .radio:active,
 .radio row:selected:active,
 .radio row:selected:focused:active {
-	background-image: url("assets/radio-selected.png");
+	background-image: url("assets/radio-selected.svg");
 }
 
 .radio:active:hover,
 .radio row:selected:active:hover,
 .radio row:selected:focused:active:hover {
-	background-image: url("assets/radio-selected-hover.png");
+	background-image: url("assets/radio-selected-hover.svg");
 }
 
 .radio:active:insensitive,
 .radio row:selected:active:insensitive,
 .radio row:selected:focused:active:insensitive {
-    background-image: url("assets/radio-selected-insensitive.png");
+    background-image: url("assets/radio-selected-insensitive.svg");
 }
 
 .radio:inconsistent,
 .radio row:selected:inconsistent,
 .radio row:selected:focused:inconsistent {
-    background-image: url("assets/radio-mixed.png");
+    background-image: url("assets/radio-mixed.svg");
 }
 
 .radio:inconsistent:active:hover,
 .radio row:selected:inconsistent:active:hover,
 
 .radio row:selected:focused:inconsistent:active:hover {
-    background-image: url("assets/radio-mixed-hover.png");
+    background-image: url("assets/radio-mixed-hover.svg");
 }
 
 .radio:inconsistent:insensitive,
@@ -153,27 +154,27 @@ GtkCheckButton:selected:focus {
 .sidebar .radio:active,
 .sidebar .radio:active:focused,
 .sidebar .radio:active:prelight {
-    background-image: url("assets/sidebar-radio-checked.png");
+    background-image: url("assets/sidebar-radio-checked.svg");
 }
 
 .sidebar .radio:active,
 .sidebar .radio:active:focused,
 .sidebar .radio:active:prelight {
-    background-image: url("assets/sidebar-radio-checked.png");
+    background-image: url("assets/sidebar-radio-checked.svg");
 }
 
 .sidebar .radio:prelight {
-    background-image: url("assets/sidebar-radio-prelight.png");
+    background-image: url("assets/sidebar-radio-prelight.svg");
 }
 
 .sidebar .radio:active:selected,
 .sidebar .radio:active:selected:focused {
-    background-image: url("assets/sidebar-radio-selected.png");
+    background-image: url("assets/sidebar-radio-selected.svg");
 }
 
 .sidebar .radio:selected:prelight,
 .sidebar .radio:selected:focused {
-    background-image: url("assets/sidebar-radio-selected-prelight.png");    
+    background-image: url("assets/sidebar-radio-selected-prelight.svg");    
 }
 
 */
@@ -229,54 +230,54 @@ GtkScale.progressbar.vertical {
 GtkScale.slider,
 GtkScale.slider.horizontal,
 GtkScale.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-hor.png");
+    background-image: url("assets/scale-slider-hor.svg");
 }
 
 GtkScale.slider:insensitive,
 GtkScale.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-insensitive-hor.png");
+    background-image: url("assets/scale-slider-insensitive-hor.svg");
 }
 
 GtkScale.slider.vertical {
-    background-image: url("assets/scale-slider-ver.png");
+    background-image: url("assets/scale-slider-ver.svg");
 }
 
 GtkScale.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-insensitive-ver.png");
+    background-image: url("assets/scale-slider-insensitive-ver.svg");
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal,
 GtkScale.scale-has-marks-above.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-marks-above-horizontal.png");
+    background-image: url("assets/scale-slider-marks-above-horizontal.svg");
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-marks-above-horizontal-insensitive.png");
+    background-image: url("assets/scale-slider-marks-above-horizontal-insensitive.svg");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical {
-    background-image: url("assets/scale-slider-marks-above-vertical.png");
+    background-image: url("assets/scale-slider-marks-above-vertical.svg");
 }
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-marks-above-vertical-insensitive.png");
+    background-image: url("assets/scale-slider-marks-above-vertical-insensitive.svg");
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal,
 GtkScale.scale-has-marks-below.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-marks-below-horizontal.png");
+    background-image: url("assets/scale-slider-marks-below-horizontal.svg");
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
-    background-image: url("assets/scale-slider-marks-below-horizontal-insensitive.png");
+    background-image: url("assets/scale-slider-marks-below-horizontal-insensitive.svg");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical {
-    background-image: url("assets/scale-slider-marks-below-vertical.png");
+    background-image: url("assets/scale-slider-marks-below-vertical.svg");
 }
 
 GtkScale.scale-has-marks-below.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-marks-below-vertical-insensitive.png");
+    background-image: url("assets/scale-slider-marks-below-vertical-insensitive.svg");
 }
 
 
@@ -300,7 +301,7 @@ GtkSwitch.trough:backdrop {
     background: none;
     color: transparent;
     box-shadow: none;
-    background-image: url("assets/switch-off.png");
+    background-image: url("assets/switch-off.svg");
     background-size: 56px 20px;
     background-position: center center;
     background-repeat: no-repeat;
@@ -308,43 +309,43 @@ GtkSwitch.trough:backdrop {
 }
 
 GtkSwitch.trough {
-    background-image: url("assets/switch-off.png");
+    background-image: url("assets/switch-off.svg");
 }
 
 GtkSwitch.trough:active {
-    background-image: url("assets/switch-on.png");
+    background-image: url("assets/switch-on.svg");
 }
 
 GtkSwitch.trough:insensitive {
-    background-image: url("assets/switch-off-disabled.png");
+    background-image: url("assets/switch-off-disabled.svg");
 }
 
 GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/switch-on-disabled.png");
+    background-image: url("assets/switch-on-disabled.svg");
 }
 
 .toolbar.menubar GtkSwitch.trough,
 .primary-toolbar .toolbar GtkSwitch.trough,
 .primary-toolbar.toolbar GtkSwitch.trough {
-    background-image: url("assets/switch-dark-off.png");
+    background-image: url("assets/switch-dark-off.svg");
 }
 
 .toolbar.menubar GtkSwitch.trough:active,
 .primary-toolbar .toolbar GtkSwitch.trough:active,
 .primary-toolbar.toolbar GtkSwitch.trough:active {
-    background-image: url("assets/switch-dark-on.png");
+    background-image: url("assets/switch-dark-on.svg");
 }
 
 .toolbar.menubar GtkSwitch.trough:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar.toolbar GtkSwitch.trough:insensitive {
-    background-image: url("assets/switch-dark-off-disabled.png");
+    background-image: url("assets/switch-dark-off-disabled.svg");
 }
 
 .toolbar.menubar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar.toolbar GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/switch-dark-on-disabled.png");
+    background-image: url("assets/switch-dark-on-disabled.svg");
 }
 
 GtkSwitch.slider {
@@ -354,4 +355,3 @@ GtkSwitch.slider {
     color: transparent;
     box-shadow: none;
 }
-
