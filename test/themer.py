@@ -108,8 +108,7 @@ class Window():
         if _iter:
             value = combo.get_model().get_value(_iter, 0)
             #self.default_settings.set_property("gtk-theme-name", value)
-            #os.system('gsettings set org.gnome.desktop.interface gtk-theme %s' % value)
-            os.system('gsettings set org.gnome.desktop.wm.preferences theme %s' % value)
+            os.system('gsettings set org.gnome.desktop.interface gtk-theme %s' % value)
 
 if __name__ == "__main__":
     win = Window()

@@ -164,8 +164,8 @@ GtkLabel:insensitive {
 
 .tooltip {
     padding: 2px 2px;
-    background-image: -gtk-gradient (radial,center 0,0,center0,0.8
-        from (alpha (mix (@tooltip_bg_color,0.86)));
+    /*background-image: -gtk-gradient (radial,center 0,0,center 0,0.8*/
+        /*from (alpha (mix (@tooltip_bg_color,0.86))));*/
 	border-width: 1px;
     border-style: 		solid;
 	border-radius: 10px;
@@ -2048,7 +2048,7 @@ GtkIconView.view.cell:selected:focused {
 
 .view:active, 
 .view *:active {
-    background-color: none;
+    background-color: @transparent;
     color: @theme_text_color;
 	text-shadow: 0px 0px @theme_shadow_color;
 

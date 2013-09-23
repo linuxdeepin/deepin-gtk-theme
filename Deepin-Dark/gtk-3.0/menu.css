@@ -218,7 +218,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem *:hover, 
 .menuitem:hover,
 .menu .menuitem:hover {
-    color: #FFF
+    color: #FFF;
    	text-shadow: 0px 1px @theme_selected_shadow_color;
 }
 

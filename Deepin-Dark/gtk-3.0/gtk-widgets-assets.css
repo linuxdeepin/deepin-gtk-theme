@@ -54,9 +54,9 @@ GtkCheckButton:selected:focus {
     background-image: url("assets/checkbox-checked-hover.svg");
 }
 
-.check:active:pressed,
-.check row:selected:active:pressed,
-.check row:selected:focused:active:pressed {
+.check:active,
+.check row:selected:active,
+.check row:selected:focused:active {
     background-image: url("assets/checkbox-checked-pressed.svg");
 }
 
@@ -73,7 +73,7 @@ GtkCheckButton:selected:focus {
     background-image: url("assets/checkbox-mixed.svg");
 }
 
-.check:inconsistent:acitve:hover
+.check:inconsistent:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focused:active:hover {
     background-image: url("assets/checkbox-mixed-hover.svg");
@@ -93,7 +93,7 @@ GtkCheckButton:selected:focus {
 }
 .radio:hover,
 .radio row:selected:hover,
-.radio row:selected:focused:hover, {
+.radio row:selected:focused:hover {
     background-image: url("assets/radio-unselected-hover.svg");
 
 }

@@ -15,7 +15,7 @@
 }
 
 .scrollbar.trough.vertical {
-	box-shadow: 0px;
+	/**box-shadow: 0px;**/
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@theme_bg_color, 1.00)),
                                      to (shade (@theme_bg_color, 1.10)));
