@@ -2,6 +2,7 @@
  * Check and Radio items *
  *************************/
 
+/**
 .check,
 .check:hover,
 .radio,
@@ -22,14 +23,15 @@ GtkCheckButton:selected,
 GtkCheckButton:selected:focus {
     background-color: transparent;
 }
+**/
 
 .check,
 .check row:selected,
 .check row:selected:focused {
     background-image: url("assets/checkbox-unchecked.png");
 }
+
 .check:hover,
-.check row:hover,
 .check row:selected:hover,
 .check row:selected:focused:hover {
     background-image: url("assets/checkbox-unchecked-hover.png");
@@ -53,7 +55,14 @@ GtkCheckButton:selected:focus {
 .check row:selected:focused:active:hover {
     background-image: url("assets/checkbox-checked-hover.png");
 
+
+/**
+.check:active,
+.check row:selected:active,
+.check row:selected:focused:active {
+    background-image: url("assets/checkbox-checked-pressed.svg");
 }
+**/
 
 .check:active:insensitive,
 .check row:selected:active:insensitive,
@@ -125,6 +134,7 @@ GtkCheckButton:selected:focus {
 
 .radio:inconsistent:active:hover,
 .radio row:selected:inconsistent:active:hover,
+
 .radio row:selected:focused:inconsistent:active:hover {
     background-image: url("assets/radio-mixed-hover.png");
 }
@@ -132,7 +142,10 @@ GtkCheckButton:selected:focus {
 .radio:inconsistent:insensitive,
 .radio row:selected:inconsistent:insensitive,
 .radio row:selected:focused:inconsistent:insensitive {
-    background-image: url("assets/radio-mixed-insensitive.png");
+
+    background-image: url("assets/radio-mixed-insensitive.svg");
+
+
     background-color: transparent;
 }
 

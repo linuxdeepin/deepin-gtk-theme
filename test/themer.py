@@ -5,7 +5,9 @@ from gi.repository import Gtk
 import os
 import logging
 
-UI_FILE = "preview.ui"
+current_dir = os.path.dirname(os.path.realpath(__file__))
+
+UI_FILE = os.path.join(current_dir, "preview.ui")
 
 def walk_directories(dirs, filter_func):
     valid = []
