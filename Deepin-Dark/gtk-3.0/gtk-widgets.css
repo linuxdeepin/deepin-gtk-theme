@@ -28,7 +28,7 @@
     -GtkProgressBar-min-vertical-bar-width: 14;
 
     -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 1;
+    -GtkScrolledWindow-scrollbars-within-bevel: 0;
 
     -GtkSeparatorMenuItem-horizontal-padding: 0;
 
@@ -787,10 +787,10 @@ GtkLevelBar.vertical {
 
 /* only render frames in a GtkScrolledWindow */
 GtkScrolledWindow.frame {
-	border-width:  1px;    
+	border-width:  0px;    
 	border-radius: 0;
     border-style:  solid;	
-    border-color:  shade (@theme_bg_color, 0.85);
+    border-color:  #FFF;
     padding: 0px;
 }
 
@@ -1709,13 +1709,13 @@ MathWindow .button *:active:hover,
     color:  @entry_text_dark_color;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@bg_color, 0.85)),
+                                     from (shade(@bg_color, 0.9)),
                                      color-stop (0.20, shade(@bg_color, 0.98)),
                                      to   (shade(@base_color, 1.00)));
 	/* outer */
     border-width: 1px;
     border-style: solid;
-    border-radius: 8px;
+    border-radius: 3px;
     border-top-color: 		transparent;
     border-right-color: 	alpha(#fff, 0.02);
     border-left-color: 		alpha(#fff, 0.02);
@@ -1784,7 +1784,7 @@ background-image: -gtk-gradient (linear,
                                      to (shade (@button_bg_active, 1.35)));
 
     border-width: 1px;
-    border-radius: 4px;
+    border-radius: 3px;
     border-style: solid;
     border-color: shade(@button_bg_active, 1.00);
     border-image: none;    
@@ -3425,24 +3425,27 @@ GtkProgressBar.osd.progressbar {
 
 .notebook tab.top {
     padding: 3px 7px;
-    border-bottom-width: 0px; 
+    border-bottom-width: 1px; 
 }
 
 .notebook tab.bottom {
     padding: 3px 7px;
-    border-top-width: 0px; 
+    border-top-width: 1px; 
+
 }
 
 .notebook tab.right {
     padding: 3px 7px;
-    border-left-width: 0px; 
+    border-left-width: 1px; 
 }
 
 .notebook tab.left {
     padding: 3px 7px;
-    border-right-width: 0px; 
+    border-right-width: 1px; 
 }
-
+.notebook tab {
+border:5px;
+}
 .notebook tab *:insensitive {
 	text-shadow: none;
 }

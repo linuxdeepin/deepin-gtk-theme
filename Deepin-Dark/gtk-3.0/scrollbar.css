@@ -23,7 +23,7 @@
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-left-color: shade (@theme_bg_color, 0.96);
+	border-left-color: #FFF;
 
 }
 
@@ -38,7 +38,7 @@
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-top-color: shade (@theme_bg_color, 0.96);
+	border-top-color: #FFF;
 }
 
 .scrollbar.slider,
