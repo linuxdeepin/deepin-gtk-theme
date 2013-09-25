@@ -28,7 +28,7 @@
     -GtkProgressBar-min-vertical-bar-width: 14;
 
     -GtkScrolledWindow-scrollbar-spacing: 0;
-    -GtkScrolledWindow-scrollbars-within-bevel: 0;
+    -GtkScrolledWindow-scrollbars-within-bevel: 1;
 
     -GtkSeparatorMenuItem-horizontal-padding: 0;
 
@@ -164,8 +164,8 @@ GtkLabel:insensitive {
 
 .tooltip {
     padding: 2px 2px;
-    /*background-image: -gtk-gradient (radial,center 0,0,center 0,0.8*/
-        /*from (alpha (mix (@tooltip_bg_color,0.86))));*/
+    background-image: -gtk-gradient (radial,center 0,0,center0,0.8
+        from (alpha (mix (@tooltip_bg_color,0.86)));
 	border-width: 1px;
     border-style: 		solid;
 	border-radius: 10px;
@@ -444,12 +444,12 @@ GtkStatusbar {
 
     background-image:                             
                        linear-gradient(to bottom, 
-                                      #ffffff,
+                                      #d6f0ff,
                                       #afe2ff  48%,
-                                      #5fc5ff 48%,
-                                      #5fc5ff 50%,
-                                      #5fc5ff 50%,
-                                      #e1f4ff
+                                      #86d3ff 48%,
+                                      #86d3ff 50%,
+                                    
+                                      #d6f0ff
                                       );
 
 
@@ -462,10 +462,10 @@ GtkStatusbar {
     border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    border-top-color: 		#1684c4;
-    border-left-color: 		#1684c4;
-    border-right-color: 	#1684c4;
-    border-bottom-color: 	#1684c4;
+    border-top-color: 		#45a8e0;
+    border-left-color: 		#45a8e0;
+    border-right-color: 	#45a8e0;
+    border-bottom-color: 	#45a8e0;
 
 	color: 			@theme_selected_fg_color;
 	text-shadow:  1px 1px @theme_selected_shadow_color;
@@ -536,8 +536,8 @@ GtkProgressBar,
 .trough.vertical {
     background-image: -gtk-gradient (linear,
                                       left top, right top,
-			                         from (shade (@bg_color, 0.94)),
-                                     color-stop (0.98, shade (@bg_color, 0.99)),
+			                         from (shade (@base_color, 0.94)),
+                                     color-stop (0.98, shade (@base_color, 0.99)),
 			                         to (shade (@bg_color, 1.00)));
     border-radius:5px;
 	text-shadow:	none;
@@ -787,10 +787,10 @@ GtkLevelBar.vertical {
 
 /* only render frames in a GtkScrolledWindow */
 GtkScrolledWindow.frame {
-	border-width:  0px;    
+	border-width:  1px;    
 	border-radius: 0;
     border-style:  solid;	
-    border-color:  #FFF;
+    border-color:  shade (@theme_bg_color, 0.85);
     padding: 0px;
 }
 
@@ -1071,7 +1071,7 @@ GtkComboBox.combobox-entry .button *:prelight {
     border-width: 1px 0px 1px 1px; /* remove rightr */
     border-top-color: 		shade(@toolbar_gradient_base, 0.60);
     border-left-color: 		shade(@toolbar_gradient_base, 0.70);
-    border-bottom-color: 	#000;
+    border-bottom-color: 	shade(@toolbar_gradient_base, 0.80);
 
     box-shadow: inset  0px  3px alpha(#000, 0.02),
 				inset  0px  2px alpha(#000, 0.04),
@@ -1698,7 +1698,7 @@ MathWindow .button *:active:hover,
                                      color-stop (0.15, shade(@toolbar_gradient_base, 1.10)),
                                      to   (shade(@toolbar_gradient_base, 1.15)));
 }
-	/* 定义输入框 */
+/****定义输入框****/
 .toolbar .entry,
 .toolbar.menubar .entry,
 .toolbar .raised .entry,
@@ -1709,8 +1709,8 @@ MathWindow .button *:active:hover,
     color:  @entry_text_dark_color;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@bg_color, 0.9)),
-                                     color-stop (0.20, shade(@bg_color, 0.98)),
+                                     from (shade(@base_color, 0.95)),
+                                     color-stop (0.20, shade(@base_color, 0.98)),
                                      to   (shade(@base_color, 1.00)));
 	/* outer */
     border-width: 1px;
@@ -1742,14 +1742,14 @@ MathWindow .button *:active:hover,
 .primary-toolbar.toolbar .entry:focused {
 background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@bg_color, 0.95)),
-                                     color-stop (0.25, shade(@bg_color, 0.98)),
+                                     from (shade(@base_color, 0.95)),
+                                     color-stop (0.25, shade(@base_color, 0.98)),
                                      to   (shade(@base_color, 1.00)));
 	/* outer */
-    border-top-color: 		alpha(#000,0.4);
-    border-right-color: 	alpha(#000,0.4);
-    border-left-color: 		alpha(#000,0.4);
-    border-bottom-color: 	alpha(#000,0.4);
+    border-top-color: 		alpha (#000,0.5);
+    border-right-color: 	alpha (#000,0.5);
+    border-left-color: 		alpha (#000,0.5);
+    border-bottom-color: 	alpha (#000,0.5);
 
 	/* border */
     box-shadow: inset  0px  3px alpha(#000, 0.03),
@@ -1784,7 +1784,7 @@ background-image: -gtk-gradient (linear,
                                      to (shade (@button_bg_active, 1.35)));
 
     border-width: 1px;
-    border-radius: 3px;
+    border-radius: 4px;
     border-style: solid;
     border-color: shade(@button_bg_active, 1.00);
     border-image: none;    
@@ -2048,7 +2048,7 @@ GtkIconView.view.cell:selected:focused {
 
 .view:active, 
 .view *:active {
-    background-color: @transparent;
+    background-color: transparent;
     color: @theme_text_color;
 	text-shadow: 0px 0px @theme_shadow_color;
 
@@ -3425,27 +3425,24 @@ GtkProgressBar.osd.progressbar {
 
 .notebook tab.top {
     padding: 3px 7px;
-    border-bottom-width: 1px; 
+    border-bottom-width: 0px; 
 }
 
 .notebook tab.bottom {
     padding: 3px 7px;
-    border-top-width: 1px; 
-
+    border-top-width: 0px; 
 }
 
 .notebook tab.right {
     padding: 3px 7px;
-    border-left-width: 1px; 
+    border-left-width: 0px; 
 }
 
 .notebook tab.left {
     padding: 3px 7px;
-    border-right-width: 1px; 
+    border-right-width: 0px; 
 }
-.notebook tab {
-border:5px;
-}
+
 .notebook tab *:insensitive {
 	text-shadow: none;
 }
@@ -3491,4 +3488,5 @@ border:5px;
                   alpha(black, 0.13) 
                   alpha(black, 0.13); 
 }
+
 

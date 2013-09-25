@@ -194,9 +194,9 @@ style "button" {
     xthickness	= 3
     ythickness	= 3
 
-    bg[NORMAL]              = shade (0.86, @base_color)
-    bg[PRELIGHT]            = shade (0.885, @base_color)    
-	bg[ACTIVE]              = shade (1.35, @selected_bg_color)	# Pulsado
+    bg[NORMAL]              = shade (0.96, @base_color)
+    bg[PRELIGHT]            = "#addff3"   
+	bg[ACTIVE]              = "#67c8f1"	
 	bg[SELECTED]            = shade (1.00, @selected_bg_color)	# 
 	bg[INSENSITIVE]         = shade (0.95, @bg_color)
 
@@ -205,7 +205,7 @@ style "button" {
 	engine "murrine" {
 		contrast                = 0.85
 		roundness				= 2
-		gradient_shades         = {1.15,1.07,1.08,1.05}
+		gradient_shades         = {1.15,1.07,1.08,1.25}
 		border_shades			= {1.10, 0.95}
 
 		lightborderstyle		= 1 # 0 = top side, 1 = all sides
@@ -306,7 +306,7 @@ style "checkbutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.svg"
+			file = "assets/null.png"
 		}
 	}
 }
@@ -390,7 +390,7 @@ style "radiobutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.svg"
+			file = "assets/null.png"
 		}
 	}
 }
@@ -416,7 +416,7 @@ style "entry" = "default" { # text
 	engine "murrine" {
 		contrast			= 0.6
 		roundness			= 2		
-		border_shades		= {1.2, 1.0}
+		border_shades		= {1.0, 1.0}
 		focusstyle  		= 3
 	}
 }
@@ -463,7 +463,7 @@ style "menubar" {
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
 
-    bg[NORMAL]          = shade (1.00, @theme_bg_dark_color)
+    bg[NORMAL]          = "#3e3e3e"
     
 	engine "murrine" {
 		gradient_shades     	= {1.00,0.97,0.97,0.94}
@@ -483,7 +483,7 @@ style "menu" {
 	bg[NORMAL]			= shade (0.88, @theme_bg_dark_color)
 
 	engine "murrine" {
-		gradient_shades		= {1.02, 1.0, 1.0, 0.98}
+		gradient_shades		= {1.08, 1.0, 1.0, 0.98}
 		roundness		    = 1 # 0 = squared 
 	}
 }
@@ -501,10 +501,10 @@ style "menu_item_white" {
 	text[PRELIGHT]      = @selected_fg_color            			# Color check/radio menu
 
     bg[PRELIGHT]      	= shade (1.00, @selected_bg_color)
-    bg[SELECTED]      	= shade (0.01, @selected_bg_color)
+    bg[SELECTED]      	= "#62bded"
 
 	engine "murrine" {
-        gradient_shades		= {0.90, 0.95, 0.95, 1.00}
+        gradient_shades		= {1.00, 0.98, 0.95, 0.90}
 		border_shades 		= {1.40, 1.0}
         roundness           = 1
         contrast            = 0.8           # Contraste separadores
@@ -555,17 +555,17 @@ style "notebook" {
 }
 
 style "progressbar" {
-	xthickness	= 1
-	ythickness	= 1
+	xthickness	= 0
+	ythickness	= 0
 
-	bg[SELECTED]		=  mix   (0.90, @selected_bg_color, @bg_color)	# Pulsado
+	bg[SELECTED]		=  mix   (0.80, "#d6f0ff", "#86d3ff")	# Pulsado
 
 	engine "murrine" {
-		gradient_shades		= {0.90, 1.13, 1.13, 1.18}
-        border_shades		= {0.8, 1.4}
-		roundness			= 4
-		glowstyle				= 4 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
-        glow_shade              = 1.20
+		gradient_shades		= {0.95, 0.9, 0.83,0.98}
+        border_shades		= {0.8, 0.8}
+		roundness			= 3
+		glowstyle				= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+        glow_shade              = 1.50
 	}
 }
 
@@ -579,16 +579,16 @@ style "scale" { # slider
 	xthickness	= 2
 	ythickness	= 2
 
-	bg[SELECTED]            = shade (1.20, @selected_bg_color)
+	bg[SELECTED]            = shade (1.20, @bg_color)
 
 	engine "murrine" {
-		sliderstyle			= 2 						# forma del slider
-		contrast 			= 0.4						# borde de todos los elementos
-		gradient_shades 	= {1.1, 1.0, 1.0, 0.85}		# gradiente del slider
+		sliderstyle			= 4 						# forma del slider
+		contrast 			= 0.5						# borde de todos los elementos
+		gradient_shades 	= {1.1, 0.95, 0.95, 0.99}		# gradiente del slider
 		border_shades 		= {0.9, 0.8}				# borde del slider
 		roundness 			= 2
 		lightborder_shade 	= 1.30						# brillo del trough-higlight
-		trough_border_shades = {0.9, 1.12}
+		trough_border_shades = {1.0, 1.0}
 		glow_shade = 1.0
 		reliefstyle = 0
 #		shadow_shades = { 1.0, 0.9 }

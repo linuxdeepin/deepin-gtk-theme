@@ -15,7 +15,7 @@
 }
 
 .scrollbar.trough.vertical {
-	/**box-shadow: 0px;**/
+	box-shadow: none;
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@theme_bg_color, 1.00)),
                                      to (shade (@theme_bg_color, 1.10)));
@@ -23,7 +23,7 @@
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-left-color: #FFF;
+	border-left-color: shade (@theme_bg_color, 0.96);
 
 }
 
@@ -38,7 +38,7 @@
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-top-color: #FFF;
+	border-top-color: shade (@theme_bg_color, 0.96);
 }
 
 .scrollbar.slider,

@@ -19,13 +19,13 @@ NautilusWindow .primary-toolbar.toolbar {
     background-image: none,
                       -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@base_color, 0.9)),
-                                     color-stop (0.20, shade(@base_color, 0.97)),
+                                     from (shade(@base_color, 1.0)),
+                                     color-stop (0.20, shade(@base_color, 1.0)),
                                      to   (shade(@bg_color, 1.00)));
     background-repeat: repeat;
     background-position: top left;
 
-    border-width: 0px 0px 1px 0px;
+    border-width: 0px 0px 0px 0px;
     border-radius: 0px;
     border-style: solid;
     border-color: alpha(#000,0.3);
@@ -122,9 +122,8 @@ NautilusWindow .sidebar .scrollbar.trough.vertical {
 }
 
 NautilusWindow .sidebar .frame {
-    border-width:0px;
-    border-style: solid;	
-   border-color:#2f2f2f;
+    border-width: 0px;
+    border-style: none;	
 }
 
 
@@ -143,8 +142,7 @@ NautilusWindow .pane-separator {
 
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {
-	color: #2f2f2f;
-text-shadow:none;
+	color: shade(@theme_fg_dark_color, 1.00);
 
 }
 
@@ -152,8 +150,8 @@ text-shadow:none;
 
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
-	color: #000;
-	text-shadow: alpha(#base_color,0.3);
+    color: shade(@theme_text_dark_color, 0.95);
+    text-shadow: 1px 1px @theme_shadow_dark_color;
 }
 
 
