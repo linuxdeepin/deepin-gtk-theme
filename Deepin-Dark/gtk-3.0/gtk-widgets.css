@@ -1770,7 +1770,7 @@ background-image: -gtk-gradient (linear,
 .toolbar .raised.entry:selected,
 .primary-toolbar .toolbar .entry:selected,
 .primary-toolbar.toolbar .entry:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: shade (@theme_selected_bg_color,0.4);
     color: @theme_selected_fg_color;
 }
 
