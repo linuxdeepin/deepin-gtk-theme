@@ -1,0 +1,14 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Deepin-Dark
+Comment=Gtk theme and Metacity theme for linuxdeepin
+Encoding=UTF-8
+
+Name[en_US]=Deepin-Dark
+
+[X-GNOME-Metatheme]
+GtkTheme=Deepin-Dark
+MetacityTheme=Deepin-Dark
+IconTheme=Faenza-Ambiance
+CursorTheme=DMZ-Black
+ButtonLayout=menu:minimize,maxmize,close

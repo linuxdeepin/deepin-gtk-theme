@@ -385,18 +385,14 @@ NautilusTrashBar,
 NautilusXContentBar.info,
 NautilusSearchBar.info,
 NautilusQueryEditor.info {
-	background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@nautilus_cluebar_color, 1.00)),
-                                     to   (shade(@nautilus_cluebar_color, 1.00)));
+	background-image:none;
     background-repeat: repeat;
     background-position: top left;
 
     border-radius: 0px;
     border-width: 0px 0px 1px 0px;
     border-style: solid;
-    border-color: transparent @nautilus_cluebar_color shade(@nautilus_cluebar_color, 0.75);
+    border-color: alpha (#000,0.1);
 
     box-shadow: inset  0px  1px alpha(#fff, 0.06),
                 inset  1px  0px alpha(#fff, 0.06),
@@ -458,13 +454,12 @@ NemoTrashBar .button,
 NemoTrashBar .button:hover,
 NautilusTrashBar .button,
 NautilusTrashBar .button:hover {
-	background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@nautilus_cluebar_color, 1.08)),
-                                     color-stop (0.45, shade(@nautilus_cluebar_color, 1.02)),
-                                     color-stop (0.52, shade(@nautilus_cluebar_color, 0.96)),
-                                     to   (shade(@nautilus_cluebar_color, 0.92)));
+	background-image: -gtk-gradient (linear,
+                                 0.45 top, 0.55 bottom,
+                                     from (alpha (@base_color, 1.30)),
+                                     color-stop (0.48, alpha (#d4effb, 1.0)),
+                                     color-stop (0.5, alpha (#c3e9f9, 1.0)),
+                                     to (alpha (#e9f7fc, 1.0)));
     background-repeat: repeat;
     background-position: top left;
 
@@ -492,11 +487,11 @@ NautilusTrashBar .button:active,
 NautilusTrashBar .button:hover:active {
 /* .button:hover:active */
 	background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (shade(@nautilus_cluebar_color, 1.00)),
-                                     color-stop (0.45, shade(@nautilus_cluebar_color, 0.95)),
-                                     color-stop (0.52, shade(@nautilus_cluebar_color, 0.91)),
-                                     to   (shade(@nautilus_cluebar_color, 0.87)));
+                                      0.45 top, 0.55 bottom,
+                                     from (alpha (@base_color, 1.30)),
+                                     color-stop (0.48, alpha (#86d3f4, 1.0)),
+                                     color-stop (0.5, alpha (#58C3F0, 1.0)),
+                                     to (alpha (@base_color, 1.0)));
 	/* outer */
     border-top-color: 		alpha(@focused_entry_border, 0.20);
     border-right-color: 	alpha(@focused_entry_border, 0.25);
@@ -530,10 +525,10 @@ NautilusTrashBar .button:insensitive {
 
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@nautilus_cluebar_color, 0.95)),
-                                     color-stop (0.45, shade(@nautilus_cluebar_color, 0.90)),
-                                     color-stop (0.52, shade(@nautilus_cluebar_color, 0.88)),
-				                     to   (shade(@nautilus_cluebar_color, 0.89)));
+                                     from (shade(@nautilus_cluebar_color, 1.2)),
+                                     color-stop (0.45, shade(@nautilus_cluebar_color, 1.1)),
+                                     color-stop (0.52, shade(@nautilus_cluebar_color, 1.0)),
+				                     to   (shade(@nautilus_cluebar_color, 1.1)));
 
     box-shadow: inset  0px  1px shade(@nautilus_cluebar_color, 0.85),
                 inset  1px  0px shade(@nautilus_cluebar_color, 0.81),

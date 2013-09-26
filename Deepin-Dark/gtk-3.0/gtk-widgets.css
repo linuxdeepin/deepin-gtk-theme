@@ -343,8 +343,8 @@ GtkStatusbar {
 
 .entry:selected,
 .entry:selected:focused {
-    background-color: shade(@theme_selected_bg_color,0.4);
-    color: @theme_selected_fg_color;
+    background-color: alpha(#000,0.7);
+    color: #FFF;
 }
 
 .entry.progressbar {
@@ -851,9 +851,9 @@ GtkScrolledWindow.frame {
 	background-image: -gtk-gradient (linear,
                                      0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#58C3F0, 0.35)),
-                                     color-stop (0.5, alpha (#58C3F0, 0.6)),
-                                     to (alpha (@base_color, 0.89)));
+                                     color-stop (0.48, alpha (#d4effb, 1.0)),
+                                     color-stop (0.5, alpha (#c3e9f9, 1.0)),
+                                     to (alpha (#e9f7fc, 1.0)));
 
     box-shadow: inset  0px  2px alpha(#fff, 0.11),
                 inset  2px  0px alpha(#fff, 0.09),
@@ -870,12 +870,12 @@ GtkScrolledWindow.frame {
 .button:hover:active,
 .button:focus:active {
 
-	background-image: -gtk-gradient (linear,
+	background-image:  -gtk-gradient (linear,
                                       0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#58C3F0, 0.75)),
+                                     color-stop (0.48, alpha (#86d3f4, 1.0)),
                                      color-stop (0.5, alpha (#58C3F0, 1.0)),
-                                     to (alpha (@base_color, 0.99)));
+                                     to (alpha (@base_color, 1.0)));
     border-top-color: 		transparent;
     border-left-color: 		alpha (#000, 0.01);
     border-right-color: 	alpha (#000, 0.01);
@@ -1691,7 +1691,7 @@ MathWindow .button *:active:hover,
 
 .toolbar .entry {
     padding: 4px 4px 4px 6px;
-    color:  shade(@toolbar_fg_color, 1.0);
+    color:  #FFF;
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@toolbar_gradient_base, 0.95)),
@@ -1770,8 +1770,8 @@ background-image: -gtk-gradient (linear,
 .toolbar .raised.entry:selected,
 .primary-toolbar .toolbar .entry:selected,
 .primary-toolbar.toolbar .entry:selected {
-    background-color: shade (@theme_selected_bg_color,0.1);
-    color: @theme_selected_fg_color;
+    background-color: alpha (#000,0.7);
+    color: #FFF;
 }
 
 /* progressbars on primary toolbar entries are special */
@@ -2086,7 +2086,7 @@ column-header .button:active:hover {
 	background-image: -gtk-gradient (linear,
                                      0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#58C3F0, 0.35)),
+                                     color-stop (0.48, alpha (#d4effb, 1.0)),
                                      color-stop (0.5, alpha (#58C3F0, 0.6)),
                                      to (alpha (@base_color, 0.89)));
     border-width: 1px 1px 1px 0px;
