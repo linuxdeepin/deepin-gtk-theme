@@ -113,7 +113,7 @@ GtkClutterOffscreen {
 
 *:selected,
 *:selected:focus {
-    background-color: shade(@theme_selected_bg_color, 1.0);
+    background-color: shade(@theme_selected_bg_color, 0.5);
     color: @theme_selected_fg_color;
 }
 
@@ -343,7 +343,7 @@ GtkStatusbar {
 
 .entry:selected,
 .entry:selected:focused {
-    background-color: @theme_selected_bg_color;
+    background-color: shade(@theme_selected_bg_color,0.4);
     color: @theme_selected_fg_color;
 }
 
@@ -1770,7 +1770,7 @@ background-image: -gtk-gradient (linear,
 .toolbar .raised.entry:selected,
 .primary-toolbar .toolbar .entry:selected,
 .primary-toolbar.toolbar .entry:selected {
-    background-color: shade (@theme_selected_bg_color,0.4);
+    background-color: shade (@theme_selected_bg_color,0.1);
     color: @theme_selected_fg_color;
 }
 
