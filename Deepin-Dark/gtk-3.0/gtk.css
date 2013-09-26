@@ -93,7 +93,7 @@
 /* @define-color sidebar_background shade(#E1E5E8, 0.95); */
 @define-color sidebar_background #fafafa;
 @define-color sidebar_icon       #808080;
-@define-color sidebar_selected_bg shade(@theme_selected_bg_color,0.10);
+@define-color sidebar_selected_bg #cae8ff;
 @define-color sidebar_fg_color @theme_text_color;
 
 @define-color button_base shade(@base_color,0.95);
