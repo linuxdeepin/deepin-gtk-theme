@@ -465,7 +465,7 @@ style "menubar" {
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
 
-    bg[NORMAL]          = "#3e3e3e"
+    bg[NORMAL]          = "#393939"
     
 	engine "murrine" {
 		gradient_shades     	= {1.00,0.97,0.97,0.94}

@@ -542,19 +542,19 @@ style "menu_item_black" {
 	#fg[ACTIVE]          = shade (1.25, @fg_color)	# text unselected tab
 	#fg[INSENSITIVE] 	= shade (1.35, @fg_color)
 
-	engine "murrine" {
+	#engine "murrine" {
 		#gradient_shades		= {1.10,0.98,0.92,0.85}
-        gradient_shades		= {1.16,1.10,1.00,1.95}
-		lightborderstyle		= 0		
-		lightborder_shade       = 1.1
-		contrast 			= 0.5
-        highlight_shade		= 1.03
-		roundness 			= 2
-		prelight_shade		= 1.5
-		focusstyle = 2
+  #      gradient_shades		= {1.16,1.10,1.00,1.95}
+	#	lightborderstyle		= 0		
+		#lightborder_shade       = 1.1
+		#contrast 			= 0.5
+  #      highlight_shade		= 1.03
+		#roundness 			= 2
+		#prelight_shade		= 1.5
+		#focusstyle = 2
  
-	}
-}
+	#}
+#}
 ##############
 style "progressbar" {
 	xthickness	= 0
