@@ -200,7 +200,7 @@ GtkComboBox .menuitem *:hover {
                                      to   (alpha (#3babe5, 1.0)));
 
  color: #FFF;
-	text-shadow: alpha (@base_color,0.3);
+	text-shadow: none;
     border-radius: 0;
     border-image: none;
 }
@@ -219,7 +219,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:hover,
 .menu .menuitem:hover {
     color: #FFF;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+   	text-shadow: none;
 }
 
 .primary-toolbar .menuitem *:insensitive,

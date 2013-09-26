@@ -25,14 +25,14 @@
 .sidebar .view:selected:prelight {
     border-style: solid;
     border-width: 1px 1px 1px 0px;
-    border-color: shade (@sidebar_selected_bg, 0.80);
+    border-color: shade (@sidebar_selected_bg, 0.98);
 
     background-image:	 -gtk-gradient (linear,
 										left top,
 										left bottom,
-										from (shade(@sidebar_selected_bg, 0.9)),
-									 	color-stop (0.40, shade (@sidebar_selected_bg, 0.93)),
-										to   (shade(@sidebar_selected_bg, 0.95)));
+										from (shade(@sidebar_selected_bg, 1.0)),
+									 	color-stop (0.40, shade (@sidebar_selected_bg, 1.02)),
+										to   (shade(@sidebar_selected_bg,1.05)));
     color:  @theme_selected_fg_color;    
     text-shadow: 0px 1px @theme_selected_shadow_color;
 }

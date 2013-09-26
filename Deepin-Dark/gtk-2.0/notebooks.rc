@@ -1,0 +1,185 @@
+#"AUPEO-radio streaming app-inspired-GTK2"
+#Creation date: 20-03-2013
+
+style "notebook" #= "default"
+	{
+  GtkNotebook::tab-overlap 	= 2
+  GtkWidget::focus-padding = 0
+  #font_name = "6" # custom tabs font size here
+  xthickness   = 0
+  ythickness   = 0
+  fg[NORMAL] 	=  @text_color # active tab label color
+		engine "pixmap"
+			{
+#FOCUS
+				image
+					{
+						border = {1, 1, 1, 2}
+						file = "tab-focus.png"
+						function = FOCUS
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 5, 1}
+						file = "notebook.png"
+						function = BOX
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-bottom.png"
+						function = EXTENSION
+						gap_side = TOP
+						recolorable = TRUE
+						state = ACTIVE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-bottom-active.png"
+						function = EXTENSION
+						gap_side = TOP
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-left.png"
+						function = EXTENSION
+						gap_side = RIGHT
+						recolorable = TRUE
+						state = ACTIVE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-left-active.png"
+						function = EXTENSION
+						gap_side = RIGHT
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-right.png"
+						function = EXTENSION
+						gap_side = LEFT
+						recolorable = TRUE
+						state = ACTIVE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-right-active.png"
+						function = EXTENSION
+						gap_side = LEFT
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-top.png"
+						function = EXTENSION
+						gap_side = BOTTOM
+						recolorable = TRUE
+						state = ACTIVE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 1, 1}
+						file = "tab-top-active.png"
+						function = EXTENSION
+						gap_side = BOTTOM
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 5, 1}
+						file = "notebook-bottom.png"
+						function = BOX_GAP
+						gap_border = {0, 0, 0, 1}
+						gap_end_border = {0, 0, 0, 0}
+						gap_end_file = "empty-1.png"
+						gap_file = "gap-bottom.png"
+						gap_side = BOTTOM
+						gap_start_border = {0, 0, 0, 0}
+						gap_start_file = "empty-1.png"
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 1, 5, 1}
+						file = "notebook.png"
+						function = BOX_GAP
+						gap_border = {0, 0, 1, 0}
+						gap_end_border = {0, 0, 0, 0}
+						gap_end_file = "empty-1.png"
+						gap_file = "gap-top.png"
+						gap_side = TOP
+						gap_start_border = {0, 0, 0, 0}
+						gap_start_file = "empty-1.png"
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {5, 1, 1, 1}
+						file = "notebook-left.png"
+						function = BOX_GAP
+						gap_border = {1, 0, 0, 0}
+						gap_end_border = {0, 0, 0, 0}
+						gap_end_file = "empty-1.png"
+						gap_file = "gap-left.png"
+						gap_side = LEFT
+						gap_start_border = {0, 0, 0, 0}
+						gap_start_file = "empty-1.png"
+						recolorable = TRUE
+						stretch = TRUE
+					}
+
+				image
+					{
+						border = {1, 5, 1, 1}
+						file = "notebook-right.png"
+						function = BOX_GAP
+						gap_border = {0, 1, 0, 0}
+						gap_end_border = {0, 0, 0, 0}
+						gap_end_file = "empty-1.png"
+						gap_file = "gap-right.png"
+						gap_side = RIGHT
+						gap_start_border = {0, 0, 0, 0}
+						gap_start_file = "empty-1.png"
+						recolorable = TRUE
+						stretch = TRUE
+					}
+			}
+	}
+
+class "GtkNotebook" style "notebook"
+widget_class "*<GtkNotebook>.GtkLabel*" 	style "notebook" # tabs label
+
+

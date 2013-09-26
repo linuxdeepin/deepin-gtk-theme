@@ -6,6 +6,8 @@ gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#ffffff\nlink_col
 gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\ntheme_text_dark_color:#dddddd"
 gtk-color-scheme = "sidebar_background:#fafafa"
 
+include "notebooks.rc"
+
 # link_color:#4a90f9"
 gtk-auto-mnemonics	= 1
 
@@ -492,9 +494,9 @@ style "menu_item_white" {
 	xthickness	= 2
 	ythickness	= 3
 
-	fg[NORMAL] 			= shade (1.00, @theme_fg_dark_color)		# menu item normal
+	fg[NORMAL] 			= "#FFFFFF"
     fg[INSENSITIVE] 	= mix(0.70, @theme_fg_dark_color, @theme_bg_dark_color)	    # menu item deshabilitados
-	fg[PRELIGHT]		= @base_color						# menu item seleccionado
+	fg[PRELIGHT]		= "#FFFFFF"						# menu item seleccionado
 
 	text[NORMAL]        = shade (1.00, @theme_fg_dark_color)		# Color check/radio menu
 	text[INSENSITIVE] 	= mix(0.70, @theme_text_dark_color, @theme_bg_dark_color)	    
@@ -527,22 +529,22 @@ style "menu_item_black" {
         contrast            = 0.0
 	}
 }
-
-style "notebook" {
-    xthickness		= 2 
-    ythickness		= 2
+################################
+#style "notebook" {
+ #   xthickness		= 2 
+ #   ythickness		= 2
    
-	bg[NORMAL]		= shade (0.97, @bg_color)		# selected tab entire
-	bg[ACTIVE]		= shade (0.90, @bg_color)		# unselected tab
-	bg[INSENSITIVE]	= shade (0.87, @bg_color)		# disabled controls
+	#bg[NORMAL]		= shade (0.99, @base_color)		# selected tab entire
+	#bg[ACTIVE]		= shade (0.90, @base_color)		# unselected tab
+	#bg[INSENSITIVE]	= shade (0.87, @base_color)		# disabled controls
 
-	fg[NORMAL]          = @text_color				# text selected tab
-	fg[ACTIVE]          = shade (1.25, @fg_color)	# text unselected tab
-	fg[INSENSITIVE] 	= shade (1.35, @fg_color)
+	#fg[NORMAL]          = @text_color				# text selected tab
+	#fg[ACTIVE]          = shade (1.25, @fg_color)	# text unselected tab
+	#fg[INSENSITIVE] 	= shade (1.35, @fg_color)
 
 	engine "murrine" {
 		#gradient_shades		= {1.10,0.98,0.92,0.85}
-        gradient_shades		= {1.16,1.10,1.00,0.95}
+        gradient_shades		= {1.16,1.10,1.00,1.95}
 		lightborderstyle		= 0		
 		lightborder_shade       = 1.1
 		contrast 			= 0.5
@@ -553,7 +555,7 @@ style "notebook" {
  
 	}
 }
-
+##############
 style "progressbar" {
 	xthickness	= 0
 	ythickness	= 0
