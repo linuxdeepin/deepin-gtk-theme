@@ -164,8 +164,9 @@ GtkLabel:insensitive {
 
 .tooltip {
     padding: 2px 2px;
-    background-image: -gtk-gradient (radial,center 0,0,center0,0.8
-        from (alpha (mix (@tooltip_bg_color,0.86)));
+    background-image: -gtk-gradient (radial,center 0,0,center 0,0.8,
+        from (alpha (@tooltip_bg_color,0.86)),
+        to (alpha (@tooltip_bg_color,0.96)));
 	border-width: 1px;
     border-style: 		solid;
 	border-radius: 10px;

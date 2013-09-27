@@ -108,16 +108,7 @@ border-top-color: shade (@theme_mdi_border_color,0.9);
 	border-right-color: 		alpha (#000,0.2);
 	border-left-color: 		alpha (#000,0.2);
 
-}
-
- {
 	padding: 2px 4px;
-/****background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@theme_tab_dark_active1),
-                                     to   (@theme_tab_dark_active2));
-****/
     border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	border-left-color: 		alpha (#000,0.2);
@@ -141,16 +132,7 @@ TerminalWindow .notebook tab {
 border-width: 0px 1px 1px 1px;
 
 	border-top-color: 		shade(@theme_mdi_border_color, 0.5);
-}
-
- {
 	padding: 2px 4px;
-/****background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from (@theme_tab_dark_active1),
-                                     to   (@theme_tab_dark_active2));
-****/
     border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	border-left-color: 		alpha (#000,0.2);
