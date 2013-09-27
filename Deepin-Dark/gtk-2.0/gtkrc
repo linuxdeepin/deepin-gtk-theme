@@ -8,6 +8,7 @@ gtk-color-scheme = "sidebar_background:#fafafa"
 
 include "notebooks.rc"
 
+
 # link_color:#4a90f9"
 gtk-auto-mnemonics	= 1
 

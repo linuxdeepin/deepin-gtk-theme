@@ -7,6 +7,7 @@ gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\nth
 gtk-color-scheme = "sidebar_background:#fafafa"
 
 include "notebooks.rc"
+include "arrow.rc"
 
 # link_color:#4a90f9"
 gtk-auto-mnemonics	= 1
@@ -465,7 +466,7 @@ style "menubar" {
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
 
-    bg[NORMAL]          = "#3e3e3e"
+    bg[NORMAL]          = "#393939"
     
 	engine "murrine" {
 		gradient_shades     	= {1.00,0.97,0.97,0.94}
