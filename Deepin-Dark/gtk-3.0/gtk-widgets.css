@@ -126,7 +126,7 @@ GtkClutterOffscreen {
 
 *:backdrop { 
     text-shadow: none;
-    icon-shadow: none;
+    icon-shadow:none;
 }
 
 .gtkstyle-fallback {
@@ -163,19 +163,20 @@ GtkLabel:insensitive {
 }
 
 .tooltip {
-    padding: 2px 2px;
+    
     background-image: -gtk-gradient (radial,center 0,0,center 0,0.8,
         from (alpha (@tooltip_bg_color,0.86)),
         to (alpha (@tooltip_bg_color,0.96)));
 	border-width: 1px;
     border-style: 		solid;
-	border-radius: 10px;
+	border-radius: 5px;
 	border-color: 		alpha(#ffffff,0.2);
-    background-color: 	alpha(@theme_tooltip_bg_color, 0.80);
+    background-color: 	alpha(@theme_tooltip_bg_color, 0.50);
     color: 				shade(@theme_tooltip_fg_color, 1.00);
 }
 
 .tooltip * {
+padding: 2px 10px;
     background-color: transparent;
 }
 
@@ -446,11 +447,12 @@ GtkStatusbar {
     background-image:                             
                        linear-gradient(to bottom, 
                                       #d6f0ff,
-                                      #afe2ff  48%,
-                                      #86d3ff 48%,
-                                      #86d3ff 50%,
+                                     
+                                      #93d8ff 48%,
+                                      #93d8ff 48%,
+                                      #93d8ff 50%,
                                     
-                                      #d6f0ff
+                                      #9cdbff
                                       );
 
 
@@ -462,7 +464,7 @@ GtkStatusbar {
                                      
     border-width: 1px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 3px;
     border-top-color: 		#45a8e0;
     border-left-color: 		#45a8e0;
     border-right-color: 	#45a8e0;
@@ -475,12 +477,13 @@ GtkStatusbar {
 .progressbar.vertical {
     background-image: 
                        linear-gradient(to right,
-                                      #ffffff,
-                                      #afe2ff  48%,
-                                      #5fc5ff 48%,
-                                      #5fc5ff 50%,
-                                      #5fc5ff 50%,
-                                      #e1f4ff
+                                      #d6f0ff,
+                                     
+                                      #93d8ff 48%,
+                                      #93d8ff 48%,
+                                      #93d8ff 50%,
+                                    
+                                      #9cdbff
                                       );
 
 
@@ -493,7 +496,7 @@ GtkStatusbar {
 
     border-width: 1px;
     border-style: solid;
-    border-radius: 5px;
+    border-radius: 3px;
     border-top-color: 		#1684c4;
     border-left-color: 		#1684c4;
     border-right-color: 	#1684c4;
@@ -527,7 +530,7 @@ GtkProgressBar,
 
     border-style: none;
     border-width: 0px;
-    border-radius: 5px;
+    border-radius: 3px;
     box-shadow: inset  1px  1px alpha(#000, 0.15),
                 inset -1px -1px alpha(#000, 0.15);
 
@@ -1448,7 +1451,7 @@ GtkHandleBox,
     background-image: 	none;
     background-color:	alpha (@theme_base_color, 0.0);
     border-color: 		@transparent;
-    icon-shadow: 		none;
+    icon-shadow: 		0px 1px alpha(#000,0.8);
     text-shadow: 		none;
 }
 
@@ -1662,7 +1665,7 @@ MathWindow .button:hover:active,
 .toolbar NautilusPathBar .button,
 .toolbar .raised .button,
 .toolbar .raised.button {
-    icon-shadow:  1px  1px @theme_shadow_dark_color;
+    icon-shadow:  0px 1px alpha(#000,0.8);
 
 }
 
@@ -1850,7 +1853,7 @@ background-image: -gtk-gradient (linear,
 
 	color:       @theme_fg_color;
     text-shadow: 0 1px @theme_shadow_color;
-    icon-shadow: 1px 1px @theme_shadow_color;
+    icon-shadow: none;
 }
 
 .inline-toolbar.toolbar .button:active,
@@ -3399,8 +3402,8 @@ GtkProgressBar.osd.progressbar {
     border-right-color: 	shade(@notebook_border, 1.15);
 
     box-shadow: inset  0px  3px alpha(#000, 0.01),
-				inset  0px  1px alpha(#000, 0.01),
-				inset  0px  1px alpha(#000, 0.06);
+				inset  0px  0px alpha(#000, 0.01),
+				inset  0px  0px alpha(#000, 0.06);
 
     -GtkWidget-focus-line-width: 0;
 }

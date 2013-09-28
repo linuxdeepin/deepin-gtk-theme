@@ -16,7 +16,7 @@
   <distance name="left_titlebar_edge" value="6"/>
   <distance name="right_titlebar_edge" value="2"/>
   <distance name="button_width" value="20"/>
-  <distance name="button_height" value="20"/>
+  <distance name="button_height" value="30"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="2" right="0" top="0" bottom="0"/>
   <border name="button_border" left="0" right="0" top="1" bottom="1"/>
@@ -29,7 +29,7 @@
   <distance name="right_width" value="0"/>
   <distance name="bottom_height" value="0"/>
   <distance name="left_titlebar_edge" value="6"/>
-  <distance name="right_titlebar_edge" value="6"/>
+  <distance name="right_titlebar_edge" value="2"/>
   <distance name="button_width" value="24"/>
   <distance name="button_height" value="24"/>
   <distance name="title_vertical_pad" value="4"/>
@@ -179,21 +179,21 @@
 <draw_ops name="menu_button_normal">
 	<image filename="menu-focus-normal.svg"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
 <draw_ops name="menu_button_prelight">
 	<image filename="menu-focus.svg"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
 <draw_ops name="menu_button_pressed">
 	<image filename="menu-pressed.svg"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"
 		colorize="shade/gtk:bg[SELECTED]/0.85"/>
@@ -201,7 +201,7 @@
 <draw_ops name="menu_button_unfocused">
 	<image filename="menu-focus-none.svg"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -212,7 +212,7 @@
 <draw_ops name="close_button_normal">
 	<image filename="DWMWindow_CloseButton.Active_NormalImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y=" 0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -220,7 +220,7 @@
 <draw_ops name="close_button_prelight">
 	<image filename="DWMWindow_CloseButton.Active_HotImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -228,7 +228,7 @@
 <draw_ops name="close_button_pressed">
 	<image filename="DWMWindow_CloseButton.Active_PressedImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>		
 </draw_ops>
@@ -236,7 +236,7 @@
 <draw_ops name="close_button_unfocused">
 	<image filename="DWMWindow_CloseButton.Active_DisabledImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -246,7 +246,7 @@
 <draw_ops name="maximize_button_normal">
 	<image filename="DWMWindow_MaximizeButton.Active_NormalImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -254,7 +254,7 @@
 <draw_ops name="maximize_button_prelight">
 	<image filename="DWMWindow_MaximizeButton.Active_HotImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -262,7 +262,7 @@
 <draw_ops name="maximize_button_pressed">
 	<image filename="DWMWindow_MaximizeButton.Active_PressedImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -270,7 +270,7 @@
 <draw_ops name="maximize_button_unfocused">
 	<image filename="DWMWindow_MaximizeButton.Active_DisabledImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -280,7 +280,7 @@
 <draw_ops name="unmaximize_button_normal">
 	<image filename="DWMWindow_UnMaximizeButton.Active_NormalImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -288,7 +288,7 @@
 <draw_ops name="unmaximize_button_prelight">
 	<image filename="DWMWindow_UnMaximizeButton.Active_HotImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -296,7 +296,7 @@
 <draw_ops name="unmaximize_button_pressed">
 	<image filename="DWMWindow_UnMaximizeButton.Active_PressedImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -304,7 +304,7 @@
 <draw_ops name="unmaximize_button_unfocused">
 	<image filename="DWMWindow_UnMaximizeButton.Active_DisabledImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -314,7 +314,7 @@
 <draw_ops name="minimize_button_normal">
 	<image filename="DWMWindow_MinimizeButton.Active_NormalImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -322,7 +322,7 @@
 <draw_ops name="minimize_button_prelight">
 	<image filename="DWMWindow_MinimizeButton.Active_HotImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -330,7 +330,7 @@
 <draw_ops name="minimize_button_pressed">
 	<image filename="DWMWindow_MinimizeButton.Active_PressedImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>
@@ -338,7 +338,7 @@
 <draw_ops name="minimize_button_unfocused">
 	<image filename="DWMWindow_MinimizeButton.Active_DisabledImage.png"
 		x="(width - object_width) / 2"
-		y="(height - object_height) / 2"
+		y="0"
 		width="object_width"
 		height="object_height"/>
 </draw_ops>

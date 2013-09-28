@@ -246,7 +246,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_file = "assets/checkbox-unchecked-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -282,7 +282,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.svg"
+			overlay_file = "assets/checkbox-checked-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -330,7 +330,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.svg"
+			overlay_file = "assets/radio-unselected-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -366,7 +366,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/radio-selected.svg"
+			overlay_file = "assets/radio-selected-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -561,10 +561,10 @@ style "progressbar" {
 	xthickness	= 0
 	ythickness	= 0
 
-	bg[SELECTED]		=  mix   (0.80, "#d6f0ff", "#86d3ff")	# Pulsado
+	bg[SELECTED]		=  mix   (0.80, "#93d8ff", "#d6f0ff")	# Pulsado
 
 	engine "murrine" {
-		gradient_shades		= {0.95, 0.9, 0.83,0.98}
+		gradient_shades		= {0.98, 0.96, 0.95,0.97}
         border_shades		= {0.8, 0.8}
 		roundness			= 3
 		glowstyle				= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow

@@ -6,7 +6,7 @@
 
 @define-color selected_bg_color #ffffff;
 @define-color selected_fg_color #000000;
-@define-color tooltip_bg_color #000000;
+@define-color tooltip_bg_color alpha(#000000,0.8);
 @define-color tooltip_fg_color #ffffff;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
@@ -28,7 +28,7 @@
 /**********************[Mediterranean-Night-Darkest]***********************/
 @define-color theme_bg_dark_color #444444;
 /***************工具栏背景颜色***********/
-@define-color theme_fg_dark_color #e9e9e9;
+@define-color theme_fg_dark_color #d1d1d1;/****菜单栏文字和图标颜色****/
 @define-color theme_text_dark_color #dddddd;
 @define-color theme_shadow_dark_color alpha(#000, 0.50);
 @define-color theme_highlight_color alpha(#fff, 0.05);
@@ -92,7 +92,7 @@
 
 /* @define-color sidebar_background shade(#E1E5E8, 0.95); */
 @define-color sidebar_background #fafafa;
-@define-color sidebar_icon       #808080;
+@define-color sidebar_icon       #4d4d4d;
 @define-color sidebar_selected_bg #ebf3f9;
 @define-color sidebar_fg_color @theme_text_color;
 
