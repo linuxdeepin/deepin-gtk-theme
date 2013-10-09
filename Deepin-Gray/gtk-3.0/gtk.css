@@ -6,7 +6,7 @@
 
 @define-color selected_bg_color #ffffff;
 @define-color selected_fg_color #000000;
-@define-color tooltip_bg_color #000000;
+@define-color tooltip_bg_color alpha(#000000,0.8);
 @define-color tooltip_fg_color #ffffff;
 
 /* Colormap actually used by the theme, to be overridden in other css files */
@@ -15,7 +15,7 @@
 @define-color theme_text_color @text_color;
 @define-color theme_fg_color @fg_color;
 @define-color theme_shadow_color alpha(#fff, 0.3);
-@define-color theme_selected_bg_color alpha(#bbbbbb, 0.4);
+@define-color theme_selected_bg_color #c7def2;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_selected_shadow_color alpha(#fff, 0.4);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
@@ -26,25 +26,25 @@
 @define-color menu_shadow_color @theme_shadow_color;
 
 /**********************[Mediterranean-Night-Darkest]***********************/
-@define-color theme_bg_dark_color #f2f2f2;
+@define-color theme_bg_dark_color #FBFBFB;
 /***************工具栏背景颜色***********/
-@define-color theme_fg_dark_color #e9e9e9;
-@define-color theme_text_dark_color #2f2f2f;
-@define-color theme_shadow_dark_color alpha(#000, 0.50);
+@define-color theme_fg_dark_color #5F5F5F;/****菜单栏文字和图标颜色****/
+@define-color theme_text_dark_color #dddddd;
+@define-color theme_shadow_dark_color alpha(#fff, 0.50);
 @define-color theme_highlight_color alpha(#fff, 0.05);
-@define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.68);
+@define-color theme_button_border_dark shade(@theme_bg_dark_color, 0.78);
 @define-color theme_entry_border_dark @theme_button_border_dark;
 @define-color theme_path_bg_color shade(@theme_bg_dark_color, 0.90);
 @define-color theme_path_active_color shade(@theme_bg_dark_color, 0.78);
-@define-color theme_tab_dark_active1 shade(@theme_bg_dark_color, 0.80);
-@define-color theme_tab_dark_active2 shade(@theme_tab_dark_active1, 1.80);
-@define-color theme_mdi_border_color shade(@theme_bg_dark_color, 0.70);
+@define-color theme_tab_dark_active1 alpha(#92c3ed,0.5);
+@define-color theme_tab_dark_active2 alpha(@theme_tab_dark_active1, 0.8);
+@define-color theme_mdi_border_color alpha(@000, 0.20);
 
 @define-color menu_bg_dark_color shade(@theme_bg_dark_color, 0.95);
 @define-color menu_fg_dark_color shade(@theme_fg_dark_color, 1.00);
 @define-color menu_shadow_dark_color alpha(#000, 0.30);
-@define-color menu_line_dark_color shade(@theme_bg_dark_color, 0.78);
-@define-color menu_line_light_color shade(@theme_bg_dark_color, 1.12);
+@define-color menu_line_dark_color alpha(#000,0.1);
+@define-color menu_line_light_color alpha(#000,0.00);
 /**************************************************************************/
 
 @define-color theme_tab_active1 shade(@theme_base_color, 0.80);
@@ -68,7 +68,7 @@
 @define-color question_fg_color rgb (97, 122, 214);
 @define-color question_bg_color rgb (138, 173, 212);
 @define-color error_fg_color rgb (106, 18, 18);
-@define-color error_bg_color rgb (240, 54, 54);
+@define-color error_bg_color #f0925a;
 
 @define-color os_chrome_bg_color @theme_bg_dark_color;
 @define-color os_chrome_fg_color @theme_fg_dark_color; 
@@ -91,10 +91,10 @@
 @define-color focused_entry_inset alpha (#d7e4f1, 0.50);
 
 /* @define-color sidebar_background shade(#E1E5E8, 0.95); */
-@define-color sidebar_background #fafafa;
-@define-color sidebar_icon       #808080;
-@define-color sidebar_selected_bg shade(@theme_selected_bg_color,0.10);
-@define-color sidebar_fg_color @theme_text_color;
+@define-color sidebar_background #fdfdfd;
+@define-color sidebar_icon       #727272;
+@define-color sidebar_selected_bg #ebf3f9;
+@define-color sidebar_fg_color #727272;
 
 @define-color button_base shade(@base_color,0.95);
 @define-color button_gradient1 alpha(@button_base, 0.00);
@@ -102,12 +102,12 @@
 @define-color button_gradient3 alpha(@button_base, 0.62);
 @define-color button_gradient4 alpha(@button_base, 0.0);
 @define-color button_bg_active shade(@base_color, 0.95);
-@define-color button_border alpha(#000000,0.4);
+@define-color button_border alpha(#000000,0.3);
 @define-color button_border_active shade(@button_border,0.9);
 
 @define-color insensitive_bg_color shade(@bg_color, 0.93);
 @define-color insensitive_fg_color shade(@bg_color, 0.70);
-@define-color insensitive_border_color shade(@bg_color, 0.80);
+@define-color insensitive_border_color shade(@bg_color, 0.90);
 
 @define-color trough_bg_color_a shade (@theme_bg_color, 0.88);
 @define-color trough_bg_color_b shade (@theme_bg_color, 0.95);

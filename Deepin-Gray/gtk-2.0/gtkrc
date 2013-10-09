@@ -3,8 +3,11 @@ gtk-color-scheme = "text_color:#282828\nfg_color:#323232"
 gtk-color-scheme = "selected_bg_color:#c1c1c1\nselected_fg_color:#000000"
 gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#ffffff\nlink_color:#4ab9ff"
 
-gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\ntheme_text_dark_color:#dddddd"
+gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#282828\ntheme_text_dark_color:#dddddd"
 gtk-color-scheme = "sidebar_background:#fafafa"
+
+include "notebooks.rc"
+
 
 # link_color:#4a90f9"
 gtk-auto-mnemonics	= 1
@@ -194,9 +197,9 @@ style "button" {
     xthickness	= 3
     ythickness	= 3
 
-    bg[NORMAL]              = shade (0.86, @base_color)
-    bg[PRELIGHT]            = shade (0.885, @base_color)    
-	bg[ACTIVE]              = shade (1.35, @selected_bg_color)	# Pulsado
+    bg[NORMAL]              = shade (0.96, @base_color)
+    bg[PRELIGHT]            = "#addff3"   
+	bg[ACTIVE]              = "#67c8f1"	
 	bg[SELECTED]            = shade (1.00, @selected_bg_color)	# 
 	bg[INSENSITIVE]         = shade (0.95, @bg_color)
 
@@ -205,7 +208,7 @@ style "button" {
 	engine "murrine" {
 		contrast                = 0.85
 		roundness				= 2
-		gradient_shades         = {1.15,1.07,1.08,1.05}
+		gradient_shades         = {1.15,1.07,1.08,1.25}
 		border_shades			= {1.10, 0.95}
 
 		lightborderstyle		= 1 # 0 = top side, 1 = all sides
@@ -243,7 +246,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_file = "assets/checkbox-unchecked-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -279,7 +282,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.svg"
+			overlay_file = "assets/checkbox-checked-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -306,7 +309,7 @@ style "checkbutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.svg"
+			file = "assets/null.png"
 		}
 	}
 }
@@ -327,7 +330,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.svg"
+			overlay_file = "assets/radio-unselected-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -363,7 +366,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/radio-selected.svg"
+			overlay_file = "assets/radio-selected-hover.svg"
 			overlay_stretch = FALSE
 		}
 
@@ -390,7 +393,7 @@ style "radiobutton" {
 			function = FLAT_BOX
 			recolorable = TRUE
 			stretch = TRUE
-			file = "assets/null.svg"
+			file = "assets/null.png"
 		}
 	}
 }
@@ -416,7 +419,7 @@ style "entry" = "default" { # text
 	engine "murrine" {
 		contrast			= 0.6
 		roundness			= 2		
-		border_shades		= {1.2, 1.0}
+		border_shades		= {1.0, 1.0}
 		focusstyle  		= 3
 	}
 }
@@ -463,7 +466,7 @@ style "menubar" {
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
 
-    bg[NORMAL]          = shade (1.00, @theme_bg_dark_color)
+    bg[NORMAL]          = "#FBFBFB"
     
 	engine "murrine" {
 		gradient_shades     	= {1.00,0.97,0.97,0.94}
@@ -480,10 +483,10 @@ style "menu" {
 	ythickness	= 0
 	GtkMenuItem::arrow-scaling	= 0.5
 
-	bg[NORMAL]			= shade (0.88, @theme_bg_dark_color)
+	bg[NORMAL]			= "#FFF"
 
 	engine "murrine" {
-		gradient_shades		= {1.02, 1.0, 1.0, 0.98}
+		gradient_shades		= {1.08, 1.0, 1.0, 0.98}
 		roundness		    = 1 # 0 = squared 
 	}
 }
@@ -492,19 +495,19 @@ style "menu_item_white" {
 	xthickness	= 2
 	ythickness	= 3
 
-	fg[NORMAL] 			= shade (1.00, @theme_fg_dark_color)		# menu item normal
+	fg[NORMAL] 			= @theme_fg_dark_color
     fg[INSENSITIVE] 	= mix(0.70, @theme_fg_dark_color, @theme_bg_dark_color)	    # menu item deshabilitados
-	fg[PRELIGHT]		= @selected_fg_color						# menu item seleccionado
+	fg[PRELIGHT]		= "#FFFFFF"						# menu item seleccionado
 
 	text[NORMAL]        = shade (1.00, @theme_fg_dark_color)		# Color check/radio menu
 	text[INSENSITIVE] 	= mix(0.70, @theme_text_dark_color, @theme_bg_dark_color)	    
 	text[PRELIGHT]      = @selected_fg_color            			# Color check/radio menu
 
     bg[PRELIGHT]      	= shade (1.00, @selected_bg_color)
-    bg[SELECTED]      	= shade (0.01, @selected_bg_color)
+    bg[SELECTED]      	= "#62bded"
 
 	engine "murrine" {
-        gradient_shades		= {0.90, 0.95, 0.95, 1.00}
+        gradient_shades		= {1.00, 0.98, 0.95, 0.90}
 		border_shades 		= {1.40, 1.0}
         roundness           = 1
         contrast            = 0.8           # Contraste separadores
@@ -527,44 +530,44 @@ style "menu_item_black" {
         contrast            = 0.0
 	}
 }
-
-style "notebook" {
-    xthickness		= 2 
-    ythickness		= 2
+################################
+#style "notebook" {
+ #   xthickness		= 2 
+ #   ythickness		= 2
    
-	bg[NORMAL]		= shade (0.97, @bg_color)		# selected tab entire
-	bg[ACTIVE]		= shade (0.90, @bg_color)		# unselected tab
-	bg[INSENSITIVE]	= shade (0.87, @bg_color)		# disabled controls
+	#bg[NORMAL]		= shade (0.99, @base_color)		# selected tab entire
+	#bg[ACTIVE]		= shade (0.90, @base_color)		# unselected tab
+	#bg[INSENSITIVE]	= shade (0.87, @base_color)		# disabled controls
 
-	fg[NORMAL]          = @text_color				# text selected tab
-	fg[ACTIVE]          = shade (1.25, @fg_color)	# text unselected tab
-	fg[INSENSITIVE] 	= shade (1.35, @fg_color)
+	#fg[NORMAL]          = @text_color				# text selected tab
+	#fg[ACTIVE]          = shade (1.25, @fg_color)	# text unselected tab
+	#fg[INSENSITIVE] 	= shade (1.35, @fg_color)
 
-	engine "murrine" {
+	#engine "murrine" {
 		#gradient_shades		= {1.10,0.98,0.92,0.85}
-        gradient_shades		= {1.16,1.10,1.00,0.95}
-		lightborderstyle		= 0		
-		lightborder_shade       = 1.1
-		contrast 			= 0.5
-        highlight_shade		= 1.03
-		roundness 			= 2
-		prelight_shade		= 1.5
-		focusstyle = 2
+  #      gradient_shades		= {1.16,1.10,1.00,1.95}
+	#	lightborderstyle		= 0		
+		#lightborder_shade       = 1.1
+		#contrast 			= 0.5
+  #      highlight_shade		= 1.03
+		#roundness 			= 2
+		#prelight_shade		= 1.5
+		#focusstyle = 2
  
-	}
-}
-
+	#}
+#}
+##############
 style "progressbar" {
-	xthickness	= 1
-	ythickness	= 1
+	xthickness	= 0
+	ythickness	= 0
 
-	bg[SELECTED]		=  mix   (0.90, @selected_bg_color, @bg_color)	# Pulsado
+	bg[SELECTED]		=  mix   (0.80, "#93d8ff", "#d6f0ff")	# Pulsado
 
 	engine "murrine" {
-		gradient_shades		= {0.90, 1.13, 1.13, 1.18}
-        border_shades		= {0.8, 1.4}
-		roundness			= 4
-		glowstyle				= 4 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
+		gradient_shades		= {0.98, 0.96, 0.95,0.97}
+        border_shades		= {0.8, 0.8}
+		roundness			= 3
+		glowstyle				= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
         glow_shade              = 1.20
 	}
 }
@@ -579,16 +582,16 @@ style "scale" { # slider
 	xthickness	= 2
 	ythickness	= 2
 
-	bg[SELECTED]            = shade (1.20, @selected_bg_color)
+	bg[SELECTED]            = shade (1.20, @bg_color)
 
 	engine "murrine" {
-		sliderstyle			= 2 						# forma del slider
-		contrast 			= 0.4						# borde de todos los elementos
-		gradient_shades 	= {1.1, 1.0, 1.0, 0.85}		# gradiente del slider
+		sliderstyle			= 4 						# forma del slider
+		contrast 			= 0.5						# borde de todos los elementos
+		gradient_shades 	= {1.1, 0.95, 0.95, 0.99}		# gradiente del slider
 		border_shades 		= {0.9, 0.8}				# borde del slider
 		roundness 			= 2
 		lightborder_shade 	= 1.30						# brillo del trough-higlight
-		trough_border_shades = {0.9, 1.12}
+		trough_border_shades = {1.0, 1.0}
 		glow_shade = 1.0
 		reliefstyle = 0
 #		shadow_shades = { 1.0, 0.9 }

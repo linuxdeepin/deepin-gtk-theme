@@ -14,7 +14,7 @@
 .sidebar .view:prelight {
     border-radius: 0px;
     color:				@sidebar_fg_color;
-	text-shadow: 		0px 1px @theme_shadow_color;
+	text-shadow: 		none;
     background-color:	@sidebar_background; 
 }
 
@@ -33,8 +33,8 @@
 										from (shade(@sidebar_selected_bg, 0.93)),
 									 	color-stop (0.40, shade (@sidebar_selected_bg, 0.95)),
 										to   (shade(@sidebar_selected_bg,0.96)));
-    color:  @theme_selected_fg_color;    
-    text-shadow: 0px 1px @theme_selected_shadow_color;
+    color:  @text_color;    
+    text-shadow: none;
 }
 
 
@@ -48,7 +48,7 @@
 GtkHCollapsablePaned,
 SourceList.pane-separator {
     border-width:            0px;
-    -GtkPaned-handle-size: 2px;
+    -GtkPaned-handle-size: 0px;
 }
 
 GtkHCollapsablePaned .pane-separator,

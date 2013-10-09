@@ -15,8 +15,8 @@
 }
 
 .scrollbar.trough.vertical {
-	box-shadow: 0px;
-    background-color: -gtk-gradient (linear, left top, right top,
+	box-shadow: none;
+    background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@theme_bg_color, 1.00)),
                                      to (shade (@theme_bg_color, 1.10)));
 
@@ -46,7 +46,7 @@
     border-width: 0px;
 	border-style: none;
     border-radius: 10px;
-	background-color:         alpha (#000, 0.4);
+	background-color:         alpha (#000, 0.3);
 }
 
 .scrollbar.slider:prelight {

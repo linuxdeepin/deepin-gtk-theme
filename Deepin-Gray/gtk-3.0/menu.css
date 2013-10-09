@@ -17,8 +17,8 @@
     background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@menu_bg_dark_color, 1.03)),
-                                     to   (shade(@menu_bg_dark_color, 0.97)));
+                                     from (shade(@menu_bg_dark_color, 1.2)),
+                                     to   (shade(@menu_bg_dark_color, 1.1)));
 	
     padding: 5px 0px;
 	border-style: solid;
@@ -119,7 +119,7 @@
  ************/
 .menubar .menuitem {
     color: @theme_fg_dark_color;
-    text-shadow: 1px 1px @theme_shadow_dark_color;
+    text-shadow: none;
 }
 
 Genericmenuitem .menuitem *,
@@ -154,7 +154,7 @@ DbusmenuGtkMenu .menuitem,
 	border-radius: 0px;
 
     color: @menu_fg_dark_color;
-    text-shadow: 1px 1px @menu_shadow_dark_color;
+    text-shadow: none;
 }
 
 
@@ -164,7 +164,7 @@ DbusmenuGtkMenu .menuitem,
 .toolbar.menubar .button .menuitem GtkLabel,
 .primary-toolbar .button .menuitem GtkLabel {
     color: @menu_fg_dark_color;
-    text-shadow: 1px 1px @menu_shadow_dark_color;
+    text-shadow: none;
 
 }
 
@@ -182,12 +182,12 @@ GtkTreeMenu .menuitem {
 .toolbar GtkComboBox .menuitem *, 
 GtkComboBox .menuitem * {
     color: @menu_fg_dark_color;
-    text-shadow: 0px 1px @menu_shadow_dark_color;
+    text-shadow: none;
 }
 
 GtkComboBox .menuitem *:hover {
     color: @theme_selected_fg_color;
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+   	text-shadow: none;
 }
 
 .toolbar .raised .button .menuitem:hover,
@@ -200,7 +200,7 @@ GtkComboBox .menuitem *:hover {
                                      to   (alpha (#3babe5, 1.0)));
 
  color: #FFF;
-	text-shadow: alpha (@base_color,0.3);
+	text-shadow: none;
     border-radius: 0;
     border-image: none;
 }
@@ -218,8 +218,8 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem *:hover, 
 .menuitem:hover,
 .menu .menuitem:hover {
-    color: #FFF
-   	text-shadow: 0px 1px @theme_selected_shadow_color;
+    color: #FFF;
+   	text-shadow: none;
 }
 
 .primary-toolbar .menuitem *:insensitive,
