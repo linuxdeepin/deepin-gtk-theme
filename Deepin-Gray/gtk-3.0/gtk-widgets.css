@@ -2046,8 +2046,8 @@ GtkIconView.view.cell:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.10);
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.052)),
-                                     to (shade(@theme_selected_bg_color, 1.0)));  
+                                     from (shade(@theme_selected_bg_color, 1.1)),
+                                     to (shade(@theme_selected_bg_color, 1.09)));  
     color: @theme_selected_fg_color;
 	text-shadow: 0px 0px @theme_selected_shadow_color;
 }
