@@ -145,7 +145,7 @@ border-left-color:alpha(#000,0.08);
 
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {
-	color: shade(@theme_fg_dark_color, 1.00);
+	color: shade(@theme_fg_dark_color, 1.00);/***nautilus面包屑文字颜色***/
 
 }
 
@@ -154,7 +154,7 @@ border-left-color:alpha(#000,0.08);
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
     color: #5F5F5F;
-    text-shadow: none;
+    text-shadow:0px 1px 1px white;
 }
 
 

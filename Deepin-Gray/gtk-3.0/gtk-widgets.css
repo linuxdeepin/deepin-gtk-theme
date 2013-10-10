@@ -1430,7 +1430,7 @@ GtkHandleBox,
 .toolbar .button *:hover,
 .toolbar .button *:active {
 /* barra */
-	color: shade(@toolbar_fg_color, 0.90);
+	color: shade(@toolbar_fg_color, 0.20);
 	text-shadow:none;
 }
 
@@ -1658,7 +1658,7 @@ MathWindow .button:hover:active,
 .toolbar NautilusPathBar .button GtkLabel,
 .toolbar .raised .button GtkLabel,
 .toolbar .raised.button GtkLabel {
-	color: @theme_fg_dark_color;
+	color: @theme_fg_dark_color;/***nautilus 搜索按钮normal文字颜色***/
 	text-shadow:none;
 
 }
@@ -1681,7 +1681,7 @@ MathWindow .button *:active:hover,
 .toolbar .raised.button *:active,
 .toolbar .raised .button *:active:hover,
 .toolbar .raised.button *:active:hover {
-	color: @theme_text_dark_color;
+	color: shade(@theme_text_dark_color,0.2);/***nautilus 搜索按钮激活文字颜色***/
 	text-shadow:none;
 }
 
