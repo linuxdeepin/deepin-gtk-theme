@@ -1733,10 +1733,10 @@ MathWindow .button *:active:hover,
                 inset  2px  0px alpha(#fff, 0.04),
                 inset -2px  0px alpha(#fff, 0.04),
                 inset  0px -2px alpha(#fff, 0.03),
-				inset  0px  1px alpha(#000, 0.30),
-                inset  1px  0px alpha(#000, 0.30),
-                inset -1px  0px alpha(#000, 0.30),
-                inset  0px -1px alpha(#000, 0.30);
+				inset  0px  1px alpha(#000, 0.15),
+                inset  1px  0px alpha(#000, 0.15),
+                inset -1px  0px alpha(#000, 0.15),
+                inset  0px -1px alpha(#000, 0.15);
 
 }
 

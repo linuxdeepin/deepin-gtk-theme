@@ -126,7 +126,7 @@
 @define-color highlighted_border #8f8f8f;
 @define-color transparent alpha(#000, 0.0);
 
-@define-color notebook_border shade(@theme_bg_color, 0.75);
+@define-color notebook_border shade(@theme_bg_color, 0.78);
 
 /* @define-color toolbar_gradient_base shade (mix(#d5dade, @theme_bg_dark_color, 0.75), 0.92); */
 @define-color toolbar_gradient_base shade (@theme_bg_dark_color, 1.00);
