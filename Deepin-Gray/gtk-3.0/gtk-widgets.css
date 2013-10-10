@@ -164,13 +164,14 @@ GtkLabel:insensitive {
 
 .tooltip {
     
-    background-image: -gtk-gradient (radial,center 0,0,center 0,0.8,
+    background-image:  url("assets/background-noise-toolbar.png"),
+                    -gtk-gradient (radial,center 0,0,center 0,0.8,
         from (alpha (@tooltip_bg_color,0.86)),
-        to (alpha (@tooltip_bg_color,0.96)));
+        to (alpha (@tooltip_bg_color,1.2)));
 	border-width: 1px;
     border-style: 		solid;
 	border-radius: 5px;
-	border-color: 		alpha(#ffffff,0.2);
+	border-color: 		alpha(#000,0.2);
     background-color: 	alpha(@theme_tooltip_bg_color, 0.50);
     color: 				shade(@theme_tooltip_fg_color, 1.00);
 }
@@ -283,10 +284,10 @@ GtkStatusbar {
 
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
-                                    from       (shade(@base_color, 0.76)),
-                                    color-stop (0.15, shade(@base_color, 0.96)),
-                                    color-stop (0.50, shade(@base_color, 0.98)),
-                                    to         (alpha(@bg_color, 1.00)));
+                                    from       (shade(@base_color, 0.96)),
+                                    color-stop (0.15, shade(@base_color, 0.98)),
+                                    color-stop (0.50, shade(@base_color, 1.0)),
+                                    to         (shade(@bg_color, 1.20)));
 
 	/* outer */
     border-width: 1px;
@@ -295,7 +296,7 @@ GtkStatusbar {
     border-top-color: 		transparent;
     border-right-color: 	alpha(#fff, 0.02);
     border-left-color: 		alpha(#fff, 0.02);
-    border-bottom-color: 	alpha(#fff, 0.03);	
+    border-bottom-color: 	white;	
 
 	/* border */
     box-shadow: inset  0px  3px alpha(#000, 0.03),
@@ -448,11 +449,11 @@ GtkStatusbar {
                        linear-gradient(to bottom, 
                                       #d6f0ff,
                                      
-                                      #93d8ff 48%,
-                                      #93d8ff 48%,
-                                      #93d8ff 50%,
+                                      #b4e4f9 48%,
+                                      #b4e4f9 48%,
+                                      #b4e4f9 50%,
                                     
-                                      #9cdbff
+                                      #c7eeff
                                       );
 
 
@@ -465,10 +466,10 @@ GtkStatusbar {
     border-width: 1px;
     border-style: solid;
     border-radius: 3px;
-    border-top-color: 		#45a8e0;
-    border-left-color: 		#45a8e0;
-    border-right-color: 	#45a8e0;
-    border-bottom-color: 	#45a8e0;
+    border-top-color: 		#7bbad6;
+    border-left-color: 		#7bbad6;
+    border-right-color: 	#7bbad6;
+    border-bottom-color: 	#7bbad6;
 
 	color: 			@theme_selected_fg_color;
 	text-shadow:  1px 1px @theme_selected_shadow_color;
@@ -680,9 +681,9 @@ GtkLevelBar.vertical {
     background-image: -gtk-gradient (linear,
 			         left top,
 			         left bottom,
-			         from (alpha (#000, 0.20)),
-                     color-stop (0.20, alpha (#000, 0.16)),
-			         to (alpha (#000, 0.06)));
+			         from (alpha (#000, 0.04)),
+                     color-stop (0.20, alpha (#000, 0.02)),
+			         to (alpha (#000, 0.02)));
 
     border-style: none;
     border-width: 0px;

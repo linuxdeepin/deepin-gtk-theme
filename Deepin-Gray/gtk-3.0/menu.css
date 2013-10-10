@@ -194,8 +194,9 @@ GtkComboBox .menuitem *:hover {
 .toolbar.menubar .button .menuitem:hover, 
 .menu .menuitem:hover,
 .menuitem:hover {
-	/* contextual menu item-selected */
-    background-image: -gtk-gradient (linear, left top, left bottom,
+	/* contextual menu item-selected 菜单选中高亮条*/
+    background-image: url("assets/background-noise-toolbar.png"),
+    -gtk-gradient (linear, left top, left bottom,
                                      from (alpha (#62bded, 0.9)),
                                      to   (alpha (#3babe5, 1.0)));
 
