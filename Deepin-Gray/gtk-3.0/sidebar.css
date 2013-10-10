@@ -24,7 +24,7 @@
 .sidebar .view *:selected,
 .sidebar .view:selected:prelight {
     border-style: solid;
-    border-width: 1px 1px 1px 0px;
+    border-width: 1px 0px 1px 0px;
     border-color: shade (@sidebar_selected_bg, 0.95);
 
     background-image:	 -gtk-gradient (linear,
