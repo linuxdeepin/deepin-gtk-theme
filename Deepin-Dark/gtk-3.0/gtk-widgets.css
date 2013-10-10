@@ -1592,8 +1592,8 @@ MathWindow .button,
     background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
 						left top, left bottom,
-						from (@button_raised_gradient_color_a),
-						to   (@button_raised_gradient_color_b));
+						from (shade(@button_raised_gradient_color_a,1.3)),
+						to   (shade(@button_raised_gradient_color_b,1.1)));
 
 	border-image: 			none;
 
@@ -1624,7 +1624,8 @@ MathWindow .button:hover:active,
 .toolbar .raised .button:hover:active,
 .toolbar .raised.button:hover:active,
 .toolbar .raised.button:active {
-    background-image: -gtk-gradient (linear,
+    background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
                      to   (shade(@button_raised_gradient_color_a, 0.80)));
