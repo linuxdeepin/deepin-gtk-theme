@@ -1,0 +1,53 @@
+/*****************
+ * tabs mono     *
+ *****************/
+.notebook tab {
+background-color: #B5D4E9;
+/***
+	background-image: -gtk-gradient (linear,
+                                     0.45 top, 0.55 bottom,
+                                     from (alpha (@base_color, 1.00)),
+                                     color-stop (0.48, shade (@base_color, 0.99)),
+                                     color-stop (0.5, shade (@base_color, 0.94)),
+                                     to (alpha (@base_color, 1.0)));
+***/
+
+    border-width: 1px; 
+    border-style: solid; 
+	border-radius: 0px;
+	border-top-color: 		shade(@notebook_border, 0.8);
+	border-left-color: 		shade(@notebook_border, 0.8);
+	border-right-color: 	shade(@notebook_border, 0.8);
+	border-bottom-color: 	shade(@notebook_border, 0.8);
+
+	border-image: none;
+    
+	color: shade(@theme_text_color, 0.95); 
+	/**text-shadow: 0 1px @theme_shadow_color;***/
+}
+
+.notebook tab:active {
+
+    background-image: -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade (@button_press_color, 1.2)),
+                                     to (shade (@button_press_color, 1.2)));
+
+    border-width: 1px; 
+    border-style: solid; 
+    border-top-color: 		shade(@button_press_color,0.9);
+    border-left-color: 		shade(@button_press_color,0.9);
+    border-right-color: 	shade(@button_press_color,0.9);
+    border-bottom-color: shade(@button_press_color,0.9);
+	border-image: none;
+
+  }
+
+
+.notebook tab GtkLabel {
+    padding: 0px 2px;
+	color: @theme_fg_color;
+	text-shadow: 1px 1px @theme_shadow_color;
+}
+
+

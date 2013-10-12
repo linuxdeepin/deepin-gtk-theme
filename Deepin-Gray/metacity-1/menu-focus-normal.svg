@@ -3,19 +3,5 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="svg2" xmlns:svg="http://www.w3.org/2000/svg"
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="21px"
-	 viewBox="0 0 16 21" enable-background="new 0 0 16 21" xml:space="preserve">
-<path id="path2411" opacity="0.5" fill="#FFFFFF" enable-background="new    " d="M4,10h8l-4.147,5L4,10z"/>
-<g opacity="0.7">
-	<g opacity="0.2">
-		<circle fill="#FFFDFD" cx="8" cy="11.5" r="3.5"/>
-	</g>
-	<g>
-		
-			<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4" y1="-283" x2="4" y2="-290.0243" gradientTransform="matrix(1 0 0 -1 4 -276)">
-			<stop  offset="0" style="stop-color:#000000"/>
-			<stop  offset="1" style="stop-color:#646464"/>
-		</linearGradient>
-		<circle fill="url(#SVGID_1_)" cx="8" cy="10.5" r="3.5"/>
-	</g>
-</g>
+	 viewBox="-40.5 2 16 21" enable-background="new -40.5 2 16 21" xml:space="preserve">
 </svg>

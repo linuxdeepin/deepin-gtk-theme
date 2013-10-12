@@ -18,8 +18,8 @@
 	border-bottom-color: 	shade(@notebook_border, 0.95);
 
 	border-image: none;
-    box-shadow: inset  1px  1px alpha(#fff, 0.08),
-                inset -1px -1px alpha(#fff, 0.08);
+  /**  box-shadow: inset  1px  1px alpha(#fff, 0.08),
+                inset -1px -1px alpha(#fff, 0.08); ***/
 	color: shade(@theme_text_color, 0.95); 
 	text-shadow: 0 1px @theme_shadow_color;
 }
@@ -40,7 +40,7 @@
     border-bottom-color: alpha(#1684c4,0.6);
 	border-image: none;
 
-    box-shadow: inset  0px  4px alpha(#000, 0.00),
+       /***box-shadow: inset  0px  4px alpha(#000, 0.00),
 				inset  0px  3px alpha(#000, 0.00),
 				inset  0px  2px alpha(#000, 0.00),
 				inset  0px  1px alpha(#000, 0.00),
@@ -53,7 +53,7 @@
                 inset -4px  0px alpha(#000, 0.01),
                 inset -3px  0px alpha(#000, 0.02),
                 inset -2px  0px alpha(#000, 0.04),
-                inset -1px  0px alpha(#000, 0.06);
+                inset -1px  0px alpha(#000, 0.06);***/
 }
 
 

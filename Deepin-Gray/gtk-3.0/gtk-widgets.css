@@ -2055,7 +2055,7 @@ GtkIconView.view.cell:selected:focused {
 
 .view:active, 
 .view *:active {
-    background-color: white;
+
     color: @theme_text_color;
 	text-shadow: 0px 0px @theme_shadow_color;
 
