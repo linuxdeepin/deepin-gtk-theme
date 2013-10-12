@@ -76,30 +76,30 @@
 <!-- ::: BORDER OUTLINE ::: -->
 <draw_ops name="border">
     <!-- top y=0 -->
-    <tint color="#acacac" x="2" y="0" width="2" height="1" alpha="1.0"/>
-    <tint color="#B2B2B2" x="4" y="0" width="width-8" height="1" alpha="1.0"/>
-    <tint color="#acacac" x="width-4" y="0" width="2" height="1" alpha="1.0"/>
+    <tint color="#c7d09c" x="2" y="0" width="2" height="1" alpha="1.0"/>
+    <tint color="#c0ca8f" x="4" y="0" width="width-8" height="1" alpha="1.0"/>
+    <tint color="#c7d09c" x="width-4" y="0" width="2" height="1" alpha="1.0"/>
 
     <!-- top y=1 -->
-    <tint color="#acacac" x="1" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#c7d09c" x="1" y="1" width="1" height="1" alpha="1.0"/>
     <tint color="#e3e3e3" x="2" y="1" width="1" height="1" alpha="1.0"/>
     <tint color="#e3e3e3" x="width-3" y="1" width="1" height="1" alpha="1.0"/>
-    <tint color="#acacac" x="width-2" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#c7d09c" x="width-2" y="1" width="1" height="1" alpha="1.0"/>
     
     <!-- top y=2 -->
     <tint color="#e3e3e3" x="1" y="2" width="1" height="1" alpha="1.0"/>
     <tint color="#e3e3e3" x="width-2" y="2" width="1" height="1" alpha="1.0"/>
 
     <!-- vertical left -->
-    <tint color="#acacac" x="0" y="2" width="1" height="2" alpha="1.0"/>
-    <tint color="#B2B2B2" x="0" y="4" width="1" height="height-4" alpha="1.0"/>
+    <tint color="#c7d09c" x="0" y="2" width="1" height="2" alpha="1.0"/>
+    <tint color="#c0ca8f" x="0" y="4" width="1" height="height-4" alpha="1.0"/>
 
     <!-- vertical right -->
-    <tint color="#acacac" x="width-1" y="2" width="1" height="2" alpha="1.0"/>
-    <tint color="#B2B2B2" x="width-1" y="4" width="1" height="height-4" alpha="1.0"/>
+    <tint color="#c7d09c" x="width-1" y="2" width="1" height="2" alpha="1.0"/>
+    <tint color="#c0ca8f" x="width-1" y="4" width="1" height="height-4" alpha="1.0"/>
 
     <!-- bottom -->
-    <tint color="#B2B2B2" x="1" y="height-1" width="width-2" height="1" alpha="1.0"/>
+    <tint color="#c0ca8f" x="1" y="height-1" width="width-2" height="1" alpha="1.0"/>
 
     
 </draw_ops>
@@ -133,7 +133,7 @@
 		<color value="shade/#FFFFFF/1.0"/>
 	</gradient>
     <image filename="metacity-noise.png" x="0" y="0" width="object_width" height="object_height"/>
-    <line color="shade/#FFFFFF/0.9" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/>
+    <line color="shade/#FFFFFF/1.0" x1="0" y1="top_height - 1" x2="width" y2="top_height - 1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_maximized">

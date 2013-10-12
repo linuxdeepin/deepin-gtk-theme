@@ -860,6 +860,10 @@ GtkScrolledWindow.frame {
 
 .button:hover {
 background-color: @button_hover_color;
+    border-top-color: 		shade(@button_hover_color,0.8);
+    border-left-color: 		shade(@button_hover_color,0.8);
+    border-right-color: 	shade(@button_hover_color,0.8);
+    border-bottom-color: 	shade(@button_hover_color,0.8);
 	/***background-image: -gtk-gradient (linear,
                                      0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
@@ -1212,7 +1216,7 @@ GtkHandleBox,
     border-width: 0 0 1px 0;
     border-radius: 0px;
     border-style: solid;
-    border-bottom-color: shade(@toolbar_gradient_base, 0.80);
+    border-bottom-color: shade(@border_color,0.8);
     box-shadow: none;
     color: @toolbar_fg_color;
 
@@ -1239,7 +1243,7 @@ GtkHandleBox,
 	border-width: 0px 0px 1px 0px;
     border-radius: 0px;
     border-style: solid;    
-    border-color: shade (@theme_bg_dark_color, 0.72);
+    border-color: shade(@border_color,0.75);/***nautilus工具栏底下描边颜色***/
 	color: @theme_fg_dark_color;
     box-shadow: none;
     -GtkToolbar-button-relief: normal;
@@ -1267,7 +1271,7 @@ GtkHandleBox,
 	border-width: 0px 0px 1px 0px;
     border-radius: 0px;
     border-style: solid;    
-    border-color: shade (@theme_bg_dark_color, 0.68);
+    border-color: shade(@border_color,0.8);/***工具栏底下描边颜色***/
 	padding: 3px;
     box-shadow: none;
     -GtkWidget-window-dragging: true;
@@ -1282,7 +1286,7 @@ GtkHandleBox,
 
     border-image: none;
     border-style: solid;
-    border-color: shade (@theme_bg_dark_color, 0.91);
+    border-color: shade(@border_color,0.8);
 }
 
 /* primary toolbar buttons */
@@ -1318,10 +1322,10 @@ GtkHandleBox,
                                      left top, left bottom,
                                      from (alpha(#fff, 0.04)),
                                      to   (alpha(#000, 0.06)));
-    border-top-color: 		alpha (#000, 0.15);
-    border-left-color: 		alpha (#000, 0.20);
-    border-right-color: 	alpha (#000, 0.20);
-    border-bottom-color: 	alpha (#000, 0.25);
+    border-top-color: 		alpha (#000, 0.10);
+    border-left-color: 		alpha (#000, 0.10);
+    border-right-color: 	alpha (#000, 0.10);
+    border-bottom-color: 	alpha (#000, 0.15);
 }
 
 .primary-toolbar .toolbar .button,
@@ -1535,7 +1539,7 @@ background-color: @button_normal_color;
 						             left top, left bottom,
 						             from (shade(@button_raised_gradient_color_a,1.1)),
 						             to   (shade(@button_raised_gradient_color_b,1.05)));**/ 
-border-width: 1px;
+border-width: 1px,1px,1px,1px;
     border-top-color: 		shade(@button_normal_color,0.8);
     border-right-color: 	shade(@button_normal_color,0.8);
     border-left-color: 		shade(@button_normal_color,0.8);
@@ -1588,6 +1592,7 @@ MathWindow .button,
 .toolbar .raised .button:insensitive:active,
 .toolbar .raised.button:insensitive:active {
 background-color: @button_normal_color;
+
    /*** background-image: -gtk-gradient (linear,
 						left top, left bottom,
 						from (shade(@button_raised_gradient_color_a, 1.0)),
@@ -1652,9 +1657,9 @@ background-color: shade(@button_press_color,1.2);
                      -gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.99)),
-                     to   (shade(@button_raised_gradient_color_a, 0.94)));
+                     to   (shade(@button_raised_gradient_color_a, 0.94)));**/
 
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid; 
     border-radius: 5px;
 	border-image: 			none;
@@ -1662,7 +1667,7 @@ background-color: shade(@button_press_color,1.2);
     border-left-color: 		alpha (#fff, 0.01);
     border-right-color: 	alpha (#fff, 0.01);
     border-bottom-color: 	transparent;
-
+/**
  box-shadow: inset  0px  4px alpha(#000, 0.02),
 				inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.04),
