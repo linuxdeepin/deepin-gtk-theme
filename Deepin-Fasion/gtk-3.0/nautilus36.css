@@ -133,12 +133,12 @@ NautilusWindow .pane-separator {
     background-color: @sidebar_background;
     /* border-color: @sidebar_background; */
     border-style: solid;
-border-width: 0px 1px 0px 0px;
+border-width: 0px 1px 0px 1px;
         
 border-top-color:purple;
 border-bottom-color:black;
-border-left-color:red;
-border-right-color:#edf3cf;
+border-left-color:shade(@border_color,0.9);
+border-right-color:transparent;
     /***background-image: -gtk-gradient(linear,
                                     left top, right top,
                                     from (@sidebar_background),

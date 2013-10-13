@@ -45,7 +45,7 @@ background-color: #B5D4E9;
 
 
 .notebook tab GtkLabel {
-    padding: 0px 2px;
+    padding: 0px 4px;
 	color: @theme_fg_color;
 	text-shadow: 1px 1px @theme_shadow_color;
 }

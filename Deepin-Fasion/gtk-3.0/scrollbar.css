@@ -17,8 +17,8 @@
 .scrollbar.trough.vertical {
 	box-shadow: none;
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@theme_bg_color, 1.00)),
-                                     to (shade (@theme_bg_color, 1.10)));
+                                     from (shade (@base_color, 1.00)),
+                                     to (shade (@base_color, 1.10)));
 
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
@@ -32,8 +32,8 @@
     border-radius: 0px;
 	border-width: 0px;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 1.00)),
-                                     to (shade (@theme_bg_color, 1.00)));
+                                     from (shade (@base_color, 1.00)),
+                                     to (shade (@base_color, 1.00)));
 
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
@@ -46,11 +46,11 @@
     border-width: 0px;
 	border-style: none;
     border-radius: 10px;
-	background-color:         alpha (#000, 0.3);
+	background-color:         shade(@button_press_color,0.9);
 }
 
 .scrollbar.slider:prelight {
-	background-color:         alpha (#000, 0.6);
+	background-color:         shade(@button_press_color,0.7);
 }
 
 .scrollbar.slider:insensitive {

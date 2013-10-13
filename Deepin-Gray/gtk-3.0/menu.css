@@ -87,7 +87,7 @@
     background-position: top left;
 
     /* linea 3D  (oscura) */
-	box-shadow: inset  0px -1px @menu_line_dark_color;
+	/***box-shadow: inset  0px -1px @menu_line_dark_color;***/
 
     /* linea 3D (clara) */
     border-image: none;
