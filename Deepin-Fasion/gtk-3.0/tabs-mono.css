@@ -1,8 +1,10 @@
+
+
 /*****************
  * tabs mono     *
  *****************/
 .notebook tab {
-background-color: #B5D4E9;
+	background-color: #B5D4E9;
 /***
 	background-image: -gtk-gradient (linear,
                                      0.45 top, 0.55 bottom,
@@ -20,10 +22,12 @@ background-color: #B5D4E9;
 	border-right-color: 	shade(@notebook_border, 0.8);
 	border-bottom-color: 	shade(@notebook_border, 0.8);
 
+
 	border-image: none;
-    
+    box-shadow: inset  1px  1px alpha(#fff, 0.08),
+                inset -1px -1px alpha(#fff, 0.08);
 	color: shade(@theme_text_color, 0.95); 
-	/**text-shadow: 0 1px @theme_shadow_color;***/
+	text-shadow: 0 1px @theme_shadow_color;
 }
 
 .notebook tab:active {
@@ -32,22 +36,36 @@ background-color: #B5D4E9;
                                      left top, left bottom,
                                      from (shade (@button_press_color, 1.2)),
                                      to (shade (@button_press_color, 1.2)));
+      
 
-    border-width: 1px; 
-    border-style: solid; 
     border-top-color: 		shade(@button_press_color,0.9);
     border-left-color: 		shade(@button_press_color,0.9);
     border-right-color: 	shade(@button_press_color,0.9);
     border-bottom-color: shade(@button_press_color,0.9);
 	border-image: none;
 
-  }
+    /*box-shadow: inset  0px  -1px alpha(#000, 0.00),
+				inset  0px  3px alpha(#000, 0.00),
+				inset  0px  2px alpha(#000, 0.00),
+				inset  0px  1px alpha(#000, 0.00),
+
+                inset  4px  0px alpha(#000, 0.01),
+                inset  3px  0px alpha(#000, 0.02),
+                inset  2px  0px alpha(#000, 0.04),
+                inset  1px  0px alpha(#000, 0.06),
+
+                inset -4px  0px alpha(#000, 0.01),
+                inset -3px  0px alpha(#000, 0.02),
+                inset -2px  0px alpha(#000, 0.04),
+                inset -1px  0px alpha(#000, 0.06);*/
+}
 
 
 .notebook tab GtkLabel {
-    padding: 0px 4px;
+    padding: 0px 2px;
 	color: @theme_fg_color;
 	text-shadow: 1px 1px @theme_shadow_color;
 }
+
 
 

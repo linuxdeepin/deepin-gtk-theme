@@ -32,8 +32,7 @@
                                      color-stop (0.48, alpha (#58C3F0, 0.55)),
                                      color-stop (0.5, alpha (#58C3F0, 0.9)),
                                      to (alpha (@base_color, 1.0)));
-    border-width: 1px; 
-    border-style: solid; 
+
     border-top-color: 		alpha(#1684c4,0.6);
     border-left-color: 		alpha(#1684c4,0.6);
     border-right-color: 	alpha(#1684c4,0.6);
