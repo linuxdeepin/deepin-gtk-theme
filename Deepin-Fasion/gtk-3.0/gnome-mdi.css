@@ -31,9 +31,9 @@ GeditWindow GtkPaned {
 /***Gedit下拉搜索框****/
 GeditViewFrame .gedit-search-slider {
     background-image: none;
-    background-color: @theme_bg_color;
+    background-color: @base_color;
     padding: 6px;
-    border-color: shade (@theme_bg_color, 0.72);
+    border-color: @border_color;
     border-radius: 0 0 3px 3px;
     border-width: 0 1px 1px 1px;
     border-style: solid;
@@ -167,9 +167,9 @@ background-color: @button_press_color;
     border-width: 1px 0px 0px 0px;
     border-style: solid; 
 	/* border-radius: 4px; */
-	border-top-color: 		shade(@button_press_color,0.9;
-	border-left-color: 		shade(@button_press_color,0.9;
-	border-right-color: 	shade(@button_press_color,0.9;
+	border-top-color: 		shade(@button_press_color,0.9);
+	border-left-color: 		shade(@button_press_color,0.9);
+	border-right-color: 	shade(@button_press_color,0.9);
 	
 	border-image: none;
 
@@ -205,9 +205,9 @@ TerminalWindow .notebook tab:active{
     border-width: 1px 0px 0px 0px;
     border-style: solid; 
 	/* border-radius: 4px; */
-	border-top-color: 		shade(@button_press_color,0.9;
-	border-left-color: 		shade(@button_press_color,0.9;
-	border-right-color: 
+	border-top-color: 		shade(@button_press_color,0.9);
+	border-left-color: 		shade(@button_press_color,0.9);
+	border-right-color: shade(@button_press_color,0.9);
 	
 	border-image: none;
 
@@ -418,12 +418,13 @@ RBSource .toolbar .button *:active:hover {
 }
 
 NemoSearchBar.info {
-    background-image: /**url("assets/background-noise-toolbar.png"),***/
+background-color: red;
+    /**background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@toolbar_gradient_base, 0.89)),
                                      color-stop (0.20, shade(@toolbar_gradient_base, 0.97)),
-                                     to   (shade(@toolbar_gradient_base, 1.01)));
+                                     to   (shade(@toolbar_gradient_base, 1.01)));**/
     background-repeat: repeat;
     background-position: top left;
 
@@ -469,7 +470,7 @@ NautilusQueryEditor.info {
 
 NemoSearchBar .entry {
 
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
+   /* box-shadow: inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.05),
                 inset  2px  0px alpha(#000, 0.04),
                 inset -2px  0px alpha(#000, 0.04),
@@ -477,7 +478,7 @@ NemoSearchBar .entry {
 				inset  0px  1px shade(@toolbar_gradient_base, 0.70),
                 inset  1px  0px shade(@toolbar_gradient_base, 0.80),
                 inset -1px  0px shade(@toolbar_gradient_base, 0.80),
-                inset  0px -1px shade(@toolbar_gradient_base, 0.90);
+                inset  0px -1px shade(@toolbar_gradient_base, 0.90);*/
 }
 
 NemoSearchBar .entry:focused {
@@ -520,12 +521,15 @@ NemoTrashBar .button,
 NemoTrashBar .button:hover,
 NautilusTrashBar .button,
 NautilusTrashBar .button:hover {
-	background-image: -gtk-gradient (linear,
+background-color: shade(@button_press_color,1.2);
+border-width: 1px;
+border-color: shade(@button_press_color,1.0);
+	/*background-image: -gtk-gradient (linear,
                                  0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
                                      color-stop (0.48, alpha (#d4effb, 1.0)),
                                      color-stop (0.5, alpha (#c3e9f9, 1.0)),
-                                     to (alpha (#e9f7fc, 1.0)));
+                                     to (alpha (#e9f7fc, 1.0)));*/
     background-repeat: repeat;
     background-position: top left;
 
@@ -552,18 +556,19 @@ NemoTrashBar .button:active,
 NemoTrashBar .button:hover:active,
 NautilusTrashBar .button:active,
 NautilusTrashBar .button:hover:active {
+background-color: @error_bg_color;
 /* .button:hover:active */
-	background-image: -gtk-gradient (linear,
+	/*background-image: -gtk-gradient (linear,
                                       0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
                                      color-stop (0.48, alpha (#86d3f4, 1.0)),
                                      color-stop (0.5, alpha (#58C3F0, 1.0)),
-                                     to (alpha (@base_color, 1.0)));
+                                     to (alpha (@base_color, 1.0)));*/
 	/* outer */
-    border-top-color: 		alpha(@focused_entry_border, 0.20);
-    border-right-color: 	alpha(@focused_entry_border, 0.25);
-    border-left-color: 		alpha(@focused_entry_border, 0.25);
-    border-bottom-color: 	alpha(#fff, 0.10);
+border-top-color: 		shade(@error_bg_color,0.8);
+    border-left-color: 		shade(@error_bg_color,0.8);
+    border-right-color: 	shade(@error_bg_color,0.8);
+    border-bottom-color: 	shade(@error_bg_color,0.8);
 
    /** box-shadow: inset  0px  2px alpha(#fff, 0.09),
                 inset  2px  0px alpha(#fff, 0.07),
@@ -588,9 +593,12 @@ NautilusTrashBar .button *:hover:active {
 .question .button:insensitive,
 NemoTrashBar .button:insensitive,
 NautilusTrashBar .button:insensitive {
+background-color: shade(@button_hover_color,1.1);
+border-width: 1px;
+border-color: shade(@button_hover_color,1.0);
 /* .button:hover:active */
 
-	background-image: -gtk-gradient (linear,
+	/*background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@nautilus_cluebar_color, 1.2)),
                                      color-stop (0.45, shade(@nautilus_cluebar_color, 1.1)),
@@ -600,7 +608,7 @@ NautilusTrashBar .button:insensitive {
     box-shadow: inset  0px  1px shade(@nautilus_cluebar_color, 0.85),
                 inset  1px  0px shade(@nautilus_cluebar_color, 0.81),
                 inset -1px  0px shade(@nautilus_cluebar_color, 0.81),
-                inset  0px -1px shade(@nautilus_cluebar_color, 0.78);
+                inset  0px -1px shade(@nautilus_cluebar_color, 0.78);*/
 }
 
 .question .button *:insensitive,
@@ -760,7 +768,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active {
                      to   (shade(@button_raised_gradient_color_a, 0.85)));
    
 	border-color: @transparent;*/
-    box-shadow: inset  0px  3px alpha(#000, 0.02),
+   /* box-shadow: inset  0px  3px alpha(#000, 0.02),
                 inset  0px  2px alpha(#000, 0.08),
                 inset  2px  0px alpha(#000, 0.03),
                 inset -2px  0px alpha(#000, 0.03),
@@ -768,7 +776,7 @@ NemoWindow .primary-toolbar.toolbar .button:hover:active {
 				inset  0px  1px alpha(#000, 0.35),
                 inset  1px  0px alpha(#000, 0.16),
                 inset -1px  0px alpha(#000, 0.16),
-                inset  0px -1px alpha(#000, 0.09);
+                inset  0px -1px alpha(#000, 0.09);*/
 
 }
 
@@ -853,6 +861,7 @@ NemoWindow .notebook {
 
 NemoWindow .notebook tab,
 NautilusWindow .notebook tab {
+background-color: red;
     border-width: 0px 1px;
     border-style: solid;
     border-color:       shade(@notebook_border, 1.00);
@@ -864,11 +873,11 @@ NautilusWindow .notebook tab {
 									 color-stop (0.15, shade(@theme_bg_color, 0.90)),
                                      to   (shade(@theme_bg_color, 0.93)));
 */
-    background-image: -gtk-gradient (linear,
+   /* background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@sidebar_background, 0.90)),
 									 color-stop (0.15, shade(@sidebar_background, 1.00)),
-                                     to   (shade(@sidebar_background, 1.00)));
+                                     to   (shade(@sidebar_background, 1.00)));*/
 
     box-shadow: inset  0px  1px alpha(#FFF, 0.08),
                 inset  1px  0px alpha(#FFF, 0.04),
@@ -904,15 +913,15 @@ NemoWindow .notebook tab:active,
 NautilusWindow .notebook tab:active {    
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_base_color, 0.90)),
-									 color-stop (0.15, shade(@theme_base_color, 1.00)),
+                                     from (shade(@base_color, 1.0)),
+									 color-stop (0.15, shade(@base_color, 1.00)),
                                      to   (shade(@theme_base_color, 1.00)));
 
 	border-image: none;
 	border-left-color: 		shade(@notebook_border, 0.8);
 	border-right-color: 	shade(@notebook_border, 0.8);
 
-    box-shadow: inset  0px  1px alpha(#000, 0.08),
+    box-shadow: inset  0px  1px alpha(#FFF, 0.08),
                 inset  1px  0px alpha(#fff, 0.04),
                 inset -1px  0px alpha(#fff, 0.04);
 

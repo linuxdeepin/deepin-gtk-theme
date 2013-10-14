@@ -274,14 +274,14 @@ GtkStatusbar {
 
 /* ¡¡¡ Ojo !!!
 	Este es el color de fondo de la ventana de configuracion del sistema */	
-    background-color: @theme_bg_color;
+
 /* ---------------------------------------- */
 
     padding: 3px 4px;
 	-GtkEntry-inner-border: 0;
     -GtkEntry-progress-border: 0;
     color: @entry_text_color;
-background-color: #f7f7e2;
+background-color: @entry_normal_color;
    /*** background-image: -gtk-gradient(linear,
                                     left top, left bottom,
                                     from       (shade(@base_color, 0.96)),
@@ -290,13 +290,13 @@ background-color: #f7f7e2;
                                     to         (shade(@bg_color, 1.20)));****/
 
 	/* outer */
-    border-width: 0px;
+    border-width: 1px;
     border-style: solid;
     border-radius: 5px;
-    border-top-color: 		transparent;
-    border-right-color: 	alpha(#fff, 0.02);
-    border-left-color: 		alpha(#fff, 0.02);
-    border-bottom-color: 	white;	
+    border-top-color: 		shade(@border_color,0.8);
+    border-right-color: 	shade(@border_color,0.8);
+    border-left-color: 		shade(@border_color,0.8);
+    border-bottom-color: 	shade(@border_color,0.8);
 
 	/* border     box-shadow: inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.05),
@@ -312,12 +312,12 @@ background-color: #f7f7e2;
 
 .entry:focused {
 	/* outer */
-	background-color: #f4f5ca;
-	border-width: 0px;
-    border-top-color: 		alpha(@focused_entry_outer, 0.95);
-    border-right-color: 	alpha(@focused_entry_outer, 1.00);
-    border-left-color: 		alpha(@focused_entry_outer, 1.00);
-    border-bottom-color: 	alpha(@focused_entry_outer, 0.95);
+	background-color: @entry_focus_color;
+	border-width: 1px;
+    border-top-color: 		shade(@entry_focus_color,0.8);
+    border-right-color: 	shade(@entry_focus_color,0.8);
+    border-left-color: 		shade(@entry_focus_color,0.8);
+    border-bottom-color: 	shade(@entry_focus_color,0.8);
 
 	/* border 
     box-shadow: inset  0px  3px alpha(#000, 0.03),
@@ -334,22 +334,19 @@ background-color: #f7f7e2;
 .entry:insensitive {
 	color: @insensitive_fg_color;
     background-image: none;
-    background-color: @insensitive_bg_color;
+    background-color: @entry_insens_color;
     border-style: solid;
-	border-color: alpha (#000, 0.00);
-    border-bottom-color: 	alpha (#000, 0.00);
+	border-color: shade(@entry_insens_color,0.9);
+    border-width: 1px;
     border-image: none;
-	box-shadow:	inset  0px  1px @insensitive_border_color,
-                inset  1px  0px @insensitive_border_color,
-                inset -1px  0px @insensitive_border_color,
-                inset  0px -1px @insensitive_border_color;
+
 }
 
 
 .entry:selected,
 .entry:selected:focused {
-    background-color: #cbe0f2;
-    color: #000;
+    background-color: #8e9e0b;
+    color: #FFF;
 }
 
 .entry.progressbar {
@@ -990,7 +987,8 @@ GtkComboBox .separator {
 
 GtkComboBox .entry,
 GtkComboBox .entry:nth-child(first) {
-    border-width: 2px 0px 2px 2px; /* remove right-outer */
+    border-width: 1px 1px 1px 1px; /* remove right-outer */
+    border-color:@entry_border_color;
 
     border-top-left-radius:     5px;
     border-bottom-left-radius:  5px;
@@ -998,35 +996,36 @@ GtkComboBox .entry:nth-child(first) {
     border-bottom-right-radius: 0px;
 
 	/* remove right-border */
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
+    /**box-shadow: inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.05),
                 inset  2px  0px alpha(#000, 0.04),
                 inset -1px  0px alpha(#000, 0.04),
                 inset  0px -2px alpha(#000, 0.03),
 				inset  0px  1px shade(@button_border, 0.80),
                 inset  1px  0px shade(@button_border, 0.90),
-                inset  0px -1px shade(@button_border, 1.05);
+                inset  0px -1px shade(@button_border, 1.05);***/
 
 }
 
 
 GtkComboBox .entry:focused {
-    border-width: 2px 0px 2px 2px; /* remove right-outer */
+    border-color:shade(@entry_border_color,0.9);
+    border-width: 1px 1px 1px 1px; /* remove right-outer */
 
 	/* border */
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
+   /*** box-shadow: inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.05),
                 inset  2px  0px alpha(#000, 0.04),
                 inset -1px  0px alpha(#000, 0.04),
                 inset  0px -2px alpha(#000, 0.03),
 				inset  0px  1px alpha(@focused_entry_border, 0.95),
                 inset  1px  0px alpha(@focused_entry_border, 0.95),
-                inset  0px -1px alpha(@focused_entry_border, 0.95);
+                inset  0px -1px alpha(@focused_entry_border, 0.95);***/
 }
 
 /* for RTL languages */
 GtkComboBox .entry:nth-child(last) {
-    border-width: 2px 2px 2px 0px;
+    border-width: 1px 1px 1px 1px;
     border-radius: 0px 5px 5px 0px;
 
 
@@ -1048,19 +1047,22 @@ GtkComboBox.combobox-entry .button:hover,
 GtkComboBox.combobox-entry .button:active,
 GtkComboBox.combobox-entry .button:insensitive,
 GtkComboBox.combobox-entry .button:nth-child(last) {
+background-color: @base_color;
     border-top-left-radius: 0px;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 
-    border-width: 2px 2px 2px 0px;
+    border-width: 1px 1px 1px 0px;
+    border-color: @entry_border_color;
     padding: 2px 3px;
 
 }
 
+
 /* for RTL languages */
 GtkComboBox.combobox-entry .button:nth-child(first) {
-    border-width: 2px 0px 2px 2px;
+    border-width: 1px 1px 1px 0px;
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -1090,11 +1092,11 @@ GtkComboBox.combobox-entry .button *:prelight {
     border-left-color: 		shade(@toolbar_gradient_base, 0.70);
     border-bottom-color: 	shade(@toolbar_gradient_base, 0.80);
 
-    box-shadow: inset  0px  3px alpha(#000, 0.02),
+   /* box-shadow: inset  0px  3px alpha(#000, 0.02),
 				inset  0px  2px alpha(#000, 0.04),
 				inset  0px  1px alpha(#000, 0.06),
                 inset  1px  0px alpha(#000, 0.05),
-                inset -1px  0px alpha(#000, 0.05);
+                inset -1px  0px alpha(#000, 0.05);*/
 }
 
 .toolbar GtkComboBox.combobox-entry .button {
@@ -1103,7 +1105,7 @@ GtkComboBox.combobox-entry .button *:prelight {
                                      from (alpha(#fff, 0.04)),
                                      to   (alpha(#000, 0.07)));
 
-    border-top-color: 		alpha (#000, 0.15);
+    border-top-color: 		red;
     border-left-color: 		alpha (#000, 0.20);
     border-right-color: 	alpha (#000, 0.20);
     border-bottom-color: 	alpha (#000, 0.25);
@@ -1120,13 +1122,13 @@ GtkComboBox.combobox-entry .button *:prelight {
     border-right-color: 	alpha (#000, 0.31);
     border-bottom-color: 	alpha (#000, 0.22);
 
-    box-shadow: inset  0px  2px alpha(#000, 0.02),
+   /* box-shadow: inset  0px  2px alpha(#000, 0.02),
 				inset  0px  1px alpha(#000, 0.06),
                 inset  2px  0px alpha(#000, 0.02),
                 inset  1px  0px alpha(#000, 0.04),
                 inset -2px  0px alpha(#000, 0.02),
                 inset -1px  0px alpha(#000, 0.04),
-                inset  0px -1px alpha(#fff, 0.01);
+                inset  0px -1px alpha(#fff, 0.01);*/
 }
 
 .toolbar GtkComboBox.combobox-entry .button,
@@ -1540,7 +1542,7 @@ background-color: @button_normal_color;
 						             left top, left bottom,
 						             from (shade(@button_raised_gradient_color_a,1.1)),
 						             to   (shade(@button_raised_gradient_color_b,1.05)));**/ 
-border-width: 1px,1px,1px,1px;
+border-width: 1px;
     border-top-color: 		shade(@button_normal_color,0.8);
     border-right-color: 	shade(@button_normal_color,0.8);
     border-left-color: 		shade(@button_normal_color,0.8);

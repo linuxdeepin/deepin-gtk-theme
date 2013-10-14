@@ -55,7 +55,8 @@
 
 @define-color entry_normal_color white;
 @define-color entry_focus_color #e7e8b1;
-@define-color entry_border_color shade(@entry_normal_color,0.85);
+@define-color entry_border_color shade(@border_color,0.8);
+@define-color entry_insens_color #f5f5e1;
 
 
 @define-color theme_tab_active1 shade(@theme_base_color, 0.80);
@@ -79,7 +80,7 @@
 @define-color question_fg_color rgb (97, 122, 214);
 @define-color question_bg_color rgb (138, 173, 212);
 @define-color error_fg_color rgb (106, 18, 18);
-@define-color error_bg_color #f0925a;
+@define-color error_bg_color #f7af6e;
 
 @define-color os_chrome_bg_color @theme_bg_dark_color;
 @define-color os_chrome_fg_color @theme_fg_dark_color; 
