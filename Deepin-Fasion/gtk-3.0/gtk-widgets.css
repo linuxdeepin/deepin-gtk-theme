@@ -2141,10 +2141,10 @@ background-color: shade(@button_press_color,1.4);
     border-style: solid;
     border-radius: 0px;
 
-    border-top-color:       shade(@button_press_color, 1.0);
-    border-left-color: 		shade(@button_press_color, 1.0);
-    border-right-color: 	shade(@button_press_color, 1.0);
-    border-bottom-color: 	shade(@button_press_color, 1.0);
+    border-top-color:       shade(@button_press_color, 1.2);
+    border-left-color: 		shade(@button_press_color, 1.2);
+    border-right-color: 	shade(@button_press_color, 1.2);
+    border-bottom-color: 	shade(@button_press_color, 1.2);
 	border-image: none;
 
    /** box-shadow: inset  0px  1px alpha(#fff, 0.08),

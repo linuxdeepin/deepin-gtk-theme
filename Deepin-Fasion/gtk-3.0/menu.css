@@ -6,8 +6,7 @@
 .toolbar .raised .menu,
 .menu {
 	/* menu contextual 菜单背景，右键菜单背景*/
-    background-image: none;
-    background-color: @menu_bg_dark_color;
+
 /*
 	background-image: -gtk-gradient (radial,
                                        1.00 0.50, 0.30,

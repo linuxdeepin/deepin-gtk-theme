@@ -301,7 +301,7 @@ color: 	black;
 /* gnome-terminal */
 TerminalScreen {
     -TerminalScreen-background-darkness: 0.95;
-    background-color: @theme_bg_color;
+    background-color: @base_color;
     color: @theme_fg_color;
     
 }
