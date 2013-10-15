@@ -67,7 +67,7 @@
 }
 
 .menu.button GtkArrow {
-    color: @menu_fg_dark_color;
+    color: @arrow_color;
 }
 
 

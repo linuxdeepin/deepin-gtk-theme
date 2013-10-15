@@ -17,7 +17,7 @@
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 2;  
     -GtkMenuBar-internal-padding: 0;
-    -GtkMenuItem-arrow-scaling: 0.6;
+    -GtkMenuItem-arrow-scaling: 0.5;
     -GtkNotebook-tab-overlap: 1;
     -GtkNotebook-tab-curvature: 0;
 	-GtkNotebook-initial-gap: 0;
@@ -1817,8 +1817,8 @@ border-width: 1px;
 .toolbar .raised.entry:selected,
 .primary-toolbar .toolbar .entry:selected,
 .primary-toolbar.toolbar .entry:selected {
-    background-color: #cbe0f2;
-    color: #000;
+    background-color: #8e9e0b;
+    color: #FFF;
 }
 
 /* progressbars on primary toolbar entries are special */
@@ -2085,6 +2085,8 @@ GtkIconView.view.cell:selected:focused {
 .view:selected:focused,
 .view *:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.10);
+    border-radius: 2px;
+    padding: 10px 2px;
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_selected_bg_color, 1.1)),
@@ -2213,7 +2215,7 @@ column-header .button:insensitive {
 }
 
 column-header .button GtkArrow {
-    color:alpha (#000,0.4) ;
+    color:@arrow_color ;
 }
 
 column-header:nth-child(last) .button {

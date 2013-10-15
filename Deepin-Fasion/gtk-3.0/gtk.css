@@ -29,7 +29,7 @@
 @define-color theme_bg_dark_color #FFFFFF;
 /***************工具栏背景颜色***********/
 @define-color border_color #F0F5D6;
-@define-color theme_fg_dark_color #5F5F5F;/****菜单栏文字和图标颜色****/
+@define-color theme_fg_dark_color #605B2B;/****菜单栏文字和图标颜色****/
 @define-color theme_text_dark_color #dddddd;
 @define-color theme_shadow_dark_color alpha(#fff, 0.50);
 @define-color theme_highlight_color alpha(#fff, 0.05);
@@ -50,6 +50,7 @@
 @define-color button_normal_color #f8fbfb;
 @define-color button_hover_color #eff3ac;
 @define-color button_press_color #AFD362;
+@define-color arrow_color #cbdaab;
 
 @define-color tab_active_color #FC9AB0;
 
@@ -106,7 +107,7 @@
 
 /* @define-color sidebar_background shade(#E1E5E8, 0.95); */
 @define-color sidebar_background #FFF;
-@define-color sidebar_icon       #94a168;
+@define-color sidebar_icon       #e0d2a3;
 @define-color sidebar_selected_bg #eaedc2;
 @define-color sidebar_fg_color #454e14;
 
