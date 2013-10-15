@@ -17,15 +17,15 @@ EphyWindow {
 }
 
 GeditWindow GtkPaned {
-    background-image:-gtk-gradient (linear,
+background-color: @base_color;
+    /*background-image:-gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@base_color, 0.97)),
-                                     to   (shade(@base_color, 1.0)));
+                                     to   (shade(@base_color, 1.0)));*/
     background-repeat: repeat;
     background-position: top left;
 
-	/*box-shadow:	inset  0px  2px shade(@theme_highlight_color, 1.00),
-                inset  0px  1px shade(@theme_mdi_border_color,0.9);*/
+	box-shadow:	inset  0px  1px shade(@theme_mdi_border_color,0.9);
 
 }
 /***Gedit下拉搜索框****/
@@ -268,9 +268,9 @@ GeditWindow .notebook tab:last-child,
 EphyNotebook.notebook tab:last-child,
 GeditWindow .notebook tab:last-child:active,
 EphyNotebook.notebook tab:last-child:active {
-	border-left-width: 0px;
+	border-left-width: 1px;
 border-right-width: 1px;
-border-right-color: shade(@border_color,0.9);
+
     border-radius: 0px 0px 0px 0px;
 }
 

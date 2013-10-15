@@ -2088,20 +2088,20 @@ column-header {
 
 column-header .button:active,
 column-header .button:active:hover {
-	background-image: -gtk-gradient (linear,
+background-image: -gtk-gradient (linear,
                                      0.45 top, 0.55 bottom,
                                      from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#d4effb, 1.0)),
-                                     color-stop (0.5, alpha (#58C3F0, 0.6)),
+                                     color-stop (0.48, #D2EFFB),
+                                     color-stop (0.5, #D2EFFB),
                                      to (alpha (@base_color, 0.89)));
     border-width: 1px 1px 1px 0px;
     border-style: solid;
     border-radius: 0px;
 
     border-top-color:           shade(@bg_color, 0.8);
-    border-left-color: 		shade(@button_bg_active, 0.78);
-    border-right-color: 	shade(@button_bg_active, 0.78);
-    border-bottom-color: 	shade(@button_bg_active, 0.70);
+    border-left-color: 		shade(@button_bg_active, 0.85);
+    border-right-color: 	shade(@button_bg_active, 0.85);
+    border-bottom-color: 	shade(@button_bg_active, 0.85);
 	border-image: none;
 
     box-shadow: inset  0px  1px alpha(#fff, 0.08),

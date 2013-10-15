@@ -1,10 +1,10 @@
-gtk-color-scheme = "base_color:#ffffff\nbg_color:#fdfdfd"
+gtk-color-scheme = "base_color:#ffffff\nbg_color:#ffffff"
 gtk-color-scheme = "text_color:#282828\nfg_color:#323232"
-gtk-color-scheme = "selected_bg_color:#c1c1c1\nselected_fg_color:#000000"
+gtk-color-scheme = "selected_bg_color:#e6eca8\nselected_fg_color:#2B4709"
 gtk-color-scheme = "tooltip_bg_color:#FFFFFF\ntooltip_fg_color:#282828\nlink_color:#4ab9ff"
 
 gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#282828\ntheme_text_dark_color:#dddddd"
-gtk-color-scheme = "sidebar_background:#fafafa"
+gtk-color-scheme = "sidebar_background:#ffffff"
 
 include "notebooks.rc"
 
@@ -116,7 +116,7 @@ style "default" {
 	engine "murrine" {
 		animation			= FALSE
         arrowstyle			= 1			# Estilo flechas menu (triangulos)
-		border_shades       = {1.0, 0.9}
+		border_shades       = {1.0, 1.0}
 		colorize_scrollbar	= TRUE
 		contrast			= 0.8
 		default_button_color	= shade (1.28, @selected_bg_color)
@@ -136,13 +136,13 @@ style "default" {
 		glowstyle			= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
    		gradient_shades		= {1.00, 0.92, 0.93, 0.85}              
 		highlight_shade		= 1.0
-		lightborder_shade	= 1.0
+		lightborder_shade	= 1.1
 		lightborderstyle	= 1 # 0 = top side, 1 = all sides
 		listviewstyle		= 0 # 0 = nothing, 1 = dotted, 2 = line
 		menubaritemstyle	= 0 # 0 = menuitem look, 1 = button look
 		menubarstyle		= 1 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle		= 1 # 0 = flat, 1 = glassy, 2 = striped
-		menustyle		    = 3 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
+		menustyle		    = 1 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
 		progressbarstyle	= 0
 		reliefstyle			= 0  # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		rgba				= FALSE	# alpha transparency
@@ -153,7 +153,7 @@ style "default" {
 		sliderstyle		    = 1 # 0 = nothing added
 		stepperstyle		= 1 # 0 = standard, 1 = integrated stepper handles, 2 = unknown
 		toolbarstyle		= 1 # 0 = flat, 1 = glassy, 2 = gradient
-		trough_shades		= {0.95, 1.0}
+		trough_shades		= {1.0, 1.0}
 	}
 }
 
@@ -197,9 +197,9 @@ style "button" {
     xthickness	= 3
     ythickness	= 3
 
-    bg[NORMAL]              = shade (0.96, @base_color)
-    bg[PRELIGHT]            = "#addff3"   
-	bg[ACTIVE]              = "#67c8f1"	
+    bg[NORMAL]              = "#f8fbfb"
+    bg[PRELIGHT]            = "#eff3ac"   
+	bg[ACTIVE]              = "#AFD362"	
 	bg[SELECTED]            = shade (1.00, @selected_bg_color)	# 
 	bg[INSENSITIVE]         = shade (0.95, @bg_color)
 
@@ -208,15 +208,15 @@ style "button" {
 	engine "murrine" {
 		contrast                = 0.85
 		roundness				= 2
-		gradient_shades         = {1.15,1.07,1.08,1.25}
-		border_shades			= {1.10, 0.95}
+		gradient_shades         = {1.1,1.1,1.1,1.1}
+		border_shades			= {1.1, 1.1}
 
 		lightborderstyle		= 1 # 0 = top side, 1 = all sides
 		lightborder_shade       = 1.3
         highlight_shade			= 1.03
 		focusstyle				= 0		
 		glowstyle				= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
-        glow_shade              = 1.45
+        glow_shade              = 1.0
         reliefstyle             = 3
 		textstyle               = 1
 		text_shade			    = 1.2
@@ -561,10 +561,10 @@ style "progressbar" {
 	xthickness	= 0
 	ythickness	= 0
 
-	bg[SELECTED]		=  mix   (0.80, "#c2ebfd", "#d6f0ff")	# Pulsado
+	bg[SELECTED]		=  "#f4e184"	# Pulsado
 
 	engine "murrine" {
-		gradient_shades		= {0.99, 0.97, 0.96,0.97}
+		gradient_shades		= {1.0, 1.0, 1.0,1.0}
         border_shades		= {0.92, 0.92}
 		roundness			= 3
 		glowstyle				= 0 # 0 = top, 1 = bottom, 2 = top and bottom, 3 = horizontal, 4 = centered glow
@@ -665,7 +665,7 @@ style "spinbutton" = "button" { # input/stepper
 }
 
 style "toolbar" = "wider" {
-    bg[NORMAL]		= shade(0.97, @bg_color)
+    bg[NORMAL]		= @base_color
 	fg[ACTIVE]		= @text_color
 
 	engine "murrine" {
