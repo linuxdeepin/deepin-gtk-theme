@@ -2075,8 +2075,10 @@ GtkIconView.view.cell:selected:focused {
     background-color: shade(@theme_selected_bg_color, 1.10);
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.1)),
-                                     to (shade(@theme_selected_bg_color, 1.05))); 
+                                     from (shade(@theme_selected_bg_color, 1.0)),
+                                     to (shade(@theme_selected_bg_color, 0.9))); 
+    border-radius: 2px;
+    padding: 10px 2px;
     color: @theme_selected_fg_color;
 	text-shadow: 0px 1px @theme_selected_shadow_color;  
 	text-shadow: none;
@@ -2084,13 +2086,14 @@ GtkIconView.view.cell:selected:focused {
 
 .view:selected:focused,
 .view *:selected:focused {
-    background-color: shade(@theme_selected_bg_color, 1.10);
+   border-width: 1px 1px 1px 1px;
+   border-color: red;
     border-radius: 2px;
     padding: 10px 2px;
 	background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_selected_bg_color, 1.1)),
-                                     to (shade(@theme_selected_bg_color, 1.09)));  
+                                     from (shade(@theme_selected_bg_color, 0.95)),
+                                     to (shade(@theme_selected_bg_color, 0.8)));  
     color: @theme_selected_fg_color;
 	text-shadow: 0px 0px @theme_selected_shadow_color;
 }
