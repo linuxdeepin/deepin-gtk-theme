@@ -142,7 +142,7 @@ style "default" {
 		menubaritemstyle	= 0 # 0 = menuitem look, 1 = button look
 		menubarstyle		= 1 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle		= 1 # 0 = flat, 1 = glassy, 2 = striped
-		menustyle		    = 1 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
+		menustyle		    = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
 		progressbarstyle	= 0
 		reliefstyle			= 0  # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		rgba				= FALSE	# alpha transparency

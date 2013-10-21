@@ -886,7 +886,7 @@ GtkScrolledWindow.frame {
     border-bottom-color: 	alpha (#fff, 0.02);
 
 	
-    box-shadow: inset  0px  4px alpha(#000, 0.02),
+    /**box-shadow: inset  0px  4px alpha(#000, 0.02),
 				inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.04),
                 inset  3px  0px alpha(#000, 0.02),
@@ -898,7 +898,7 @@ GtkScrolledWindow.frame {
 				inset  0px  1px alpha(shade(@button_border_active, 0.70), 0.90),
                 inset  1px  0px alpha(shade(@button_border_active, 0.80), 0.80),
                 inset -1px  0px alpha(shade(@button_border_active, 0.80), 0.80),
-                inset  0px -1px alpha(shade(@button_border_active, 1.10), 0.70);
+                inset  0px -1px alpha(shade(@button_border_active, 1.10), 0.70);*/
 
 }
 
@@ -909,13 +909,13 @@ GtkScrolledWindow.frame {
     border-left-color: 		alpha(@focused_entry_outer, 1.00);
     border-bottom-color: 	alpha(@focused_entry_outer, 0.95);
 
-    box-shadow: inset  0px  2px alpha(#fff, 0.08),
+   /* box-shadow: inset  0px  2px alpha(#fff, 0.08),
                 inset  2px  0px alpha(#fff, 0.07),
                 inset -2px  0px alpha(#fff, 0.07),
                 inset  0px -2px alpha(#fff, 0.06),
 				inset  0px  1px alpha(@focused_entry_border, 0.80),
                 inset  1px  0px alpha(@focused_entry_border, 0.85),
-                inset -1px  0px alpha(@focused_entry_border, 0.85),
+                inset -1px  0px alpha(@focused_entry_border, 0.85),*/
                 inset  0px -1px alpha(@focused_entry_border, 0.95);
 }
 
@@ -931,10 +931,10 @@ GtkScrolledWindow.frame {
 	border-color: alpha (#000, 0.00);
     border-bottom-color: 	alpha (#000, 0.00);
     border-image: none;
-	box-shadow:	inset  0px  1px @insensitive_border_color,
+	/*box-shadow:	inset  0px  1px @insensitive_border_color,
                 inset  1px  0px @insensitive_border_color,
                 inset -1px  0px @insensitive_border_color,
-                inset  0px -1px @insensitive_border_color;
+                inset  0px -1px @insensitive_border_color;*/
 
 }
 

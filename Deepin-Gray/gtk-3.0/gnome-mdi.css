@@ -864,9 +864,9 @@ NautilusWindow .notebook tab {
 */
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@sidebar_background, 0.90)),
-									 color-stop (0.15, shade(@sidebar_background, 1.00)),
-                                     to   (shade(@sidebar_background, 1.00)));
+                                     from (shade(@base_color, 0.98)),
+									 color-stop (0.15, shade(@base_color, 1.00)),
+                                     to   (shade(@base_color, 1.00)));
 
     box-shadow: inset  0px  1px alpha(#000, 0.08),
                 inset  1px  0px alpha(#000, 0.04),
@@ -902,9 +902,9 @@ NemoWindow .notebook tab:active,
 NautilusWindow .notebook tab:active {    
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_base_color, 0.90)),
-									 color-stop (0.15, shade(@theme_base_color, 1.00)),
-                                     to   (shade(@theme_base_color, 1.00)));
+                                     from (shade(@base_color, 0.98)),
+									 color-stop (0.15, shade(@base_color, 1.00)),
+                                     to   (shade(@base_color, 1.00)));
 
 	border-image: none;
 	border-left-color: 		shade(@notebook_border, 1.00);

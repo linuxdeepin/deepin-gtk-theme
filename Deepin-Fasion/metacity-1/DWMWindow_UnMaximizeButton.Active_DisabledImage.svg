@@ -19,7 +19,7 @@
 <circle fill="#DBE27F" cx="-61.298" cy="174.062" r="7"/>
 <circle fill="#DBE27F" cx="-47.298" cy="174.688" r="7"/>
 <circle fill="#DBE27F" cx="-33.298" cy="174.062" r="7"/>
-<circle opacity="0.2" fill="#DBE27F" enable-background="new    " cx="10" cy="10" r="7"/>
+<circle opacity="0.2" fill="#DBE27F" enable-background="new    " cx="10" cy="10" r="6.5"/>
 <g>
 	
 		<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="-86.661" y1="177.911" x2="-79.589" y2="170.839"/>
@@ -51,5 +51,5 @@
 	<circle fill="#AFD362" cx="-70" cy="140" r="7"/>
 	<rect x="-73" y="137" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" width="6" height="6"/>
 </g>
-<circle opacity="0.4" fill="none" stroke="#AFD362" stroke-miterlimit="10" cx="10" cy="10" r="6.5"/>
+<circle opacity="0.4" fill="none" stroke="#AFD362" stroke-miterlimit="10" enable-background="new    " cx="10" cy="10" r="6.036"/>
 </svg>

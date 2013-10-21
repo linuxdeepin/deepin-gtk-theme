@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1"
+	 id="svg2" xmlns:svg="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" inkscape:export-ydpi="90" inkscape:export-xdpi="90" inkscape:export-filename="/usr/share/themes/Gnome-Cupertino/gtk-3.0/assets/switch-off.png" inkscape:version="0.48.4 r9939" sodipodi:docname="switch-off.svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="56px" height="20px"
+	 viewBox="0 0 56 20" enable-background="new 0 0 56 20" xml:space="preserve">
+<sodipodi:namedview  objecttolerance="10" bordercolor="#666666" showgrid="false" inkscape:cx="7.5021097" inkscape:zoom="8.4642857" guidetolerance="10" pagecolor="#ffffff" inkscape:cy="10" borderopacity="1" gridtolerance="10" id="namedview59" inkscape:window-width="1920" inkscape:current-layer="svg2" inkscape:pageshadow="2" inkscape:window-maximized="1" inkscape:window-height="1117" inkscape:window-y="0" inkscape:window-x="0" inkscape:pageopacity="0">
+	</sodipodi:namedview>
+<g id="g3040" opacity="0.5">
+	<g id="g3">
+		
+			<linearGradient id="path18_1_" gradientUnits="userSpaceOnUse" x1="326.1875" y1="-385.125" x2="326.1875" y2="-368.125" gradientTransform="matrix(1 0 0 -1 -298 -367)">
+			<stop  offset="0" style="stop-color:#FFFFFF"/>
+			<stop  offset="0.5043" style="stop-color:#FDFDFD"/>
+			<stop  offset="0.6857" style="stop-color:#F6F6F6"/>
+			<stop  offset="0.8148" style="stop-color:#EBEBEB"/>
+			<stop  offset="0.8487" style="stop-color:#E6E6E6"/>
+			<stop  offset="1" style="stop-color:#DCDCDC"/>
+		</linearGradient>
+		<path id="path18" fill="url(#path18_1_)" stroke="#898989" stroke-width="1.1144" stroke-miterlimit="10" d="M3.52,10
+			c0,4.694,3.8,8.5,8.488,8.5h32.359c4.688,0,8.488-3.806,8.488-8.5l0,0c0-4.694-3.8-8.5-8.488-8.5H12.008
+			C7.32,1.5,3.52,5.306,3.52,10L3.52,10z"/>
+		
+			<linearGradient id="path25_1_" gradientUnits="userSpaceOnUse" x1="-109.6458" y1="-384.938" x2="-109.6458" y2="-369.062" gradientTransform="matrix(-1 0 0 -1 -81.4583 -367)">
+			<stop  offset="0" style="stop-color:#000000;stop-opacity:0.6"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</linearGradient>
+		<path id="path25" opacity="0.1" fill="none" stroke="url(#path25_1_)" stroke-miterlimit="10" enable-background="new    " d="
+			M44.367,17.438c4.094,0,7.425-3.337,7.425-7.438s-3.331-7.438-7.425-7.438H12.008c-4.094,0-7.425,3.336-7.425,7.438
+			c0,4.101,3.331,7.438,7.425,7.438H44.367z"/>
+		
+			<linearGradient id="path32_1_" gradientUnits="userSpaceOnUse" x1="-109.6458" y1="-383.875" x2="-109.6458" y2="-370.125" gradientTransform="matrix(-1 0 0 -1 -81.4583 -367)">
+			<stop  offset="0" style="stop-color:#000000;stop-opacity:0.6"/>
+			<stop  offset="1" style="stop-color:#000000"/>
+		</linearGradient>
+		<path id="path32" opacity="0.05" fill="none" stroke="url(#path32_1_)" stroke-miterlimit="10" enable-background="new    " d="
+			M44.367,16.375c3.508,0,6.363-2.86,6.363-6.375s-2.854-6.375-6.363-6.375H12.008C8.5,3.625,5.645,6.485,5.645,10
+			s2.854,6.375,6.363,6.375H44.367z"/>
+	</g>
+	<g id="g36">
+		<path id="path38" opacity="0.5" enable-background="new    " d="M3.145,10c0-4.963,4.038-9,9-9s9,4.037,9,9s-4.038,9-9,9
+			S3.145,14.962,3.145,10z M4.204,10c0,4.379,3.562,7.941,7.941,7.941s7.941-3.562,7.941-7.941s-3.562-7.941-7.941-7.941
+			S4.204,5.621,4.204,10z"/>
+		<g id="g40">
+			
+				<linearGradient id="circle55_1_" gradientUnits="userSpaceOnUse" x1="-93.6033" y1="-385" x2="-93.6033" y2="-369" gradientTransform="matrix(-1 0 0 -1 -81.4583 -367)">
+				<stop  offset="0" style="stop-color:#FFFFFF"/>
+				<stop  offset="0.408" style="stop-color:#FDFDFD"/>
+				<stop  offset="0.6411" style="stop-color:#F4F4F4"/>
+				<stop  offset="0.8296" style="stop-color:#E6E6E6"/>
+				<stop  offset="0.9941" style="stop-color:#D3D3D3"/>
+				<stop  offset="1" style="stop-color:#D2D2D2"/>
+			</linearGradient>
+			<circle id="circle55" fill="url(#circle55_1_)" cx="12.145" cy="10" r="8"/>
+			<ellipse id="ellipse57" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" cx="12.145" cy="10" rx="7.187" ry="7.194"/>
+		</g>
+	</g>
+</g>
+<g opacity="0.5">
+	<g opacity="0.3">
+		<line fill="none" stroke="#000000" stroke-width="2" stroke-miterlimit="10" x1="36" y1="4" x2="36" y2="14"/>
+	</g>
+	<g>
+		<line fill="none" stroke="#898989" stroke-width="2" stroke-miterlimit="10" x1="36" y1="5" x2="36" y2="15"/>
+	</g>
+</g>
+</svg>

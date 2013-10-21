@@ -855,7 +855,7 @@ NemoWindow .notebook {
 
 NemoWindow .notebook tab,
 NautilusWindow .notebook tab {
-background-color: red;
+
     border-width: 0px 1px;
     border-style: solid;
     border-color:       shade(@notebook_border, 1.00);
