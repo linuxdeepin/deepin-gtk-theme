@@ -25,7 +25,7 @@
 	border-width: 1px;
 	border-radius: 0px;
 
-	border-color: shade(@menu_bg_dark_color, 0.97);
+	border-color: shade(@menu_bg_dark_color, 0.7);
 	border-image: 	none;
 }
 
@@ -388,7 +388,8 @@ GtkComboBox .menuitem.separator,
 	border-style: none;
     border-image: none;
 
-	color: alpha(#000, 0.05);
+	color: alpha(#FFF, 0.05);
+	
 
 }
 

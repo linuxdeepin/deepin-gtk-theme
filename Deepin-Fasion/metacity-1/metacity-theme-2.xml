@@ -138,7 +138,7 @@
 
 <draw_ops name="titlebar_maximized">
 	<include name="titlebar_gradient_maximized"/>
-	<include name="maxed_border"/>
+	<!-- ::<include name="maxed_border"/>  ::--->
 </draw_ops>
 
 <draw_ops name="round_titlebar">
