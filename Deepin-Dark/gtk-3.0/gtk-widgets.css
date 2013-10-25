@@ -915,8 +915,8 @@ GtkScrolledWindow.frame {
                 inset  0px -2px alpha(#fff, 0.06),
 				inset  0px  1px alpha(@focused_entry_border, 0.80),
                 inset  1px  0px alpha(@focused_entry_border, 0.85),
-                inset -1px  0px alpha(@focused_entry_border, 0.85),*/
-                inset  0px -1px alpha(@focused_entry_border, 0.95);
+                inset -1px  0px alpha(@focused_entry_border, 0.85),
+                inset  0px -1px alpha(@focused_entry_border, 0.95);*/
 }
 
 .button *:active,
