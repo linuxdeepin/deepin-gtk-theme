@@ -15,7 +15,7 @@
 @define-color theme_text_color @text_color;
 @define-color theme_fg_color @fg_color;
 @define-color theme_shadow_color alpha(#fff, 0.3);
-@define-color theme_selected_bg_color #c7def2;
+@define-color theme_selected_bg_color #a2c4e2;
 @define-color theme_selected_fg_color @selected_fg_color;
 @define-color theme_selected_shadow_color alpha(#fff, 0.4);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;

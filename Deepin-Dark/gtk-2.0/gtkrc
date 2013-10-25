@@ -922,8 +922,8 @@ widget "MozillaGtkWidget*GtkRadio*"				style:highest "radiobutton"
 # For Google Chrome/Chromium integration.
 style "chrome-gtk-frame" {
     ChromeGtkFrame::frame-gradient-size		    	= 120
-    ChromeGtkFrame::frame-gradient-color		    = shade (1.06, @theme_bg_dark_color)
-    ChromeGtkFrame::inactive-frame-gradient-color	= shade (1.06, @theme_bg_dark_color)
+    ChromeGtkFrame::frame-gradient-color		    = "#444444"
+    ChromeGtkFrame::inactive-frame-gradient-color	= "#7f7f7f"
     ChromeGtkFrame::frame-color			        	= shade (0.64, @theme_bg_dark_color)
     ChromeGtkFrame::inactive-frame-color			= shade (0.64, @theme_bg_dark_color)
 
@@ -1048,4 +1048,5 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 include "apps/thunar.rc"		# thunar especific
 include "apps/terminal.rc"
 include "apps/gmusicbrowser.rc"
+
 
