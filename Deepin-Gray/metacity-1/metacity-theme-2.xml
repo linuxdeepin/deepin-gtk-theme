@@ -166,12 +166,12 @@
 
 <!-- ::: TITLES ::: -->
 <draw_ops name="title">
-	<title color="shade/#FBFBFB/0.05" x="((width - title_width) / 2) -36 `max` 0" y="0 `max` ((height-title_height)/2)-1"/>
+	<title color="shade/#FBFBFB/0.05" x="((width - title_width) / 2)  `max` 0" y="0 `max` ((height-title_height)/2)-1"/>
 	
 </draw_ops>
 
 <draw_ops name="title_unfocused">
-	<title color="shade/#FBFBFB/0.75" x="((width - title_width) / 2) -36 `max` 0" y="0 `max` ((height-title_height)/2)-1"/>
+	<title color="shade/#FBFBFB/0.75" x="((width - title_width) / 2)  `max` 0" y="0 `max` ((height-title_height)/2)-1"/>
 
 </draw_ops>
 
