@@ -166,11 +166,13 @@ background-color: transparent;
 .menuitem.check:active {
     background-image: url("assets/menuitem-checkbox-checked.png");
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 
 .menuitem.check:active:insensitive {
     background-image: url("assets/menuitem-checkbox-checked-insensitive.png");
     background-repeat: no-repeat;
+    background-color: transparent;
     
 }
 
@@ -178,22 +180,26 @@ background-color: transparent;
 .menuitem.radio:inconsistent {
     background-image: url("assets/menuitem-checkbox-mixed.png");
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 
 .menuitem.check:inconsistent:insensitive,
 .menuitem.radio:inconsistent:insensitive {
     background-image: url("assets/menuitem-checkbox-mixed-insensitive.png");
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 
 .menuitem.radio:active {
     background-image: url("assets/menuitem-radio-checked.png");
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 
 .menuitem.radio:active:insensitive {
     background-image: url("assets/menuitem-radio-checked-insensitive.png");
     background-repeat: no-repeat;
+    background-color: transparent;
 }
 /*
 .sidebar .radio:active,
