@@ -311,7 +311,13 @@ TerminalScreen {
 
 
 MathWindow * {
-    background-color: transparent;
+background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (shade(@theme_bg_dark_color, 1.00)),
+									 color-stop (0.25, shade(@theme_bg_dark_color, 0.95)),
+                                     to               (shade(@theme_bg_dark_color, 0.94)));
+
 }
 
 MathWindow {
@@ -330,7 +336,8 @@ MathDisplay GtkTextView.view {
 	/* color texto del display 
 	color: shade (#e8d001, 1.25); */
 	color: @calc_display_fg_color;
-    background-color: shade(@theme_bg_dark_color, 1.50);
+    
+    background-color: shade(@theme_bg_dark_color, 0.70);
 
 }
 
@@ -339,7 +346,7 @@ MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
 	/* Borde del display */
 	/* es necesario poner 'padding' porque sino el display sobre-escribe el borde */
 
-	padding: 			 3px;
+	padding: 			 0px;
     background-color: shade(@theme_bg_dark_color, 1.50);
     border-width: 		 1px;
 	border-radius: 		 5px;
@@ -363,10 +370,20 @@ MathWindow .button:hover:active {}
 */
 
 MathWindow .button,
+MathWindow .button:hover,
+MathWindow .button:active,
+MathWindow .button:hover:active,
 MathWindow .cell {
+background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (shade(@theme_bg_dark_color, 1.00)),
+									 color-stop (0.25, shade(@theme_bg_dark_color, 0.95)),
+                                     to               (shade(@theme_bg_dark_color, 0.94)));
     color: @theme_fg_dark_color;
 	text-shadow: 0px 1px @theme_shadow_dark_color;
 }
+
 
 MathWindow .menuitem {
     color: @menu_fg_dark_color;
