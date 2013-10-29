@@ -37,16 +37,19 @@
   <border name="button_border" left="0" right="0" top="1" bottom="1"/>
 </frame_geometry>
 
-<frame_geometry name="utility" title_scale="small" rounded_top_left="true" rounded_top_right="true" rounded_bottom_left="false" rounded_bottom_right="false">
-	<distance name="left_width" value="2"/>
-	<distance name="right_width" value="2"/>
-	<distance name="bottom_height" value="2"/>
-	<distance name="left_titlebar_edge" value="3"/>
-	<distance name="right_titlebar_edge" value="3"/>
-	<distance name="title_vertical_pad" value="0"/>
-	<border name="title_border" left="2" right="2" top="4" bottom="3"/>
-	<border name="button_border" left="0" right="0" top="2" bottom="2"/>
-	<aspect_ratio name="button" value="1"/>
+<frame_geometry name="utility" rounded_top_left="2" rounded_top_right="2" rounded_bottom_left="1" rounded_bottom_right="1">
+	<distance name="left_width" value="1"/>
+	<distance name="right_width" value="1"/>
+	<distance name="bottom_height" value="1"/>
+	<distance name="left_titlebar_edge" value="6"/>
+	<distance name="right_titlebar_edge" value="2"/>
+
+    <distance name="button_width" value="20"/>
+    <distance name="button_height" value="30"/>
+	<distance name="title_vertical_pad" value="15"/>
+
+	<border name="title_border" left="2" right="0" top="0" bottom="0"/>
+	<border name="button_border" left="0" right="0" top="1" bottom="1"/>
 </frame_geometry>
 
 <frame_geometry name="border" has_title="true">
