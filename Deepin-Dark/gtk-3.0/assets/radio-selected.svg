@@ -5,22 +5,22 @@
 	 width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
 <g>
 	
-		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="874" y1="1501" x2="874" y2="1487" gradientTransform="matrix(1 0 0 1 -866 -1486)">
+		<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="1148" y1="-1848" x2="1148" y2="-1834" gradientTransform="matrix(1 0 0 -1 -1140 -1833)">
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		<stop  offset="1" style="stop-color:#000000;stop-opacity:0.1"/>
 	</linearGradient>
 	
 		<circle opacity="0.7" fill="url(#SVGID_1_)" stroke="#000102" stroke-miterlimit="10" enable-background="new    " cx="8" cy="8" r="7"/>
-	<circle opacity="0.9" enable-background="new    " cx="8" cy="8" r="4.095"/>
+	<circle opacity="0.9" enable-background="new    " cx="8" cy="8" r="3"/>
 	
-		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="874.3295" y1="1499.5236" x2="871.5051" y2="1487.4392" gradientTransform="matrix(1 0 0 1 -866 -1486)">
+		<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="1148.3293" y1="-1846.5236" x2="1145.5049" y2="-1834.4392" gradientTransform="matrix(1 0 0 -1 -1140 -1833)">
 		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.6"/>
 	</linearGradient>
-	<path fill="url(#SVGID_2_)" d="M11.569,2.705c-1.045-0.733-2.316-1.166-3.689-1.166c-3.556,0-6.44,2.883-6.44,6.44
+	<path fill="url(#SVGID_2_)" d="M11.569,2.705C10.524,1.972,9.253,1.539,7.88,1.539c-3.556,0-6.44,2.883-6.44,6.44
 		c0,2.706,1.67,5.017,4.033,5.97C6.451,9.266,8.645,5.291,11.569,2.705z"/>
 </g>
-<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="870.888" y1="1463.413" x2="870.888" y2="1448.413" gradientTransform="matrix(1 0 0 1 -866 -1486)">
+<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="1144.8879" y1="-1810.413" x2="1144.8879" y2="-1795.413" gradientTransform="matrix(1 0 0 -1 -1140 -1833)">
 	<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0"/>
 	<stop  offset="1" style="stop-color:#000000;stop-opacity:0.1"/>
 </linearGradient>

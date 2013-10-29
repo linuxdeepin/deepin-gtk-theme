@@ -310,7 +310,7 @@ TerminalScreen {
 }
 
 
-MathWindow * {
+MathWindow GtkTable * {
 background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
@@ -388,10 +388,11 @@ background-image: url("assets/background-noise-toolbar.png"),
 MathWindow .menuitem {
     color: @menu_fg_dark_color;
     text-shadow: 1px 1px @menu_shadow_dark_color;
+
 }
 
 MathWindow GtkLabel:insensitive {
-    color: mix(@theme_bg_dark_color, @theme_fg_dark_color, 0.80);
+    color: mix(@theme_bg_dark_color, @theme_fg_dark_color, 0.90);
 	text-shadow: none;
 }
 
