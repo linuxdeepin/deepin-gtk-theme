@@ -81,7 +81,7 @@
 
 @define-color entry_text_color @theme_text_color;
 @define-color focused_entry_border mix(@theme_selected_bg_color, @theme_bg_color, 0.40);
-@define-color focused_entry_outer  alpha(#00a6ff, 0.9);
+@define-color focused_entry_outer  alpha(#61a3dc, 0.9);
 
 @define-color entry_text_dark_color @theme_text_color;
 @define-color entry_bg_dark_color shade(@theme_base_color, 0.88);
@@ -97,11 +97,11 @@
 @define-color sidebar_fg_color @theme_text_color;
 
 @define-color button_base shade(@base_color,0.95);
-@define-color button_gradient1 alpha(@button_base, 0.00);
-@define-color button_gradient2 alpha(@button_base, 0.35);
-@define-color button_gradient3 alpha(@button_base, 0.62);
-@define-color button_gradient4 alpha(@button_base, 0.0);
-@define-color button_bg_active shade(@base_color, 0.95);
+@define-color button_gradient1 #FDFDFD;
+@define-color button_gradient2 #F9F9F9;
+@define-color button_gradient3 #F4F4F4;
+@define-color button_gradient4 #FDFDFD;
+@define-color button_bg_active shade(@base_color, 1.0);
 @define-color button_border alpha(#000000,0.4);
 @define-color button_border_active shade(@button_border,0.9);
 
