@@ -1,6 +1,6 @@
 gtk-color-scheme = "base_color:#ffffff\nbg_color:#fdfdfd"
 gtk-color-scheme = "text_color:#282828\nfg_color:#323232"
-gtk-color-scheme = "selected_bg_color:#c1c1c1\nselected_fg_color:#000000"
+gtk-color-scheme = "selected_bg_color:#a2c4e2\nselected_fg_color:#000000"
 gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#ffffff\nlink_color:#4ab9ff"
 
 gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\ntheme_text_dark_color:#dddddd"
@@ -207,7 +207,7 @@ style "button" {
 
 	engine "murrine" {
 		contrast                = 0.85
-		roundness				= 2
+		roundness				= 3
 		gradient_shades         = {1.15,1.07,1.08,1.25}
 		border_shades			= {1.10, 0.95}
 
@@ -418,7 +418,7 @@ style "entry" = "default" { # text
 
 	engine "murrine" {
 		contrast			= 0.6
-		roundness			= 2		
+		roundness			= 3		
 		border_shades		= {1.0, 1.0}
 		focusstyle  		= 3
 	}
@@ -740,7 +740,7 @@ style "treeview" {
 	text[ACTIVE] 	= @selected_fg_color					# txt+indicador selected unfocused
 
 	engine "murrine" {
-		gradient_shades		= {1.00, 1.05, 1.05, 1.10}        
+		gradient_shades		= {1.10, 1.05, 1.05, 1.03}       
 		separatorstyle 		= 0		       
 		contrast			= 0.75
 	}
@@ -921,15 +921,15 @@ widget "MozillaGtkWidget*GtkRadio*"				style:highest "radiobutton"
 
 # For Google Chrome/Chromium integration.
 style "chrome-gtk-frame" {
-    ChromeGtkFrame::frame-gradient-size		    	= 120
-    ChromeGtkFrame::frame-gradient-color		    = "#444444"
-    ChromeGtkFrame::inactive-frame-gradient-color	= "#7f7f7f"
-    ChromeGtkFrame::frame-color			        	= shade (0.64, @theme_bg_dark_color)
-    ChromeGtkFrame::inactive-frame-color			= shade (0.64, @theme_bg_dark_color)
+    ChromeGtkFrame::frame-gradient-size		    	= 60
+    ChromeGtkFrame::frame-gradient-color		    = "#FFFFFF"
+    ChromeGtkFrame::inactive-frame-gradient-color	= "#FDFDFD"
+    ChromeGtkFrame::frame-color			        	= "#FDFDFD"
+    ChromeGtkFrame::inactive-frame-color			= "#FDFDFD"
 
     ChromeGtkFrame::scrollbar-trough-color			= shade (0.99, @bg_color)
     ChromeGtkFrame::scrollbar-slider-prelight-color	= shade (0.87, @bg_color)
-    ChromeGtkFrame::scrollbar-slider-normal-color	= shade (0.80, @bg_color)
+    ChromeGtkFrame::scrollbar-slider-normal-color	= shade (0.90, @bg_color)
 }
 class "ChromeGtkFrame"	style "chrome-gtk-frame"
 
