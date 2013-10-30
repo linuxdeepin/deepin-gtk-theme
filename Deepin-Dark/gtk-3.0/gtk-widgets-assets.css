@@ -282,53 +282,65 @@ GtkScale.slider,
 GtkScale.slider.horizontal,
 GtkScale.slider.horizontal:hover {
     background-image: url("assets/scale-slider-hor.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.slider:insensitive,
 GtkScale.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-insensitive-hor.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.slider.vertical {
     background-image: url("assets/scale-slider-ver.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.slider.vertical:insensitive {
     background-image: url("assets/scale-slider-insensitive-ver.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal,
 GtkScale.scale-has-marks-above.slider.horizontal:hover {
     background-image: url("assets/scale-slider-marks-above-horizontal.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-above.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-marks-above-horizontal-insensitive.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-above.slider.vertical {
     background-image: url("assets/scale-slider-marks-above-vertical.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
-    background-image: url("assets/scale-slider-marks-above-vertical-insensitive.svg");
+    background-image: url("assets/scale-slider-marks-above-vertical-insensitive.svg")
+    background-repeat: no-repeat;;
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal,
 GtkScale.scale-has-marks-below.slider.horizontal:hover {
     background-image: url("assets/scale-slider-marks-below-horizontal.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal:insensitive {
     background-image: url("assets/scale-slider-marks-below-horizontal-insensitive.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-below.slider.vertical {
     background-image: url("assets/scale-slider-marks-below-vertical.svg");
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-below.slider.vertical:insensitive {
     background-image: url("assets/scale-slider-marks-below-vertical-insensitive.svg");
+    background-repeat: no-repeat;
 }
 
 
