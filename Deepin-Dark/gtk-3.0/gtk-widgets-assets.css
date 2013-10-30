@@ -86,7 +86,7 @@ GtkCheckButton:selected:focus {
 .check:inconsistent:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focused:active:hover {
-    background-image: url("assets/checkbox-mixed-hover.svg");
+    background-image: url("assets/checkbox-checked-hover.svg");
     background-color: transparent;
 }
 
