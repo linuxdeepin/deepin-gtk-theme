@@ -16,14 +16,14 @@
     background-color: transparent;
     border-style: none;
 }
-
+***/
 GtkCheckButton:hover,
 GtkCheckButton:active:hover,
 GtkCheckButton:selected,
 GtkCheckButton:selected:focus {
     background-color: transparent;
 }
-**/
+
 
 .check,
 .check row:selected,
