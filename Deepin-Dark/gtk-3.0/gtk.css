@@ -54,7 +54,7 @@
 @define-color button_raised_gradient_color_b shade(@theme_bg_dark_color, 0.90);
 @define-color button_raised_linked_shadow alpha(@theme_base_color, 0.70);
 
-@define-color link_color #5AD2FF;
+@define-color link_color #124f94;
 @define-color frame_color #808080;
 @define-color inactive_frame_color #bbbbbb;
 @define-color warning_color #f57900;
