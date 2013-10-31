@@ -921,11 +921,11 @@ widget "MozillaGtkWidget*GtkRadio*"				style:highest "radiobutton"
 
 # For Google Chrome/Chromium integration.
 style "chrome-gtk-frame" {
-    ChromeGtkFrame::frame-gradient-size		    	= 60
-    ChromeGtkFrame::frame-gradient-color		    = "#FFFFFF"
-    ChromeGtkFrame::inactive-frame-gradient-color	= "#FDFDFD"
-    ChromeGtkFrame::frame-color			        	= "#FDFDFD"
-    ChromeGtkFrame::inactive-frame-color			= "#FDFDFD"
+    ChromeGtkFrame::frame-gradient-size		    	= 0
+    ChromeGtkFrame::frame-gradient-color		    = "#383838"
+    ChromeGtkFrame::inactive-frame-gradient-color	= "#444444"
+    ChromeGtkFrame::frame-color			        	= "#383838"
+    ChromeGtkFrame::inactive-frame-color			= "#383838"
 
     ChromeGtkFrame::scrollbar-trough-color			= shade (0.99, @bg_color)
     ChromeGtkFrame::scrollbar-slider-prelight-color	= shade (0.87, @bg_color)
