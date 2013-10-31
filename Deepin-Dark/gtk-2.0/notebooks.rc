@@ -4,9 +4,9 @@
 style "notebook" #= "default"
 	{
   GtkNotebook::tab-overlap 	= 2
-  GtkWidget::focus-padding = 0
+  GtkWidget::focus-padding = 10
   #font_name = "6" # custom tabs font size here
-  xthickness   = 0
+  xthickness   = 4
   ythickness   = 0
   fg[NORMAL] 	=  @text_color # active tab label color
 		engine "pixmap"

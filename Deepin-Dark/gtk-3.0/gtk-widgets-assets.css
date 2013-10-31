@@ -319,7 +319,7 @@ GtkScale.scale-has-marks-above.slider.vertical {
 
 GtkScale.scale-has-marks-above.slider.vertical:insensitive {
     background-image: url("assets/scale-slider-marks-above-vertical-insensitive.svg")
-    background-repeat: no-repeat;;
+    background-repeat: no-repeat;
 }
 
 GtkScale.scale-has-marks-below.slider.horizontal,
