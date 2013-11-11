@@ -142,7 +142,7 @@ style "default" {
 		menubaritemstyle	= 0 # 0 = menuitem look, 1 = button look
 		menubarstyle		= 1 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle		= 1 # 0 = flat, 1 = glassy, 2 = striped
-		menustyle		    = 3 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
+		menustyle		    = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
 		progressbarstyle	= 0
 		reliefstyle			= 0  # 0 = flat, 1 = inset, 2 = shadow, 3 = shadow with gradient, 4 = stronger shadow with gradient
 		rgba				= FALSE	# alpha transparency
@@ -479,8 +479,8 @@ style "menubar" {
 }
 
 style "menu" {
-	xthickness	= 0
-	ythickness	= 0
+	xthickness	= 5
+	ythickness	= 5
 	GtkMenuItem::arrow-scaling	= 0.5
 
 	bg[NORMAL]			= shade (0.88, @theme_bg_dark_color)
@@ -510,7 +510,7 @@ style "menu_item_white" {
         gradient_shades		= {1.00, 0.98, 0.95, 0.90}
 		border_shades 		= {1.40, 1.0}
         roundness           = 1
-        contrast            = 0.8           # Contraste separadores
+        contrast            = 0.99           # Contraste separadores
 		textstyle           = 0
 		#text_shade			= 0.7
 	}

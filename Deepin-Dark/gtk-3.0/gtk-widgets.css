@@ -372,43 +372,60 @@ GtkStatusbar {
 /*****************
  * GtkSpinButton *
  *****************/
-.spinbutton.button,
-.spinbutton.button:prelight,
-.spinbutton.button:hover,
-.spinbutton.button:active,
-.spinbutton.button:focused,
-.spinbutton.button:insensitive {
-	box-shadow: none;
+.spinbutton .button {
+    border-radius: 0;
+    border-width: 0 0 0 0px;
+    background-color: @transparent;
     background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
-
-    border-width: 0px;
-    border-style: none;
-    border-image: none;
-
+    -unico-outer-stroke-width: 0;
+    -unico-inner-stroke-width: 0;
+    padding: 2px 6px;
 }
 
-.spinbutton.button {
-    color: @internal_element_color;
+.spinbutton .button:active,
+.spinbutton .button:active:hover {
+
+    background-color: alpha (#000, 0.05);
+	background-image: none;
+
+    -unico-border-gradient: -gtk-gradient (linear,
+                     left top, left bottom,
+                     from (shade (@base_color, 0.74)),
+                     to (shade (@base_color, 0.74)));
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (#000, 0.07)),
+                    to (alpha (#000, 0.03)));
 }
 
-.spinbutton.button:prelight,
-.spinbutton.button:active {
-    color: @internal_element_prelight;
+.spinbutton .button:focus,
+.spinbutton .button:focus:active {
+    -unico-border-gradient: -gtk-gradient (linear,
+                    left top, left bottom,
+                    from (alpha (@selected_bg_color, 0.80)),
+                    to (alpha (@selected_bg_color, 0.75)));
 }
 
-.spinbutton.button:insensitive {
-    color: @insensitive_border_color;
+.spinbutton .button:insensitive,
+.spinbutton .button:focus:insensitive {
+    background-image: none;
+    background-color: alpha (#000, 0.05);
+    color: @insensitive_color;
 }
 
-.spinbutton.entry {
-    padding: 4px 6px 4px 5px;
-
+.spinbutton .button:last-child {
+    border-width: 0 0 0 0px;
+    border-radius: 0 2px 2px 0;
+    -unico-outer-stroke-width: 0;
 }
 
-.spinbutton.entry:focused {
-
+.spinbutton .button:first-child {
+    border-width: 10px 0 0 0;
+    border-radius: 2px 0 0 2px;
+    -unico-outer-stroke-width: 0;
 }
+
 
 /****************
  * Progress bar *
