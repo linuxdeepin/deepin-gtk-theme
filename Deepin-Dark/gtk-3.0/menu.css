@@ -20,13 +20,17 @@
                                      from (shade(@menu_bg_dark_color, 1.03)),
                                      to   (shade(@menu_bg_dark_color, 0.97)));
 	
-    padding: 5px 0px;
+    padding: 5px 3px;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0px;
 
 	border-color: shade(@menu_bg_dark_color, 0.7);
 	border-image: 	none;
+	box-shadow: inset 1px 0px alpha(#FFF,0.1),
+	            inset -1px 0px alpha(#FFF,0.1),
+	            inset 0px 1px alpha(#FFF,0.1),
+	            inset 0px -1px alpha(#FFF,0.1);
 }
 
 .menu:selected {
@@ -98,7 +102,29 @@
 
     color: @menu_fg_dark_color;
 }
+.menubar:backdrop {
+    -GtkWidget-window-dragging: true;
+    background-color: shade (@theme_bg_dark_color, 1.00); 
+    background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@theme_bg_dark_color, 1.2)),
+                                     to   (shade(@theme_bg_dark_color, 1.2)));
+    background-repeat: repeat;
+    background-position: top left;
 
+    /* linea 3D  (oscura) */
+	/***box-shadow: inset  0px -1px @menu_line_dark_color;***/
+
+    /* linea 3D (clara) */
+    border-image: none;
+    border-width: 0px 0px 0px 0px;
+    border-style: solid;
+    border-radius: 0px;
+    border-bottom-color:  @menu_line_light_color;
+
+    color: shade(@menu_fg_dark_color,0.6);
+}
 /***************
  * menubaritem *
  ***************/
@@ -119,6 +145,11 @@
  ************/
 .menubar .menuitem {
     color: @theme_fg_dark_color;
+    text-shadow: 1px 1px @theme_shadow_dark_color;
+}
+
+.menubar .menuitem:backdrop {
+    color: shade(@theme_fg_dark_color,0.6);
     text-shadow: 1px 1px @theme_shadow_dark_color;
 }
 

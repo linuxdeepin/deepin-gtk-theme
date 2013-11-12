@@ -10,8 +10,13 @@ NautilusWindow .sidebar .image {
 	icon-shadow: none;
 }
 
+NautilusWindow .sidebar .image:backdrop {
+    color: 	shade(@sidebar_icon,1.9);
+	icon-shadow: none;
+}
+
 NautilusWindow .sidebar .image:prelight {
-    color: 	shade(@sidebar_icon, 1.10);
+    color: 	shade(@sidebar_icon, 1.60);
 }
 
 NautilusWindow .primary-toolbar.toolbar {
@@ -28,7 +33,25 @@ NautilusWindow .primary-toolbar.toolbar {
     border-width: 0px 0px 0px 0px;
     border-radius: 0px;
     border-style: solid;
-    border-color: alpha(#000,0.3);
+    border-color: red;
+    box-shadow: none;
+    padding: 1px 1px 1px;
+    -GtkWidget-window-dragging: true;
+    -GtkToolbar-button-relief: normal;    
+}
+NautilusWindow .primary-toolbar.toolbar:backdrop {
+	/* search-toolbar */
+    background-image:  -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@sidebar_background,0.9)),
+                                     to   (shade(@sidebar_background,0.9)));
+    background-repeat: repeat;
+    background-position: top left;
+
+    border-width: 0px 0px 0px 0px;
+    border-radius: 0px;
+    border-style: solid;
+    border-color: red;
     box-shadow: none;
     padding: 1px 1px 1px;
     -GtkWidget-window-dragging: true;
@@ -36,11 +59,14 @@ NautilusWindow .primary-toolbar.toolbar {
 }
 
 
+
+
 NautilusWindow .toolbar {
 	/* secundary search-toolbar */
     -GtkWidget-window-dragging: true;
     -GtkToolbar-button-relief: normal;    
     padding: 3px 5px;
+
 }
 
 .toolbar.menubar NautilusPathBar .button *,
@@ -48,6 +74,7 @@ NautilusWindow .toolbar .button *,
 NautilusWindow .toolbar.menubar .linked .button *,
 NautilusWindow .toolbar.menubar .button *  {
     padding: 0px;
+
 }
 
 /* buttons pathbar */
@@ -120,6 +147,12 @@ NautilusWindow .sidebar .scrollbar.trough.vertical {
     background-color: @sidebar_background;
 
 }
+NautilusWindow .sidebar .scrollbar.trough:backdrop,
+NautilusWindow .sidebar .scrollbar.trough.vertical:backdrop {
+    background-image: none;
+    background-color: shade(@sidebar_background,0.96);
+
+}
 
 NautilusWindow .sidebar .frame {
     border-width: 0px;
@@ -145,17 +178,41 @@ NautilusWindow .pane-separator {
 	color: shade(@theme_fg_dark_color, 1.00);
 
 }
+.toolbar.menubar NautilusPathBar.linked .button *:backdrop, 
+.toolbar.menubar NautilusPathBar .button *:backdrop {
+	color: shade(@theme_fg_dark_color,0.6);
 
+}
 
 
 .toolbar.menubar NautilusPathBar.linked .button *:active,
 .toolbar.menubar NautilusPathBar.linked .button *:active:hover {
     color: shade(@theme_text_dark_color, 0.95);
     text-shadow: 1px 1px @theme_shadow_dark_color;
+
+}
+.toolbar.menubar NautilusPathBar.linked .button *:active:backdrop,
+.toolbar.menubar NautilusPathBar.linked .button *:active:hover :backdrop{
+    color: shade(@theme_fg_dark_color,0.6);
+    
 }
 
 
+
 /* Middle toolbar-button */
+.toolbar.menubar NautilusPathBar.linked .button,
+.toolbar.menubar NautilusPathBar.linked .button:hover,
+.toolbar.menubar NautilusPathBar.linked .button:active,
+.toolbar.menubar NautilusPathBar.linked .button:active:hover,
+.toolbar.menubar NautilusPathBar.linked .button:insensitive {
+    border-width: 1px;
+    border-right-width: 0px;
+    border-left-width:  0px;
+    border-radius: 0;
+    padding-left:  6px;
+    padding-right: 6px;
+}
+
 .toolbar.menubar NautilusPathBar.linked .button,
 .toolbar.menubar NautilusPathBar.linked .button:hover,
 .toolbar.menubar NautilusPathBar.linked .button:active,
@@ -209,7 +266,7 @@ NautilusWindow .pane-separator {
     padding-left:  10px;
     padding-right: 10px;
     border-width: 1px;
-    border-radius: 20px;
+    border-radius: 4px;
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
 }

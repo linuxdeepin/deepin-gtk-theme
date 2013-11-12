@@ -20,11 +20,13 @@
 @define-color theme_selected_shadow_color alpha(#fff, 0.4);
 @define-color theme_tooltip_bg_color @tooltip_bg_color;
 @define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color toolbar_color #383838;
 
 @define-color menu_bg_color shade(@theme_bg_color, 1.06);
 @define-color menu_fg_color shade(@theme_fg_color, 1.00);
 @define-color menu_shadow_color @theme_shadow_color;
-
+@define-color backdrop_border_color #CDCDCD;
+@define-color backdrop_fg_color #878787;
 /**********************[Mediterranean-Night-Darkest]***********************/
 @define-color theme_bg_dark_color #444444;
 /***************工具栏背景颜色***********/

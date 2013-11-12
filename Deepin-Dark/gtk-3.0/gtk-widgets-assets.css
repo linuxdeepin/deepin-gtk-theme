@@ -31,7 +31,12 @@ GtkCheckButton:selected:focus {
     background-image: url("assets/checkbox-unchecked.svg");
     background-color: transparent;
 }
-
+.check:backdrop,
+.check row:selected:backdrop,
+.check row:selected:focused:backdrop {
+    background-image: url("assets/checkbox-unchecked-backdrop.svg");
+    background-color: transparent;
+}
 .check:hover,
 .check row:selected:hover,
 .check row:selected:focused:hover {
@@ -50,6 +55,12 @@ GtkCheckButton:selected:focus {
 .check row:selected:active,
 .check row:selected:focused:active {
     background-image: url("assets/checkbox-checked.svg");
+    background-color: transparent;
+}
+.check:active:backdrop,
+.check row:selected:active:backdrop,
+.check row:selected:focused:active:backdrop {
+    background-image: url("assets/checkbox-checked-backdrop.svg");
     background-color: transparent;
 }
 
@@ -82,7 +93,12 @@ GtkCheckButton:selected:focus {
     background-image: url("assets/checkbox-mixed.svg");
     background-color: transparent;
 }
-
+.check:inconsistent:backdrop,
+.check row:selected:inconsistent:backdrop,
+.check row:selected:focused:inconsistent:backdrop {
+    background-image: url("assets/checkbox-mixed-backdrop.svg");
+    background-color: transparent;
+}
 .check:inconsistent:active:hover,
 .check row:selected:active:hover,
 .check row:selected:focused:active:hover {
@@ -125,6 +141,12 @@ background-color: transparent;
 	background-color: transparent;
 }
 
+.radio:active:backdrop,
+.radio row:selected:active:backdrop,
+.radio row:selected:focused:active:backdrop {
+	background-image: url("assets/radio-selected-backdrop.svg");
+	background-color: transparent;
+}
 .radio:active:hover,
 .radio row:selected:active:hover,
 .radio row:selected:focused:active:hover {
@@ -146,6 +168,12 @@ background-color: transparent;
     background-color: transparent;
 }
 
+.radio:inconsistent:backdrop,
+.radio row:selected:inconsistent:backdrop,
+.radio row:selected:focused:inconsistent:backdrop {
+    background-image: url("assets/radio-mixed-backdrop.svg");
+    background-color: transparent;
+}
 .radio:inconsistent:active:hover,
 .radio row:selected:inconsistent:active:hover,
 
@@ -374,9 +402,15 @@ GtkSwitch.trough:backdrop {
 GtkSwitch.trough {
     background-image: url("assets/switch-off.svg");
 }
+GtkSwitch.trough:backdrop {
+    background-image: url("assets/switch-off-backdrop.svg");
+    }
 
 GtkSwitch.trough:active {
     background-image: url("assets/switch-on.svg");
+}
+GtkSwitch.trough:active:backdrop {
+    background-image: url("assets/switch-on-backdrop.svg");
 }
 
 GtkSwitch.trough:insensitive {
