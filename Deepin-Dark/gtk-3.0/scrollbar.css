@@ -48,6 +48,13 @@
     border-radius: 10px;
 	background-color:         alpha (#000, 0.4);
 }
+.scrollbar.slider:backdrop,
+.scrollbar.button:backdrop {
+    border-width: 0px;
+	border-style: none;
+    border-radius: 10px;
+	background-color:         alpha (#000, 0.1);
+}
 
 .scrollbar.slider:prelight {
 	background-color:         alpha (#000, 0.6);

@@ -24,8 +24,17 @@ GeditWindow GtkPaned {
     background-repeat: repeat;
     background-position: top left;
 
-	box-shadow:	inset  0px  2px shade(@theme_highlight_color, 1.00),
-                inset  0px  1px shade(@theme_mdi_border_color,0.9);
+	box-shadow:	inset  0px  1px shade(@theme_mdi_border_color,0.9);
+
+}GeditWindow GtkPaned:backdrop {
+    background-image:-gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@base_color, 0.98)),
+                                     to   (shade(@base_color, 0.98)));
+    background-repeat: repeat;
+    background-position: top left;
+    box-shadow:	inset  0px  1px shade(@base_color,0.98);
+
 
 }
 /***Gedit下拉搜索框****/
@@ -83,74 +92,60 @@ TerminalWindow .notebook {
                                      to   (shade(@theme_bg_dark_color, 0.95)));
 }
 
-TerminalWindow .notebook,
-GeditWindow .notebook,
-EphyNotebook.notebook {
-	border-style: solid;
-    border-width: 1px 0px 0px 0px;
-	border-radius: 0px;
-	border-top-color: #9ec3e2;/****Gedit ,Terminal标签底下描边颜色****/
-	border-image: none;
-    background-color: shade(@theme_bg_color, 0.97);
-	background-image: none;
-}
-  /***Gedit未激活标签背景*****/
 
+
+  /***Gedit未激活标签背景*****/
+TerminalWindow .notebook,
 GeditWindow .notebook tab,
 EphyNotebook.notebook tab {
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+	border-radius: 0px;
+/*	border-top-color: #9ec3e2;***Gedit ,Terminal标签底下描边颜色****/
+	border-image: none;
     background-image:-gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@base_color, 0.97)),
-                                     to   (shade(@base_color, 1.0)));
+                                     to   (shade(@base_color, 0.95)));
     background-repeat: repeat;
     background-position: top left;
-    border-width: 1px 1px 1px 1px;
-    border-top-color: shade (@theme_mdi_border_color,0.9); 
 	border-right-color: 		alpha (#000,0.2);
 	border-left-color: 		alpha (#000,0.2);
+    border-bottom-color: 	shade (@theme_mdi_border_color,0.9);
 
-	padding: 2px 4px;
+	padding: 4px 7px;
 
 	border-style: solid;
-	border-left-color: 		alpha (#000,0.2);
-	border-bottom-color: 	shade (@theme_mdi_border_color,0.9);
-	border-right-color: 	alpha (#000,0.2);
-	border-image: none;
+	
 
-	box-shadow:	inset  0px  1px @theme_highlight_color,
+	box-shadow:	inset  0px  1px shade (@theme_mdi_border_color,0.9),
                 inset  1px  0px @theme_highlight_color,
                 inset -1px  0px @theme_highlight_color;
 
 }
 
 
-GeditWindow .notebook tab:backdrop,
+GeditWindow .notebook tab:backdrop
 {
-color:red;
     background-image:-gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@base_color, 0.98)),
                                      to   (shade(@base_color, 0.98)));
     
     background-position: top left;
-    border-width: 0px 1px 1px 1px;
+    border-width: 0px 1px 0px 1px;
  
-	border-right-color: 		alpha (#000,0.2);
-	border-left-color: 		alpha (#000,0.2);
-
-	padding: 2px 7px;
+	padding: 4px 7px;
     
 	border-style: solid;
+    
 	border-left-color: 		alpha (#000,0.2);
 	border-bottom-color: 	shade (@theme_mdi_border_color,0.9);
 	border-right-color: 	alpha (#000,0.2);
 	border-image: none;
 
-    box-shadow:inset 0px -1px @notebook_border,
-                inset  -1px 0px @notebook_border;
-
-
 }
+
 NautilusWindow .notebook tab:backdrop,
 
 EphyNotebook.notebook tab:backdrop {
@@ -166,7 +161,7 @@ color:red;
 	border-right-color: 		alpha (#000,0.2);
 	border-left-color: 		alpha (#000,0.2);
 
-	padding: 0px 7px;
+	padding: 1px 7px;
     
 	border-style: solid;
 	border-left-color: 		alpha (#000,0.2);
@@ -191,7 +186,6 @@ border-width: 0px 1px 1px 1px;
 
 	border-top-color: 		shade(@theme_mdi_border_color, 0.5);
 	padding: 2px 4px;
-    border-width: 1px 1px 1px 1px;
 	border-style: solid;
 	border-left-color: 		alpha (#000,0.2);
 	border-bottom-color: 	shade (@theme_mdi_border_color,0.9);
@@ -206,7 +200,7 @@ border-width: 0px 1px 1px 1px;
 
 GeditWindow.notebook tab.top.
 EphyNotebook.notebook tab.top {
-    padding: 2px 4px;
+    padding: 3px 4px;
 }
 
 GeditWindow .notebook tab:active,
@@ -218,17 +212,19 @@ EphyNotebook.notebook tab:active {
                                      to   (@theme_tab_dark_active2));
     background-repeat: repeat;
     background-position: top left;
-    padding: 2px 4px;
+/*    padding: 2px 4px;*/
 
-    border-width: 1px 0px 0px 0px;
+    border-width: 0px 1px 0px 1px;
     border-style: solid; 
 	/* border-radius: 4px; */
 	border-top-color: 		shade (@theme_mdi_border_color,0.9);
 	border-left-color: 		shade (@theme_mdi_border_color,0.9);
+    border-left-color:      shade (@theme_mdi_border_color,0.9);
 	border-right-color: 	shade (@theme_mdi_border_color,0.9);
 	
 	border-image: none;
 
+/*
     box-shadow: inset  0px  4px alpha(#000, 0.01),
 				inset  0px  3px alpha(#000, 0.02),
 				inset  0px  2px alpha(#000, 0.03),
@@ -243,11 +239,12 @@ EphyNotebook.notebook tab:active {
                 inset -3px  0px alpha(#000, 0.02),
                 inset -2px  0px alpha(#000, 0.03),
                 inset -1px  0px alpha(#000, 0.04);
+*/
 
 
 }
 
- GeditWindow .notebook tab:active:backdrop,
+ GeditWindow .notebook tab:active:backdrop
  {
    /***Gedit激活标签背景*****/
     background-image:-gtk-gradient (linear,
@@ -256,24 +253,21 @@ EphyNotebook.notebook tab:active {
                                      to   (shade(@base_color,0.9)));
     background-repeat: repeat;
     background-position: top left;
-    padding: 2px 4px;
+/*    padding: 2px 4px;*/
 
-    border-width: 0px 0px 0px 0px;
+    border-width: 0px 1px 0px 1px;
     border-style: solid; 
 	/* border-radius: 4px; */
 	border-top-color: 		shade (@theme_mdi_border_color,0.9);
-	border-left-color: 		red;
+	border-left-color: 		shade (@theme_mdi_border_color,0.9);
+    border-left-color:      shade (@theme_mdi_border_color,0.9);
 	border-right-color: 	shade (@theme_mdi_border_color,0.9);
-	
-
-
-
-
 }
+
+
 NautilusWindow .notebook tab:active:backdrop,
 
 EphyNotebook.notebook tab:active:backdrop {
-   /***Gedit激活标签背景*****/
     background-image:-gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@base_color,0.9)),
@@ -288,8 +282,6 @@ EphyNotebook.notebook tab:active:backdrop {
 
 
 	border-image: none;
-
-
 
 }
 
@@ -399,10 +391,15 @@ border-right-width: 0px;
 
 TerminalWindow .notebook tab GtkLabel,
 EphyNotebook.notebook tab GtkLabel,
-GeditWindow .notebook tab GtkLabel,
 GeditWindow.notebook tab GtkLabel {
-	padding: 1px 4px;
+/*	padding: 2px 4px;*/
 color: 	black;
+    /***text-shadow: 0px 1px #000;***/
+}TerminalWindow .notebook tab GtkLabel:backdrop,
+EphyNotebook.notebook tab GtkLabel:backdrop,
+GeditWindow.notebook tab GtkLabel:backdrop {
+/*	padding: 2px 4px;*/
+color: 	@backdrop_fg_color;
     /***text-shadow: 0px 1px #000;***/
 }
 
@@ -1062,7 +1059,7 @@ NemoWindow .notebook tab:active {
 */
 
 NautilusWindow .notebook tab.top {
-    padding: 1px 6px;
+    padding: 1px 7px;
 }
 
 NemoWindow .notebook tab.top {
@@ -1089,7 +1086,7 @@ NemoWindow .notebook tab:last-child:active {
 
 NautilusWindow .notebook tab GtkLabel,
 NemoWindow .notebook tab GtkLabel {
-	padding: 0px;
+/*	padding: 0px;*/
 	color: @theme_text_color; 
 	text-shadow: 0px 1px @theme_shadow_color;
 }

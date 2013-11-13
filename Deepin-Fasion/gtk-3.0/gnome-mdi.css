@@ -118,6 +118,32 @@ border-width: 1px 1px 1px 1px;
                 inset -1px  0px @theme_highlight_color;*/
 
 }
+NautilusWindow .notebook tab:backdrop {
+color:red;
+    background-image:-gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@base_color, 0.78)),
+                                     to   (shade(@base_color, 0.98)));
+    
+    background-position: top left;
+    border-width: 0px 0px 0px 0px;
+ 
+	border-right-color: 		alpha (#000,0.2);
+	border-left-color: 		alpha (#000,0.2);
+
+	padding: 1px 7px;
+    
+	border-style: solid;
+	border-left-color: 		alpha (#000,0.2);
+	border-bottom-color: 	shade (@theme_mdi_border_color,0.9);
+	border-right-color: 	alpha (#000,0.2);
+	border-image: none;
+
+    box-shadow:inset 0px -1px @notebook_border,
+                inset  -1px 0px @notebook_border;
+
+
+}
   /***Terminal未激活标签背景*****/
 TerminalWindow .notebook tab {
    background-color: @base_color;
@@ -180,7 +206,24 @@ background-color: @button_press_color;
 
 
 }
- 
+ NautilusWindow .notebook tab:active:backdrop {
+    background-image:-gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from (shade(@base_color,0.9)),
+                                     to   (shade(@base_color,1.0)));
+    background-repeat: repeat;
+    background-position: top left;
+    padding: 1px 7px;
+
+    border-width: 0px 0px 0px 0px;
+    border-style: solid; 
+	/* border-radius: 4px; */
+
+
+	border-image: none;
+
+}
+
 
 TerminalWindow .notebook tab:active{
    /***terminal激活标签背景*****/

@@ -1826,8 +1826,8 @@ MathWindow .button {
     background-image: url("assets/background-noise-toolbar.png"), 
                       -gtk-gradient (linear,
 						             left top, left bottom,
-						             from (shade(@button_raised_gradient_color_a,0.9)),
-						             to   (shade(@button_raised_gradient_color_b,0.85)));
+						             from (shade(@button_raised_gradient_color_a,1.0)),
+						             to   (shade(@button_raised_gradient_color_b,1.0)));
 
 }
 
@@ -2063,8 +2063,8 @@ MathWindow .button:hover:active:backdrop,
     background-image: url("assets/background-noise-toolbar.png"),
                       -gtk-gradient (linear,
 				     left top, left bottom,
-                     from (shade(@button_raised_gradient_color_b, 0.9)),
-                     to   (shade(@button_raised_gradient_color_a, 0.9)));
+                     from (shade(@button_raised_gradient_color_b, 1.1)),
+                     to   (shade(@button_raised_gradient_color_a, 1.0)));
 
     border-width: 1px;
     border-style: solid; 
@@ -2520,6 +2520,11 @@ GtkIconView.view.cell:selected:focused {
     color: @theme_fg_color;
 	text-shadow: 0px 1px @theme_shadow_color;
 }
+.view:backdrop {
+    background-color: @theme_base_color;
+    color: @backdrop_fg_color;
+	text-shadow: 0px 1px @theme_shadow_color;
+}
 
 
 .view:selected,
@@ -2533,6 +2538,7 @@ GtkIconView.view.cell:selected:focused {
 	text-shadow: 0px 1px @theme_selected_shadow_color;  
 	text-shadow: none;
 }
+
 .view:selected:backdrop,
 .view *:selected:backdrop {
 
@@ -2540,7 +2546,7 @@ GtkIconView.view.cell:selected:focused {
                                      left top, left bottom,
                                      from (shade(@base_color, 0.9)),
                                      to (shade(@base_color, 0.88))); 
-    color: shade(@theme_selected_fg_color,1.3);
+    color: shade(@backdrop_fg_color,0.);
 	text-shadow: 0px 1px @theme_selected_shadow_color;  
 	text-shadow: none;
 }
@@ -3304,6 +3310,29 @@ GtkProgressBar.osd.progressbar {
 
 }
 
+.toolbar.menubar .linked .button:active:backdrop,
+.toolbar.menubar .linked .button:active:hover:backdrop,
+.toolbar .button.raised.linked:active:backdrop,
+.toolbar .button.raised.linked:active:hover:backdrop,
+.toolbar .raised.linked .button:active:backdrop,
+.toolbar .raised.linked .button:active:hover:backdrop,
+.primary-toolbar .linked .button:active:backdrop,
+.primary-toolbar .linked .button:active:hover:backdrop {
+	/* Quita borde derecho */
+    box-shadow: inset  0px  4px alpha(#000, 0.02),
+				inset  0px  3px alpha(#000, 0.02),
+				inset  0px  2px alpha(#000, 0.06),
+                inset  3px  0px alpha(#000, 0.02),
+                inset  2px  0px alpha(#000, 0.03),
+                inset -2px  0px alpha(#000, 0.02),
+                inset -1px  0px alpha(#000, 0.03),
+                inset  0px -2px alpha(#000, 0.01),
+
+				inset  0px  1px alpha(#000, 0.05),
+                inset  1px  0px alpha(#000, 0.06),
+                inset  0px -1px alpha(#000, 0.09);
+
+}
 /* Middle toolbar-button insensitive */
 .toolbar.menubar .linked .button:insensitive,
 .toolbar .button.raised.linked:insensitive,
@@ -3474,6 +3503,28 @@ GtkProgressBar.osd.progressbar {
                 inset -1px  0px alpha(#000, 0.16),
                 inset  0px -1px alpha(#000, 0.09);
 
+}.toolbar.menubar .linked .button:active:last-child:backdrop,
+.toolbar.menubar .linked .button:active:hover:last-child:backdrop,
+.toolbar .button.raised.linked:active:last-child:backdrop,
+.toolbar .button.raised.linked:active:hover:last-child:backdrop,
+.toolbar .raised.linked .button:active:last-child:backdrop,
+.toolbar .raised.linked .button:active:hover:last-child:backdrop,
+.primary-toolbar .linked .button:active:last-child,
+.primary-toolbar .linked .button:active:hover:last-child:backdrop {
+    box-shadow: inset  0px  4px alpha(#000, 0.02),
+				inset  0px  3px alpha(#000, 0.02),
+				inset  0px  2px alpha(#000, 0.02),
+                inset  3px  0px alpha(#000, 0.02),
+                inset  2px  0px alpha(#000, 0.03),
+                inset -3px  0px alpha(#000, 0.02),
+                inset -2px  0px alpha(#000, 0.03),
+                inset  0px -2px alpha(#000, 0.01),
+
+				inset  0px  1px alpha(#000, 0.05),
+                inset  1px  0px alpha(#000, 0.06),
+                inset -1px  0px alpha(#000, 0.05),
+                inset  0px -1px alpha(#000, 0.05);
+
 }
 
 /* Rightmost toolbar-button insensitive */
@@ -3555,6 +3606,30 @@ GtkProgressBar.osd.progressbar {
 				inset  0px  1px alpha(#000, 0.25),
                 inset  1px  0px alpha(#000, 0.16),
                 inset -1px  0px alpha(#000, 0.16),
+                inset  0px -1px alpha(#000, 0.09);
+
+
+}
+.toolbar.menubar .linked .button:active:only-child:backdrop,
+.toolbar.menubar .linked .button:active:hover:only-child:backdrop,
+.toolbar .button.raised.linked:active:only-child:backdrop,
+.toolbar .button.raised.linked:active:hover:only-child:backdrop,
+.toolbar .raised.linked .button:active:only-child:backdrop,
+.toolbar .raised.linked .button:active:hover:only-child:backdrop,
+.primary-toolbar .linked .button:active:only-child:backdrop,
+.primary-toolbar .linked .button:active:hover:only-child:backdrop {
+    box-shadow: inset  0px  4px alpha(#000, 0.02),
+				inset  0px  3px alpha(#000, 0.02),
+				inset  0px  2px alpha(#000, 0.02),
+                inset  3px  0px alpha(#000, 0.02),
+                inset  2px  0px alpha(#000, 0.03),
+                inset -3px  0px alpha(#000, 0.02),
+                inset -2px  0px alpha(#000, 0.03),
+                inset  0px -2px alpha(#000, 0.01),
+
+				inset  0px  1px alpha(#000, 0.05),
+                inset  1px  0px alpha(#000, 0.06),
+                inset -1px  0px alpha(#000, 0.06),
                 inset  0px -1px alpha(#000, 0.09);
 
 

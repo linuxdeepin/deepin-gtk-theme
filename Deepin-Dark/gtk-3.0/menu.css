@@ -135,10 +135,18 @@
 
 .menubar.menuitem:hover,
 .menubar .menuitem:hover {
-    border-radius: 3px 3px 0 0;
-    color: @theme_selected_fg_color;
-	text-shadow: 0px 1px @theme_selected_shadow_color;
+    border-radius: 4px 4px 0 0;
+    border-width: 1px 1px 0 1px;
+    background-image: url("assets/background-noise-toolbar.png"),
+                    -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@toolbar_gradient_base, 1.38)),
+                                     to (shade (@toolbar_gradient_base, 1.11)));
+    box-shadow: none;
+
+    color: shade (@dark_fg_color, 1.1);
+    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
 }
+
 
 /************
  * menuitem *

@@ -10,10 +10,6 @@ NautilusWindow .sidebar .image {
 	icon-shadow: none;
 }
 
-NautilusWindow .sidebar .image:backdrop {
-    color: 	shade(@sidebar_icon,1.9);
-	icon-shadow: none;
-}
 
 NautilusWindow .sidebar .image:prelight {
     color: 	shade(@sidebar_icon, 1.60);
@@ -99,6 +95,7 @@ NautilusToolbar .button {
 }
 
 NautilusToolbar .button *:active {
+
     icon-shadow: 0px 1px alpha(#000,0.8);
 }
 
@@ -109,7 +106,6 @@ NautilusToolbar .button *:active:insensitive {
 
 .toolbar NautilusPathBar .button *:active,
 .toolbar NautilusPathBar .button *:hover {
-	
 }
 
 NautilusFloatingBar {

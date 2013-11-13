@@ -114,5 +114,10 @@
 	color: @theme_fg_color;
 	text-shadow: 1px 1px @theme_shadow_color;
 }
+.notebook tab GtkLabel:backdrop {
+    padding: 0px 2px;
+	color: @backdrop_fg_color;
+	text-shadow: 1px 1px @theme_shadow_color;
+}
 
 
