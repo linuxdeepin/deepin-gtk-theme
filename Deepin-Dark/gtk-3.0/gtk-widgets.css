@@ -284,7 +284,7 @@ GtkStatusbar {
 
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
-                                    from       (shade(@base_color, 0.76)),
+                                    from       (shade(@base_color, 0.9)),
                                     color-stop (0.15, shade(@base_color, 0.96)),
                                     color-stop (0.50, shade(@base_color, 0.98)),
                                     to         (alpha(@bg_color, 1.00)));
@@ -299,15 +299,15 @@ GtkStatusbar {
     border-bottom-color: 	alpha(#fff, 0.03);	
 
 	/* border */
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
-				inset  0px  2px alpha(#000, 0.05),
-                inset  2px  0px alpha(#000, 0.04),
-                inset -2px  0px alpha(#000, 0.04),
-                inset  0px -2px alpha(#000, 0.03),
-				inset  0px  1px shade(@button_border, 0.80),
-                inset  1px  0px shade(@button_border, 0.90),
-                inset -1px  0px shade(@button_border, 0.90),
-                inset  0px -1px shade(@button_border, 1.05);
+    box-shadow: inset  0px  3px alpha(#000, 0.01),
+				inset  0px  2px alpha(#000, 0.01),
+                inset  2px  0px alpha(#000, 0.01),
+                inset -2px  0px alpha(#000, 0.01),
+                inset  0px -2px alpha(#000, 0.01),
+				inset  0px  1px alpha(#000,0.2),
+                inset  1px  0px alpha(#000,0.2),
+                inset -1px  0px alpha(#000,0.2),
+                inset  0px -1px alpha(#000,0.2);
 }
 
 .entry:backdrop {
@@ -346,21 +346,19 @@ GtkStatusbar {
 
 .entry:focused {
 	/* outer */
+/*
     border-top-color: 		alpha(@focused_entry_outer, 0.95);
     border-right-color: 	alpha(@focused_entry_outer, 1.00);
     border-left-color: 		alpha(@focused_entry_outer, 1.00);
     border-bottom-color: 	alpha(@focused_entry_outer, 0.95);
+*/
 
 	/* border */
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
-				inset  0px  2px alpha(#000, 0.05),
-                inset  2px  0px alpha(#000, 0.04),
-                inset -2px  0px alpha(#000, 0.04),
-                inset  0px -2px alpha(#000, 0.03),
-				inset  0px  1px alpha(@focused_entry_border, 0.95),
-                inset  1px  0px alpha(@focused_entry_border, 0.90),
-                inset -1px  0px alpha(@focused_entry_border, 0.90),
-                inset  0px -1px alpha(@focused_entry_border, 0.85);
+    box-shadow:
+				inset  0px  1px shade(@focused_entry_border, 0.8),
+                inset  1px  0px shade(@focused_entry_border, 0.8),
+                inset -1px  0px shade(@focused_entry_border, 0.8),
+                inset  0px -1px shade(@focused_entry_border, 0.8);
 }
 
 .entry:insensitive {
@@ -382,6 +380,11 @@ GtkStatusbar {
 .entry:selected:focused {
     background-color: #cbe0f2;
     color: #000;
+}
+.entry:selected:backdrop,
+.entry:selected:focused:backdrop {
+    background-color: #bcbcbc;
+    color: @theme_fg_color;
 }
 
 .entry.progressbar {
@@ -912,6 +915,20 @@ GtkLevelBar.vertical {
 	color: mix(@theme_selected_bg_color, @theme_fg_color, 0.70);
 
 }
+.frame:backdrop {
+    padding: 2px;
+    border-width: 1px;
+	border-radius: 4px;
+    border-style: solid;
+    border-color: shade (@theme_bg_color, 0.85);
+	border-top-color:       shade(@notebook_border, 1.25);
+    border-left-color: 		shade(@notebook_border, 1.25);
+    border-right-color: 	shade(@notebook_border, 1.25);
+    border-bottom-color: 	shade(@notebook_border, 1.25);
+	color: @backdrop_fg_color;
+
+}
+
 
 /* only render frames in a GtkScrolledWindow */
 GtkScrolledWindow.frame {
@@ -1198,14 +1215,14 @@ GtkComboBox .entry:nth-child(first) {
     border-bottom-right-radius: 0px;
 
 	/* remove right-border */
-    box-shadow: inset  0px  3px alpha(#000, 0.03),
-				inset  0px  2px alpha(#000, 0.05),
-                inset  2px  0px alpha(#000, 0.04),
-                inset -1px  0px alpha(#000, 0.04),
-                inset  0px -2px alpha(#000, 0.03),
-				inset  0px  1px shade(@button_border, 0.80),
-                inset  1px  0px shade(@button_border, 0.90),
-                inset  0px -1px shade(@button_border, 1.05);
+    box-shadow: inset  0px  3px alpha(#000, 0.01),
+				inset  0px  2px alpha(#000, 0.01),
+                inset  2px  0px alpha(#000, 0.01),
+                inset -2px  0px alpha(#000, 0.01),
+                inset  0px -2px alpha(#000, 0.01),
+				inset  0px  1px alpha(#000,0.2),
+                inset  1px  0px alpha(#000,0.2),
+                inset  0px -1px alpha(#000,0.2);
 
 }
 GtkComboBox .entry:backdrop,
@@ -1217,6 +1234,7 @@ GtkComboBox .entry:nth-child(first):backdrop {
     border-bottom-left-radius:  5px;
     border-top-right-radius:    0px;
     border-bottom-right-radius: 0px;
+    
 
 	/* remove right-border */
 
