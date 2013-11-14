@@ -121,6 +121,14 @@
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
+<draw_ops name="titlebar_gradient_unfocused">
+	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
+		<color value="shade/#444444/1.4"/>
+		<color value="shade/#444444/1.20"/>
+	</gradient>
+   <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
+</draw_ops>
+
 <draw_ops name="titlebar_gradient_maximized">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
 		<color value="shade/#494949/1.07"/>
@@ -128,12 +136,13 @@
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
-<draw_ops name="titlebar_gradient_unfocused">
-	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-		<color value="shade/#444444/1.4"/>
+
+<draw_ops name="titlebar_gradient_maximized_unfocursed">
+	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
+		<color value="shade/#444444/1.40"/>
 		<color value="shade/#444444/1.20"/>
 	</gradient>
-   <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
+    <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 
@@ -149,7 +158,10 @@
 
 <draw_ops name="titlebar_maximized">
 	<include name="titlebar_gradient_maximized"/>
-	<!-- ::<include name="maxed_border"/> ::: -->
+</draw_ops>
+
+<draw_ops name="titlebar_maximized_unfocused">
+	<include name="titlebar_gradient_maximized_unfocursed"/>
 </draw_ops>
 
 <draw_ops name="round_titlebar">
@@ -440,7 +452,7 @@
 </frame_style>
 
 <frame_style name="normal_maximized" geometry="normal_maximized" parent="normal">
-	<piece position="entire_background" draw_ops="titlebar_maximized"/>
+	<piece position="entire_background" draw_ops="titlebar_maximized_unfocused"/>
 	<button function="maximize" state="normal" draw_ops="unmaximize_button_unfocused"/>
 	<button function="maximize" state="pressed" draw_ops="unmaximize_button_pressed"/>
 	<button function="maximize" state="prelight" draw_ops="unmaximize_button_prelight"/>
