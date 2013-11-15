@@ -2687,12 +2687,15 @@ background-image: -gtk-gradient (linear,
                 inset  0px -1px alpha(#fff, 0.05);
 }
 column-header .button:hover:backdrop {
-background-image: -gtk-gradient (linear,
-                                     0.45 top, 0.55 bottom,
-                                     from (shade (@base_color, 0.98)),
-                                     color-stop (0.48, shade(@base_color,0.97)),
-                                     color-stop (0.5, shade(@base_color,0.96)),
-                                     to (shade (@base_color, 0.95)));
+ background-image:                             
+                       linear-gradient(to bottom, 
+                                      #fdfdfd,
+                                     
+                                      #f2f2f2 48%,
+                                      #eaeaea 50%,
+                                    
+                                      #fdfdfd
+                                      );
     border-width: 1px 1px 1px 0px;
     border-style: solid;
     border-radius: 0px;
@@ -2715,6 +2718,12 @@ column-header .button:insensitive {
     border-image: none;
 	box-shadow:	none;
 }
+column-header .button:backdrop {
+    border-width: 1px 1px 1px 0px;
+    border-color: @insensitive_border_color;
+    box-shadow: inset -1px 0 alpha(#fff,0.0),
+                inset 0 -1px alpha(#fff,0.2);
+}
 
 
 column-header .button GtkArrow {
@@ -2722,7 +2731,7 @@ column-header .button GtkArrow {
 }
 
 column-header:nth-child(last) .button {
-    border-width: 0px 0px 1px 0px;
+    border-width: 1px 1px 1px 0px;
 }
 
 row:insensitive {

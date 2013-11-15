@@ -86,7 +86,7 @@ GtkHCollapsablePaned .pane-separator:selected {
     background-color: @sidebar_background;
     border-width: 0px 1px 0px 0px;
     border-style: solid;
-    border-color: shade (@button_border, 0.90);
+    border-color: red;
 }
 
 /* Marlin sidebar separator */

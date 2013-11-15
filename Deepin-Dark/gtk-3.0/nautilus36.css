@@ -15,7 +15,8 @@ NautilusWindow .sidebar .image:prelight {
     color: 	shade(@sidebar_icon, 1.60);
 }
 
-NautilusWindow .primary-toolbar.toolbar {
+NautilusWindow .primary-toolbar.toolbar  {
+    margin:30px;
 	/* search-toolbar */
     background-image: none,
                       -gtk-gradient (linear,
@@ -76,6 +77,7 @@ NautilusWindow .toolbar.menubar .button *  {
 /* buttons pathbar */
 NautilusWindow .toolbar.menubar .button, 
 .toolbar.menubar NautilusPathBar .button {
+    
     padding: 2px 4px;
 }
 
@@ -155,19 +157,25 @@ NautilusWindow .sidebar .frame {
     border-style: none;	
 }
 
-
+/*定义nautilus侧边栏右边描边颜色*/
+/*
 NautilusWindow > GtkTable > .pane-separator,
 NautilusWindow .pane-separator {
     background-color: @sidebar_background;
-    /* border-color: @sidebar_background; */
-    border-style: none;
-    border-width: 0px;
-    background-image: -gtk-gradient(linear,
+    border-style: solid;
+border-width: 0px 1px 0px 1px;
+        
+border-top-color:purple;
+border-bottom-color:black;
+border-left-color:shade(@border_color,0.9);
+border-right-color:transparent;
+*/
+    /***background-image: -gtk-gradient(linear,
                                     left top, right top,
                                     from (@sidebar_background),
                                     color-stop (0.50, @sidebar_background),
-                                    to   (shade(@theme_bg_color, 0.65)));
-}
+                                    to   (shade(@theme_bg_color, 0.65)));***/
+/*}*/
 
 .toolbar.menubar NautilusPathBar.linked .button *, 
 .toolbar.menubar NautilusPathBar .button * {

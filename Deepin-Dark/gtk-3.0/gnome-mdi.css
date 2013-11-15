@@ -764,6 +764,21 @@ NemoWindow .pane-separator {
     border-color: @sidebar_background;
     border-image: none;
 }
+NautilusWindow > GtkTable > .pane-separator:backdrop,
+NautilusWindow .pane-separator:backdrop,
+NemoWindow > GtkTable > .pane-separator:backdrop,
+NemoWindow .pane-separator:backdrop {
+    background-color: red;
+    background-image: -gtk-gradient (linear,
+                                     left top, right top,
+                                     from (@sidebar_background),
+                                     color-stop(0.50, @sidebar_background),
+                                     to   (shade(@theme_bg_color, 0.60)));
+    border-style: solid;
+    border-width: 0px;
+    border-color: @sidebar_background;
+    border-image: none;
+}
 
 
 NemoSearchBar,

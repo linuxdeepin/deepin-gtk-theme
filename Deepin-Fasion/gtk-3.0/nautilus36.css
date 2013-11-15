@@ -127,7 +127,7 @@ NautilusWindow .sidebar .frame {
     border-style: none;	
 }
 
-
+/*定义nautilus侧边栏右边描边颜色*/
 NautilusWindow > GtkTable > .pane-separator,
 NautilusWindow .pane-separator {
     background-color: @sidebar_background;
