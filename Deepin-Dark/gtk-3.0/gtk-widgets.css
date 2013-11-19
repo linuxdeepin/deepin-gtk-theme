@@ -2564,7 +2564,7 @@ GtkIconView.view.cell:selected:focused {
                                      left top, left bottom,
                                      from (shade(@base_color, 0.9)),
                                      to (shade(@base_color, 0.88))); 
-    color: shade(@backdrop_fg_color,0.);
+    color: shade(@backdrop_fg_color,0.8);
 	text-shadow: 0px 1px @theme_selected_shadow_color;  
 	text-shadow: none;
 }
