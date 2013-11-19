@@ -20,7 +20,7 @@
                                      from (shade(@menu_bg_dark_color, 1.03)),
                                      to   (shade(@menu_bg_dark_color, 0.97)));
 	
-    padding: 5px 3px;
+    padding: 3px 3px;
 	border-style: solid;
 	border-width: 1px;
 	border-radius: 0px;
@@ -241,12 +241,13 @@ GtkComboBox .menuitem *:hover {
 .menuitem:hover {
 	/* contextual menu item-selected */
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (alpha (#62bded, 0.9)),
-                                     to   (alpha (#3babe5, 1.0)));
+                                     from (alpha (#417FFF , 1.0)),
+                                     to   (alpha (#27a3e3, 1.0)));
+
 
  color: #FFF;
 	text-shadow: none;
-    border-radius: 0;
+    border-radius: 3px;
     border-image: none;
 }
 

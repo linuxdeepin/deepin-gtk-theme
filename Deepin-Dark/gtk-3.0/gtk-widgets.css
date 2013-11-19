@@ -979,10 +979,10 @@ GtkScrolledWindow.frame {
                 inset  2px  0px alpha(#fff, 0.09),
                 inset -2px  0px alpha(#fff, 0.09),
                 inset  0px -2px alpha(#fff, 0.07),
-				inset  0px  1px alpha(shade(@button_border, 1.00), 0.70),
-                inset  1px  0px alpha(shade(@button_border, 0.94), 0.80),
-                inset -1px  0px alpha(shade(@button_border, 0.94), 0.80),
-                inset  0px -1px alpha(shade(@button_border, 0.88), 0.90);
+				inset  0px  1px alpha(shade(@button_border, 1.00), 0.45),
+                inset  1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset -1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset  0px -1px alpha(shade(@button_border, 0.88), 0.50);
 
 	/* box-shadow Syntax */
 	/* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
@@ -2601,6 +2601,11 @@ GtkTreeView row:nth-child(odd):hover {
 	background-color: shade(@base_color, 0.98);
 	
 }
+GtkTreeView row:nth-child(odd):backdrop,
+GtkTreeView row:nth-child(odd):hover :backdrop{
+	background-color: shade(@base_color, 0.97);
+	
+}
 
 GtkTreeView row:nth-child(even),
 GtkTreeView row:nth-child(even):hover  {	
@@ -4041,7 +4046,7 @@ GtkProgressBar.osd.progressbar {
 
 	background-color: shade(@theme_bg_color, 0.94);
 
-    /* background and border-bottom */
+     background and border-bottom 
     background-image: linear-gradient(to top, 
 									  shade(@notebook_border, 1.20) 1px,
                                       shade(@theme_bg_color, 0.99)  1px,
