@@ -434,6 +434,17 @@ MathWindow {
     background-repeat: repeat;
     background-position: top left;
 }
+MathWindow:backdrop {
+    color: @backdrop_fg_color;   
+    background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (shade(@theme_bg_dark_color, 1.00)),
+									 color-stop (0.25, shade(@theme_bg_dark_color, 0.95)),
+                                     to               (shade(@theme_bg_dark_color, 0.94)));
+    background-repeat: repeat;
+    background-position: top left;
+}
 
 MathDisplay GtkTextView.view {
 	/* color texto del display 
@@ -441,6 +452,14 @@ MathDisplay GtkTextView.view {
 	color: @calc_display_fg_color;
     
     background-color: shade(@theme_bg_dark_color, 0.70);
+
+}
+MathDisplay GtkTextView.view:backdrop {
+	/* color texto del display 
+	color: shade (#e8d001, 1.25); */
+	color: @backdrop_fg_color;
+    
+    background-color: shade(@theme_bg_dark_color, 0.80);
 
 }
 
@@ -460,6 +479,21 @@ MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
 	border-bottom-color: alpha(#fff, 0.16);
 	border-image: 		 none;
 
+}
+MathWindow.background :backdrop  > GtkBox.vertical :backdrop  > GtkBox.vertical :backdrop  > GtkScrolledWindow :backdrop {
+	/* Borde del display */
+	/* es necesario poner 'padding' porque sino el display sobre-escribe el borde */
+
+	padding: 			 0px;
+    background-color: shade(@theme_bg_dark_color, 0.80);
+    border-width: 		 1px;
+	border-radius: 		 5px;
+    border-style: 		 solid;
+	border-top-color: 	 alpha(#000, 0.15);
+	border-left-color: 	 alpha(#000, 0.12);
+	border-right-color:  alpha(#000, 0.12);
+	border-bottom-color: alpha(#fff, 0.06);
+	border-image: 		 none;
 }
 
 /*******************************
@@ -484,6 +518,20 @@ background-image: url("assets/background-noise-toolbar.png"),
 									 color-stop (0.25, shade(@theme_bg_dark_color, 0.95)),
                                      to               (shade(@theme_bg_dark_color, 0.94)));
     color: @theme_fg_dark_color;
+	text-shadow: 0px 1px @theme_shadow_dark_color;
+}
+MathWindow .button:backdrop,
+MathWindow .button:hover:backdrop,
+MathWindow .button:active:backdrop,
+MathWindow .button:hover:active:backdrop,
+MathWindow .cell {
+background-image: url("assets/background-noise-toolbar.png"),
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (shade(@theme_bg_dark_color, 1.00)),
+									 color-stop (0.25, shade(@theme_bg_dark_color, 0.95)),
+                                     to               (shade(@theme_bg_dark_color, 0.94)));
+    color: @backdrop_fg_color;
 	text-shadow: 0px 1px @theme_shadow_dark_color;
 }
 
