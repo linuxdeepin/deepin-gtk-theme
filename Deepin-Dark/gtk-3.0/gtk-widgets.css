@@ -4046,7 +4046,7 @@ GtkProgressBar.osd.progressbar {
 
 	background-color: shade(@theme_bg_color, 0.94);
 
-     background and border-bottom 
+/*     background and border-bottom */
     background-image: linear-gradient(to top, 
 									  shade(@notebook_border, 1.20) 1px,
                                       shade(@theme_bg_color, 0.99)  1px,
