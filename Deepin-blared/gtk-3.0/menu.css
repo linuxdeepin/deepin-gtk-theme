@@ -14,7 +14,7 @@
        								   0.50 0.00, 1.10,
 									   from (shade(@menu_bg_dark_color, 1.15)),
        								   to   (shade(@menu_bg_dark_color, 0.95)));*/
-    background-image: url("assets/background-noise-toolbar.png"),
+    background-image: url("assets/background.jpg"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@menu_bg_dark_color, 1.03)),
@@ -82,7 +82,7 @@
 .menubar {
     -GtkWidget-window-dragging: true;
     background-color: shade (@theme_bg_dark_color, 1.00); 
-    background-image: url("assets/background-noise-toolbar.png"),
+    background-image: url("assets/background.jpg"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 1.00)),
@@ -105,7 +105,7 @@
 .menubar:backdrop {
     -GtkWidget-window-dragging: true;
     background-color: shade (@theme_bg_dark_color, 1.00); 
-    background-image: url("assets/background-noise-toolbar.png"),
+    background-image: url("assets/background.jpg"),
                       -gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@theme_bg_dark_color, 1.2)),
@@ -137,7 +137,7 @@
 .menubar .menuitem:hover {
     border-radius: 4px 4px 0 0;
     border-width: 1px 1px 0 1px;
-    background-image: url("assets/background-noise-toolbar.png"),
+    background-image: url("assets/background.jpg"),
                     -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@toolbar_gradient_base, 1.1)),
                                      to (shade (@toolbar_gradient_base, 1.0)));
