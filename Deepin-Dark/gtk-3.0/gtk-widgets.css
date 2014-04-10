@@ -6,7 +6,7 @@
     -GtkButton-image-spacing: 0;
     -GtkButton-interior-focus: true;
     -GtkButton-inner-border: 1;
-    -GtkCheckButton-indicator-size: 16;
+    -GtkCheckButton-indicator-size: 14;
     -GtkCheckMenuItem-indicator-size: 14;
     -GtkEntry-inner-border: 2;
     -GtkEntry-progress-border: 0;
@@ -1065,10 +1065,10 @@ GtkScrolledWindow.frame {
 
 	background-image:  -gtk-gradient (linear,
                                       0.45 top, 0.55 bottom,
-                                     from (alpha (@base_color, 1.30)),
+                                     from (alpha (#c5e9fc, 1.30)),
                                      color-stop (0.48, alpha (#86d3f4, 1.0)),
                                      color-stop (0.5, alpha (#58C3F0, 1.0)),
-                                     to (alpha (@base_color, 1.0)));
+                                     to (alpha (#bde7fc, 1.0)));
     border-top-color: 		transparent;
     border-left-color: 		alpha (#000, 0.01);
     border-right-color: 	alpha (#000, 0.01);

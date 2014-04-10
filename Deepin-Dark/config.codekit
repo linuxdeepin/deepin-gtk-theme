@@ -1,0 +1,1889 @@
+{
+"CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
+"creatorBuild": "16877",
+"files": {
+	"\/gtk-2.0\/assets\/checkbox-checked.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 758,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/checkbox-checked.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/checkbox-checked.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/handle.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 186,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/handle.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/handle.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/notebook-gap-bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 159,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-bottom.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-bottom.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/notebook-gap-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-left.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-left.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/notebook-gap-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-right.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-right.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/notebook-gap-top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 158,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-top.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook-gap-top.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/notebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 227,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/notebook.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/null.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/null.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/null.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/radio-mixed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 705,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/radio-mixed.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/radio-mixed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/scroll-background.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 155,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/scroll-background.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/scroll-background.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/slider-horizontal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 828,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/slider-horizontal.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/slider-horizontal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/slider-vertical.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3458,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/slider-vertical.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/slider-vertical.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/assets\/toolbar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 214,
+		"inputAbbreviatedPath": "\/gtk-2.0\/assets\/toolbar.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/assets\/toolbar.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/empty-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146,
+		"inputAbbreviatedPath": "\/gtk-2.0\/empty-1.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/empty-1.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/empty-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 217,
+		"inputAbbreviatedPath": "\/gtk-2.0\/empty-2.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/empty-2.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/empty-3.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146,
+		"inputAbbreviatedPath": "\/gtk-2.0\/empty-3.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/empty-3.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/entry-focus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 257,
+		"inputAbbreviatedPath": "\/gtk-2.0\/entry-focus.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/entry-focus.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/entry-in.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 363,
+		"inputAbbreviatedPath": "\/gtk-2.0\/entry-in.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/entry-in.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/entry.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 255,
+		"inputAbbreviatedPath": "\/gtk-2.0\/entry.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/entry.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/focus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 218,
+		"inputAbbreviatedPath": "\/gtk-2.0\/focus.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/focus.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/gap-bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 216,
+		"inputAbbreviatedPath": "\/gtk-2.0\/gap-bottom.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/gap-bottom.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/gap-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85,
+		"inputAbbreviatedPath": "\/gtk-2.0\/gap-left.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/gap-left.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/gap-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 85,
+		"inputAbbreviatedPath": "\/gtk-2.0\/gap-right.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/gap-right.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/gap-top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 216,
+		"inputAbbreviatedPath": "\/gtk-2.0\/gap-top.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/gap-top.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/notebook-bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 142,
+		"inputAbbreviatedPath": "\/gtk-2.0\/notebook-bottom.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/notebook-bottom.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/notebook-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 146,
+		"inputAbbreviatedPath": "\/gtk-2.0\/notebook-left.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/notebook-left.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/notebook-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 143,
+		"inputAbbreviatedPath": "\/gtk-2.0\/notebook-right.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/notebook-right.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/notebook.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 184,
+		"inputAbbreviatedPath": "\/gtk-2.0\/notebook.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/notebook.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-bottom-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20107,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-bottom-active.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-bottom-active.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-bottom.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20475,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-bottom.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-bottom.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-focus.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 223,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-focus.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-focus.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-left-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20082,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-left-active.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-left-active.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-left.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20485,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-left.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-left.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-right-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20082,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-right-active.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-right-active.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-right.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20519,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-right.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-right.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-top-active.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18286,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-top-active.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-top-active.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/tab-top.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20482,
+		"inputAbbreviatedPath": "\/gtk-2.0\/tab-top.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/tab-top.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-2.0\/toolbar-bg.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 273,
+		"inputAbbreviatedPath": "\/gtk-2.0\/toolbar-bg.png",
+		"outputAbbreviatedPath": "\/gtk-2.0\/toolbar-bg.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/background-noise-toolbar.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 66527,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/background-noise-toolbar.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/background-noise-toolbar.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-checked-insensitive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 390,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked-insensitive.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked-insensitive.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-checked-selected.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 259,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked-selected.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked-selected.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-checked.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 398,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-checked.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-mixed-insensitive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 191,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed-insensitive.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed-insensitive.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-mixed-selected.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 175,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed-selected.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed-selected.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-checkbox-mixed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 188,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-checkbox-mixed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-radio-checked-insensitive.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3978,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked-insensitive.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked-insensitive.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-radio-checked-selected.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3996,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked-selected.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked-selected.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/assets\/menuitem-radio-checked.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 3990,
+		"inputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked.png",
+		"outputAbbreviatedPath": "\/gtk-3.0\/assets\/menuitem-radio-checked.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/gtk-3.0\/gnome-mdi.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gnome-mdi.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gnome-nautilus34-gray-light.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gnome-nautilus34-gray-light.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gnome-nautilus34-gray.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gnome-nautilus34-gray.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gnome-nautilus34-light.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gnome-nautilus34-light.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gnome-panel.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gnome-panel.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gtk-widgets-assets.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gtk-widgets-assets.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gtk-widgets.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gtk-widgets.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/gtk.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/gtk.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/menu-tribute.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/menu-tribute.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/menu.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/menu.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/nautilus36.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/nautilus36.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/scrollbar.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/scrollbar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/sidebar.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/sidebar.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs-classic.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs-classic.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs-dark.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs-dark.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs-mono.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs-mono.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs-themed-dark.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs-themed-dark.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs-themed.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs-themed.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/tabs.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/tabs.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity-darkest.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity-darkest.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity-greeter.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity-greeter.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity-nautilus34-gray-light.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity-nautilus34-gray-light.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity-nautilus34-gray.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity-nautilus34-gray.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity-nautilus34-light.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity-nautilus34-light.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/gtk-3.0\/unity.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/gtk-3.0\/unity.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsSetByUser": 0
+		},
+	"\/metacity-1\/DWMWindow_CloseButton.Active_DisabledImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15541,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_DisabledImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_DisabledImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_CloseButton.Active_HotImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16264,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_HotImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_HotImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_CloseButton.Active_NormalImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 15077,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_NormalImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_NormalImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_CloseButton.Active_PressedImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 16282,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_PressedImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_CloseButton.Active_PressedImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MaximizeButton.Active_DisabledImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 199,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_DisabledImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_DisabledImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MaximizeButton.Active_HotImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 194,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_HotImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_HotImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MaximizeButton.Active_NormalImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 179,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_NormalImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_NormalImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MaximizeButton.Active_PressedImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 195,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_PressedImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MaximizeButton.Active_PressedImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MinimizeButton.Active_DisabledImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 173,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_DisabledImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_DisabledImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MinimizeButton.Active_HotImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 165,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_HotImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_HotImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MinimizeButton.Active_NormalImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 158,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_NormalImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_NormalImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_MinimizeButton.Active_PressedImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 167,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_PressedImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_MinimizeButton.Active_PressedImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_UnMaximizeButton.Active_DisabledImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 226,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_DisabledImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_DisabledImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_UnMaximizeButton.Active_HotImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 221,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_HotImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_HotImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_UnMaximizeButton.Active_NormalImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 198,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_NormalImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_NormalImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/DWMWindow_UnMaximizeButton.Active_PressedImage.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 218,
+		"inputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_PressedImage.png",
+		"outputAbbreviatedPath": "\/metacity-1\/DWMWindow_UnMaximizeButton.Active_PressedImage.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/metacity-1\/metacity-noise.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 65623,
+		"inputAbbreviatedPath": "\/metacity-1\/metacity-noise.png",
+		"outputAbbreviatedPath": "\/metacity-1\/metacity-noise.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 533,
+		"inputAbbreviatedPath": "\/unity\/close.png",
+		"outputAbbreviatedPath": "\/unity\/close.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_focused_normal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 533,
+		"inputAbbreviatedPath": "\/unity\/close_focused_normal.png",
+		"outputAbbreviatedPath": "\/unity\/close_focused_normal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_focused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 535,
+		"inputAbbreviatedPath": "\/unity\/close_focused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/close_focused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_focused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 515,
+		"inputAbbreviatedPath": "\/unity\/close_focused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/close_focused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_unfocused.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 524,
+		"inputAbbreviatedPath": "\/unity\/close_unfocused.png",
+		"outputAbbreviatedPath": "\/unity\/close_unfocused.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_unfocused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 535,
+		"inputAbbreviatedPath": "\/unity\/close_unfocused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/close_unfocused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/close_unfocused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 515,
+		"inputAbbreviatedPath": "\/unity\/close_unfocused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/close_unfocused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 610,
+		"inputAbbreviatedPath": "\/unity\/maximize.png",
+		"outputAbbreviatedPath": "\/unity\/maximize.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_focused_normal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 610,
+		"inputAbbreviatedPath": "\/unity\/maximize_focused_normal.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_focused_normal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_focused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 597,
+		"inputAbbreviatedPath": "\/unity\/maximize_focused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_focused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_focused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 583,
+		"inputAbbreviatedPath": "\/unity\/maximize_focused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_focused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_unfocused.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 602,
+		"inputAbbreviatedPath": "\/unity\/maximize_unfocused.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_unfocused.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_unfocused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 597,
+		"inputAbbreviatedPath": "\/unity\/maximize_unfocused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_unfocused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/maximize_unfocused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 583,
+		"inputAbbreviatedPath": "\/unity\/maximize_unfocused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/maximize_unfocused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144,
+		"inputAbbreviatedPath": "\/unity\/minimize.png",
+		"outputAbbreviatedPath": "\/unity\/minimize.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_focused_normal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144,
+		"inputAbbreviatedPath": "\/unity\/minimize_focused_normal.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_focused_normal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_focused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 178,
+		"inputAbbreviatedPath": "\/unity\/minimize_focused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_focused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_focused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 177,
+		"inputAbbreviatedPath": "\/unity\/minimize_focused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_focused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_unfocused.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 144,
+		"inputAbbreviatedPath": "\/unity\/minimize_unfocused.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_unfocused.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_unfocused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 178,
+		"inputAbbreviatedPath": "\/unity\/minimize_unfocused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_unfocused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/minimize_unfocused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 177,
+		"inputAbbreviatedPath": "\/unity\/minimize_unfocused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/minimize_unfocused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 600,
+		"inputAbbreviatedPath": "\/unity\/unmaximize.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_focused_normal.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 600,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_focused_normal.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_focused_normal.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_focused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 593,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_focused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_focused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_focused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 577,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_focused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_focused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_unfocused.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 589,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_unfocused.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_unfocused.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_unfocused_prelight.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 593,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_unfocused_prelight.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_unfocused_prelight.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/unity\/unmaximize_unfocused_pressed.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 577,
+		"inputAbbreviatedPath": "\/unity\/unmaximize_unfocused_pressed.png",
+		"outputAbbreviatedPath": "\/unity\/unmaximize_unfocused_pressed.png",
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		}
+	},
+"hooks": [
+	],
+"lastSavedByUser": "舒乐",
+"manualImportLinks": {
+	},
+"projectAttributes": {
+	"bowerAbbreviatedPath": "",
+	"displayValue": "Deepin-Dark",
+	"displayValueWasSetByUser": 0,
+	"iconImageName": "harddrive_yellow"
+	},
+"projectSettings": {
+	"alwaysUseExternalServer": 0,
+	"animateCSSInjections": 1,
+	"autoApplyPSLanguageSettingsStyle": 0,
+	"autoprefixerBrowserString": "> 1%, last 2 versions, ff 17, opera 12.1",
+	"autoSyncProjectSettingsFile": 1,
+	"browserRefreshDelay": 0,
+	"coffeeAutoOutputPathRelativePath": "",
+	"coffeeAutoOutputPathReplace1": "",
+	"coffeeAutoOutputPathReplace2": "",
+	"coffeeAutoOutputPathStyle": 0,
+	"coffeeCreateSourceMap": 0,
+	"coffeeLintFlags2": {
+		"arrow_spacing": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"camel_case_classes": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"colon_assignment_spacing": {
+			"active": 0,
+			"flagValue": 1
+			},
+		"cyclomatic_complexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"duplicate_key": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indentation": {
+			"active": 1,
+			"flagValue": 2
+			},
+		"line_endings": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"max_line_length": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"missing_fat_arrows": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newlines_after_classes": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"no-unnecessary_fat_arrows": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_backticks": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_empty_param_list": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_implicit_braces": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_implicit_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"no_stand_alone_at": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_tabs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_throwing_strings": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"no_trailing_whitespace": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"non_empty_constructor_needs_parens": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space_operators": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"coffeeMinifyOutput": 1,
+	"coffeeOutputStyle": 0,
+	"coffeeSyntaxCheckerStyle": 1,
+	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerPreviewPathAddition": "",
+	"genericWebpageFileExtensionsString": "html, htm, shtml, shtm, xhtml, php, jsp, asp, aspx, erb, ctp",
+	"hamlAutoOutputPathRelativePath": "",
+	"hamlAutoOutputPathReplace1": "",
+	"hamlAutoOutputPathReplace2": "",
+	"hamlAutoOutputPathStyle": 0,
+	"hamlEscapeHTMLCharacters": 0,
+	"hamlNoEscapeInAttributes": 0,
+	"hamlOutputFormat": 2,
+	"hamlOutputStyle": 0,
+	"hamlUseCDATA": 0,
+	"hamlUseDoubleQuotes": 0,
+	"hamlUseUnixNewlines": 0,
+	"jadeAutoOutputPathRelativePath": "",
+	"jadeAutoOutputPathReplace1": "",
+	"jadeAutoOutputPathReplace2": "",
+	"jadeAutoOutputPathStyle": 0,
+	"jadeCompileDebug": 1,
+	"jadeOutputStyle": 0,
+	"javascriptAutoOutputPathRelativePath": "\/min",
+	"javascriptAutoOutputPathReplace1": "",
+	"javascriptAutoOutputPathReplace2": "",
+	"javascriptAutoOutputPathStyle": 2,
+	"javascriptCreateSourceMap": 1,
+	"javascriptOutputStyle": 1,
+	"javascriptOutputSuffix": "-ck",
+	"javascriptSyntaxCheckerStyle": 1,
+	"jsCheckerReservedNamesString": "",
+	"jsHintFlags2": {
+		"asi": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"boss": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"camelcase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"couch": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"curly": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"dojo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eqeqeq": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eqnull": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"es3": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"esnext": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"expr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"freeze": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"funcscope": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"gcl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"globalstrict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"immed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"iterator": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"jquery": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"lastsemic": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"latedef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"laxbreak": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"laxcomma": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"loopfunc": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"maxcomplexity": {
+			"active": 0,
+			"flagValue": 10
+			},
+		"maxdepth": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"maxparams": {
+			"active": 0,
+			"flagValue": 3
+			},
+		"maxstatements": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"mootools": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"moz": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"multistr": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"newcap": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noarg": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"noempty": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonbsp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nonew": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"nonstandard": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"notypeof": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"noyield": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onecase": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"onevar": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"phantom": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"proto": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"prototypejs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"scripturl": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shadow": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"shelljs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"smarttabs": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"strict": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"supernew": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"trailing": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"typed": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"undef": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"withstmt": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"worker": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"wsh": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"yui": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"jsLintFlags2": {
+		"ass": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"bitwise": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"browser": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"closure": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"continue": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"debug": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"devel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"eqeq": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evil": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"forin": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"indent": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"maxlen": {
+			"active": 0,
+			"flagValue": 150
+			},
+		"newcap": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"node": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"nomen": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"plusplus": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"properties": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"regexp": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"rhino": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sloppy": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"stupid": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"sub": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"todo": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unparam": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"white": {
+			"active": 0,
+			"flagValue": -1
+			}
+		},
+	"kitAutoOutputPathRelativePath": "",
+	"kitAutoOutputPathReplace1": "",
+	"kitAutoOutputPathReplace2": "",
+	"kitAutoOutputPathStyle": 0,
+	"lessAllowInsecureImports": 0,
+	"lessAutoOutputPathRelativePath": "..\/css",
+	"lessAutoOutputPathReplace1": "less",
+	"lessAutoOutputPathReplace2": "css",
+	"lessAutoOutputPathStyle": 2,
+	"lessCreateSourceMap": 0,
+	"lessDisableJavascript": 0,
+	"lessIeCompatibility": 1,
+	"lessOutputStyle": 0,
+	"lessRelativeURLS": 0,
+	"lessStrictImports": 0,
+	"lessStrictMath": 0,
+	"lessStrictUnits": 0,
+	"markdownAutoOutputPathRelativePath": "",
+	"markdownAutoOutputPathReplace1": "",
+	"markdownAutoOutputPathReplace2": "",
+	"markdownAutoOutputPathStyle": 0,
+	"markdownEnableFootnotes": 0,
+	"markdownEnableSmartyPants": 1,
+	"markdownExpandTabs": 1,
+	"reloadFileURLs": 0,
+	"sassAutoOutputPathRelativePath": "..\/css",
+	"sassAutoOutputPathReplace1": "sass",
+	"sassAutoOutputPathReplace2": "css",
+	"sassAutoOutputPathStyle": 2,
+	"sassCreateSourceMap": 0,
+	"sassDebugStyle": 0,
+	"sassDecimalPrecision": 5,
+	"sassOutputStyle": 0,
+	"sassUseLibsass": 0,
+	"shouldRunAutoprefixer": 0,
+	"shouldRunBless": 0,
+	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs",
+	"slimAutoOutputPathRelativePath": "",
+	"slimAutoOutputPathReplace1": "",
+	"slimAutoOutputPathReplace2": "",
+	"slimAutoOutputPathStyle": 0,
+	"slimCompileOnly": 0,
+	"slimLogicless": 0,
+	"slimOutputStyle": 1,
+	"slimRailsCompatible": 0,
+	"stylusAutoOutputPathRelativePath": "..\/css",
+	"stylusAutoOutputPathReplace1": "stylus",
+	"stylusAutoOutputPathReplace2": "css",
+	"stylusAutoOutputPathStyle": 2,
+	"stylusDebugStyle": 0,
+	"stylusImportCSS": 0,
+	"stylusOutputStyle": 0,
+	"stylusResolveRelativeURLS": 0,
+	"typescriptAutoOutputPathRelativePath": "\/js",
+	"typescriptAutoOutputPathReplace1": "",
+	"typescriptAutoOutputPathReplace2": "",
+	"typescriptAutoOutputPathStyle": 2,
+	"typescriptCreateDeclarationFile": 0,
+	"typescriptCreateSourceMap": 0,
+	"typescriptMinifyOutput": 0,
+	"typescriptModuleType": 0,
+	"typescriptNoImplicitAny": 0,
+	"typescriptNoResolve": 0,
+	"typescriptRemoveComments": 0,
+	"typescriptTargetECMAVersion": 0,
+	"uglifyDefinesString": "",
+	"uglifyFlags2": {
+		"ascii-only": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"booleans": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"bracketize": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"cascade": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comments": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"comparisons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"compress": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"conditionals": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"dead_code": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"drop_debugger": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"eval": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"evaluate": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_funs": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"hoist_vars": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"if_return": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"indent-level": {
+			"active": 0,
+			"flagValue": 4
+			},
+		"indent-start": {
+			"active": 0,
+			"flagValue": 0
+			},
+		"inline-script": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"join_vars": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"loops": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"mangle": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"max-line-len": {
+			"active": 1,
+			"flagValue": 32000
+			},
+		"properties": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"quote-keys": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"screw-ie8": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"semicolons": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sequences": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"sort": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"space-colon": {
+			"active": 1,
+			"flagValue": -1
+			},
+		"toplevel": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unsafe": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"unused": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"warnings": {
+			"active": 0,
+			"flagValue": -1
+			},
+		"width": {
+			"active": 1,
+			"flagValue": 80
+			}
+		},
+	"uglifyReservedNamesString": "$",
+	"websiteRelativeRoot": ""
+	},
+"settingsFileVersion": "2"
+}
