@@ -445,34 +445,70 @@ GtkStatusbar {
                                      to (shade (@button_bg_active, 1.30))); 
 */
 
-    background-image:                             
-                       linear-gradient(to bottom, 
-                                      #d6f0ff,
-                                     
-                                      #b4e4f9 48%,
-                                      #b4e4f9 48%,
-                                      #b4e4f9 50%,
-                                    
-                                      #c7eeff
-                                      );
+
+	background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
+
+
+
 
 
     background-size: 40px auto, auto, auto;
-    box-shadow: inset  0px  0px alpha(#007bc1, 0.65),
-                inset  0px  0px alpha(#007bc1, 0.65),
-                inset 0px  0px alpha(#007bc1, 0.65),
-                inset  0px 0px alpha(#007bc1, 0.65);
+    box-shadow: inset  0px  1px alpha(#fff, 0.3),
+                inset  -1px 0   alpha(#fff,0.4),
+                inset  1px 0   alpha(#fff,0.4),
+                inset  0px -1px alpha(#fff,0.4),
+                       1px 0    alpha(#000,0.3);
+/*
+                inset  0px  -1px alpha(#fff, 0.4),
+                inset  1px  0px alpha(#fff, 0.4),
+                inset  -1px  0px alpha(#fff, 0.4);
+                                     
+*/
+    border-width: 1px;
+    border-style: solid;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-color: alpha(#000,0.3);
+    border-left-color: alpha(#000,0.3);
+    border-bottom-color: alpha(#000,0.2);
+    border-right-color: alpha(#000,0.3);
+	color: 			@theme_selected_fg_color;
+	text-shadow:  1px 1px @theme_selected_shadow_color;
+}
+
+.progressbar:backdrop,
+.toolbar .progressbar:backdrop,
+.entry.progressbar:backdrop,
+.progressbar row:backdrop,
+.progressbar row:hover:backdrop,
+.progressbar row:selected:backdrop,
+.progressbar row:selected:focused:backdrop {
+
+
+ 
+	background: linear-gradient(180deg ,#d1d1d1 0% ,#f0f0f0 100%);
+
+
+
+    background-size: 40px auto, auto, auto;
+
                                      
     border-width: 1px;
     border-style: solid;
-    border-radius: 3px;
-    border-top-color: 		#7bbad6;
-    border-left-color: 		#7bbad6;
-    border-right-color: 	#7bbad6;
-    border-bottom-color: 	#7bbad6;
+   border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border-top-color: 		alpha(#000,0.2);
+    border-left-color: 		alpha(#000,0.2);
+    border-right-color: 	alpha(#000,0.2);
+    border-bottom-color: 	alpha(#000,0.2);
 
 	color: 			@theme_selected_fg_color;
 	text-shadow:  1px 1px @theme_selected_shadow_color;
+    box-shadow: inset  0px  1px alpha(#fff, 0.3),
+                inset  -1px 0   alpha(#fff,0.4),
+                inset  1px 0   alpha(#fff,0.4),
+                inset  0px -1px alpha(#fff,0.5),
+                       1px 0    alpha(#000,0.3);
 }
 
 .progressbar.vertical {
@@ -497,7 +533,7 @@ GtkStatusbar {
 
     border-width: 1px;
     border-style: solid;
-    border-radius: 3px;
+    border-radius: 4px;
     border-top-color: 		#1684c4;
     border-left-color: 		#1684c4;
     border-right-color: 	#1684c4;
@@ -507,6 +543,7 @@ GtkStatusbar {
 	color: 			@theme_selected_fg_color;
 	text-shadow:  1px 1px @theme_selected_shadow_color;
 }
+
 
 /* through component */
 GtkProgressBar,
@@ -818,31 +855,25 @@ GtkScrolledWindow.frame {
 .button {
     -GtkWidget-focus-line-width: 0; 
 
-	background-image: -gtk-gradient (linear,
-                                     left top, left bottom,
-                                     from             (@button_gradient1),
-                                     color-stop (0.40, @button_gradient2),
-                                     color-stop (0.60, @button_gradient3),
-                                     to               (@button_gradient4));
+	
+	background: linear-gradient(180deg ,#fcfcfc 0% ,#f2f2f2 100%);
 
     border-width: 1px;
     border-radius: 6px;
     border-style: solid;
 
 	/* outer */
-    border-top-color: 		transparent;
-    border-left-color: 		alpha (#000, 0.01);
-    border-right-color: 	alpha (#000, 0.01);
-    border-bottom-color: 	alpha (#000, 0.03);
+       border-color: transparent;
+
 	
-    box-shadow: inset  0px  2px alpha(#fff, 0.11),
-                inset  2px  0px alpha(#fff, 0.09),
-                inset -2px  0px alpha(#fff, 0.09),
-                inset  0px -2px alpha(#fff, 0.07),
-				inset  0px  1px alpha(shade(@button_border, 1.00), 0.70),
-                inset  1px  0px alpha(shade(@button_border, 0.94), 0.80),
-                inset -1px  0px alpha(shade(@button_border, 0.94), 0.80),
-                inset  0px -1px alpha(shade(@button_border, 0.88), 0.90);
+    box-shadow: inset  0px  2px alpha(#fff, 1.0),
+                inset  2px  0px alpha(#fff, 0.3),
+                inset -2px  0px alpha(#fff, 0.3),
+                inset  0px -2px alpha(#fff, 0.3),
+				inset  0px  1px alpha(shade(@button_border, 1.00), 0.45),
+                inset  1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset -1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset  0px -1px alpha(shade(@button_border, 0.88), 0.50);
 
 	/* box-shadow Syntax */
 	/* box-shadow: [ inset ] horizontal_offset vertical_offset [ blur_radius ] [ spread ] color */
@@ -852,18 +883,41 @@ GtkScrolledWindow.frame {
 
 }
 
-.button:hover {
-	background-image: -gtk-gradient (linear,
-                                     0.45 top, 0.55 bottom,
-                                     from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#d4effb, 1.0)),
-                                     color-stop (0.5, alpha (#c3e9f9, 1.0)),
-                                     to (alpha (#e9f7fc, 1.0)));
 
-    box-shadow: inset  0px  2px alpha(#fff, 0.11),
-                inset  2px  0px alpha(#fff, 0.09),
-                inset -2px  0px alpha(#fff, 0.09),
-                inset  0px -2px alpha(#fff, 0.07),
+.button:backdrop {
+
+	background: linear-gradient(180deg ,#f5f5f5 0% ,#e5e5e6 100%);
+
+    color: @backdrop_fg_color;
+    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
+    border-width: 1px;
+    border-radius: 6px;
+    border-style: solid;
+
+	/* outer */
+     border-color: transparent;
+	
+    box-shadow: inset  0px  2px alpha(#fff, 0.1),
+                inset  2px  0px alpha(#fff, 0.1),
+                inset -2px  0px alpha(#fff, 0.1),
+                inset  0px -2px alpha(#fff, 0.1),
+				inset  0px  1px alpha(shade(@button_border, 1.00), 0.20),
+                inset  1px  0px alpha(shade(@button_border, 0.94), 0.20),
+                inset -1px  0px alpha(shade(@button_border, 0.94), 0.20),
+                inset  0px -1px alpha(shade(@button_border, 0.88), 0.20);
+}
+
+.button:hover {
+
+	
+	background: linear-gradient(180deg ,#97d6fc 0% ,#5dbdfc 100%);
+
+
+
+    box-shadow: inset  0px  2px alpha(#fff, 0.3),
+                inset  2px  0px alpha(#fff, 0.2),
+                inset -2px  0px alpha(#fff, 0.2),
+                inset  0px -2px alpha(#fff, 0.2),
 				inset  0px  1px alpha(shade(@button_border, 0.94), 0.70),
                 inset  1px  0px alpha(shade(@button_border, 0.87), 0.80),
                 inset -1px  0px alpha(shade(@button_border, 0.87), 0.80),
@@ -871,23 +925,63 @@ GtkScrolledWindow.frame {
 
 }
 
+.button:hover:backdrop {
+	
+
+	background: linear-gradient(180deg ,#dedede 0% ,#dedede 100%);
+
+
+    box-shadow:inset  2px  0px alpha(#fff, 0.09),
+                inset -2px  0px alpha(#fff, 0.09),
+                inset  0px -2px alpha(#fff, 0.07),
+				inset  0px  1px alpha(shade(@button_border, 1.00), 0.50),
+                inset  1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset -1px  0px alpha(shade(@button_border, 0.94), 0.50),
+                inset  0px -1px alpha(shade(@button_border, 0.88), 0.50);
+                                    
+}
+
+
 .button:active,
 .button:hover:active,
 .button:focus:active {
 
-	background-image:  -gtk-gradient (linear,
-                                      0.45 top, 0.55 bottom,
-                                     from (alpha (@base_color, 1.30)),
-                                     color-stop (0.48, alpha (#86d3f4, 1.0)),
-                                     color-stop (0.5, alpha (#58C3F0, 1.0)),
-                                     to (alpha (@base_color, 1.0)));
-    border-top-color: 		transparent;
-    border-left-color: 		alpha (#000, 0.01);
-    border-right-color: 	alpha (#000, 0.01);
-    border-bottom-color: 	alpha (#fff, 0.02);
+	
+	background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
+
+
+    border-color: transparent;
+
+    color:black;
 
 	
-    /***box-shadow: inset  0px  4px alpha(#000, 0.02),
+    box-shadow: inset  0px  2px alpha(#fff, 0.3),
+                inset  2px  0px alpha(#fff, 0.2),
+                inset -2px  0px alpha(#fff, 0.2),
+                inset  0px -2px alpha(#fff, 0.2),
+				inset  0px  1px #279be2,
+                inset  1px  0px #279be2,
+                inset -1px  0px #279be2,
+                inset  0px -1px #279be2;
+
+}
+
+.button:active:backdrop,
+.button:hover:active:backdrop,
+.button:focus:active:backdrop {
+
+
+	background-image:  -gtk-gradient (linear,
+                                      0.45 top, 0.55 bottom,
+                                     from (shade (@base_color, 1.00)),
+                                     color-stop (0.48, shade (@base_color, 0.88)),
+                                     color-stop (0.5, shade (@base_color, 0.84)),
+                                     to (shade (@base_color, 0.9)));
+     border-color: transparent;
+
+
+	
+    /**box-shadow: inset  0px  4px alpha(#000, 0.02),
 				inset  0px  3px alpha(#000, 0.03),
 				inset  0px  2px alpha(#000, 0.04),
                 inset  3px  0px alpha(#000, 0.02),
@@ -899,10 +993,15 @@ GtkScrolledWindow.frame {
 				inset  0px  1px alpha(shade(@button_border_active, 0.70), 0.90),
                 inset  1px  0px alpha(shade(@button_border_active, 0.80), 0.80),
                 inset -1px  0px alpha(shade(@button_border_active, 0.80), 0.80),
-                inset  0px -1px alpha(shade(@button_border_active, 1.10), 0.70);**/
+                inset  0px -1px alpha(shade(@button_border_active, 1.10), 0.70);*/
 
 }
 
+.button:active:insensitive:backdrop {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (mix (#e3e3e3, @bg_color, 0.5)),
+                                     to (mix (#f3f3f3, @bg_color, 0.5)));
+}
 .button:focus,
 .button.default {
     border-top-color: 		alpha(@focused_entry_outer, 0.95);
@@ -910,33 +1009,31 @@ GtkScrolledWindow.frame {
     border-left-color: 		alpha(@focused_entry_outer, 1.00);
     border-bottom-color: 	alpha(@focused_entry_outer, 0.95);
 
-    /**box-shadow: inset  0px  2px alpha(#fff, 0.08),
+   /* box-shadow: inset  0px  2px alpha(#fff, 0.08),
                 inset  2px  0px alpha(#fff, 0.07),
                 inset -2px  0px alpha(#fff, 0.07),
                 inset  0px -2px alpha(#fff, 0.06),
 				inset  0px  1px alpha(@focused_entry_border, 0.80),
                 inset  1px  0px alpha(@focused_entry_border, 0.85),
                 inset -1px  0px alpha(@focused_entry_border, 0.85),
-                inset  0px -1px alpha(@focused_entry_border, 0.95);**/
+                inset  0px -1px alpha(@focused_entry_border, 0.95);*/
 }
 
-.button *:active,
-.button *:hover:active {
-	color: @theme_selected_fg_color;
-	text-shadow: 1px 1px @theme_selected_shadow_color;
-}
+
 
 .button:insensitive {
     background-image: none;
     background-color: @insensitive_bg_color;
-	border-color: alpha (#000, 0.00);
-    border-bottom-color: 	alpha (#000, 0.00);
+	 border-color: transparent;
     border-image: none;
-	box-shadow:	inset  0px  1px @insensitive_border_color,
-                inset  1px  0px @insensitive_border_color,
-                inset -1px  0px @insensitive_border_color,
-                inset  0px -1px @insensitive_border_color;
-
+	box-shadow: inset  0px  2px alpha(#fff, 0.1),
+                inset  2px  0px alpha(#fff, 0.1),
+                inset -2px  0px alpha(#fff, 0.1),
+                inset  0px -2px alpha(#fff, 0.1),
+				inset  0px  1px alpha(shade(@button_border, 1.00), 0.20),
+                inset  1px  0px alpha(shade(@button_border, 0.94), 0.20),
+                inset -1px  0px alpha(shade(@button_border, 0.94), 0.20),
+                inset  0px -1px alpha(shade(@button_border, 0.88), 0.20);
 }
 
 .button *:insensitive {
