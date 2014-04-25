@@ -14,8 +14,7 @@
        								   0.50 0.00, 1.10,
 									   from (shade(@menu_bg_dark_color, 1.15)),
        								   to   (shade(@menu_bg_dark_color, 0.95)));*/
-    background-image: url("assets/background-noise-toolbar.png"),
-                      -gtk-gradient (linear,
+    background-image:-gtk-gradient (linear,
                                      left top, left bottom,
                                      from (shade(@menu_bg_dark_color, 1.2)),
                                      to   (shade(@menu_bg_dark_color, 1.1)));
@@ -198,7 +197,7 @@ GtkComboBox .menuitem *:hover {
    background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
 
      color:#000;
-    text-shadow:0 1px aplha(#fff,0.7);
+    text-shadow:0 1px aplha(#fff,0.3);
 	text-shadow: none;
     border-radius: 0;
     border-image: none;
@@ -218,7 +217,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:hover,
 .menu .menuitem:hover {
     color: #000;
-   	text-shadow:0 1px aplha(#fff,0.7);
+   	text-shadow:0 1px aplha(#fff,0.3);
 }
 
 .primary-toolbar .menuitem *:insensitive,

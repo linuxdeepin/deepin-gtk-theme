@@ -859,7 +859,7 @@ GtkScrolledWindow.frame {
 	background: linear-gradient(180deg ,#fcfcfc 0% ,#f2f2f2 100%);
 
     border-width: 1px;
-    border-radius: 6px;
+    border-radius: 5px;
     border-style: solid;
 
 	/* outer */
@@ -888,10 +888,10 @@ GtkScrolledWindow.frame {
 
 	background: linear-gradient(180deg ,#f5f5f5 0% ,#e5e5e6 100%);
 
-    color: @backdrop_fg_color;
+    color: @theme_fg_color;
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
     border-width: 1px;
-    border-radius: 6px;
+    border-radius: 5px;
     border-style: solid;
 
 	/* outer */
@@ -951,6 +951,7 @@ GtkScrolledWindow.frame {
 
 
     border-color: transparent;
+    border-radius: 5px;
 
     color:black;
 
@@ -1004,6 +1005,7 @@ GtkScrolledWindow.frame {
 }
 .button:focus,
 .button.default {
+    border-radius: 4px;
     border-top-color: 		alpha(@focused_entry_outer, 0.95);
     border-right-color: 	alpha(@focused_entry_outer, 1.00);
     border-left-color: 		alpha(@focused_entry_outer, 1.00);

@@ -22,10 +22,10 @@
 
     background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
 
-    border-top-color: 		alpha(#1684c4,0.6);
-    border-left-color: 		alpha(#1684c4,0.6);
-    border-right-color: 	alpha(#1684c4,0.6);
-    border-bottom-color: alpha(#1684c4,0.6);
+    border-top-color: 		alpha(#085eb5,0.8);
+    border-left-color: 		alpha(#085eb5,0.6);
+    border-right-color: 	alpha(#085eb5,0.6);
+    border-bottom-color: alpha(#085eb5,0.8);
 	border-image: none;
 
     /***box-shadow: inset  0px  4px alpha(#000, 0.00),
@@ -42,6 +42,18 @@
                 inset -3px  0px alpha(#000, 0.02),
                 inset -2px  0px alpha(#000, 0.04),
                 inset -1px  0px alpha(#000, 0.06);***/
+}
+.notebook tab:active:backdrop {
+
+   
+	background: linear-gradient(180deg ,#d1d1d1 0% ,#f0f0f0 100%);
+
+    border-top-color: 		alpha(#000,0.4);
+    border-left-color: 		alpha(#000,0.3);
+    border-right-color: 	alpha(#000,0.3);
+    border-bottom-color: alpha(#000,0.3);
+	border-image: none;
+
 }
 
 

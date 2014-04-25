@@ -319,58 +319,78 @@ GtkSwitch.trough:backdrop {
     background: none;
     color: transparent;
     box-shadow: none;
-    background-image: url("assets/switch-off.png");
-    background-size: 56px 20px;
+    background-image: url("assets/dui-flat-switch-off.png");
+    background-size: 41px 21px;
     background-position: center center;
     background-repeat: no-repeat;
     text-shadow: none;
 }
 
 GtkSwitch.trough {
-    background-image: url("assets/switch-off.png");
+    background-image: url("assets/dui-flat-switch-off.png");
+    background-repeat: no-repeat;
+}
+GtkSwitch.trough:backdrop {
+    background-image: url("assets/dui-flat-switch-off-backdrop.png");
     background-repeat: no-repeat;
 }
 
 GtkSwitch.trough:active {
-    background-image: url("assets/switch-on.png");
+    background-image: url("assets/dui-flat-switch-on.png");
+    background-repeat: no-repeat;
+}
+GtkSwitch.trough:active:backdrop {
+    background-image: url("assets/dui-flat-switch-on-backdrop.png");
     background-repeat: no-repeat;
 }
 
 GtkSwitch.trough:insensitive {
-    background-image: url("assets/switch-off-disabled.png");
+    background-image: url("assets/dui-flat-switch-off-disabled.png");
     background-repeat: no-repeat;
 }
 
 GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/switch-on-disabled.png");
+    background-image: url("assets/dui-flat-switch-on-disabled.png");
     background-repeat: no-repeat;
 }
 
 .toolbar.menubar GtkSwitch.trough,
 .primary-toolbar .toolbar GtkSwitch.trough,
 .primary-toolbar.toolbar GtkSwitch.trough {
-    background-image: url("assets/switch-dark-off.png");
+    background-image: url("assets/dui-flat-switch-dark-off.png");
+    background-repeat: no-repeat;
+}
+.toolbar.menubar GtkSwitch.trough:backdrop,
+.primary-toolbar .toolbar GtkSwitch.trough:backdrop,
+.primary-toolbar.toolbar GtkSwitch.trough:backdrop {
+    background-image: url("assets/dui-flat-switch-dark-off-backdrop.png");
     background-repeat: no-repeat;
 }
 
 .toolbar.menubar GtkSwitch.trough:active,
 .primary-toolbar .toolbar GtkSwitch.trough:active,
 .primary-toolbar.toolbar GtkSwitch.trough:active {
-    background-image: url("assets/switch-dark-on.png");
+    background-image: url("assets/dui-flat-switch-dark-on.png");
+    background-repeat: no-repeat;
+}
+.toolbar.menubar GtkSwitch.trough:active:backdrop,
+.primary-toolbar .toolbar GtkSwitch.trough:active:backdrop,
+.primary-toolbar.toolbar GtkSwitch.trough:active:backdrop {
+    background-image: url("assets/dui-flat-switch-dark-on-backdrop.png");
     background-repeat: no-repeat;
 }
 
 .toolbar.menubar GtkSwitch.trough:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:insensitive,
 .primary-toolbar.toolbar GtkSwitch.trough:insensitive {
-    background-image: url("assets/switch-dark-off-disabled.png");
+    background-image: url("assets/dui-flat-switch-dark-off-disabled.png");
     background-repeat: no-repeat;
 }
 
 .toolbar.menubar GtkSwitch.trough:active:insensitive,
 .primary-toolbar .toolbar GtkSwitch.trough:active:insensitive,
 .primary-toolbar.toolbar GtkSwitch.trough:active:insensitive {
-    background-image: url("assets/switch-dark-on-disabled.png");
+    background-image: url("assets/dui-flat-switch-dark-on-disabled.png");
     background-repeat: no-repeat;
 }
 
