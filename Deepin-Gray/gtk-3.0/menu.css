@@ -217,7 +217,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:hover,
 .menu .menuitem:hover {
     color: #000;
-   	text-shadow:0 1px aplha(#fff,0.3);
+   	text-shadow:0 1px alpha(#fff,0.3);
 }
 
 .primary-toolbar .menuitem *:insensitive,

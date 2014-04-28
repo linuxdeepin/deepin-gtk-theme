@@ -302,6 +302,7 @@ GtkScale.scale-has-marks-below.slider.vertical:insensitive {
 /**********
  * switch *
  **********/
+
 GtkSwitch {
     -GtkWidget-focus-line-width: 0;
     border-radius: 8px;
@@ -396,7 +397,8 @@ GtkSwitch.trough:active:insensitive {
 
 GtkSwitch.slider {
     border: none;
-    border-image: none;
+/*    border-image:url("assets/switch-slider.png");*/
+    background-position: 0 center;
     background: none;
     color: transparent;
     box-shadow: none;
