@@ -197,7 +197,7 @@ GtkComboBox .menuitem *:hover {
    background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
 
      color:#000;
-    text-shadow:0 1px aplha(#fff,0.3);
+    text-shadow:0 1px alpha(#fff,0.3);
 	text-shadow: none;
     border-radius: 0;
     border-image: none;
