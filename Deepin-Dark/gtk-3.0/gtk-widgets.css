@@ -119,7 +119,6 @@ GtkClutterOffscreen {
 }
 
 *:insensitive {
-    background-color: @insensitive_bg_color;
     color: @insensitive_fg_color;
     border-color: @insensitive_border_color;
     box-shadow: none;
@@ -2004,6 +2003,7 @@ MathWindow .button:hover:active,
 				     left top, left bottom,
                      from (shade(@button_raised_gradient_color_b, 0.90)),
                      to   (shade(@button_raised_gradient_color_a, 0.80)));
+    color:white;
 
     border-width: 1px;
     border-style: solid; 

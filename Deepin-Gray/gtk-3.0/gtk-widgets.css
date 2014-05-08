@@ -3595,4 +3595,107 @@ GtkProgressBar.osd.progressbar {
                   alpha(black, 0.13); 
 }
 
+/*******
+ * CSD *
+ *******/
 
+/*******
+ * CSD *
+ *******/
+.titlebar {
+    text-shadow: 0 1px @wm_title_shadow;
+	background:@theme_bg_dark_color;
+    box-shadow: inset  0px  1px shade(@theme_bg_dark_color, 1.4);
+    border-radius: 4px 4px 0 0;
+}
+
+.titlebar .separator {
+	color: shade(@theme_bg_dark_color, 0.8);
+}
+
+
+.tiled .titlebar {
+    border-radius: 40px;
+}
+/*
+.maximized .titlebar {
+    border-radius: 0;
+}
+*/
+/* this is the default titlebar that is added by GTK
+ * when client-side decorations are in use and the application
+ * did not set a custom titlebar.
+ */
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.titlebar .title {
+    font: bold;
+	color: @wm_title_focused;
+}
+.titlebar .title:backdrop {
+	color: @wm_title_unfocused;
+	text-shadow: none;
+}
+
+.titlebar .titlebutton {
+    icon-shadow: 0px 1px @wm_title_shadow;
+    color: @wm_title_focused;
+    background: none;
+    /*padding: 5px 5px 6px 5px;*/
+    padding: 2px 6px 3px 3px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: none;
+    icon-shadow: none;
+	transition: 250ms ease-in-out;
+}
+
+.titlebar .titlebutton:hover {
+    background-image: none;
+	color: shade(red, 1.2);
+}
+
+.titlebar .titlebutton:active,
+.titlebar .titlebutton:active:hover {
+    background-image: none;
+	color: black;
+    border-width: 1px;
+    border-image: none;
+    icon-shadow: none;
+	box-shadow: none;
+}
+
+.titlebar .titlebutton:backdrop {
+    background-image: none;
+    color: @wm_title_unfocused;
+    border-image: none;
+    icon-shadow: none;
+}
+
+.titlebar .titlebutton:backdrop:hover {
+	color: shade(red, 1.2);
+}
+
+.window-frame {
+    border-radius: 4px 4px 0 0;
+    /* lamefun trick to get rounded borders regardless of CSD use */
+    border-width: 0px;    
+    box-shadow: 0 0 0 1px shade(@theme_bg_dark_color, 0.2),
+				0 3px 7px alpha(black, 0.7);
+    /* this is used for the resize cursor area */
+    margin: 10px;
+}
+
+.window-frame.tiled {
+    border-radius: 0;
+}
+
+.window-frame:backdrop {
+    box-shadow: 0 0 0 1px shade(@theme_bg_dark_color, 0.2),
+				0 3px 4px @wm_shadow;
+}
