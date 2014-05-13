@@ -3,8 +3,8 @@ UnityPanelWidget,
 
     background-image: url("assets/background-noise-toolbar.png"),
 					  -gtk-gradient (linear, left top, left bottom,
-                                     from (shade(@theme_bg_dark_color, 1.08)),
-                                     to   (shade(@theme_bg_dark_color, 1.00)));
+                                     from (shade(@toolbar, 1.08)),
+                                     to   (shade(@toolbar, 1.00)));
 
     border-width: 0px;
 	border-style: none;
@@ -13,15 +13,15 @@ UnityPanelWidget,
 
 .unity-panel.menubar,
 .unity-panel .menubar {
-    color:				@theme_fg_dark_color;
-	text-shadow: 		0px 1px @theme_shadow_dark_color;    
+    color:				@toolbar_text;
+	text-shadow: 		0px 1px @dark_text_shadow;    
 }
 
 .unity-panel.menuitem,
 .unity-panel .menuitem {
     border-width: 0px;
 
-    /* icon-shadow: 0 1 shade (@theme_bg_dark_color, 1.06); */
+    /* icon-shadow: 0 1 shade (@toolbar, 1.06); */
 }
 
 

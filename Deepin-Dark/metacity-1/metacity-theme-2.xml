@@ -79,30 +79,30 @@
 <!-- ::: BORDER OUTLINE ::: -->
 <draw_ops name="border">
     <!-- top y=0 -->
-    <tint color="#a3a3a3" x="2" y="0" width="2" height="1" alpha="1.0"/>
-    <tint color="#808080" x="4" y="0" width="width-8" height="1" alpha="1.0"/>
-    <tint color="#a3a3a3" x="width-4" y="0" width="2" height="1" alpha="1.0"/>
+    <tint color="#4d4d4d" x="2" y="0" width="2" height="1" alpha="1.0"/>
+    <tint color="#484848" x="4" y="0" width="width-8" height="1" alpha="1.0"/>
+    <tint color="#4d4d4d" x="width-4" y="0" width="2" height="1" alpha="1.0"/>
 
     <!-- top y=1 -->
-    <tint color="#a3a3a3" x="1" y="1" width="1" height="1" alpha="1.0"/>
-    <tint color="#7f7f7f" x="2" y="1" width="1" height="1" alpha="1.0"/>
-    <tint color="#7f7f7f" x="width-3" y="1" width="1" height="1" alpha="1.0"/>
-    <tint color="#a3a3a3" x="width-2" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#4d4d4d" x="1" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#505050" x="2" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#505050" x="width-3" y="1" width="1" height="1" alpha="1.0"/>
+    <tint color="#4d4d4d" x="width-2" y="1" width="1" height="1" alpha="1.0"/>
     
     <!-- top y=2 -->
-    <tint color="#7f7f7f" x="1" y="2" width="1" height="1" alpha="1.0"/>
-    <tint color="#7f7f7f" x="width-2" y="2" width="1" height="1" alpha="1.0"/>
+    <tint color="#505050" x="1" y="2" width="1" height="1" alpha="1.0"/>
+    <tint color="#505050" x="width-2" y="2" width="1" height="1" alpha="1.0"/>
 
     <!-- vertical left -->
-    <tint color="#a3a3a3" x="0" y="2" width="1" height="2" alpha="1.0"/>
-    <tint color="#808080" x="0" y="4" width="1" height="height-4" alpha="1.0"/>
+    <tint color="#4d4d4d" x="0" y="2" width="1" height="2" alpha="1.0"/>
+    <tint color="#484848" x="0" y="4" width="1" height="height-4" alpha="1.0"/>
 
     <!-- vertical right -->
-    <tint color="#a3a3a3" x="width-1" y="2" width="1" height="2" alpha="1.0"/>
-    <tint color="#808080" x="width-1" y="4" width="1" height="height-4" alpha="1.0"/>
+    <tint color="#4d4d4d" x="width-1" y="2" width="1" height="2" alpha="1.0"/>
+    <tint color="#4d4d4d" x="width-1" y="4" width="1" height="height-4" alpha="1.0"/>
 
     <!-- bottom -->
-    <tint color="#808080" x="1" y="height-1" width="width-2" height="1" alpha="1.0"/>
+    <tint color="#484848" x="1" y="height-1" width="width-2" height="1" alpha="1.0"/>
 
     
 </draw_ops>
@@ -115,32 +115,32 @@
 <!-- ::: TITLEBAR ::: -->
 <draw_ops name="titlebar_gradient">
 	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-		<color value="shade/#494949/1.07"/>
-		<color value="shade/#444444/1.00"/>
+		<color value="shade/#252627/1.4"/>
+		<color value="shade/#252627/0.98"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
 	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-		<color value="shade/#444444/1.3"/>
-		<color value="shade/#444444/1.20"/>
+		<color value="shade/#252627/1.3"/>
+		<color value="shade/#252627/1.20"/>
 	</gradient>
    <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_maximized">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#494949/1.07"/>
-		<color value="shade/#444444/1.00"/>
+		<color value="shade/#252627/1.4"/>
+		<color value="shade/#252627/0.98"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_maximized_unfocursed">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#444444/1.30"/>
-		<color value="shade/#444444/1.20"/>
+		<color value="shade/#252627/1.30"/>
+		<color value="shade/#252627/1.20"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>

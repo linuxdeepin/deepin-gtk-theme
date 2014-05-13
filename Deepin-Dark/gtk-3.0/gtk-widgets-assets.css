@@ -340,7 +340,7 @@ GtkScale.progressbar.vertical {
 GtkScale.slider,
 GtkScale.slider.horizontal,
 GtkScale.slider.horizontal:hover {
-    background-image: url("assets/scale-slider-hor.svg");
+    background-image: url("assets/scale-slider.png");
     background-repeat: no-repeat;
 }
 
@@ -351,7 +351,7 @@ GtkScale.slider.horizontal:insensitive {
 }
 
 GtkScale.slider.vertical {
-    background-image: url("assets/scale-slider-ver.svg");
+    background-image: url("assets/scale-slider.png");
     background-repeat: no-repeat;
 }
 

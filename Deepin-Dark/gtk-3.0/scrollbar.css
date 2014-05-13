@@ -17,13 +17,13 @@
 .scrollbar.trough.vertical {
 	box-shadow: none;
     background-image: -gtk-gradient (linear, left top, right top,
-                                     from (shade (@theme_bg_color, 1.00)),
-                                     to (shade (@theme_bg_color, 1.10)));
+                                     from (shade (@bg_color, 1.00)),
+                                     to (shade (@bg_color, 1.10)));
 
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-left-color: shade (@theme_bg_color, 0.96);
+	border-left-color: shade (@bg_color, 0.96);
 
 }
 
@@ -32,13 +32,13 @@
     border-radius: 0px;
 	border-width: 0px;
     background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@theme_bg_color, 1.00)),
-                                     to (shade (@theme_bg_color, 1.00)));
+                                     from (shade (@bg_color, 1.00)),
+                                     to (shade (@bg_color, 1.00)));
 
 	border-style: none;
 	border-width: 0px 0px 0px 0px;
     border-radius: 0px;
-	border-top-color: shade (@theme_bg_color, 0.96);
+	border-top-color: shade (@bg_color, 0.96);
 }
 
 .scrollbar.slider,
@@ -71,15 +71,15 @@
 /* overlay scrollbar */
 OsThumb:selected,
 OsScrollbar:selected {
-    background-color: @theme_selected_bg_color;
+    background-color: @selected_bg;
 }
 
 OsThumb:active,
 OsScrollbar:active {
-    background-color: shade (@theme_bg_color, 0.6);
+    background-color: shade (@bg_color, 0.6);
 }
 
 OsThumb:insensitive,
 OsScrollbar:insensitive {
-    background-color: shade (@theme_bg_color, 0.85);
+    background-color: shade (@bg_color, 0.85);
 }

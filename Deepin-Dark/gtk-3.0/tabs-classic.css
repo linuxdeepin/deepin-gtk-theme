@@ -4,7 +4,7 @@
 .notebook {
     padding: 0px;
 
-	background-color: shade (@theme_bg_color, 0.97);
+	background-color: shade (@bg_color, 0.97);
     background-image: none;
     box-shadow: none;
 
@@ -37,15 +37,15 @@
 .notebook tab:active {
     background-image: -gtk-gradient (linear,
                                      left top, left bottom,
-                                     from (shade(@theme_bg_color, 1.00)),
-                                     to   (shade(@theme_bg_color, 0.97)));
+                                     from (shade(@bg_color, 1.00)),
+                                     to   (shade(@bg_color, 0.97)));
 
 	border-color: shade(@notebook_border, 1.00);
 	border-image: none; 
 }
 
 .notebook tab GtkLabel {
-	color: @theme_text_color;
+	color: @text_color;
 	text-shadow: 0 1px alpha(#fff, 0.18);
 }
 

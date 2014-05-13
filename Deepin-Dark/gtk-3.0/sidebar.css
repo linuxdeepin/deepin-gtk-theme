@@ -15,7 +15,8 @@
     border-radius: 0px;
     color:				@sidebar_fg_color;
 	text-shadow: 		none;
-    background-color:	@sidebar_background; 
+    background-color:	@sidebar_background;
+
 }
 .sidebar:backdrop,
 .sidebar.view:backdrop,
@@ -25,7 +26,7 @@
     border-radius: 0px;
     color:				#7D7D7D;
 	text-shadow: 		none;
-    background-color:	shade(@sidebar_background,0.96); 
+    background-color:	shade(@sidebar_background,0.98); 
 }
 
 
@@ -34,35 +35,35 @@
 .sidebar .view:selected,
 .sidebar .view *:selected,
 .sidebar .view:selected:prelight {
-    border-style: solid;
-    border-width: 1px 1px 1px 0px;
-    border-color: shade (@sidebar_selected_bg, 0.89);
+
 
     background-image:	 -gtk-gradient (linear,
 										left top,
 										left bottom,
-										from (shade(@sidebar_selected_bg, 0.93)),
-									 	color-stop (0.40, shade (@sidebar_selected_bg, 0.95)),
-										to   (shade(@sidebar_selected_bg,0.96)));
-    color:  @text_color;    
-    text-shadow: none;
+										from (shade(@sidebar_selected_bg, 1.6)),
+										to   (shade(@sidebar_selected_bg,1.4)));
+    box-shadow: inset 0 1px shade(@sidebar_selected_bg,1.0),
+                inset 0 -1px shade(@sidebar_selected_bg,1.0),
+                inset 0 2px alpha(#fff,0.1);
+    color:  @active_color;    
+    text-shadow: 0 1px @dark_text_shadow;
 }
 .sidebar.view:selected:backdrop,
 .sidebar.view *:selected:backdrop,
 .sidebar .view:selected:backdrop,
 .sidebar .view *:selected:backdrop,
 .sidebar .view:selected:prelight:backdrop {
-    border-style: solid;
-    border-width: 1px 1px 1px 0px;
-    border-color: #D4D4D4;
 
     background-image:	 -gtk-gradient (linear,
 										left top,
 										left bottom,
-										from (#DEDEDE),
-										to   (#DBDBDB));
-    color:  @text_color;    
-    text-shadow: none;
+										from (shade(@sidebar_selected_bg, 1.8)),
+										to   (shade(@sidebar_selected_bg,1.6)));
+    box-shadow: inset 0 1px shade(@sidebar_selected_bg,1.2),
+                inset 0 -1px shade(@sidebar_selected_bg,1.2),
+                inset 0 2px alpha(#fff,0.05);
+    color:  @backdrop_fg_color;    
+    text-shadow: 0 1px @dark_text_shadow;
 }
 
 
@@ -70,7 +71,7 @@
 .sidebar .radio:focused,
 .sidebar .radio:selected {
     background-image: none;
-    background-color: alpha(@theme_base_color, 0.0);
+    background-color: alpha(@base_color, 0.0);
 }
 
 GtkHCollapsablePaned,
