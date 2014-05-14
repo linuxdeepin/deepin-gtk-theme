@@ -114,7 +114,7 @@ GtkClutterOffscreen {
 
 *:selected,
 *:selected:focus {
-    background-color: shade(@selected_bg, 0.5);
+    background-color: shade(@selected_bg, 0.9);
     color: @selected_fg_color;
 }
 
@@ -1939,10 +1939,10 @@ GtkHandleBox,
 
 MathWindow .button:hover,
 MathWindow .button {
-    background-image:    -gtk-gradient (linear,
-						                left top, left bottom,
-						                from (@press_button),
-						                to   (@press_button));
+    background-image:  -gtk-gradient (linear,
+						             left top, left bottom,
+						             from (shade(@press_button,1.2)),
+						             to   (shade(@press_button,0.6)));
     
     
 }
@@ -2032,14 +2032,13 @@ MathWindow .button {
 
 }
 
-/*
+
 MathWindow .button:hover,
 MathWindow .button,
 .toolbar NautilusPathBar .button,
 .toolbar.menubar .button,
 .toolbar .raised .button,
 .toolbar .raised.button {
-
     border-width: 1px;
     border-radius: 5px;
     border-style: solid;
@@ -2092,9 +2091,9 @@ MathWindow .button:backdrop,
 	color:@backdrop_fg_color;
 
 }
-*/
 
-/*
+
+
 .toolbar NautilusPathBar .button:insensitive,
 .toolbar .button.raised.linked:insensitive,
 .toolbar .raised.linked .button:insensitive,
@@ -2160,7 +2159,7 @@ MathWindow .button:backdrop,
 
 	color: mix(@toolbar, @toolbar_text, 0.20);
 }
-*/
+
 
 
 
