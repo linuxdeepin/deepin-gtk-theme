@@ -209,13 +209,13 @@ GtkTreeMenu .menuitem {
 /* Workaround for lp:949368 */
 .toolbar GtkComboBox .menuitem *, 
 GtkComboBox .menuitem * {
-    color: shade(@toolbar_text,1.2);
-/*    text-shadow: 0 1px @alpha(#000, 0.30);*/
+    color: shade(@toolbar_text,1.4);
+    text-shadow: 0 1px alpha(#000, 0.50);
 }
 
 GtkComboBox .menuitem *:hover {
-    color: shade(@toolbar_text,1.2);
-   	text-shadow: 0 1px alpha(#000,0.3);
+    color: white;
+   	text-shadow: 0 1px alpha(#000,0.5);
 }
 .toolbar .raised .button .menuitem:hover,
 .toolbar.menubar .button .menuitem:hover, 
@@ -228,10 +228,7 @@ GtkComboBox .menuitem *:hover {
 
 	text-shadow: 0 1px alpha(#000,0.3);
     border-radius: 0;
-    box-shadow: inset  0   1px   alpha(#000,1),
-                inset 0 -1px    alpha(#000,1),
-                inset 0  2px     alpha(#FFF,0.1),
-                inset 0  -2px     alpha(#FFF,0.1)
+   
 }
 
 .toolbar .menuitem *:hover,
@@ -239,7 +236,6 @@ GtkComboBox .menuitem *:hover {
 .primary-toolbar.toolbar .button .menuitem *:hover,
 .toolbar .raised .button .menuitem *:hover, /* menuitem opciones visualizacion nautilus  */
 .toolbar.menubar .button .menuitem *:hover, 
-GtkComboBox .menuitem *:hover, 
 GtkTreeMenu .menuitem *:active,
 GtkTreeMenu .menuitem *:prelight,
 .menuitem *:active,
@@ -426,7 +422,7 @@ GtkComboBox .menuitem.separator,
  ***************/
 .button.menuitem.menubar:active,
 .button.menuitem.menubar *:active {
-    color: red;
+/*    color: red;*/
     background-image: none;
     background-color: @toolbar;
 

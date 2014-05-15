@@ -97,7 +97,7 @@ Geditoolbar.toolbar .raised .button *:active,
 Geditoolbar.toolbar .raised.button *:active,
 Geditoolbar.toolbar .raised .button *:active:hover,
 Geditoolbar.toolbar .raised.button *:active:hover {
-	color:red;
+	color: @toolbar_text;
     text-shadow: 0px 1px @dark_text_shadow;
 }
 

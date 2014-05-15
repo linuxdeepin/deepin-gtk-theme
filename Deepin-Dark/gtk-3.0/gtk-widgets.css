@@ -1408,9 +1408,9 @@ GtkComboBox.combobox-entry .button *:prelight {
 	/* color combobox read-only */
     color: 			shade(@toolbar_fg_color, 0.94);
 	text-shadow: 0 1px @toolbar_shadow_color;
+
+
 }
-
-
 .primary-toolbar GtkComboBox .cell {
 	/* color combobox read-only */
     color: 			shade(@toolbar_text, 0.94);
@@ -1496,7 +1496,7 @@ GtkComboBox.combobox-entry .button *:prelight {
     color: @toolbar_text;
 }
 
-/* Hace que el boton del combobox_entry tenga el mismo gradient que las cajas de texto
+ Hace que el boton del combobox_entry tenga el mismo gradient que las cajas de texto
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active,
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active,
@@ -1513,17 +1513,17 @@ GtkComboBox.combobox-entry .button:hover:active:nth-child(last) {
                                     color-stop (0.50, shade(@base_color, 0.93)),
                                     to         (shade(@base_color, 0.95)));
 
-    box-shadow: 1 0 inset shade(@frame_color, 1.50);
+    box-shadow:inset 1px 0  shade(@frame_color, 1.50);
 }
 
 .primary-toolbar GtkComboBox.combobox-entry .button:active:nth-child(first),
 .primary-toolbar GtkComboBox.combobox-entry .button:hover:active:nth-child(first),
 GtkComboBox.combobox-entry .button:active:nth-child(first),
 GtkComboBox.combobox-entry .button:hover:active:nth-child(first) {
-    box-shadow: -1 0 inset shade(@frame_color, 1.50);
+    box-shadow: inset -1px 0  shade(@frame_color, 1.50);
 }
 
-*/
+
 
 
 /************
@@ -2624,7 +2624,6 @@ GtkIconView {
                                      to (@bg_color)); 
 }
 
-/*
 GtkIconView.view.cell:selected,
 GtkIconView.view.cell:selected:focused {
     background-color: alpha(@selected_bg, 0.90);    
@@ -2646,7 +2645,6 @@ GtkIconView.view.cell:selected:focused {
     -GtkWidget-focus-line-width: 0;
 	text-shadow: 0px 1px @text_shadow;  
 }
-*/
 
 .view {
     background-color: @base_color;
@@ -4387,4 +4385,139 @@ GtkProgressBar.osd.progressbar {
                   alpha(black, 0.13); 
 }
 
+/*******
+ * CSD *
+ ******/
+
+.titlebar {
+    background-image: linear-gradient(to bottom,
+                                  shade (@toolbar, 0.96),
+                                  shade (@toolbar, 0.84)
+                                  );
+    border-color: shade (@toolbar, 0.56);
+    border-radius: 4px 4px 0 0;
+    border-style: solid;
+    border-width: 0 0 1px;
+
+    text-shadow: 0 1px alpha (#fff, 0.4);
+    icon-shadow: 0 1px alpha (#fff, 0.4);
+
+    box-shadow: inset 0 0 0 1px alpha (#fff, 0.06),
+                inset 0 1px 0 0 alpha (#fff, 0.1);
+
+    padding: 0px 3px;
+}
+
+.titlebar:backdrop {
+    background-image: linear-gradient(to bottom,
+                              @toolbar,
+                              shade (@toolbar, 0.90)
+                              );
+    border-color: shade (@toolbar, 0.64);
+}
+
+.header-bar {
+    padding: 16px 6px 8px;
+}
+
+.titlebar.default-decoration {
+    border: none;
+    box-shadow: none;
+}
+
+.titlebar .separator {
+    color: transparent;
+}
+
+.titlebar .title {
+    color: @title_color;
+    font: Bold 9;
+    text-shadow: 0 1px @title_shadow_color;
+    icon-shadow: 0 1px @title_shadow_color;
+}
+
+.titlebar .title:backdrop {
+    color: shade (@title_color, 0.80);
+    text-shadow: none;
+}
+
+
+.titlebar .titlebutton {
+    icon-shadow: 0px 1px alpha (#fff, 0.4);
+    color: alpha (#000, 0.50);
+    padding: 3px;
+
+    border-radius: 3px;
+    border-width: 1px;
+    border-color: transparent;
+    border-style: solid;
+    border-image: none;
+    box-shadow: none;
+}
+
+.titlebar .titlebutton:backdrop {
+    color: alpha (#000, 0.30);
+}
+
+.window-frame {
+    border-radius: 4px 4px 0 0;
+
+    box-shadow: 0 0 0 1px alpha (#000, 0.3),
+                0 6px 20px -3px alpha (#000, 0.80);
+
+    margin: 8px;
+}
+
+.window-frame:backdrop {
+    box-shadow: 0 0 0 1px alpha (#000, 0.3),
+                0 6px 10px -3px alpha (#000, 0.90);
+}
+
+/***************
+ * Dialog      *
+ ***************/
+
+.prompt,
+GtkMessageDialog {
+    -GtkDialog-button-spacing: 0;
+    -GtkDialog-content-area-border: 12px;
+}
+
+GtkMessageDialog .button {
+    padding: 6px;
+}
+
+GtkDialog .titlebar,
+GtkMessageDialog .titlebar {
+    border: none;
+
+    background-image: none;
+    background-color: @bg_color;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
+}
+
+GtkDialog .titlebar:backdrop,
+GtkMessageDialog .titlebar:backdrop {
+    border: none;
+
+    background-image: none;
+    background-color: @bg_color;
+
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 1px 0 0 #fff;
+
+    color: shade (@base_color, 1.20);
+}
+
+GtkDialog,
+GtkMessageDialog {
+    box-shadow: inset 1px 0 0 0 alpha (#fff, 0.20),
+                inset -1px 0 0 0 alpha (#fff, 0.20),
+                inset 0 -1px 0 0 alpha (#fff, 0.30);
+
+}
 
