@@ -430,6 +430,7 @@ TerminalScreen {
 }
 
 
+/*
 MathWindow GtkTable * {
 background-image:                   
                       -gtk-gradient (linear,
@@ -439,6 +440,7 @@ background-image:
                                      to               (shade(@toolbar, 0.94)));
 
 }
+*/
 
 MathWindow {
     color: @toolbar_text;    
@@ -468,7 +470,7 @@ MathDisplay GtkTextView.view {
 	color: shade (#e8d001, 1.25); */
 	color: @calc_display_fg_color;
     
-    background-color: shade(@toolbar, 0.70);
+    background-color: shade(@toolbar, 0.80);
 
 }
 MathDisplay GtkTextView.view:backdrop {
@@ -522,9 +524,27 @@ MathWindow .button {}
 MathWindow .button:active,
 MathWindow .button:hover:active {}
 */
-
+MathWindow GtkTable ,
 MathWindow .button,
+MathWindow .cell {
+background-image:  -gtk-gradient (linear,
+						             left top, left bottom,
+						             from (shade(@press_button,1.0)),
+						             to   (shade(@press_button,0.6)));
+    color: @toolbar_text;
+	text-shadow: 0px 1px @dark_text_shadow;
+}
+MathWindow GtkTable:hover
 MathWindow .button:hover,
+MathWindow .cell {
+    background-image: -gtk-gradient (linear,
+						left top, left bottom,
+						from (shade(@press_button,2.4)),
+						to   (shade(@press_button,0.5)));
+    color: @toolbar_text;
+	text-shadow: 0px 1px @dark_text_shadow;
+}
+MathWindow GtkTable :active,
 MathWindow .button:active,
 MathWindow .button:hover:active,
 MathWindow .cell {
