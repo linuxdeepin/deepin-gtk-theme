@@ -540,7 +540,8 @@ MathWindow .button:backdrop,
 MathWindow .button:hover:backdrop,
 MathWindow .button:active:backdrop,
 MathWindow .button:hover:active:backdrop,
-MathWindow .cell {
+MathWindow .cell
+{
 background-image:  -gtk-gradient (linear,
                                      left top, left bottom,
                                      from             (shade(@toolbar, 1.00)),
@@ -549,6 +550,16 @@ background-image:  -gtk-gradient (linear,
     color: @backdrop_fg_color;
 	text-shadow: 0px 1px @dark_text_shadow;
 }
+MathWindow .cell {
+background-image:-gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (shade(@toolbar, 1.00)),
+									 color-stop (0.25, shade(@toolbar, 0.95)),
+                                     to               (shade(@toolbar, 0.94)));
+    color: white;
+	text-shadow: 0px 1px @dark_text_shadow;
+}
+
 
 
 MathWindow .menuitem {
