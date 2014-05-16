@@ -2664,6 +2664,7 @@ GtkIconView.view.cell:selected:focused {
                                      left top, left bottom,
                                      from (shade(@selected_bg, 1.1)),
                                      to (shade(@selected_bg, 1.0))); 
+    background-color: @selected_bg ;
     color: white;
 	text-shadow: 0px 0px @text_shadow;
     box-shadow: inset 0 1px shade(@selected_bg,0.8),
@@ -2685,7 +2686,9 @@ GtkIconView.view.cell:selected:focused {
                inset 0 2px alpha(#fff,0.2),
                 inset 0 -1px shade(@base_color,0.5);
 }
-GtkTextView.view:selected:backdrop
+GtkTextView.view:selected:backdrop,
+GtkTextView.view:active:selected:focused:backdrop,
+GtkTextView.view:selected:focused:backdrop
  {
 
 	background-color:shade(@base_color,0.6);

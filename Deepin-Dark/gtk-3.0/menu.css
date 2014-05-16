@@ -149,19 +149,18 @@
     text-shadow: 0px 1px @dark_text_shadow;
 }
 
-Genericmenuitem .menuitem *,
-DbusmenuGtkMenu .menuitem *,
+/*nautilus 菜单*****/
 .toolbar .raised .button .menuitem *,
 .toolbar.menubar .button .menuitem *,
 .toolbar .menuitem *,
 .primary-toolbar .menuitem *,
-.primary-toolbar .button .menuitem *,
-.menu .menuitem *, 
-.menuitem {
+.primary-toolbar .button .menuitem *
+{
+    
 /* Arregla cambio de altura en menu item nautilus view options */
     padding: 0;
     border-width: 0;
-
+    color:shade(@toolbar_text,1.2);
 }
 /*/gtk程序菜单，例如gedit，不对nautilus生效、*/
 Genericmenuitem .menuitem,
