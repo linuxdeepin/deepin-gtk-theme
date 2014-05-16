@@ -4006,7 +4006,7 @@ GtkProgressBar.osd.progressbar {
 				inset  0px -1px alpha(#000, 0.09);
 	
     color: shade(@selected_fg_color, 1.00);
-	text-shadow: 1px 1px @text_shadow;
+	text-shadow: 1px 1px @dark_text_shadow;
 }
 
 /* Leftmost button */
