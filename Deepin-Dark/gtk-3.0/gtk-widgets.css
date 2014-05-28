@@ -8,7 +8,7 @@
     -GtkButton-inner-border: 1;
     -GtkCheckButton-indicator-size: 14;
     -GtkCheckMenuItem-indicator-size: 14;
-    -GtkEntry-inner-border: 2;
+    -GtkEntry-inner-border: 1;
     -GtkEntry-progress-border: 0;
     -GtkExpander-expander-size: 8;
 
@@ -339,7 +339,6 @@ GtkStatusbar {
 }
 
 .entry:focused {
-	/* outer */
 
     box-shadow: inset  0px  1px @selected_bg,
                 inset  1px  0px @selected_bg,

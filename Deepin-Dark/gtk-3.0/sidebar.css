@@ -31,9 +31,8 @@
 
 
 .sidebar.view:selected,
-.sidebar.view *:selected,
+/*.sidebar.view *:selected,*/
 .sidebar .view:selected,
-.sidebar .view *:selected,
 .sidebar .view:selected:prelight {
 
 
