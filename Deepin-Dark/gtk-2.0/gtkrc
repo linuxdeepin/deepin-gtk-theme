@@ -1,6 +1,6 @@
 gtk-color-scheme = "base_color:#ffffff\nbg_color:#fdfdfd"
 gtk-color-scheme = "text_color:#282828\nfg_color:#323232"
-gtk-color-scheme = "selected_bg_color:#a2c4e2\nselected_fg_color:#000000"
+gtk-color-scheme = "selected_bg_color:#417fff\nselected_fg_color:#ffffff"
 gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#ffffff\nlink_color:#4ab9ff"
 
 gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\ntheme_text_dark_color:#dddddd"
@@ -483,11 +483,12 @@ style "menu" {
 	ythickness	= 5
 	GtkMenuItem::arrow-scaling	= 0.5
 
-	bg[NORMAL]			= shade (0.88, @theme_bg_dark_color)
+	bg[NORMAL]			= "#fdfdfd"
 
 	engine "murrine" {
 		gradient_shades		= {1.08, 1.0, 1.0, 0.98}
 		roundness		    = 1 # 0 = squared 
+       contrast            = 0.5
 	}
 }
 
@@ -499,12 +500,12 @@ style "menu_item_white" {
     fg[INSENSITIVE] 	= mix(0.70, @theme_fg_dark_color, @theme_bg_dark_color)	    # menu item deshabilitados
 	fg[PRELIGHT]		= "#FFFFFF"						# menu item seleccionado
 
-	text[NORMAL]        = shade (1.00, @theme_fg_dark_color)		# Color check/radio menu
+	text[NORMAL]        = @text_color		# Color check/radio menu
 	text[INSENSITIVE] 	= mix(0.70, @theme_text_dark_color, @theme_bg_dark_color)	    
 	text[PRELIGHT]      = @selected_fg_color            			# Color check/radio menu
 
     bg[PRELIGHT]      	= shade (1.00, @selected_bg_color)
-    bg[SELECTED]      	= "#62bded"
+    bg[SELECTED]      	= "#417fff"
 
 	engine "murrine" {
         gradient_shades		= {1.00, 0.98, 0.95, 0.90}
@@ -1048,5 +1049,4 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 include "apps/thunar.rc"		# thunar especific
 include "apps/terminal.rc"
 include "apps/gmusicbrowser.rc"
-
 
