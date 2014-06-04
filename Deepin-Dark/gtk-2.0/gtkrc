@@ -461,12 +461,12 @@ style "menubar" {
 	xthickness	= 3
 	ythickness	= 0
 
-    fg[NORMAL]          = @theme_fg_dark_color
+    fg[NORMAL]          = @selected_fg_color
 	fg[PRELIGHT]	    = @selected_fg_color
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
 
-    bg[NORMAL]          = "#393939"
+    bg[NORMAL]          = "#fdfdfd"
     
 	engine "murrine" {
 		gradient_shades     	= {1.00,0.97,0.97,0.94}
@@ -1049,4 +1049,3 @@ widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
 include "apps/thunar.rc"		# thunar especific
 include "apps/terminal.rc"
 include "apps/gmusicbrowser.rc"
-
