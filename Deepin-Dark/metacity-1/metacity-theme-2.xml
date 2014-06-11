@@ -14,8 +14,8 @@
   <distance name="right_width" value="1"/>
   <distance name="bottom_height" value="1"/>
   <distance name="left_titlebar_edge" value="6"/>
-  <distance name="right_titlebar_edge" value="2"/>
-  <distance name="button_width" value="20"/>
+  <distance name="right_titlebar_edge" value="4"/>
+  <distance name="button_width" value="30"/>
   <distance name="button_height" value="30"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="2" right="0" top="0" bottom="0"/>
@@ -241,7 +241,7 @@
 <!-- close icon -->
 
 <draw_ops name="close_button_normal">
-	<image filename="DWMWindow_CloseButton.Active_NormalImage.png"
+	<image filename="close_normal.png"
 		x="(width - object_width) / 2"
 		y=" 0"
 		width="object_width"
@@ -249,7 +249,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_prelight">
-	<image filename="DWMWindow_CloseButton.Active_HotImage.png"
+	<image filename="close_hover.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -257,7 +257,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_pressed">
-	<image filename="DWMWindow_CloseButton.Active_PressedImage.png"
+	<image filename="close_press.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -265,7 +265,7 @@
 </draw_ops>
 
 <draw_ops name="close_button_unfocused">
-	<image filename="DWMWindow_CloseButton.Active_DisabledImage.png"
+	<image filename="close_disabled.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -275,7 +275,7 @@
 <!-- maximize icon -->
 
 <draw_ops name="maximize_button_normal">
-	<image filename="DWMWindow_MaximizeButton.Active_NormalImage.png"
+	<image filename="maximize_normal.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -283,7 +283,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_prelight">
-	<image filename="DWMWindow_MaximizeButton.Active_HotImage.png"
+	<image filename="maximize_hover.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -291,7 +291,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_pressed">
-	<image filename="DWMWindow_MaximizeButton.Active_PressedImage.png"
+	<image filename="maximize_press.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -299,7 +299,7 @@
 </draw_ops>
 
 <draw_ops name="maximize_button_unfocused">
-	<image filename="DWMWindow_MaximizeButton.Active_DisabledImage.png"
+	<image filename="maximize_disabled.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -309,7 +309,7 @@
 <!-- unmaximize icon -->
 
 <draw_ops name="unmaximize_button_normal">
-	<image filename="DWMWindow_UnMaximizeButton.Active_NormalImage.png"
+	<image filename="maximize_normal.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -317,7 +317,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_prelight">
-	<image filename="DWMWindow_UnMaximizeButton.Active_HotImage.png"
+	<image filename="maximize_hover.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -325,7 +325,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_pressed">
-	<image filename="DWMWindow_UnMaximizeButton.Active_PressedImage.png"
+	<image filename="maximize_press.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -333,7 +333,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_unfocused">
-	<image filename="DWMWindow_UnMaximizeButton.Active_DisabledImage.png"
+	<image filename="maximize_disabled.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -343,7 +343,7 @@
 <!-- minimize icon -->
 
 <draw_ops name="minimize_button_normal">
-	<image filename="DWMWindow_MinimizeButton.Active_NormalImage.png"
+	<image filename="minimise_normal.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -351,7 +351,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_button_prelight">
-	<image filename="DWMWindow_MinimizeButton.Active_HotImage.png"
+	<image filename="minimise_hover.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -359,7 +359,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_button_pressed">
-	<image filename="DWMWindow_MinimizeButton.Active_PressedImage.png"
+	<image filename="minimise_press.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -367,7 +367,7 @@
 </draw_ops>
 
 <draw_ops name="minimize_button_unfocused">
-	<image filename="DWMWindow_MinimizeButton.Active_DisabledImage.png"
+	<image filename="minimise_disabled.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
