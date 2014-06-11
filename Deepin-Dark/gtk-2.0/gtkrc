@@ -461,7 +461,7 @@ style "menubar" {
 	xthickness	= 3
 	ythickness	= 0
 
-    fg[NORMAL]          = @selected_fg_color
+    fg[NORMAL]          = @text_color
 	fg[PRELIGHT]	    = @selected_fg_color
 	fg[ACTIVE]	        = @selected_fg_color
 	fg[SELECTED]	    = @selected_fg_color
