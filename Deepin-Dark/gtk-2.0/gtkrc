@@ -3,7 +3,7 @@ gtk-color-scheme = "text_color:#282828\nfg_color:#323232"
 gtk-color-scheme = "selected_bg_color:#417fff\nselected_fg_color:#ffffff"
 gtk-color-scheme = "tooltip_bg_color:#000000\ntooltip_fg_color:#ffffff\nlink_color:#4ab9ff"
 
-gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#e9e9e9\ntheme_text_dark_color:#dddddd"
+gtk-color-scheme = "theme_bg_dark_color:#444444\ntheme_fg_dark_color:#282828\ntheme_text_dark_color:#dddddd"
 gtk-color-scheme = "sidebar_background:#fafafa"
 
 include "notebooks.rc"
@@ -140,7 +140,7 @@ style "default" {
 		lightborderstyle	= 1 # 0 = top side, 1 = all sides
 		listviewstyle		= 0 # 0 = nothing, 1 = dotted, 2 = line
 		menubaritemstyle	= 0 # 0 = menuitem look, 1 = button look
-		menubarstyle		= 1 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
+		menubarstyle		= 0 # 0 = flat, 1 = glassy, 2 = gradient, 3 = striped
 		menuitemstyle		= 1 # 0 = flat, 1 = glassy, 2 = striped
 		menustyle		    = 0 # 0 = no vertical menu stripe, 1 = display vertical menu stripe, 2 = faint? 3 = borderless
 		progressbarstyle	= 0
@@ -521,7 +521,7 @@ style "menu_item_black" {
 	xthickness	= 2
 	ythickness	= 3
 
-	fg[PRELIGHT]	= @selected_fg_color
+	fg[PRELIGHT]	= @text_color
     bg[PRELIGHT]      = shade (0.94, @selected_bg_color)
     bg[SELECTED]      = shade (0.94, @selected_bg_color)
 
