@@ -260,7 +260,7 @@ GtkTreeMenu .menuitem *:prelight,
 .menuitem:insensitive,
 .menuitem *:insensitive {
 	/* contextual menu insensitive */
-    color: shade(@toolbar_text,0.3);
+    color: shade(@toolbar_text,0.6);
     text-shadow: none;
 }
 
