@@ -309,7 +309,7 @@
 <!-- unmaximize icon -->
 
 <draw_ops name="unmaximize_button_normal">
-	<image filename="maximize_normal.png"
+	<image filename="unmaximize_normal.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -317,7 +317,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_prelight">
-	<image filename="maximize_hover.png"
+	<image filename="unmaximize_hover.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -325,7 +325,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_pressed">
-	<image filename="maximize_press.png"
+	<image filename="unmaximize_press.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
@@ -333,7 +333,7 @@
 </draw_ops>
 
 <draw_ops name="unmaximize_button_unfocused">
-	<image filename="maximize_disabled.png"
+	<image filename="unmaximize_disabled.png"
 		x="(width - object_width) / 2"
 		y="0"
 		width="object_width"
