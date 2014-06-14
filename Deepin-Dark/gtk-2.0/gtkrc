@@ -237,7 +237,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_file = "assets/checkbox-unchecked.png"
 			overlay_stretch = FALSE
 		}
 
@@ -246,7 +246,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked-hover.svg"
+			overlay_file = "assets/checkbox-unchecked-hover.png"
 			overlay_stretch = FALSE
 		}
 
@@ -255,7 +255,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked.svg"
+			overlay_file = "assets/checkbox-unchecked.png"
 			overlay_stretch = FALSE
 		}
 
@@ -264,7 +264,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = OUT
-			overlay_file = "assets/checkbox-unchecked-insensitive.svg"
+			overlay_file = "assets/checkbox-unchecked-insensitive.png"
 			overlay_stretch = FALSE
 		}
 
@@ -273,7 +273,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.svg"
+			overlay_file = "assets/checkbox-checked.png"
 			overlay_stretch = FALSE
 		}
 
@@ -282,7 +282,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/checkbox-checked-hover.svg"
+			overlay_file = "assets/checkbox-checked-hover.png"
 			overlay_stretch = FALSE
 		}
 
@@ -291,7 +291,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = IN
-			overlay_file = "assets/checkbox-checked.svg"
+			overlay_file = "assets/checkbox-checked.png"
 			overlay_stretch = FALSE
 		}
 
@@ -301,7 +301,7 @@ style "checkbutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = IN
-			overlay_file = "assets/checkbox-checked-insensitive.svg"
+			overlay_file = "assets/checkbox-checked-insensitive.png"
 			overlay_stretch = FALSE
 		}
 
@@ -321,7 +321,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.svg"
+			overlay_file = "assets/radio-unselected.png"
 			overlay_stretch = FALSE
 		}
 
@@ -330,7 +330,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = OUT
-			overlay_file = "assets/radio-unselected-hover.svg"
+			overlay_file = "assets/radio-unselected-hover.png"
 			overlay_stretch = FALSE
 		}
 
@@ -339,7 +339,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = OUT
-			overlay_file = "assets/radio-unselected.svg"
+			overlay_file = "assets/radio-unselected.png"
 			overlay_stretch = FALSE
 		}
 
@@ -348,7 +348,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = OUT
-			overlay_file = "assets/radio-unselected-insensitive.svg"
+			overlay_file = "assets/radio-unselected-insensitive.png"
 			overlay_stretch = FALSE
 		}
 
@@ -357,7 +357,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = NORMAL
 			shadow = IN
-			overlay_file = "assets/radio-selected.svg"
+			overlay_file = "assets/radio-selected.png"
 			overlay_stretch = FALSE
 		}
 
@@ -366,7 +366,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = PRELIGHT
 			shadow = IN
-			overlay_file = "assets/radio-selected-hover.svg"
+			overlay_file = "assets/radio-selected-hover.png"
 			overlay_stretch = FALSE
 		}
 
@@ -375,7 +375,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = ACTIVE
 			shadow = IN
-			overlay_file = "assets/radio-selected.svg"
+			overlay_file = "assets/radio-selected.png"
 			overlay_stretch = FALSE
 		}
 
@@ -385,7 +385,7 @@ style "radiobutton" {
 			recolorable = TRUE
 			state = INSENSITIVE
 			shadow = IN
-			overlay_file = "assets/radio-selected-insensitive.svg"
+			overlay_file = "assets/radio-selected-insensitive.png"
 			overlay_stretch = FALSE
 		}
 

@@ -3737,7 +3737,7 @@ GtkProgressBar.osd.progressbar {
 .toolbar .raised.linked .button:last-child,
 .primary-toolbar .linked .button:last-child,
 .primary-toolbar .linked .entry:last-child {
-    box-shadow: inset  0px  2px alpha(#fff, 0.09),
+    box-shadow: inset  0px  2px alpha(#fff, 0.2),
                 inset  2px  0px alpha(#fff, 0.06),
                 inset -2px  0px alpha(#fff, 0.06),
                 inset  0px -2px alpha(#fff, 0.1),
