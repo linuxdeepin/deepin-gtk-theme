@@ -161,17 +161,7 @@
 
 <constant name="InnerOutLine" value="#aeaeae"/>
 <draw_ops name="inner_outline">
-    <!-- top line -->
-    <tint color="InnerOutLine" x="4" y="title_height+bottom_height+7" width="width-8" height="1" alpha="1.0"/>
 
-    <!-- bottom line -->
-    <tint color="InnerOutLine" x="4" y="height-5" width="width-8" height="1" alpha="1.0"/>
-
-    <!-- left line -->
-    <tint color="InnerOutLine" x="4" y="title_height+bottom_height+7" width="1" height="height-title_height-bottom_height-11" alpha="1.0"/>
-
-    <!-- right line -->
-    <tint color="InnerOutLine" x="width-5" y="title_height+bottom_height+7" width="1" height="height-title_height-bottom_height-11" alpha="1.0"/>
 
 </draw_ops>
 
