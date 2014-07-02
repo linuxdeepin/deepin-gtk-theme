@@ -331,7 +331,7 @@ MathWindow {
 MathDisplay GtkTextView.view {
 	/* color texto del display 
 	color: shade (#e8d001, 1.25); */
-	color: @calc_display_fg_color;
+	color: @text_color;
     background-color: shade(@theme_bg_dark_color, 1.50);
 
 }
