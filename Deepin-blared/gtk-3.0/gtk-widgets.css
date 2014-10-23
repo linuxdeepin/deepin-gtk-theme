@@ -88,9 +88,9 @@ GtkExpander,
 GtkOverlay,
 GtkBox
 */
-GtkOrientable {
+/*GtkOrientable {
     background-color: @theme_bg_color;
-}
+}*/
 
 /* FIXME: why do we still need this? */
 GtkClutterOffscreen {
