@@ -497,7 +497,7 @@ style "menu_item_white" {
 	ythickness	= 3
 
 	fg[NORMAL] 			= @text_color
-    fg[INSENSITIVE] 	= mix(0.70, @theme_fg_dark_color, @theme_bg_dark_color)	    # menu item deshabilitados
+    
 	fg[PRELIGHT]		= "#FFFFFF"						# menu item seleccionado
 
 	text[NORMAL]        = @text_color		# Color check/radio menu

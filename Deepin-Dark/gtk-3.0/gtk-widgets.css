@@ -65,7 +65,8 @@
 /***************
  * Base States *
  ***************/
-
+/* fix calculator display error */
+/*
 .background {
     color: @fg_color;
     background-color: @bg_color;
@@ -75,6 +76,7 @@
     color: @backdrop_fg_color;
     background-color: @bg_color;
 }
+*/
 /*
 GtkGrid,
 GtkAlignment,
@@ -93,10 +95,12 @@ GtkBox
 }*/
 
 /* FIXME: why do we still need this? */
+/*
 GtkClutterOffscreen {
     background-color: @bg_color;
     color: @fg_color;
 }
+*/
 
 
 *:active {
