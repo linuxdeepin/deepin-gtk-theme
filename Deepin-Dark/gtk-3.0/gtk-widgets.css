@@ -20,7 +20,7 @@
     -GtkMenuItem-arrow-scaling: 0.6;
     -GtkNotebook-tab-overlap: 1;
     -GtkNotebook-tab-curvature: 0;
-	-GtkNotebook-initial-gap: 0;
+    -GtkNotebook-initial-gap: 0;
 
     -GtkPaned-handle-size: 2;
 
@@ -39,7 +39,7 @@
     -GtkWidget-separator-height: 2;
 
     -GtkToolItemGroup-expander-size: 9;
-	-GtkToolbar-internal-padding: 0;
+    -GtkToolbar-internal-padding: 0;
     -GtkToolButton-icon-spacing: 4;
 
     -GtkTreeView-expander-size: 8;
@@ -52,7 +52,7 @@
     -GtkWidget-visited-link-color: @link_color;
 
     -GtkWindow-resize-grip-height: 0;
-	-GtkWindow-resize-grip-width: 0;
+    -GtkWindow-resize-grip-width: 0;
 
     -WnckTasklist-fade-overlay-rect: 0;
 
@@ -74,32 +74,6 @@
     color: @backdrop_fg_color;
     background-color: @bg_color;
 }
-
-/*
-GtkGrid,
-GtkAlignment,
-GtkAspectFrame,
-GtkButtonBox,
-GtkFixed,
-GtkPaned,
-GtkLayout,
-GtkNotebook,
-GtkExpander,
-GtkOverlay,
-GtkBox
-*/
-/*GtkOrientable {
-    background-color: @bg_color;
-}*/
-
-/* FIXME: why do we still need this? */
-/*
-GtkClutterOffscreen {
-    background-color: @bg_color;
-    color: @fg_color;
-}
-*/
-
 
 *:active {
     background-color: alpha(shade(@selected_bg, 1.90), 0.015);
@@ -169,16 +143,16 @@ GtkLabel:insensitive {
     background-image: -gtk-gradient (radial,center 0,0,center 0,0.8,
         from (alpha (@tooltip_bg,0.86)),
         to (alpha (@tooltip_bg,0.96)));
-	border-width: 1px;
+    border-width: 1px;
     border-style: 		solid;
-	border-radius: 5px;
-	border-color: 		alpha(#ffffff,0.2);
+    border-radius: 5px;
+    border-color: 		alpha(#ffffff,0.2);
     background-color: 	alpha(@tooltip_bg, 0.50);
     color: 				shade(@tooltip_fg_color, 1.00);
 }
 
 .tooltip * {
-padding: 2px 10px;
+    padding: 2px 10px;
     background-color: transparent;
 }
 
@@ -203,10 +177,9 @@ padding: 2px 10px;
     border-width: 1px;
     border-style: solid;
     border-image: none;
-	border-color:  mix(@fg_color, @bg_color, 0.95);
+    border-color:  mix(@fg_color, @bg_color, 0.95);
     border-bottom-color: alpha (shade (@bg_color, 1.26), 0.15);
     border-right-color:  alpha (shade (@bg_color, 1.26), 0.15);
-
 }
 
 GtkTreeView.view.separator,
@@ -278,7 +251,7 @@ GtkStatusbar {
 /* ---------------------------------------- */
 
     padding: 3px 4px;
-	-GtkEntry-inner-border: 0;
+    -GtkEntry-inner-border: 0;
     -GtkEntry-progress-border: 0;
     color: @entry_text_color;
 
@@ -313,7 +286,7 @@ GtkStatusbar {
 /* ---------------------------------------- */
 
     padding: 3px 4px;
-	-GtkEntry-inner-border: 0;
+    -GtkEntry-inner-border: 0;
     -GtkEntry-progress-border: 0;
     color: @backdrop_fg_color;
 
@@ -350,11 +323,11 @@ GtkStatusbar {
 }
 
 .entry:insensitive {
-	color: @insensitive_fg_color;
+    color: @insensitive_fg_color;
     background-image: none;
     background-color: @insensitive_bg_color;
     border-style: solid;
-	border-color: alpha (#000, 0.00);
+    border-color: alpha (#000, 0.00);
     border-bottom-color: 	alpha (#000, 0.00);
     border-image: none;
 	box-shadow:	inset  0px  1px @insensitive_border_color,
@@ -1105,6 +1078,7 @@ GtkScrolledWindow.frame {
 
     border-width: 1px;
     border-radius: 6px;
+    padding: 3px;
     border-style: solid;
 
 	/* outer */
@@ -1137,6 +1111,7 @@ GtkScrolledWindow.frame {
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
     border-width: 1px;
     border-radius: 6px;
+    padding: 3px;
     border-style: solid;
 
 	/* outer */
@@ -1158,6 +1133,7 @@ GtkScrolledWindow.frame {
 	background: linear-gradient(180deg ,#97d6fc 0% ,#5dbdfc 100%);
 
     border-radius: 6px;
+    padding:3px;
     box-shadow: inset  0px  2px alpha(#fff, 0.6),
                 inset  2px  0px alpha(#fff, 0.3),
                 inset -2px  0px alpha(#fff, 0.3),
@@ -1189,8 +1165,9 @@ GtkScrolledWindow.frame {
 .button:focus:active {
 
 
-	background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
+    background: linear-gradient(180deg ,#57b3ff 0% ,#75e8ff 100%);
     border-radius: 6px;
+    padding:3px;
     border-top-color: 		transparent;
     border-left-color: 		alpha (#000, 0.01);
     border-right-color: 	alpha (#000, 0.01);
