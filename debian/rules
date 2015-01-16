@@ -1,0 +1,9 @@
+#! /usr/bin/make -f
+%:
+	dh $@
+
+override_dh_install:
+	dh_install
+	# Change gtk-theme name
+	sed -i 's/Deepin-Dark/Deepin/g' debian/deepin-gtk-theme/usr/share/themes/Deepin/index.theme
+	sed -i 's/Deepin/Deepin-Legacy/g' debian/deepin-gtk-theme/usr/share/themes/Deepin-Legacy/index.theme
