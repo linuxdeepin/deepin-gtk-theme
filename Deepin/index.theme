@@ -9,6 +9,6 @@ Name[en_US]=Deepin
 [X-GNOME-Metatheme]
 GtkTheme=Deepin
 MetacityTheme=Deepin
-IconTheme=Deepin
+IconTheme=Faenza-Ambiance
 CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maxmize,close
