@@ -1,0 +1,56 @@
+/* Default color scheme */
+@define-color base_color #fff;
+@define-color bg_color #fff;
+@define-color tooltip_bg_color #000;
+@define-color selected_bg_color #007fbe;
+@define-color text_color #333;
+@define-color insensitive_color #a3a3a3;
+@define-color fg_color #333;
+@define-color tooltip_fg_color #FFF;
+@define-color selected_fg_color #FFF;
+@define-color transparent alpha (#FFF, 0.00);
+@define-color selected_text_color rgb(0,117,192);
+
+@define-color menu_bg_top_color #ecf8fc;
+@define-color menu_bg_bottom_color #dcf2f9;
+@define-color menuitem_bg_color #f2fbff;
+
+@define-color base_color #fff;
+
+@define-color hover_color #cceeff;
+
+@define-color button_border_normal_color #a3a3a3;
+@define-color button_border_focus_color #31abee;
+@define-color button_border_active_color #31abee;
+
+@define-color button_normal_color #f2fbff;
+@define-color button_focus_color #cceeff;
+@define-color button_active_color #aecfe1;
+
+
+/* Colormap actually used by the theme, to be overridden in other css files */
+@define-color theme_base_color @base_color;
+@define-color theme_text_color @text_color;
+@define-color theme_bg_color @bg_color;
+@define-color theme_fg_color @fg_color;
+@define-color theme_tooltip_bg_color @tooltip_bg_color;
+@define-color theme_tooltip_fg_color @tooltip_fg_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+
+@define-color link_color #08C;
+@define-color frame_color #8a9580;
+@define-color inactive_frame_color #c7ccc1;
+@define-color warning_color #f57900;
+@define-color error_color #cc0000;
+@define-color success_color #4e9a06;
+
+@define-color info_fg_color rgb (0, 136, 204);
+@define-color info_bg_color rgb (252, 252, 189);
+@define-color warning_fg_color rgb (173, 120, 41);
+@define-color warning_bg_color rgb (250, 173, 61);
+@define-color question_fg_color rgb (97, 122, 214);
+@define-color question_bg_color rgb (138, 173, 212);
+@define-color error_fg_color rgb (166, 38, 38);
+@define-color error_bg_color rgb (237, 54, 54);
+@import url("gtk-widgets.css");
