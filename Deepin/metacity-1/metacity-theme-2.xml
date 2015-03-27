@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-  <name>Deepin-Dark</name>
+  <name>Deepin2</name>
   <author>Deepin Design Team</author>
   <copyright>GPL</copyright>
   <date>2013</date>
-  <description>Deepin desktop theme dark ver</description>
+  <description>A dark theme dor deepin desktop and this theme is based on Numix Flat</description>
 </info>
 
 <!--geometry -->
@@ -16,7 +16,7 @@
   <distance name="left_titlebar_edge" value="6"/>
   <distance name="right_titlebar_edge" value="4"/>
   <distance name="button_width" value="27"/>
-  <distance name="button_height" value="30"/>
+  <distance name="button_height" value="22"/>
   <distance name="title_vertical_pad" value="4"/>
   <border name="title_border" left="2" right="0" top="0" bottom="0"/>
   <border name="button_border" left="0" right="0" top="1" bottom="1"/>
@@ -115,32 +115,32 @@
 <!-- ::: TITLEBAR ::: -->
 <draw_ops name="titlebar_gradient">
 	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-		<color value="shade/#252627/1.4"/>
-		<color value="shade/#252627/0.98"/>
+		<color value="shade/#252627/1.1"/>
+		<color value="shade/#252627/1.0"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_unfocused">
 	<gradient type="vertical" x="1" y="1" width="width-2" height="top_height-1">
-		<color value="shade/#252627/1.3"/>
-		<color value="shade/#252627/1.20"/>
+		<color value="shade/#252627/1.0"/>
+		<color value="shade/#252627/1.0"/>
 	</gradient>
    <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_maximized">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#252627/1.4"/>
-		<color value="shade/#252627/0.98"/>
+		<color value="shade/#252627/1.1"/>
+		<color value="shade/#252627/1.0"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
 
 <draw_ops name="titlebar_gradient_maximized_unfocursed">
 	<gradient type="vertical" x="0" y="0" width="width" height="top_height">
-		<color value="shade/#252627/1.30"/>
-		<color value="shade/#252627/1.20"/>
+		<color value="shade/#252627/1.0"/>
+		<color value="shade/#252627/1.0"/>
 	</gradient>
     <image filename="metacity-noise.png" x="1" y="1" width="width-2" height="object_height-1"/>
 </draw_ops>
