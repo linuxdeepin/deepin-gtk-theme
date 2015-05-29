@@ -1,10 +1,10 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Deepin2
+Name=Deepin
 Comment=A modern flat theme
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Deepin2
-MetacityTheme=Deepin2
+GtkTheme=Deepin
+MetacityTheme=Deepin
 ButtonLayout=:minimize,maximize,close
