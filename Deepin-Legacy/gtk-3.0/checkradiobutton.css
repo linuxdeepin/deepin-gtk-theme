@@ -1,0 +1,223 @@
+/*******************
+ * check and radio *
+ *******************/
+/* draw regular check and radio items using our assets */
+
+.check,
+.check row:selected,
+.check row:selected:focus {
+    background-image: url("assets/checkbox-unchecked.png");
+}
+
+.check:hover,
+.check row:selected:hover,
+.check row:selected:focus:hover {
+    background-image: url("assets/checkbox-unchecked-hover.png");
+}
+
+.check:insensitive,
+.check row:selected:insensitive,
+.check row:selected:focus:insensitive {
+    background-image: url("assets/checkbox-unchecked-insensitive.png");
+}
+
+.check:active,
+.check row:selected:active,
+.check row:selected:focus:active {
+    background-image: url("assets/checkbox-checked.png");
+}
+
+.check:active:hover,
+.check row:selected:active:hover,
+.check row:selected:focus:active:hover {
+    background-image: url("assets/checkbox-checked-hover.png");
+}
+
+.check:active:insensitive,
+.check row:selected:active:insensitive,
+.check row:selected:focus:active:insensitive {
+    background-image: url("assets/checkbox-checked-insensitive.png");
+}
+
+.check:inconsistent,
+.check row:selected:inconsistent,
+.check row:selected:focus:inconsistent {
+    background-image: url("assets/checkbox-mixed.png");
+}
+
+.check:inconsistent:hover,
+.check row:selected:inconsistent:hover,
+.check row:selected:focus:inconsistent:hover {
+    background-image: url("assets/checkbox-mixed-hover.png");
+}
+
+.check:inconsistent:insensitive,
+.check row:selected:inconsistent:insensitive,
+.check row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/checkbox-mixed-insensitive.png");
+}
+
+/*** for treeview***/
+GtkTreeView.check,
+GtkTreeView.check row:selected,
+GtkTreeView.check row:selected:focus {
+    background-image: url("assets/16-checkbox-unchecked.png");
+}
+
+GtkTreeView.check:hover,
+GtkTreeView.check row:selected:hover,
+GtkTreeView.check row:selected:focus:hover {
+    background-image: url("assets/16-checkbox-unchecked.png");
+}
+
+GtkTreeView.check:insensitive,
+GtkTreeView.check row:selected:insensitive,
+GtkTreeView.check row:selected:focus:insensitive {
+    background-image: url("assets/16-checkbox-unchecked-insensitive.png");
+}
+
+GtkTreeView.check:active,
+GtkTreeView.check row:selected:active,
+GtkTreeView.check row:selected:focus:active {
+    background-image: url("assets/16-checkbox-checked.png");
+}
+
+GtkTreeView.check:active:hover,
+GtkTreeView.check row:selected:active:hover,
+GtkTreeView.check row:selected:focus:active:hover {
+    background-image: url("assets/16-checkbox-checked.png");
+}
+
+GtkTreeView.check:active:insensitive,
+GtkTreeView.check row:selected:active:insensitive,
+GtkTreeView.check row:selected:focus:active:insensitive {
+    background-image: url("assets/16-checkbox-checked-insensitive.png");
+}
+
+GtkTreeView.check:inconsistent,
+GtkTreeView.check row:selected:inconsistent,
+GtkTreeView.check row:selected:focus:inconsistent {
+    background-image: url("assets/16-checkbox-mixed.png");
+}
+
+GtkTreeView.check:inconsistent:hover,
+GtkTreeView.check row:selected:inconsistent:hover,
+GtkTreeView.check row:selected:focus:inconsistent:hover {
+    background-image: url("assets/16-checkbox-mixed.png");
+}
+
+GtkTreeView.check:inconsistent:insensitive,
+GtkTreeView.check row:selected:inconsistent:insensitive,
+GtkTreeView.check row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/16-checkbox-mixed-insensitive.png");
+}
+
+/*** Radio button ***/
+.radio,
+.radio row:selected,
+.radio row:selected:focus {
+    background-image: url("assets/radio-unselected.png");
+}
+
+.radio:hover,
+.radio row:selected:hover,
+.radio row:selected:focus:hover {
+    background-image: url("assets/radio-unselected-hover.png");
+}
+
+.radio:insensitive,
+.radio row:selected:insensitive,
+.radio row:selected:focus:insensitive {
+    background-image: url("assets/radio-unselected-insensitive.png");
+}
+
+.radio:active,
+.radio row:selected:active,
+.radio row:selected:focus:active {
+    background-image: url("assets/radio-selected.png");
+}
+
+.radio:active:hover,
+.radio row:selected:active:hover,
+.radio row:selected:focus:active:hover {
+    background-image: url("assets/radio-selected-hover.png");
+}
+
+.radio:active:insensitive,
+.radio row:selected:active:insensitive,
+.radio row:selected:focus:active:insensitive {
+    background-image: url("assets/radio-selected-insensitive.png");
+}
+
+.radio:inconsistent,
+.radio row:selected:inconsistent,
+.radio row:selected:focus:inconsistent {
+    background-image: url("assets/radio-mixed.png");
+}
+
+.radio:inconsistent:hover,
+.radio row:selected:inconsistent:hover,
+.radio row:selected:focus:inconsistent:hover {
+    background-image: url("assets/radio-mixed-hover.png");
+}
+
+.radio:inconsistent:insensitive,
+.radio row:selected:inconsistent:insensitive,
+.radio row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/radio-mixed-insensitive.png");
+}
+
+/*** for treeview***/
+GtkTreeView.radio,
+GtkTreeView.radio row:selected,
+GtkTreeView.radio row:selected:focus {
+    background-image: url("assets/16-radio-unselected.png");
+}
+
+GtkTreeView.radio:hover,
+GtkTreeView.radio row:selected:hover,
+GtkTreeView.radio row:selected:focus:hover {
+    background-image: url("assets/16-radio-unselected.png");
+}
+
+GtkTreeView.radio:insensitive,
+GtkTreeView.radio row:selected:insensitive,
+GtkTreeView.radio row:selected:focus:insensitive {
+    background-image: url("assets/16-radio-unselected-insensitive.png");
+}
+
+GtkTreeView.radio:active,
+GtkTreeView.radio row:selected:active,
+GtkTreeView.radio row:selected:focus:active {
+    background-image: url("assets/16-radio-selected.png");
+}
+
+GtkTreeView.radio:active:hover,
+GtkTreeView.radio row:selected:active:hover,
+GtkTreeView.radio row:selected:focus:active:hover {
+    background-image: url("assets/16-radio-selected.png");
+}
+
+GtkTreeView.radio:active:insensitive,
+GtkTreeView.radio row:selected:active:insensitive,
+GtkTreeView.radio row:selected:focus:active:insensitive {
+    background-image: url("assets/16-radio-selected-insensitive.png");
+}
+
+GtkTreeView.radio:inconsistent,
+GtkTreeView.radio row:selected:inconsistent,
+GtkTreeView.radio row:selected:focus:inconsistent {
+    background-image: url("assets/16-radio-mixed.png");
+}
+
+GtkTreeView.radio:inconsistent:hover,
+GtkTreeView.radio row:selected:inconsistent:hover,
+GtkTreeView.radio row:selected:focus:inconsistent:hover {
+    background-image: url("assets/16-radio-mixed.png");
+}
+
+GtkTreeView.radio:inconsistent:insensitive,
+GtkTreeView.radio row:selected:inconsistent:insensitive,
+GtkTreeView.radio row:selected:focus:inconsistent:insensitive {
+    background-image: url("assets/16-radio-mixed-insensitive.png");
+}

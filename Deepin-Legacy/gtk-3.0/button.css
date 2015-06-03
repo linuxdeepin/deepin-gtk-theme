@@ -1,0 +1,157 @@
+/*********
+* Button *
+*********/
+
+.button {
+    border: 1px solid @button_border_normal_color;
+    border-radius: 2px;
+    background-color: @button_normal_color;
+}
+
+.button:hover {
+    background-color: @hover_color;
+}
+
+.button:focus {
+    border-color: @button_border_focus_color;
+}
+
+/**************
+* SpinButtons *
+**************/
+
+.spinbutton {
+    border-width: 1px 1px 1px 1px;
+    border-color: @button_border_normal_color;
+}
+
+.spinbutton:focused {
+    border: 1px @button_border_focus_color solid;
+}
+
+.spinbutton .button:nth-child(2):focused {
+    border-width: 0px 1px 0px 1px;
+    border-color: @button_border_focus_color;
+    background: @bg_color;
+}
+.spinbutton .button:last-child:focused {
+    background: @bg_color;
+}
+.spinbutton .button:nth-child(2):hover {
+    background: @hover_color;
+}
+.spinbutton .button:last-child:hover {
+    background: @hover_color;
+}
+
+.spinbutton .button:nth-child(2){
+    border-width: 0px 1px 0px 1px;
+    border-color: @insensitive_color;
+    border-style:solid;
+    -unico-outer-stroke-width: 0;
+    background: @bg_color;
+}
+.spinbutton .button:last-child{
+    border-width: 0px 0px 0px 0px;
+    border-color: @insensitive_color;
+    background: @bg_color;
+}
+
+GtkDialog .button {
+    padding: 0;
+}
+
+GtkDialog .button:focused {
+    background-color: @button_focus_color;
+}
+
+GtkDialog .button:focused:active {
+    background-color: @button_active_color;
+}
+
+.button:active,
+.button:hover:active {
+    background-color: @button_active_color;
+}
+
+.toolbar .button {
+    margin: 1px;
+	icon-shadow: none;
+}
+
+
+/*************************** 
+* Secondary Toolbar Button *
+***************************/
+
+.secondary-toolbar.toolbar .button {
+    -GtkButton-inner-border: 0 3px 0 3px;
+    padding: 0 3px 0 3px;
+    -unico-outer-stroke-width: 0;
+}
+
+.secondary-toolbar.toolbar .button:hover {
+
+    /*color: shade (@selected_bg_color, 0.65);*/
+
+    border-color: @transparent;
+    background-image: none;
+    background-color: @transparent;
+    -unico-inner-stroke-width: 0;
+    -unico-border-gradient: none;
+}
+
+.secondary-toolbar.toolbar .button:active,
+.secondary-toolbar.toolbar .button:hover:active {
+
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (alpha (#000, 0.00)),
+        to (alpha (#000, 0.00)));
+
+    background-image: -gtk-gradient (linear,
+        left top,
+        left bottom,
+        from (alpha (#000, 0.10)),
+        to (alpha (#000, 0.10)));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (alpha (#000, 0.30)),
+        color-stop (0.15, alpha (#000, 0.10)),
+        color-stop (0.85, alpha (#000, 0.10)),
+        to (alpha (#fff, 0.50)));
+}
+
+/******************
+* Special Buttons *
+******************/
+
+.help_button {
+
+    text-shadow: 0 1px alpha (#000, 0.6);
+    icon-shadow: 0 1px alpha (#000, 0.6);
+
+    background-image: -gtk-gradient (linear,
+        left top,
+        left bottom,
+        from (#959ea7),
+        color-stop (0.49, #76828e),
+        color-stop (0.51, #677481),
+        to (#8d96a0));
+
+    -unico-border-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (#6c7580),
+        to (#474e55));
+        
+    -unico-inner-stroke-gradient: -gtk-gradient (linear,
+        left top, left bottom,
+        from (alpha (#fff, 0.30)),
+        to (alpha (#fff, 0.00)));
+}
+
+.help_button *:insensitive {
+    color: alpha (@text_color, 0.7);
+}
+
