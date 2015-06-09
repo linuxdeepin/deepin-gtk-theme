@@ -2240,28 +2240,29 @@ GtkColorButton.button {
  * header-bar *
  **************/
 .header-bar {
-    padding: 4px 6px;
+    padding: 6px 6px;
     border-width: 0 0 1px 0;
-    border-style: solid;
-    border-color: shade(@toolbar,0.85);
+    border-style:outset;
+    border-color: shade(@toolbar,0.8);
     background-image:-gtk-gradient (linear,
 				     left top, left bottom,
-                     from (shade(@toolbar, 1.0)),
-                     to   (shade(@toolbar, 0.98)));
+                     from (shade(@toolbar, 0.9)),
+                     to   (shade(@toolbar, 0.8)));
     color: @titlebar_fg_color;
 }
 
 
-.header-bar .button.text-button {
-    padding: 2px 10px;
+.header-bar .text-button {
+    padding: 4px 6px;
     font-size: 10px;
     font-style: normal;
 }
 
 
 .header-bar .button.image-button {
-    padding: 2px 6px;
+    padding: 4px 6px;
 }
+
 
 /*
 .header-bar .title {
@@ -2276,32 +2277,19 @@ GtkColorButton.button {
 */
 
 .header-bar GtkComboBox,
-.header-bar .button  { 
+.header-bar .button,
+.header-bar .button.raised.linked,
+.header-bar .raised.linked .button,
+.header-bar .linked .button  { 
     border-color: @border;
     border-width: 1px;
-    /* Rectangle 2: */
     background-image:  -gtk-gradient (linear,
 						             left top, left bottom,
 						             from (shade(@toolbar_button,1.1)),
 						             to   (shade(@toolbar_button,1.0)));
-/*
-	box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.01), 
-				inset 0px 2px 0px 0px rgba(255,255,255,0.08),
-				inset 0px 0px 0px 2px rgba(255,255,255,0.05),
-                inset 1px 1px 0px 0px rgba(255,255,255,1.0);
-*/
-    
 	border-radius: 3px;
-	
     color: @toolbar_text;
     font-size: 10px;
-    font-style: normal;
-/*
-    box-shadow: inset 0px 1px 0px 0px @inline,
-			    inset 0px -1px 0px 0px @inline,
-			    inset 1px 0px 0px 0px @inline,
-			    inset -1px 0px 0px 0px @inline;
-*/
 
 }
 .header-bar GtkComboBox:backdrop,
@@ -2338,16 +2326,11 @@ GtkColorButton.button {
 .header-bar .linked .button:hover:first-child,
 .header-bar .linked .button:hover:only-child,
 .header-bar .linked .button:hover:last-child {
-/* Rectangle 97: */
     background-image: linear-gradient(-180deg, #D4EFFF 0%, #9AD7FF 100%);
-/*    border-width: 1px;*/
     border-color: #b3defe;
     border-bottom-color: #84c9fe;
     
     font-size: 10px;
-    font-style: normal;
-
-/*	border-radius: 3px;*/
     color:shade(@toolbar_text,1.4);
     box-shadow: none;
 }
@@ -2361,7 +2344,6 @@ GtkColorButton.button {
 						from (shade(@toolbar_button,1.2)),
 						to   (shade(@toolbar_button,1.1)));
     font-size: 10px;
-    font-style: normal;
     color:shade(@toolbar_text,1.4);
     box-shadow: inset 0px 1px 0px 0px @light_inline,
 			    inset 0px -1px 0px 0px @light_inline,
@@ -2369,33 +2351,22 @@ GtkColorButton.button {
 			    inset -1px 0px 0px 0px @light_inline;
 
 }
-.header-bar .button:checked{
-	/* border: 1px solid red; */
-	border-color: #299ff6;
+.header-bar .button:active,
+.header-bar .button:checked,
+.header-bar .button.raised.linked:active,
+.header-bar .button.raised.linked:checked,
+.header-bar .raised.linked .button:active,
+.header-bar .raised.linked .button:checked,
+.header-bar .linked .button:active ,
+.header-bar .linked .button:checked {
+	border: #299ff6;
     background-image:-gtk-gradient (linear,
 				     left top, left bottom,
                      from (shade(@selected_bg_color, 1.1)),
                      to   (shade(@selected_bg_color, 1.0)));
 	color:@active_text;
 	font-size: 10px;
-    font-family: SourceHanSansCN-Normal;
-	font-style: normal;
-    box-shadow: none;
-
-                     
-}
-.header-bar .button:active {
-	/* border: 1px solid red; */
-	border-color: #299ff6;
-    background-image:-gtk-gradient (linear,
-				     left top, left bottom,
-                     from (shade(@selected_bg_color, 1.1)),
-                     to   (shade(@selected_bg_color, 1.0)));
-	color:@active_text;
-	font-size: 10px;
-    font-family: SourceHanSansCN-Normal;
-	font-style: normal;
-    box-shadow: none;
+	padding: 4px 6px;
 
                      
 }
@@ -2409,7 +2380,6 @@ GtkColorButton.button {
                      to   (shade(@toolbar_button, 0.80)));
 	color:@toolbar_text;
 	font-size: 10px;
-	font-style: normal;
   
 
                      
@@ -2420,24 +2390,183 @@ GtkColorButton.button {
 .header-bar .button:active:hover:first-child,
 .header-bar .button:active:hover:only-child
 {
-	border-color: #299ff6;
+ 	border-color: #299ff6;
     background-image:-gtk-gradient (linear,
-				     left top, left bottom,
+ 				     left top, left bottom,
                      from (shade(@selected_bg_color, 1.2)),
                      to   (shade(@selected_bg_color, 1.1)));
-	color:@active_text;
-	font-size: 10px;
-    font-family: SourceHanSansCN-Normal;
-	font-style: normal;
+ 	color:@active_text;
+ 	font-size: 10px;
+ 	font-style: normal;
     
 }
-
-.header-bar .button:focus,
-.header-bar .button:hover:focus,
-.header-bar .button:active:focus,
-.header-bar .button:active:hover:focus {
-    border-color: shade(@titlebar_bg_color, 0.7);
+/* linked titlebar buttons */
+/*
+.header-bar .button.raised.linked,
+.header-bar .raised.linked .button,
+.header-bar .linked .button {
+box-shadow: none;
 }
+*/
+ 
+ 
+/*
+.header-bar .button.raised.linked:hover,
+.header-bar .raised.linked .button:hover,
+.header-bar .linked .button:hover {
+*/
+ 
+}
+/*
+.header-bar .button.raised.linked:active:backdrop,
+.header-bar .raised.linked .button:active:backdrop,
+.header-bar .linked .button:active:backdrop {
+    box-shadow: none;
+*/
+}
+ 
+/*
+.header-bar .button.raised.linked:insensitive,
+.header-bar .raised.linked .button:insensitive,
+.header-bar .linked .button:insensitive {
+    box-shadow: none;
+*/
+}
+ 
+/* remove box shadow from last-child and only-child */
+.header-bar .button.raised.linked:last-child,
+.header-bar .button.raised.linked:only-child,
+.header-bar .button:insensitive.raised.linked:last-child,
+.header-bar .button:insensitive.raised.linked:only-child,
+.header-bar .button:active *:insensitive.raised.linked:last-child,
+.header-bar .button:active *:insensitive.raised.linked:only-child,
+.header-bar .raised.linked .button:last-child,
+.header-bar .raised.linked .button:only-child,
+.header-bar .raised.linked .button:insensitive:last-child,
+.header-bar .raised.linked .button:insensitive:only-child,
+.header-bar .raised.linked .button:active *:insensitive:last-child,
+.header-bar .raised.linked .button:active *:insensitive:only-child,
+.header-bar .linked .button:last-child,
+.header-bar .linked .button:only-child,
+.header-bar .linked .button:insensitive:last-child,
+.header-bar .linked .button:insensitive:only-child,
+.header-bar .linked .button:active *:insensitive:last-child,
+.header-bar .linked .button:active *:insensitive:only-child {
+   box-shadow: inset -1px 0 @inline,
+                inset 0 1px shade(@inline,1.2),
+                inset 0 -1px @inline,
+                inset 1px 0 @inline;
+    background-color: transparent;
+}
+
+/* add back the inset shadow effect */
+.header-bar .button:active.raised.linked:last-child,
+.header-bar .button:active.raised.linked:only-child,
+.header-bar .raised.linked .button:active:last-child,
+.header-bar .raised.linked .button:active:only-child,
+.header-bar .linked .button:active:last-child,
+.header-bar .linked .button:active:only-child {
+    box-shadow: inset 1px 0 #279bf6;
+    background-color: transparent;
+}
+
+/* middle button */
+.header-bar .button.raised.linked,
+.header-bar .button.raised.linked:active,
+.header-bar .button.raised.linked:insensitive,
+.header-bar .raised.linked .button,
+.header-bar .raised.linked .button:active,
+.header-bar .raised.linked .button:insensitive,
+.header-bar .linked .button,
+.header-bar .linked .button:active,
+.header-bar .linked .button:insensitive {
+    border-width: 1px;
+    border-radius: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    background-color: transparent;
+    font-size: 10px;
+    font-style: normal;
+}
+
+/* leftmost button */
+.header-bar .button.raised.linked:first-child,
+.header-bar .button.raised.linked:active:first-child,
+/*.header-bar .button.raised.linked:insensitive:first-child,*/
+.header-bar .raised.linked .button:first-child,
+.header-bar .raised.linked .button:active:first-child,
+/*.header-bar .raised.linked .button:insensitive:first-child,*/
+.header-bar .linked .button:first-child,
+.header-bar .linked .button:active:first-child
+/*.header-bar .linked .button:insensitive:first-child */
+{
+    border-width: 1px;
+    border-radius: 3px;
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: transparent;
+     box-shadow: inset -1px 0 #279bf6;
+}
+.header-bar .button.raised.linked:first-child:backdrop,
+.header-bar .button.raised.linked:active:first-child:backdrop,
+.header-bar .button.raised.linked:insensitive:first-child:backdrop,
+.header-bar .raised.linked .button:first-child:backdrop,
+.header-bar .raised.linked .button:active:first-child:backdrop,
+.header-bar .raised.linked .button:insensitive:first-child:backdrop,
+.header-bar .linked .button:first-child:backdrop,
+.header-bar .linked .button:active:first-child:backdrop,
+.header-bar .linked .button:active:last-child:backdrop,
+.header-bar .linked .button:insensitive:first-child:backdrop {
+
+     box-shadow: none;
+}
+.header-bar .button.raised.linked:first-child,
+.header-bar .raised.linked .button:first-child,
+.header-bar .linked .button:first-child {
+    border-width: 1px;
+    border-radius: 3px;
+    border-right-width: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    background-color: transparent;
+   box-shadow: none;
+    background-color: transparent;
+}
+
+/* rightmost button */
+.header-bar .button.raised.linked:last-child,
+.header-bar .button.raised.linked:active:last-child,
+.header-bar .button.raised.linked:insensitive:last-child,
+.header-bar .raised.linked .button:last-child,
+.header-bar .raised.linked .button:active:last-child,
+.header-bar .raised.linked .button:insensitive:last-child,
+.header-bar .linked .button:last-child,
+.header-bar .linked .button:active:last-child,
+.header-bar .linked .button:insensitive:last-child {
+    border-width: 1px;
+    border-radius: 3px;
+    border-left-width: 0;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    box-shadow: none;
+}
+
+/* linked single button */
+.header-bar .button.raised.linked:only-child,
+.header-bar .button.raised.linked:active:only-child,
+.header-bar .button.raised.linked:insensitive:only-child,
+.header-bar .raised.linked .button:only-child,
+.header-bar .raised.linked .button:active:only-child,
+.header-bar .raised.linked .button:insensitive:only-child,
+.header-bar .linked .button:only-child,
+.header-bar .linked .button:active:only-child,
+.header-bar .linked .button:insensitive:only-child {
+    border-width: 1px;
+    border-radius: 3px;
+}
+
+
 
 .header-bar .button:insensitive {
     border-color: shade(@titlebar_bg_color, 0.85);
@@ -3102,171 +3231,6 @@ box-shadow: none;
     font-style: normal;
 }
 
-/* linked titlebar buttons */
-.header-bar .button.raised.linked,
-.header-bar .raised.linked .button,
-.header-bar .linked .button {
-box-shadow: none;
-}
-
-.header-bar .button.raised.linked:active,
-.header-bar .raised.linked .button:active,
-.header-bar .linked .button:active {
-    box-shadow: none;
-    font-size: 10px;
-    font-style: normal;
-    box-shadow: inset 1px 0 #279bf6,
-                inset -1px 0 #279bf6;
-}
-.header-bar .button.raised.linked:hover,
-.header-bar .raised.linked .button:hover,
-.header-bar .linked .button:hover {
-
-}
-.header-bar .button.raised.linked:active:backdrop,
-.header-bar .raised.linked .button:active:backdrop,
-.header-bar .linked .button:active:backdrop {
-    box-shadow: none;
-}
-
-.header-bar .button.raised.linked:insensitive,
-.header-bar .raised.linked .button:insensitive,
-.header-bar .linked .button:insensitive {
-    box-shadow: none;
-}
-
-/* remove box shadow from last-child and only-child */
-.header-bar .button.raised.linked:last-child,
-.header-bar .button.raised.linked:only-child,
-.header-bar .button:insensitive.raised.linked:last-child,
-.header-bar .button:insensitive.raised.linked:only-child,
-.header-bar .button:active *:insensitive.raised.linked:last-child,
-.header-bar .button:active *:insensitive.raised.linked:only-child,
-.header-bar .raised.linked .button:last-child,
-.header-bar .raised.linked .button:only-child,
-.header-bar .raised.linked .button:insensitive:last-child,
-.header-bar .raised.linked .button:insensitive:only-child,
-.header-bar .raised.linked .button:active *:insensitive:last-child,
-.header-bar .raised.linked .button:active *:insensitive:only-child,
-.header-bar .linked .button:last-child,
-.header-bar .linked .button:only-child,
-.header-bar .linked .button:insensitive:last-child,
-.header-bar .linked .button:insensitive:only-child,
-.header-bar .linked .button:active *:insensitive:last-child,
-.header-bar .linked .button:active *:insensitive:only-child {
-   box-shadow: inset -1px 0 @inline,
-                inset 0 1px shade(@inline,1.2),
-                inset 0 -1px @inline,
-                inset 1px 0 @inline;
-    background-color: transparent;
-}
-
-/* add back the inset shadow effect */
-.header-bar .button:active.raised.linked:last-child,
-.header-bar .button:active.raised.linked:only-child,
-.header-bar .raised.linked .button:active:last-child,
-.header-bar .raised.linked .button:active:only-child,
-.header-bar .linked .button:active:last-child,
-.header-bar .linked .button:active:only-child {
-    box-shadow: inset 1px 0 #279bf6;
-    background-color: transparent;
-}
-
-/* middle button */
-.header-bar .button.raised.linked,
-.header-bar .button.raised.linked:active,
-.header-bar .button.raised.linked:insensitive,
-.header-bar .raised.linked .button,
-.header-bar .raised.linked .button:active,
-.header-bar .raised.linked .button:insensitive,
-.header-bar .linked .button,
-.header-bar .linked .button:active,
-.header-bar .linked .button:insensitive {
-    border-width: 1px;
-    border-radius: 0;
-    border-right-width: 0;
-    border-left-width: 0;
-    background-color: transparent;
-    font-size: 10px;
-    font-style: normal;
-}
-
-/* leftmost button */
-.header-bar .button.raised.linked:first-child,
-.header-bar .button.raised.linked:active:first-child,
-/*.header-bar .button.raised.linked:insensitive:first-child,*/
-.header-bar .raised.linked .button:first-child,
-.header-bar .raised.linked .button:active:first-child,
-/*.header-bar .raised.linked .button:insensitive:first-child,*/
-.header-bar .linked .button:first-child,
-.header-bar .linked .button:active:first-child
-/*.header-bar .linked .button:insensitive:first-child */
-{
-    border-width: 1px;
-    border-radius: 3px;
-    border-right-width: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    background-color: transparent;
-     box-shadow: inset -1px 0 #279bf6;
-}
-.header-bar .button.raised.linked:first-child:backdrop,
-.header-bar .button.raised.linked:active:first-child:backdrop,
-.header-bar .button.raised.linked:insensitive:first-child:backdrop,
-.header-bar .raised.linked .button:first-child:backdrop,
-.header-bar .raised.linked .button:active:first-child:backdrop,
-.header-bar .raised.linked .button:insensitive:first-child:backdrop,
-.header-bar .linked .button:first-child:backdrop,
-.header-bar .linked .button:active:first-child:backdrop,
-.header-bar .linked .button:active:last-child:backdrop,
-.header-bar .linked .button:insensitive:first-child:backdrop {
-
-     box-shadow: none;
-}
-.header-bar .button.raised.linked:first-child,
-.header-bar .raised.linked .button:first-child,
-.header-bar .linked .button:first-child {
-    border-width: 1px;
-    border-radius: 3px;
-    border-right-width: 0;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    background-color: transparent;
-   box-shadow: none;
-    background-color: transparent;
-}
-
-/* rightmost button */
-.header-bar .button.raised.linked:last-child,
-.header-bar .button.raised.linked:active:last-child,
-.header-bar .button.raised.linked:insensitive:last-child,
-.header-bar .raised.linked .button:last-child,
-.header-bar .raised.linked .button:active:last-child,
-.header-bar .raised.linked .button:insensitive:last-child,
-.header-bar .linked .button:last-child,
-.header-bar .linked .button:active:last-child,
-.header-bar .linked .button:insensitive:last-child {
-    border-width: 1px;
-    border-radius: 3px;
-    border-left-width: 0;
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-    box-shadow: none;
-}
-
-/* linked single button */
-.header-bar .button.raised.linked:only-child,
-.header-bar .button.raised.linked:active:only-child,
-.header-bar .button.raised.linked:insensitive:only-child,
-.header-bar .raised.linked .button:only-child,
-.header-bar .raised.linked .button:active:only-child,
-.header-bar .raised.linked .button:insensitive:only-child,
-.header-bar .linked .button:only-child,
-.header-bar .linked .button:active:only-child,
-.header-bar .linked .button:insensitive:only-child {
-    border-width: 1px;
-    border-radius: 3px;
-}
 
 /***********
  * tooltip *
@@ -3935,8 +3899,10 @@ GtkBubbleWindow .toolbar {
  *******/
 .titlebar {
     border-radius: 3px 3px 0 0;
-    background-image: none;
-    background-color: @titlebar_bg_color;
+    background-image:  -gtk-gradient (linear,
+						             left top, left bottom,
+						             from (shade(@toolbar,1.1)),
+						             to   (shade(@toolbar,0.98)));
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.1);
     text-shadow: none;
 }
@@ -3963,8 +3929,10 @@ GtkBubbleWindow .toolbar {
 }
 
 .titlebar:backdrop {
-    background-image: none;
-    background-color: @titlebar_bg_color;
+    background-image:  -gtk-gradient (linear,
+						             left top, left bottom,
+						             from (shade(@toolbar,1.05)),
+						             to   (shade(@toolbar,1.02)));    
     color: mix(@titlebar_fg_color, @titlebar_bg_color, 0.4);
     text-shadow: none;
 }

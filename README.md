@@ -1,1 +1,0 @@
-Deepin GTK Theme
