@@ -4,13 +4,14 @@
 @define-color base_color #ffffff;
 @define-color text_color #282828;
 @define-color selected_bg_color #2CA7F8;
+@define-color active_color @selected_bg_color;
 @define-color selected_fg_color #fff;
 @define-color tooltip_bg_color alpha(#000000,0.8);
 @define-color tooltip_fg_color #fff;
 @define-color black_text #000000;
 @define-color focus #7BBEFB;
 @define-color tab @selected_bg_color;
-@define-color inline shade(@toolbar,1.2);
+@define-color inline shade(@toolbar,1.4);
 @define-color light_inline alpha(#fff,0.06);
 @define-color toolbar_text #282828;
 @define-color toolbar #fafafa;

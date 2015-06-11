@@ -459,21 +459,21 @@ GtkEntry.entry.pin-entry {
 GtkLabel.pin-label {
 	font: regular 50;
 }
-
+/*数字输入框*/
 MathDisplay GtkTextView.view {
-    background-color: #F7E8D6;
-    color:@text_color;
- 
+    background-color: shade(@toolbar, 0.90);
+    color:black;
+    border: 1px solid red;
 }
 MathDisplay GtkTextView.view:backdrop {
-    background-color: shade(@toolbar, 0.98);
-    color:shade(@toolbar_text,1.2);;
-    
+    background-color: shade(@toolbar, 0.95);
+    color:shade(@toolbar_text,0.7);;
+    border: 1px solid red;
 }
 MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
 
-    border-width: 		 2px;
-    border-color: #F3D5B3;
+    border-width: 		 1px;
+    border-color: @inline;
 	border-radius: 		 0px;
     border-style: 		 solid;
 
@@ -481,44 +481,61 @@ MathWindow.background > GtkBox.vertical > GtkBox.vertical > GtkScrolledWindow {
 
 }
 
-
-
+MathWindow .header-bar .button {
+	box-shadow: none;
+}
+MathWindow .header-bar .button:hover {
+	box-shadow: none;
+}
 
 
 /*Calculator background color*/
 MathWindow {
-    color: @toolbar_text;  
-    background-image: linear-gradient(-180deg, #FFFAF4 0%, #FFF5E7 100%);
+    color: @toolbar_text;    
+    background-image:                   
+                      -gtk-gradient (linear,
+                                     left top, left bottom,
+                                     from             (alpha(@toolbar, 1.00)),
+									 color-stop (0.25, shade(@toolbar, 0.95)),
+                                     to               (shade(@toolbar, 0.94)));
+    background-repeat: repeat;
+    background-position: top left;
 }
 
 MathWindow:backdrop {
     color: shade(@toolbar_text,0.7);   
-    background-color: @toolbar;
+    background-color: shade(@toolbar,1.1);
 
 }
-MathWindow GtkTable ,
-MathWindow .button,
-MathWindow .cell {
-background-image:  -gtk-gradient (linear,
+
+MathWindow .button {
+	background-image:  -gtk-gradient (linear,
 						             left top, left bottom,
 						             from (shade(@toolbar,1.2)),
-						             to   (shade(@toolbar,1.1)));
+						             to   (shade(@toolbar,1.2)));
     color: @toolbar_text;
     border-radius: 0;
     padding: 16px 24px;
-    border: 1px solid alpha(#000,0.1);
-    box-shadow: inset 1px  0 alpha(#fff,1),
-                inset 0 1px alpha(#fff,1),
-                inset 0 -1px alpha(#fff,1),
-                inset -1px 0 alpha(#fff,1);
+    border: 1px solid @border;
+    box-shadow: inset 1px  0 alpha(#fff,0.02),
+                inset 0 1px alpha(#fff,0.04),
+                inset 0 -1px alpha(#fff,0.02),
+                inset -1px 0 alpha(#fff,0.02);
 }
+
+MathWindow .header-bar GtkComboBox:hover{
+    box-shadow: none;
+    border: 1px solid transparent;
+}
+
 MathWindow GtkTable:hover,
 MathWindow .button:hover {
-    background: #FFB14E;
-    border: 1px solid #FFA643;
+	background-image: linear-gradient(-180deg, #ffab51 0%, rgba(255,170,113,1) 100%);
+
     color: white;
-    border-radius: 0;
-    padding: 16px 24px;
+    border: 1px solid #f08900;
+    border-radius: 0px;
+/*     padding: 16px 24px; */
     box-shadow: inset 1px  0 alpha(#fff,0.02),
                 inset 0 1px alpha(#fff,0.04),
                 inset 0 -1px alpha(#fff,0.02),
@@ -526,24 +543,27 @@ MathWindow .button:hover {
 }
 MathWindow GtkTable :active,
 MathWindow .button:active,
-MathWindow .button:hover:active
-{
-    background: #FD912E;
-    border: 1px solid #FF8412;
-    color: white;
-    padding: 16px 24px;
+MathWindow .button:hover:active,
+MathWindow .cell {
+    background-image: linear-gradient(-180deg,  #ff5f00 0%, #ff9335 100%);    
+    color: @toolbar_text;
+    border: 1px solid rgba(202, 64, 14, 0.84);
     box-shadow: inset 1px  0 alpha(#fff,0.02),
-                inset 0 1px alpha(#fff,0.0),
+                inset 0 1px alpha(#fff,0.04),
                 inset 0 -1px alpha(#fff,0.02),
                 inset -1px 0 alpha(#fff,0.02);
 }
-MathWindow .button:backdrop
+
+MathWindow .button:backdrop,
+MathWindow .button:hover:backdrop,
+MathWindow .button:active:backdrop,
+MathWindow .button:hover:active:backdrop
 {
 background-image:  -gtk-gradient (linear,
-						             left top, left bottom,
-						             from (shade(@toolbar,1.1)),
-						             to   (shade(@toolbar,1.1)));
-    color: shade(@toolbar_text ,1.8);
+                                     left top, left bottom,
+                                     from             (shade(@toolbar, 1.20)),
+                                     to               (shade(@toolbar, 1.1)));
+    color: shade(@toolbar_text ,1.1);
 	text-shadow: 0px 1px @dark_text_shadow;
 }
 MathWindow GtkComboBox .menu {
@@ -551,21 +571,15 @@ MathWindow GtkComboBox .menu {
     border:1px solid @border;
     color:@toolbar_text;
 }
-MathWindow GtkComboBox .button {
-    color:@toolbar_text;
-}
 
 MathWindow GtkComboBox .menu .menuitem:active,
 MathWindow GtkComboBox .menu .menuitem:hover {
-/*    background-color: green;*/
     color: white;
-    background-color: #FD912E;
-    border: none;
 }
 MathWindow .scrollbar.trough {
     border-width: 0;
     border-radius: 0;
-    background-color: transparent;
+    background-color: shade(@toolbar,0.95);
     background-image: none;
 }
 /*
@@ -593,7 +607,4 @@ MathWindow GtkLabel:insensitive {
     color: mix(@toolbar, @toolbar_text, 0.90);
 	text-shadow: none;
 }
-MathWindow .entry,
-MathWindow .toolbar{
-background-color: red;
-}
+
