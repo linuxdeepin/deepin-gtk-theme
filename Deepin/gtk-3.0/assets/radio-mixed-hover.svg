@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="12px" viewBox="0 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>radio-mixed-hover</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D2EFFE" offset="0%"></stop>
+            <stop stop-color="#A5E5FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="12" height="12" rx="40"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Artboard-2" sketch:type="MSArtboardGroup" transform="translate(-659.000000, -595.000000)">
+            <g id="radio-mixed-hover" sketch:type="MSLayerGroup" transform="translate(659.000000, 595.000000)">
+                <g id="check">
+                    <use stroke-opacity="0.2" stroke="#FFFFFF" stroke-width="2" fill="url(#linearGradient-1)" fill-rule="evenodd" sketch:type="MSShapeGroup" xlink:href="#path-2"></use>
+                    <use stroke="#2AACF9" stroke-width="1" fill="none" xlink:href="#path-2"></use>
+                </g>
+                <rect id="Rectangle-179" fill="#000000" sketch:type="MSShapeGroup" x="3" y="5" width="6" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
