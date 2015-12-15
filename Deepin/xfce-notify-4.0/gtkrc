@@ -1,41 +1,41 @@
 style "notify-window" {
-    XfceNotifyWindow::summary-bold = 1
-    XfceNotifyWindow::border-color = "#2d2d2d"
-    XfceNotifyWindow::border-color-hover = "#333333"
-    XfceNotifyWindow::border-radius = 2.0
-    XfceNotifyWindow::border-width = 1.0
-    XfceNotifyWindow::border-width-hover = 1.0
+  XfceNotifyWindow::summary-bold = 1
+  XfceNotifyWindow::border-color = "#17191F"
+  XfceNotifyWindow::border-color-hover = "#17191F"
+  XfceNotifyWindow::border-radius = 3.0
+  XfceNotifyWindow::border-width = 1.0
+  XfceNotifyWindow::border-width-hover = 1.0
 
-    bg[NORMAL] = "#111111"
+  bg[NORMAL] = "#292C36"
 }
 
 style "notify-button" {
-    bg[NORMAL] = "#2d2d2d"
-    bg[PRELIGHT] = "#333333"
-    bg[ACTIVE] = "#2d2d2d"
+  bg[NORMAL] = "#434652"
+  bg[PRELIGHT] = "#5C6070"
+  bg[ACTIVE] = "#5294E2"
 
-    fg[NORMAL] = "#dcdcdc"
-    fg[PRELIGHT] = "#dedede"
-    fg[ACTIVE] = "#dedede"
+  fg[NORMAL] = "#BAC3CF"
+  fg[PRELIGHT] = "#BAC3CF"
+  fg[ACTIVE] = "#ffffff"
 
-    engine "murrine" {
-        gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
-		border_shades = { 0.9, 0.9 }
-        roundness = 2
-        textstyle = 0
-    }
+  engine "murrine" {
+    gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+    border_shades = { 1.0, 1.0 }
+    roundness = 2
+    textstyle = 0
+  }
 }
 
 style "notify-text" {
-    GtkWidget::link-color = "#d64937"
+  GtkWidget::link-color = "#5294E2"
 
-    fg[NORMAL] = "#f9f9f9"
-    fg[PRELIGHT] = "#f9f9f9"
-    fg[ACTIVE] = "#f9f9f9"
+  fg[NORMAL] = "#BAC3CF"
+  fg[PRELIGHT] = "#BAC3CF"
+  fg[ACTIVE] = "#BAC3CF"
 
-    engine "murrine" {
-        textstyle = 0
-    }
+  engine "murrine" {
+    textstyle = 0
+  }
 }
 
 style "notify-summary" {
@@ -43,26 +43,25 @@ style "notify-summary" {
 }
 
 style "notify-progressbar" {
-    xthickness   = 1
-    ythickness   = 1
+  GtkProgressBar::min-horizontal-bar-height = 4
 
-    bg[NORMAL]   = "#dcdcdc"
-	bg[ACTIVE] = "#2d2d2d"
-    bg[SELECTED] = "#dedede"
+  xthickness   = 0
+  ythickness   = 0
 
-    fg[PRELIGHT] = "#333333"
-    fg[ACTIVE] = "#f9f9f9"
-    fg[SELECTED] = "#333333"
+  fg[PRELIGHT] = "#000000"
+  bg[NORMAL]   = "#5294E2"
+  bg[ACTIVE] = "#1D1F26"
+  bg[SELECTED] = "#5294E2"
 
-    engine "murrine" {
-        gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
-        border_shades = { 1.0, 1.0 }
-		trough_shades = { 1.0, 1.0 }
-		trough_border_shades = { 1.0, 1.0 }
-        progressbarstyle = 0
-        roundness = 2
-        textstyle = 0
-    }
+  engine "murrine" {
+    gradient_shades = { 1.0, 1.0, 1.0, 1.0 }
+    border_shades = { 1.0, 1.0 }
+    trough_shades = { 1.0, 1.0 }
+    trough_border_shades = { 1.0, 1.0 }
+    progressbarstyle = 0
+    roundness = 2
+    textstyle = 0
+  }
 }
 
 class "XfceNotifyWindow" style "notify-window"

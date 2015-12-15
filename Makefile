@@ -1,9 +1,7 @@
-PREFIX= /usr
+PREFIX = /usr
 
-all:
+all: 
 
-install:
-	mkdir -pv  $(DESTDIR)$(PREFIX)/share/themes/Deepin
-	cp -r Deepin/*  $(DESTDIR)$(PREFIX)/share/themes/Deepin
-
-
+install: 
+	mkdir -p $(DESTDIR)$(PREFIX)/share/themes
+	cp -r Deepin $(DESTDIR)$(PREFIX)/share/themes/
