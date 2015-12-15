@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="28px" height="24px" viewBox="0 0 28 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.3 (16044) - http://www.bohemiancoding.com/sketch -->
+    <title>maximize_normal</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="窗口控制按钮" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="浅色-无阴影" sketch:type="MSArtboardGroup" transform="translate(-133.000000, -123.000000)" fill="#000000">
+            <g id="maximize_normal" sketch:type="MSLayerGroup" transform="translate(133.000000, 123.000000)">
+                <rect id="Rectangle-11" fill-opacity="0" sketch:type="MSShapeGroup" x="0" y="0" width="28" height="24"></rect>
+                <path d="M9,14 L9,16 L11,16 L17,16 L19,16 L19,14 L19,10 L19,8 L17,8 L11,8 L9,8 L9,10 L9,14 Z M11,14 L17,14 L17,10 L11,10 L11,14 Z" fill-opacity="0.4" sketch:type="MSShapeGroup"></path>
+            </g>
+        </g>
+    </g>
+</svg>
