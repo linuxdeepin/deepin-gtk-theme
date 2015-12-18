@@ -1,12 +1,12 @@
 [Desktop Entry]
 Type=X-GNOME-Metatheme
-Name=Deepin
+Name=deepin
 Comment=A flat theme with transparent elements
 Encoding=UTF-8
 
 [X-GNOME-Metatheme]
-GtkTheme=Deepin
-MetacityTheme=Deepin
-IconTheme=Deepin
+GtkTheme=deepin
+MetacityTheme=deepin
+IconTheme=deepin
 CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close

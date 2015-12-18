@@ -258,7 +258,7 @@ GtkSearchEntry.entry {
       .button.flat:hover:active, .sidebar-button.button:hover:active {
         transition: all 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .button:last-child {
-	box-shadow:-1px 0  #cfd6e6;
+	box-shadow:none;
 }
   .button:hover {
     color: #5c616c;
@@ -1984,7 +1984,7 @@ GtkInfoBar GtkSwitch.trough:active:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check,
 GtkFileChooserDialog .dialog-vbox > .frame .check {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-dark.png"), url("assets/checkbox-unchecked-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked.png"), url("assets/checkbox-unchecked@2.png")); }
 
 GtkTreeView.view.check:selected,
 .list-row:selected .check,
@@ -1996,7 +1996,7 @@ GtkInfoBar .check {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:insensitive,
 GtkFileChooserDialog .dialog-vbox > .frame .check:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive-dark.png"), url("assets/checkbox-unchecked-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-unchecked-insensitive.png"), url("assets/checkbox-unchecked-insensitive@2.png")); }
 
 GtkTreeView.view.check:insensitive:selected,
 .list-row:selected .check:insensitive,
@@ -2008,7 +2008,7 @@ GtkInfoBar .check:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent,
 GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-dark.png"), url("assets/checkbox-mixed-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed.png"), url("assets/checkbox-mixed@2.png")); }
 
 GtkTreeView.view.check:inconsistent:selected,
 .list-row:selected .check:inconsistent,
@@ -2020,7 +2020,7 @@ GtkInfoBar .check:inconsistent {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:inconsistent:insensitive,
 GtkFileChooserDialog .dialog-vbox > .frame .check:inconsistent:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive-dark.png"), url("assets/checkbox-mixed-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-mixed-insensitive.png"), url("assets/checkbox-mixed-insensitive@2.png")); }
 
 GtkTreeView.view.check:inconsistent:insensitive:selected,
 .list-row:selected .check:inconsistent:insensitive,
@@ -2032,7 +2032,7 @@ GtkInfoBar .check:inconsistent:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .check:checked,
 GtkFileChooserDialog .dialog-vbox > .frame .check:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked-dark.png"), url("assets/checkbox-checked-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/checkbox-checked.png"), url("assets/checkbox-checked@2.png")); }
 
 GtkTreeView.view.check:checked:selected,
 .list-row:selected .check:checked,
@@ -2056,7 +2056,7 @@ GtkInfoBar .check:checked:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio,
 GtkFileChooserDialog .dialog-vbox > .frame .radio {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-dark.png"), url("assets/radio-unchecked-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked.png"), url("assets/radio-unchecked@2.png")); }
 
 GtkTreeView.view.radio:selected,
 .list-row:selected .radio,
@@ -2068,7 +2068,7 @@ GtkInfoBar .radio {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:insensitive,
 GtkFileChooserDialog .dialog-vbox > .frame .radio:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive-dark.png"), url("assets/radio-unchecked-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-unchecked-insensitive.png"), url("assets/radio-unchecked-insensitive@2.png")); }
 
 GtkTreeView.view.radio:insensitive:selected,
 .list-row:selected .radio:insensitive,
@@ -2080,7 +2080,7 @@ GtkInfoBar .radio:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent,
 GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-dark.png"), url("assets/radio-mixed-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.png"), url("assets/radio-mixed@2.png")); }
 
 GtkTreeView.view.radio:inconsistent:selected,
 .list-row:selected .radio:inconsistent,
@@ -2092,7 +2092,7 @@ GtkInfoBar .radio:inconsistent {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:inconsistent:insensitive,
 GtkFileChooserDialog .dialog-vbox > .frame .radio:inconsistent:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive-dark.png"), url("assets/radio-mixed-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-insensitive.png"), url("assets/radio-mixed-insensitive@2.png")); }
 
 GtkTreeView.view.radio:inconsistent:insensitive:selected,
 .list-row:selected .radio:inconsistent:insensitive,
@@ -2104,7 +2104,7 @@ GtkInfoBar .radio:inconsistent:insensitive {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked,
 GtkFileChooserDialog .dialog-vbox > .frame .radio:checked {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-dark.png"), url("assets/radio-checked-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked.png"), url("assets/radio-checked@2.png")); }
 
 GtkTreeView.view.radio:checked:selected,
 .list-row:selected .radio:checked,
@@ -2116,7 +2116,7 @@ GtkInfoBar .radio:checked {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame .radio:checked:insensitive,
 GtkFileChooserDialog .dialog-vbox > .frame .radio:checked:insensitive {
-  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive-dark.png"), url("assets/radio-checked-insensitive-dark@2.png")); }
+  -gtk-icon-source: -gtk-scaled(url("assets/radio-checked-insensitive.png"), url("assets/radio-checked-insensitive@2.png")); }
 
 GtkTreeView.view.radio:checked:insensitive:selected,
 .list-row:selected .radio:checked:insensitive,
@@ -2748,7 +2748,8 @@ GtkVolumeButton.button {
   background-color: transparent;
   background-image: none;
   background-color: rgba(231, 232, 235, 0);
-  border-width: 0; }
+  border-width: 0; 
+box-shadow: none;}
   .header-bar .button.titlebutton:hover,
   .titlebar .button.titlebutton:hover {
     color: rgba(82, 93, 118, 0.8);
@@ -3915,17 +3916,19 @@ NautilusWindow.csd.background, NautilusWindow .list.sidebar {
 
 GtkFileChooserDialog GtkPlacesSidebar.sidebar,
 NautilusWindow GtkPlacesSidebar.sidebar {
-  background-color: rgba(53, 57, 69, 1.0); }
+  background-color: #e7e8eb; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-placeholder-row.list-row.activatable {
     border: 1px solid #2ca7f8; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row {
     background-color: rgba(75, 81, 98, 0.95); }
-  GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable,
-  NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable {
+ 
+ 
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable，
+GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable {
     border: none;
-    color: #BAC3CF; }
+    color: #353945; }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon {
       color: rgba(186, 195, 207, 0.6); }
@@ -3979,7 +3982,7 @@ MarlinViewWindow .source-list, MarlinViewWindow .source-list.view, MarlinViewWin
 NemoWindow .sidebar,
 NemoWindow .source-list.sidebar.view,
 MarlinViewWindow .sidebar, MarlinViewWindow .source-list.sidebar.view {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: rgba(53,57, 69, 0.95); }
   NemoWindow .sidebar .view,
   NemoWindow .sidebar row,
   NemoWindow .source-list.sidebar.view .view,
@@ -4019,7 +4022,7 @@ MarlinViewWindow .pane-separator {
   background-color: rgba(53, 57, 69, 0.95); }
 
 GtkFileChooserDialog.background.csd, GtkFileChooserDialog.background {
-  background-color: rgba(53, 57, 69, 0.95); }
+  background-color: #e7e8eb; }
 
 GtkFileChooserDialog GtkPlacesSidebar.sidebar {
   background-color: transparent; }
@@ -4036,12 +4039,12 @@ GtkFileChooserDialog .dialog-vbox > .frame {
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame {
   background-color: transparent;
-  border-color: rgba(37, 40, 49, 0.95); }
+  border-color: #d5d9e3; }
 
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkLabel,
 GtkFileChooserDialog GtkFileChooserWidget > GtkActionBar > GtkRevealer > .action-bar.frame GtkComboBox,
 GtkFileChooserDialog .dialog-vbox > .frame GtkLabel, GtkFileChooserDialog .dialog-vbox > .frame GtkComboBox {
-  color: #BAC3CF; }
+  color: #3a495d; }
 
 FeedReaderreaderUI.background.csd > .titlebar .pane-separator,
 FeedReaderreaderUI.background.csd.maximized > .titlebar .pane-separator,
