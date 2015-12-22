@@ -3948,9 +3948,11 @@ GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable {
   NautilusWindow GtkPlacesSidebar.sidebar .separator, NautilusWindow GtkPlacesSidebar.sidebar .view.separator {
     color: transparent; }
 
+/*
 GtkFileChooserDialog.maximized GtkPlacesSidebar.sidebar,
 NautilusWindow.maximized GtkPlacesSidebar.sidebar {
   background-color: #353945; }
+*/
 
 GtkFileChooserDialog .sidebar-button.button,
 NautilusWindow .sidebar-button.button {
