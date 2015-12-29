@@ -3931,7 +3931,7 @@ GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable {
     color: #353945; }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable .sidebar-icon {
-      color: rgba(186, 195, 207, 0.6); }
+      color: #788390; }
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable:hover,
     GtkFileChooserDialog GtkPlacesSidebar.sidebar .has-open-popup,
     NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable:hover, NautilusWindow GtkPlacesSidebar.sidebar .has-open-popup {
