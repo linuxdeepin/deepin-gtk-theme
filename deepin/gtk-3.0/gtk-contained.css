@@ -3922,7 +3922,7 @@ NautilusWindow GtkPlacesSidebar.sidebar {
     border: 1px solid #2ca7f8; }
   GtkFileChooserDialog GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row,
   NautilusWindow GtkPlacesSidebar.sidebar .sidebar-new-bookmark-row {
-    background-color: rgba(75, 81, 98, 0.95); }
+    background-color: rgba(0,0,0,0.1); }
  
  
 NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable，
