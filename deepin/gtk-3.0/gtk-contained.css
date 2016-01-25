@@ -3925,7 +3925,7 @@ NautilusWindow GtkPlacesSidebar.sidebar {
     background-color: rgba(0,0,0,0.1); }
  
  
-NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable，
+NautilusWindow GtkPlacesSidebar.sidebar .list-row.activatable,
 GtkFileChooserDialog GtkPlacesSidebar.sidebar .list-row.activatable {
     border: none;
     color: #353945; }
