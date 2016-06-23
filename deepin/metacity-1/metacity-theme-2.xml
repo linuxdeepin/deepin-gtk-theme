@@ -2,9 +2,9 @@
 <metacity_theme>
 <info>
 	<name>deepin</name>
-	<author>deepin</author>
-	<copyright>deepin</copyright>
-	<date>2015</date>
+	<author>shule1987</author>
+	<copyright>shule1987</copyright>
+	<date>2016</date>
 	<description>deepin Metacity theme</description>
 </info>
 
@@ -13,30 +13,30 @@
 <constant name="C_title_focused" value="#70788d" />
 <constant name="C_title_unfocused" value="#979dac" />
 
-<constant name="C_wm_bg_focused" value="#e7e8eb" />
-<constant name="C_wm_bg_unfocused" value="#e7e8eb" />
+<constant name="C_wm_bg_focused" value="#ffffff" />
+<constant name="C_wm_bg_unfocused" value="#ffffff" />
 
 <constant name="C_wm_highlight" value="#eeeff1" />
 
 <!-- window button colors -->
 
 <!-- close -->
-<constant name="C_button_close_bg_focused" value="#f46067" />
-<constant name="C_button_close_bg_hover" value="#f68086" />
-<constant name="C_button_close_bg_active" value="#f13039" />
+<constant name="C_button_close_bg_focused" value="#D6D6D6" />
+<constant name="C_button_close_bg_hover" value="#EFEFF2" />
+<constant name="C_button_close_bg_active" value="#D6D6D6" />
 
 <constant name="C_icon_close_bg" value="#F8F8F9" />
 
 <!-- minimize, maximize -->
-<constant name="C_button_bg_hover" value="#fdfdfd" />
-<constant name="C_button_bg_active" value="#5294E2" />
+<constant name="C_button_bg_hover" value="#EFEFF2" />
+<constant name="C_button_bg_active" value="#D6D6D6" />
 
 <constant name="C_button_border_hover" value="#D1D3DA" />
 
 <constant name="C_icon_bg_focused" value="#90949E" />
 <constant name="C_icon_bg_unfocused" value="#B6B8C0" />
-<constant name="C_icon_bg_hover" value="#7A7F8B" />
-<constant name="C_icon_bg_active" value="#ffffff" />
+<constant name="C_icon_bg_hover" value="#EFEFF2" />
+<constant name="C_icon_bg_active" value="#D6D6D6" />
 
 <!-- geometries -->
 
@@ -44,13 +44,12 @@
 	<distance name="left_width" value="0" />
 	<distance name="right_width" value="0" />
 	<distance name="bottom_height" value="0" />
-	<distance name="left_titlebar_edge" value="5"/>
-	<distance name="right_titlebar_edge" value="5"/>
+	<distance name="left_titlebar_edge" value="2"/>
+	<distance name="right_titlebar_edge" value="2"/>
 	<distance name="title_vertical_pad" value="3"/>
 	<border name="title_border" left="10" right="10" top="3" bottom="3"/>
-	<border name="button_border" left="0" right="0" top="0" bottom="0"/>
-  <distance name="button_width" value="30"/>
-  <distance name="button_height" value="16"/>
+	<border name="button_border" left="3" right="3" top="0" bottom="0"/>
+	<aspect_ratio name="button" value="1.0" />
 </frame_geometry>
 
 <frame_geometry name="normal_unfocused" title_scale="medium" rounded_top_left="1" rounded_top_right="1" parent="normal">
