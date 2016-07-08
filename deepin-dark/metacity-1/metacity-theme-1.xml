@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <metacity_theme>
 <info>
-	<name>deepin</name>
+	<name>deepin-Dark</name>
 	<author>shule1987</author>
 	<copyright>shule1987</copyright>
 	<date>2016</date>
-	<description>deepin Metacity theme</description>
+	<description>deepin-Dark Metacity theme</description>
 </info>
 
 <!-- meaningfull constants -->
@@ -13,8 +13,8 @@
 <constant name="C_title_focused" value="#70788d" />
 <constant name="C_title_unfocused" value="#979dac" />
 
-<constant name="C_wm_bg_focused" value="#e7e8eb" />
-<constant name="C_wm_bg_unfocused" value="#e7e8eb" />
+<constant name="C_wm_bg_focused" value="#1f2326" />
+<constant name="C_wm_bg_unfocused" value="#1f2326" />
 
 <constant name="C_wm_highlight" value="#eeeff1" />
 
