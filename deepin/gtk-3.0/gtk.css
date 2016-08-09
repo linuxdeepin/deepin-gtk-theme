@@ -4238,12 +4238,12 @@ box-shadow: none;}
     background-color: alpha(@base_color,0.5); }
 */
     
-
+@define-color active_color #2ca7f8;
 @define-color theme_fg_color #5c616c;
 @define-color theme_text_color #303030;
 @define-color theme_bg_color #f9fcff;
 @define-color theme_base_color #ffffff;
-@define-color theme_selected_bg_color @active_color;
+@define-color theme_selected_bg_color #2CA7F8;
 @define-color theme_selected_fg_color #ffffff;
 @define-color fg_color #303030;
 @define-color text_color #303030;
@@ -4286,4 +4286,4 @@ box-shadow: none;}
 @define-color border_color alpha(#000000,0.1);
 @define-color toolbar_color shade(@base_color,0.98);
 @define-color toolbar_icon_color @theme_text_color;
-@define-color active_color #2ca7f8;
+

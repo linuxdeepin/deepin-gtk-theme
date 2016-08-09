@@ -4283,12 +4283,12 @@ filechooser placessidebar.sidebar scrollbar,
     background-color: rgba(42, 45, 55, 0.95); }
     
 */
-
+@define-color active_color #106daa;
 @define-color theme_fg_color #5c616c;
 @define-color theme_text_color #89919a;
 @define-color theme_bg_color @base_color;
 @define-color theme_base_color @base_color;
-@define-color theme_selected_bg_color @active_color;
+@define-color theme_selected_bg_color #106daa;
 @define-color theme_selected_fg_color #ffffff;
 @define-color fg_color #303030;
 @define-color text_color @theme_text_color;
@@ -4333,4 +4333,4 @@ filechooser placessidebar.sidebar scrollbar,
 @define-color toolbar_icon_color @theme_text_color;
 @define-color hightlight_line rgba(255,255,255,0.02);
 
-@define-color active_color #106daa;
+
