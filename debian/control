@@ -1,0 +1,12 @@
+Source: deepin-gtk-theme
+Section: gnome
+Priority: optional
+Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Standards-Version: 3.9.5
+Build-Depends: debhelper (>= 9),
+
+Package: deepin-gtk-theme
+Architecture: all
+Breaks: libgtk-3-0 ( <= 3.5.0 )
+Description: Deepin Gtk Themes
+ This package contains GTK+ themes for Deepin Desktop Environment.
