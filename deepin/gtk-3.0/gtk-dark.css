@@ -976,7 +976,7 @@ headerbar,
   border-style: solid;
   border-color: blue;
   color: @text_color;
-  background-color: red;
+  background-color: @toolbar_color;
   box-shadow: inset 0 1px @hightlight_line; }
   .csd headerbar,
   .csd .titlebar:not(headerbar) {
@@ -3068,7 +3068,7 @@ decoration {
   .solid-csd decoration {
     border-radius: 0;
     margin: 1px;
-    background-color: rgba(231, 232, 235, 0.95);
+    background-color: shade(@base_color,0.5);
     box-shadow: none; }
 
 headerbar.default-decoration button.titlebutton,
