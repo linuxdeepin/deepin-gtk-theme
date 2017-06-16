@@ -9,6 +9,7 @@
   -GtkWidget-text-handle-width: 20;
   -GtkWidget-text-handle-height: 20;
   -GtkDialog-button-spacing: 4;
+
   -GtkDialog-action-area-border: 0;
   outline-color: rgba(92, 97, 108, 0.3);
   outline-style: none;
@@ -3042,6 +3043,14 @@ headerbar button.titlebutton,
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin-left: -3px;
+    margin-right: -3px;
+    margin-top: -6px;
+    margin-bottom: -6px;
     border: 0px solid red; }
     headerbar button.titlebutton.close:backdrop, headerbar button.titlebutton.maximize:backdrop, headerbar button.titlebutton.minimize:backdrop,
     .titlebar .button.titlebutton.close:backdrop,
@@ -3050,6 +3059,8 @@ headerbar button.titlebutton,
       opacity: 1; }
   headerbar button.titlebutton.close,
   .titlebar .button.titlebutton.close {
+    padding-right: 6px;
+    margin-right: -6px;
     background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2x.png")); }
   headerbar button.titlebutton.close:backdrop,
   .titlebar .button.titlebutton.close:backdrop {
