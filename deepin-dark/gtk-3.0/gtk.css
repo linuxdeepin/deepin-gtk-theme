@@ -3127,6 +3127,15 @@ headerbar button.titlebutton,
   .titlebar .button.titlebutton.minimize:active {
     background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2x.png")); }
 
+.ssd decoration headerbar.default-decoration button.titlebutton {
+    min-width: 27px;
+    min-height: 23px;
+    margin-left: -3px;
+    margin-right: -3px;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
 .view:selected, iconview:selected, .view:selected:focus, iconview:selected:focus, .view text:selected, iconview text:selected,
 textview text:selected, iconview text:selected:focus,
 textview text:selected:focus, .view text selection:focus, iconview text selection:focus, .view text selection, iconview text selection,
