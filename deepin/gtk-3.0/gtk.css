@@ -1458,7 +1458,7 @@ headerbar entry {
     color: rgba(82, 93, 118, 0.8);
     border-color: rgba(82, 93, 118, 0.1);
     /*  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.9));*/
-    
+
     background-color: transparent;
 }
 .primary-toolbar entry image,
@@ -5599,6 +5599,16 @@ filechooser actionbar entry:disabled {
     color: rgba(186, 195, 207, 0.55);
     background-image: linear-gradient(to bottom, rgba(102, 109, 132, 0.2), rgba(102, 109, 132, 0.2));
 }
+
+/* deepin override settings go here */
+headerbar.default-decoration {
+    padding: 4px 0px; /* make titlebar height larger */
+}
+
+headerbar.default-decoration:backdrop {
+    padding: 4px 0px; /* make titlebar height larger */
+}
+
 /*
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
