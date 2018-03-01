@@ -5609,6 +5609,10 @@ headerbar.default-decoration:backdrop {
     padding: 4px 0px; /* make titlebar height larger */
 }
 
+headerbar .title {
+    font-weight: bold;
+}
+
 /*
 filechooser placessidebar.sidebar scrollbar,
 .nautilus-window placessidebar.sidebar scrollbar, .nemo-window .sidebar scrollbar, .caja-side-pane scrollbar {
