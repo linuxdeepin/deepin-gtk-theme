@@ -4152,8 +4152,6 @@ headerbar button.titlebutton.minimize:backdrop,
 }
 headerbar button.titlebutton.close,
 .titlebar .button.titlebutton.close {
-    padding-right: 6px;
-    margin-right: -6px;
     background-image: -gtk-scaled(url("assets/titlebutton-close.png"), url("assets/titlebutton-close@2x.png"));
 }
 headerbar button.titlebutton.close:backdrop,
