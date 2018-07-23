@@ -1,2 +1,2 @@
-# 17.10.6
+# 17.10.7
     Improve HiDPI support.
