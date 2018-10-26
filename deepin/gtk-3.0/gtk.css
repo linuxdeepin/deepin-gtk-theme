@@ -1284,12 +1284,12 @@ headerbar,
 .titlebar:not(headerbar) {
     min-height: 36px;
     padding: 0 7px;
-    border-width: 0 0 1px;
+    border-width: 0;
     border-style: solid;
     border-color: #d4d5db;
     color: rgba(82, 93, 118, 0.8);
     background-color: shade(@base_color,0.95);
-    box-shadow: inset 0 1px rgba(239, 240, 242, 0.95);
+    box-shadow: inset 0 1px rgba(255, 255, 255, 0.15);
 }
 .csd headerbar,
 .csd .titlebar:not(headerbar) {
@@ -1375,7 +1375,7 @@ headerbar.default-decoration:backdrop,
 .default-decoration.titlebar:backdrop:not(headerbar),
 .csd .default-decoration.titlebar:backdrop:not(headerbar) {
     min-height: 28px;
-    padding: 0 3px;
+    padding: 0 3spx;
     background-color: @base_color;
     border-bottom-width: 0;
 }
@@ -4097,9 +4097,14 @@ headerbar.default-decoration button.titlebutton,
     min-height: 0;
     margin: 0;
 }
+/* remove the space between closebutton and right side */
+headerbar box.right{
+	margin-right: -7px;
+}
 headerbar button.titlebutton,
 .titlebar .button.titlebutton {
     padding: 0;
+    margin: -3px;
     min-width: 40px;
     min-height: 40px;
     border-color: transparent;
@@ -4132,22 +4137,17 @@ headerbar button.titlebutton.minimize,
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    padding-left: 3px;
-    padding-right: 3px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    margin-left: -3px;
-    margin-right: -3px;
-    margin-top: -6px;
-    margin-bottom: -6px;
-    border: 0px solid red;
+    border-radius:0px;
+    padding:0px;
+    border: none;
+
 }
 /* make close button responsive in a bigger area*/
 headerbar button.titlebutton.close,
 .titlebar .button.titlebutton.close {
-    margin-right: -8px;
-    padding-top: 14px;
-    padding-right: 8px;
+    margin-right: 0px;
+    padding-top: 0px;
+    padding-right: 0px;
 }
 headerbar button.titlebutton.close:backdrop,
 headerbar button.titlebutton.maximize:backdrop,
@@ -4208,8 +4208,7 @@ headerbar button.titlebutton.minimize:active,
 .ssd decoration headerbar.default-decoration button.titlebutton {
     min-width: 40px;
     min-height: 40px;
-    margin-left: -3px;
-    margin-right: -3px;
+    margin: 0px;
     padding-left: 0px;
     padding-right: 0px;
 }
