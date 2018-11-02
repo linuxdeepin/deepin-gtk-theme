@@ -19,11 +19,21 @@
 .window-frame.ssd {
     background-color: @base_color;
 }
+/*
 .window-frame.ssd .header-bar.default-decoration,
 .window-frame.ssd .titlebar.default-decoration {
     border-radius: 4px 4px 0 0;
     background-color: @base_Color;
     padding: 8px;
+}
+*/
+.ssd .default-decoration {
+    border-radius: 4px 4px 0 0;
+    border:none;
+	background-color: @base_color;
+}
+.ssd .default-decoration button.titlebutton{
+    border:none;
 }
 .background {
     color: @theme_text_color;
@@ -4222,13 +4232,20 @@ headerbar button.titlebutton.minimize:active,
 .titlebar .button.titlebutton.minimize:active {
     background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2x.png"));
 }
+
 .ssd decoration headerbar.default-decoration button.titlebutton {
-    min-width: 27px;
-    min-height: 23px;
-    margin-left: -3px;
-    margin-right: -3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0px;
+    margin-left:-2px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.ssd ,
+.ssd decoration,
+.ssd decoration headerbar.default-decoration{
+	margin:0px;
+	padding:0px;
 }
 .view:selected,
 iconview:selected,
