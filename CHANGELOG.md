@@ -1,3 +1,5 @@
+#17.10.11
+  update close icons
 #17.10.10
   update titlebar styles
 ## 17.10.9 (2018-10-25)
