@@ -1,3 +1,5 @@
+#2020.06.10
+  fix dark insensitive text 
 #17.10.11
   update close icons
 #17.10.10
