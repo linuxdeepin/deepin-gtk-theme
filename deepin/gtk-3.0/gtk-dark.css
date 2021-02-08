@@ -4151,16 +4151,21 @@ messagedialog.csd decoration {
 }
 headerbar.default-decoration button.titlebutton,
 .titlebar.default-decoration button.titlebutton {
-    padding: 0 4px;
+    padding: 0px;
     min-width: 0;
     min-height: 0;
     margin: 0;
 }
+/* remove the space between closebutton and right side */
+headerbar box.right{
+	margin-right: -3px;
+}
 headerbar button.titlebutton,
 .titlebar button.titlebutton {
     padding: 0;
-    min-width: 27px;
-    min-height: 23px;
+    margin: -3px;
+    min-width: 40px;
+    min-height: 40px;
     border-color: transparent;
     background-image: none;
     background-color: rgba(231, 232, 235, 0);
@@ -4191,7 +4196,9 @@ headerbar button.titlebutton.minimize,
     background-color: transparent;
     background-position: center;
     background-repeat: no-repeat;
-    border: 0px solid red;
+    border-radius:0px;
+    padding:0px;
+    border: none;
 }
 headerbar button.titlebutton.close:backdrop,
 headerbar button.titlebutton.maximize:backdrop,
@@ -4250,12 +4257,10 @@ headerbar button.titlebutton.minimize:active,
     background-image: -gtk-scaled(url("assets/titlebutton-minimize-active-dark.png"), url("assets/titlebutton-minimize-active-dark@2x.png"));
 }
 .ssd decoration headerbar.default-decoration button.titlebutton {
-    min-width: 27px;
-    min-height: 23px;
-    margin-left: -3px;
-    margin-right: -3px;
-    padding-left: 3px;
-    padding-right: 3px;
+    min-width: 40px;
+    min-height: 40px;
+    margin: 0px;
+    padding: 0px;
 }
 .view:selected,
 iconview:selected,
