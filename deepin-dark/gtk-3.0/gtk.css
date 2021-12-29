@@ -3608,7 +3608,7 @@ paned .sidebar.left:dir(rtl),
 paned .sidebar:dir(rtl),
 paned .sidebar:dir(ltr),
 paned .sidebar {
-    border-color: none;
+    border-color: rgba(0, 0, 0, 0);
 }
 stacksidebar row {
     padding: 10px 4px;
