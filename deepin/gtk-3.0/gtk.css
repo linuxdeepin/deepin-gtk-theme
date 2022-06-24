@@ -4105,7 +4105,7 @@ headerbar.default-decoration button.titlebutton,
     padding: 0 0px;
     min-width: 40px;
     min-height: 40px;
-    margin: 3px;
+    margin: 0px;
 }
 
 /* remove the space between closebutton and right side */
