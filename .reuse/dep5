@@ -1,0 +1,58 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: deepin-gtk-theme
+Upstream-Contact: UnionTech Software Technology Co., Ltd. <>
+Source: https://github.com/linuxdeepin/deepin-gtk-theme
+
+# ci
+Files: .github/* .gitlab-ci.yml output/results.txt
+Copyright: None
+License: CC0-1.0
+
+# gitignore
+Files: .gitignore 
+Copyright: None
+License: CC0-1.0
+
+# xml toml json conf yaml
+Files:  *.toml *.json *conf *.yaml
+Copyright: None
+License: CC0-1.0
+
+# rpm
+Files: rpm/*
+Copyright: None
+License: CC0-1.0
+
+# debian
+Files: debian/*
+Copyright: None
+License: LGPL-3.0-or-later
+
+# Arch
+Files: archlinux/*
+Copyright: None
+License: CC0-1.0
+
+# README&DOC
+Files: README.md README.zh_CN.md CHANGELOG.md
+Copyright: UnionTech Software Technology Co., Ltd.
+License: CC-BY-4.0
+
+# Project file
+Files: *.pro *.prf *.pri *.qrc *CMakeLists.txt *.cmake *.in
+Copyright: None
+License: CC0-1.0
+
+# svg
+Files: deepin/metacity-1/*.svg deepin/gnome-shell/common-assets/*/*.svg deepin/gnome-shell/light-assets/*/*.svg 
+deepin/cinnamon/common-assets/*/*.svg deepin/cinnamon/light-assets/*/*.svg deepin/unity/*.svg deepin/unity/*/*.svg
+deepin-dark/*.svg deepin-dark/*/*.svg deepin-dark/*/*/*.svg deepin-dark/*/*/*/*.svg
+Copyright: UnionTech Software Technology Co., Ltd.
+License: LGPL-3.0-or-later
+
+#example png
+Files: deepin/gnome-shell/common-assets/misc/*.png deepin/cinnamon/common-assets/misc/*.png
+deepin/*/*/*.png deepin-dark/*/*/*.png
+Copyright: UnionTech Software Technology Co., Ltd.
+License: LGPL-3.0-or-later
+
