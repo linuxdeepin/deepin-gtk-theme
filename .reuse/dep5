@@ -14,7 +14,7 @@ Copyright: None
 License: CC0-1.0
 
 # xml toml json conf yaml
-Files:  *.toml *.json *conf *.yaml
+Files:  *.toml *.json *conf *.yaml *.xpm *.css *.xml *.rc
 Copyright: None
 License: CC0-1.0
 
@@ -26,10 +26,15 @@ License: CC0-1.0
 # debian
 Files: debian/*
 Copyright: None
-License: LGPL-3.0-or-later
+License: GPL-3.0-or-later
 
 # Arch
 Files: archlinux/*
+Copyright: None
+License: CC0-1.0
+
+# theme
+Files: *.theme *gtkrc *themerc
 Copyright: None
 License: CC0-1.0
 
@@ -39,20 +44,17 @@ Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
 
 # Project file
-Files: *.pro *.prf *.pri *.qrc *CMakeLists.txt *.cmake *.in
+Files: *.pro *.prf *.pri *.qrc *CMakeLists.txt *.cmake *.in Makefile
 Copyright: None
 License: CC0-1.0
 
-# svg
-Files: deepin/metacity-1/*.svg deepin/gnome-shell/common-assets/*/*.svg deepin/gnome-shell/light-assets/*/*.svg 
-deepin/cinnamon/common-assets/*/*.svg deepin/cinnamon/light-assets/*/*.svg deepin/unity/*.svg deepin/unity/*/*.svg
-deepin-dark/*.svg deepin-dark/*/*.svg deepin-dark/*/*/*.svg deepin-dark/*/*/*/*.svg
+#example svg
+Files: *.svg
 Copyright: UnionTech Software Technology Co., Ltd.
-License: LGPL-3.0-or-later
+License: GPL-3.0-or-later
 
 #example png
-Files: deepin/gnome-shell/common-assets/misc/*.png deepin/cinnamon/common-assets/misc/*.png
-deepin/*/*/*.png deepin-dark/*/*/*.png
+Files: *.png *.svg
 Copyright: UnionTech Software Technology Co., Ltd.
-License: LGPL-3.0-or-later
+License: GPL-3.0-or-later
 
