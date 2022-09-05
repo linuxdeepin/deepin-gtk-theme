@@ -14,7 +14,8 @@ Copyright: None
 License: CC0-1.0
 
 # xml toml json conf yaml
-Files:  *.toml *.json *conf *.yaml *.xpm *.css *.xml *.rc
+Files: deepin-dark/*.xpm deepin-dark/*.css deepin-dark/*.rc deepin-dark/*.xml
+	deepin/*.xpm deepin/*.css deepin/*.rc deepin/*.xml
 Copyright: None
 License: CC0-1.0
 
@@ -44,17 +45,17 @@ Copyright: UnionTech Software Technology Co., Ltd.
 License: CC-BY-4.0
 
 # Project file
-Files: *.pro *.prf *.pri *.qrc *CMakeLists.txt *.cmake *.in Makefile
+Files: Makefile
 Copyright: None
 License: CC0-1.0
 
 #example svg
-Files: *.svg
+Files: deepin-dark/*.svg deepin/*.svg
 Copyright: UnionTech Software Technology Co., Ltd.
 License: GPL-3.0-or-later
 
 #example png
-Files: *.png *.svg
+Files: deepin-dark/*.png deepin/*.png
 Copyright: UnionTech Software Technology Co., Ltd.
 License: GPL-3.0-or-later
 
