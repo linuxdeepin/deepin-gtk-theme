@@ -10,7 +10,7 @@ license=('LGPL3')
 optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin-git')
 conflicts=(deepin-gtk-theme)
-providers=(deepin-gtk-theme)
+provides=(deepin-gtk-theme)
 source=('source.tar.gz')
 sha512sums=('SKIP')
 
