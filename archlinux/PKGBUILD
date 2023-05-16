@@ -2,6 +2,9 @@
 pkgname=deepin-gtk-theme-git
 pkgver=2020.06.10.r12.g3cd9a6d
 pkgrel=1
+sourcename=deepin-gtk-theme
+sourcetars=("$sourcename"_"$pkgver".tar.xz)
+sourcedir="$sourcename"
 pkgdesc="Deepin GTK Theme"
 arch=('any')
 url="https://github.com/linuxdeepin/deepin-gtk-theme"
@@ -11,14 +14,14 @@ optdepends=('gtk-engine-murrine: for gtk2 themes')
 groups=('deepin-git')
 conflicts=(deepin-gtk-theme)
 provides=(deepin-gtk-theme)
-source=('source.tar.gz')
+source=("${sourcetars[@]}")
 sha512sums=('SKIP')
 
 prepare() {
-    cd $deepin_source_name
+    cd $sourcedir
 }
 
 package() {
-  cd $deepin_source_name
+  cd $sourcedir
   make DESTDIR="$pkgdir" install
 }
