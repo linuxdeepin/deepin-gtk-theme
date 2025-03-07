@@ -1,3 +1,9 @@
+deepin-gtk-theme (25.3.7) unstable; urgency=medium
+
+  * chore: update gtk theme
+
+ -- zhangkun <zhangkun2@uniontech.com>  Fri, 07 Mar 2025 10:39:24 +0800
+
 deepin-gtk-theme (23.11.23) unstable; urgency=low
 
   * new tag in 2023, fix the icon of firefox
